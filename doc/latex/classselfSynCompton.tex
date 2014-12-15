@@ -1,0 +1,256 @@
+\hypertarget{classselfSynCompton}{\section{self\-Syn\-Compton Class Reference}
+\label{classselfSynCompton}\index{self\-Syn\-Compton@{self\-Syn\-Compton}}
+}
+
+
+{\ttfamily \#include $<$self\-Syn\-Compton.\-hpp$>$}
+
+Inheritance diagram for self\-Syn\-Compton\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classselfSynCompton}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class provides S\-S\-C electron energy losses and S\-S\-C luminosity calculation \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classselfSynCompton_a577dca084342cabf74de2765f0b187d0}{self\-Syn\-Compton} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, \hyperlink{classmagneticField}{magnetic\-Field} $\ast$\-\_\-\-B, std\-::string \-\_\-id)
+\item 
+\hyperlink{classselfSynCompton_adc3ac6dc66cc436b48d0a36ab26871fd}{$\sim$self\-Syn\-Compton} ()
+\item 
+void \hyperlink{classselfSynCompton_a46f692985a0fd74c14a018cc43f25c0b}{print\-Info} ()
+\item 
+double \hyperlink{classselfSynCompton_a51bad50f11e56a623b80e4436ef1b629}{dotg} (double g)
+\item 
+void \hyperlink{classselfSynCompton_af254f0dcd2abfe1d218c85d917992e24}{update} ()
+\item 
+double \hyperlink{classselfSynCompton_a39e8b6e7b4094f39f9436cd94a15775e}{calculate\-Lpv} (double v)
+\item 
+void \hyperlink{classselfSynCompton_ae34a13d5ddf894d3e1ede229ffb4176a}{set\-Lpv} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmagneticField}{magnetic\-Field} $\ast$ \hyperlink{classselfSynCompton_a7f24c41ccf47e77fefab4c946e9397f6}{B}
+\item 
+\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ \hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classselfSynCompton_a577dca084342cabf74de2765f0b187d0}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!self\-Syn\-Compton@{self\-Syn\-Compton}}
+\index{self\-Syn\-Compton@{self\-Syn\-Compton}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{self\-Syn\-Compton}]{\setlength{\rightskip}{0pt plus 5cm}self\-Syn\-Compton\-::self\-Syn\-Compton (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{{\bf magnetic\-Field} $\ast$}]{\-\_\-\-B, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classselfSynCompton_a577dca084342cabf74de2765f0b187d0}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-\-B} & -\/ \hyperlink{classmagneticField}{magnetic\-Field} class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                                            
+           : \hyperlink{classenergyDissProc_a0cf0b423089016fbe8a697378c519590}{energyDissProc}( \_cfg, \_r, \_ele, \_id  ), \hyperlink{classselfSynCompton_a7f24c41ccf47e77fefab4c946e9397f6}{B}(\_B) \{
+10   \textcolor{comment}{/* requested parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"}+\hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id},200,&\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"KN"},0,&KN);
+13   
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+15 
+16   \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin} = 1.0;
+17   \textcolor{comment}{/* here we set vpMAX to a maximum value specified by maximal value of magnetic field at R0 */}
+18   vpMax = 100.0*A43*DSQR(\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->getGammaMax( ))*DSQR(\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->getGammaMax( ))*( 
+      \hyperlink{classselfSynCompton_a7f24c41ccf47e77fefab4c946e9397f6}{B}->\hyperlink{classmagneticField_a3b573d12649137290d521539b903da8d}{getMaxB}( )/B\_CR )*mec2h;
+19 
+20   allocateUpe( );
+21   allocateUpeR( );
+22   allocateLpv( );
+23   allocateLvPoint( );
+24   allocateLvPointAvg( );
+25 
+26   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+27  \}
+\end{DoxyCode}
+\hypertarget{classselfSynCompton_adc3ac6dc66cc436b48d0a36ab26871fd}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!$\sim$self\-Syn\-Compton@{$\sim$self\-Syn\-Compton}}
+\index{$\sim$self\-Syn\-Compton@{$\sim$self\-Syn\-Compton}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{$\sim$self\-Syn\-Compton}]{\setlength{\rightskip}{0pt plus 5cm}self\-Syn\-Compton\-::$\sim$self\-Syn\-Compton (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classselfSynCompton_adc3ac6dc66cc436b48d0a36ab26871fd}
+destructor 
+\begin{DoxyCode}
+29                                  \{
+30   freeLpv( );
+31   freeLvPoint( );
+32   freeLvPointAvg( );
+33   freeUpe( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classselfSynCompton_a39e8b6e7b4094f39f9436cd94a15775e}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!calculate\-Lpv@{calculate\-Lpv}}
+\index{calculate\-Lpv@{calculate\-Lpv}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{calculate\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}double self\-Syn\-Compton\-::calculate\-Lpv (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classselfSynCompton_a39e8b6e7b4094f39f9436cd94a15775e}
+calculate intrinsic luminosity 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ frequency (jet co-\/moving frame) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'\-\_\-v 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_aed17a9ce8a970cbd1e250c59947407ac}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+59                                               \{
+60   \textcolor{keywordtype}{double} dg,de,j;
+61   \textcolor{keywordtype}{double} Int1;
+62   \textcolor{keywordtype}{double} e;
+63   Int1 = 0.0;
+64   j = 0.0;
+65 
+66   e = PLANCK\_H*v/(ELECTRON\_MASS*LIGHT\_SPEED*LIGHT\_SPEED);
+67   
+68   dg = \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( );
+69   de = \hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->\hyperlink{classenergyDissProc_a5ef88d9ecacade52bbd277695230d237}{getdLogE}( );
+70 
+71   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );i++ ) \{
+72     Int1 = 0.0;
+73     \textcolor{comment}{/* integration over electron energy (gamma) */}
+74     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0;k<\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );k++ ) \{ 
+75       Int1  += bazinga::IntCor( k, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*inverseCompton::fiso( 
+      \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k), \hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->get\_ep(i),e )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}(k)/
+      \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k); \}
+76     
+77       \textcolor{comment}{/* integration over seed photon energy */}
+78     j += bazinga::IntCor( i, \hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->get\_upe(i)/\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->get\_ep(i)*Int1*dg; \}
+79 
+80   j *= constC1*e*de;
+81   \textcolor{keywordflow}{return} j; \}
+\end{DoxyCode}
+\hypertarget{classselfSynCompton_a51bad50f11e56a623b80e4436ef1b629}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!dotg@{dotg}}
+\index{dotg@{dotg}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{dotg}]{\setlength{\rightskip}{0pt plus 5cm}double self\-Syn\-Compton\-::dotg (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classselfSynCompton_a51bad50f11e56a623b80e4436ef1b629}
+get d gamma \textbackslash{} d t for particular process 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_a8074e0db5d859a8815e7136c2fc41b46}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+42                                       \{
+43   \textcolor{keywordtype}{double} b,sum, val = 0.0;
+44 
+45   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );i++ ) \{
+46     b = 4.0*\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->get\_ep(i)*g;
+47     \textcolor{keywordflow}{if}( b > 1.0 ) \{ \hyperlink{classenergyDissProc_a69ea4be814273e47e69e31e593c3a250}{set\_KN\_info}( g ); \}
+48     sum += bazinga::IntCor( i, \hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->get\_ep(i)*\hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->get\_upe(i)*
+      inverseCompton::fKN( b, KN ); \}
+49   
+50   val = \hyperlink{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{syn}->\hyperlink{classenergyDissProc_a5ef88d9ecacade52bbd277695230d237}{getdLogE}( )*sum;
+51   
+52   set\_upe\_r( val );  
+53   \textcolor{keywordflow}{return}( val ); \}
+\end{DoxyCode}
+\hypertarget{classselfSynCompton_a46f692985a0fd74c14a018cc43f25c0b}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void self\-Syn\-Compton\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classselfSynCompton_a46f692985a0fd74c14a018cc43f25c0b}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+35                                 \{
+36   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+37   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+38   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"KN"},KN); \}
+\end{DoxyCode}
+\hypertarget{classselfSynCompton_ae34a13d5ddf894d3e1ede229ffb4176a}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!set\-Lpv@{set\-Lpv}}
+\index{set\-Lpv@{set\-Lpv}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{set\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}void self\-Syn\-Compton\-::set\-Lpv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classselfSynCompton_ae34a13d5ddf894d3e1ede229ffb4176a}
+set intrinsic luminosities 
+
+Reimplemented from \hyperlink{classenergyDissProc_a93a39df53f30801f9f057cd55c05485d}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+55                              \{
+56   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_Lpv( i, \hyperlink{classselfSynCompton_a39e8b6e7b4094f39f9436cd94a15775e}{calculateLpv}( get\_vp(i) ) ); \} 
+57 \}
+\end{DoxyCode}
+\hypertarget{classselfSynCompton_af254f0dcd2abfe1d218c85d917992e24}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!update@{update}}
+\index{update@{update}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void self\-Syn\-Compton\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classselfSynCompton_af254f0dcd2abfe1d218c85d917992e24}
+update all process internal parameters to current radius 
+
+Reimplemented from \hyperlink{classenergyDissProc_a6033524ea3d0fe38056bd74622f6c4ad}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+40 \{ \hyperlink{classenergyDissProc_a7b51925f603e271657cab66afe822591}{flag\_upe\_r} = \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classselfSynCompton_a7f24c41ccf47e77fefab4c946e9397f6}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!B@{B}}
+\index{B@{B}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf magnetic\-Field}$\ast$ self\-Syn\-Compton\-::\-B}}\label{classselfSynCompton_a7f24c41ccf47e77fefab4c946e9397f6}
+magenetic field B' \hypertarget{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}{\index{self\-Syn\-Compton@{self\-Syn\-Compton}!syn@{syn}}
+\index{syn@{syn}!selfSynCompton@{self\-Syn\-Compton}}
+\subsubsection[{syn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf energy\-Diss\-Proc}$\ast$ self\-Syn\-Compton\-::syn}}\label{classselfSynCompton_a98b1421fe0ab8028d180d16d48ccbcc8}
+synchrotron process pointer 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{selfSynCompton_8hpp}{self\-Syn\-Compton.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{selfSynCompton_8cpp}{self\-Syn\-Compton.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,551 @@
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{7}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{8}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!AccdPlanar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{8}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar@{$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar}|hyperpage}{8}
+\indexentry{$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar@{$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar}!AccdPlanar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{8}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!getvext@{getvext}|hyperpage}{8}
+\indexentry{getvext@{getvext}!AccdPlanar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{8}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{9}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!AccdPlanar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{9}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}|hyperpage}{9}
+\indexentry{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}!AccdPlanar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{9}
+\indexentry{Accd\discretionary {-}{}{}Planar@{Accd\discretionary {-}{}{}Planar}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{9}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!AccdPlanar@{Accd\discretionary {-}{}{}Planar}|hyperpage}{9}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{10}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{10}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!AccdSphericalGu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{10}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{11}
+\indexentry{$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!AccdSphericalGu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{11}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!getvext@{getvext}|hyperpage}{11}
+\indexentry{getvext@{getvext}!AccdSphericalGu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{11}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{11}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!AccdSphericalGu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{11}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{12}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!AccdSphericalGu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{12}
+\indexentry{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!update@{update}|hyperpage}{12}
+\indexentry{update@{update}!AccdSphericalGu@{Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{12}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}|hyperpage}{12}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!beta@{beta}|hyperpage}{13}
+\indexentry{beta@{beta}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{13}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!get\discretionary {-}{}{}N@{get\discretionary {-}{}{}N}|hyperpage}{13}
+\indexentry{get\discretionary {-}{}{}N@{get\discretionary {-}{}{}N}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{13}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{13}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{13}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!who\discretionary {-}{}{}Am\discretionary {-}{}{}I@{who\discretionary {-}{}{}Am\discretionary {-}{}{}I}|hyperpage}{13}
+\indexentry{who\discretionary {-}{}{}Am\discretionary {-}{}{}I@{who\discretionary {-}{}{}Am\discretionary {-}{}{}I}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{13}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!cfg@{cfg}|hyperpage}{13}
+\indexentry{cfg@{cfg}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{13}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!id@{id}|hyperpage}{13}
+\indexentry{id@{id}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{13}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!N@{N}|hyperpage}{14}
+\indexentry{N@{N}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{14}
+\indexentry{base\discretionary {-}{}{}Class@{base\discretionary {-}{}{}Class}!r@{r}|hyperpage}{14}
+\indexentry{r@{r}!baseClass@{base\discretionary {-}{}{}Class}|hyperpage}{14}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{14}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{15}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!BlrPlanar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{15}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar@{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar}|hyperpage}{16}
+\indexentry{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar@{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar}!BlrPlanar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{16}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!getvext@{getvext}|hyperpage}{16}
+\indexentry{getvext@{getvext}!BlrPlanar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{16}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{16}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!BlrPlanar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{16}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}|hyperpage}{16}
+\indexentry{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}!BlrPlanar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{16}
+\indexentry{Blr\discretionary {-}{}{}Planar@{Blr\discretionary {-}{}{}Planar}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{17}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!BlrPlanar@{Blr\discretionary {-}{}{}Planar}|hyperpage}{17}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{17}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{18}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!BlrSpherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{18}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical@{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical}|hyperpage}{19}
+\indexentry{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical@{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical}!BlrSpherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{19}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!getvext@{getvext}|hyperpage}{19}
+\indexentry{getvext@{getvext}!BlrSpherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{19}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{19}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!BlrSpherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{19}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{19}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!BlrSpherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{19}
+\indexentry{Blr\discretionary {-}{}{}Spherical@{Blr\discretionary {-}{}{}Spherical}!update@{update}|hyperpage}{20}
+\indexentry{update@{update}!BlrSpherical@{Blr\discretionary {-}{}{}Spherical}|hyperpage}{20}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{20}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{21}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!BlrSphericalGu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{21}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{21}
+\indexentry{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!BlrSphericalGu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{21}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!getvext@{getvext}|hyperpage}{22}
+\indexentry{getvext@{getvext}!BlrSphericalGu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{22}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{23}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!BlrSphericalGu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{23}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{23}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!BlrSphericalGu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{23}
+\indexentry{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!update@{update}|hyperpage}{23}
+\indexentry{update@{update}!BlrSphericalGu@{Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{23}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{24}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{24}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!DtPlanar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{24}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar@{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar}|hyperpage}{25}
+\indexentry{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar@{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar}!DtPlanar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{25}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!getvext@{getvext}|hyperpage}{25}
+\indexentry{getvext@{getvext}!DtPlanar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{25}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{25}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!DtPlanar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{25}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}|hyperpage}{25}
+\indexentry{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}!DtPlanar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{25}
+\indexentry{Dt\discretionary {-}{}{}Planar@{Dt\discretionary {-}{}{}Planar}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{26}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!DtPlanar@{Dt\discretionary {-}{}{}Planar}|hyperpage}{26}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{26}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{27}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!DtSpherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{27}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical@{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical}|hyperpage}{27}
+\indexentry{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical@{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical}!DtSpherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{27}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!getvext@{getvext}|hyperpage}{28}
+\indexentry{getvext@{getvext}!DtSpherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{28}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{28}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!DtSpherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{28}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{28}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!DtSpherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{28}
+\indexentry{Dt\discretionary {-}{}{}Spherical@{Dt\discretionary {-}{}{}Spherical}!update@{update}|hyperpage}{28}
+\indexentry{update@{update}!DtSpherical@{Dt\discretionary {-}{}{}Spherical}|hyperpage}{28}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{29}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{30}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!DtSphericalGu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{30}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{30}
+\indexentry{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!DtSphericalGu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{30}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!getvext@{getvext}|hyperpage}{30}
+\indexentry{getvext@{getvext}!DtSphericalGu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{30}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{30}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!DtSphericalGu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{30}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{31}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!DtSphericalGu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{31}
+\indexentry{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}!update@{update}|hyperpage}{31}
+\indexentry{update@{update}!DtSphericalGu@{Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}|hyperpage}{31}
+\indexentry{electrons@{electrons}|hyperpage}{31}
+\indexentry{electrons@{electrons}!electrons@{electrons}|hyperpage}{32}
+\indexentry{electrons@{electrons}!electrons@{electrons}|hyperpage}{32}
+\indexentry{electrons@{electrons}!$\sim $electrons@{$\sim $electrons}|hyperpage}{33}
+\indexentry{$\sim $electrons@{$\sim $electrons}!electrons@{electrons}|hyperpage}{33}
+\indexentry{electrons@{electrons}!add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{33}
+\indexentry{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!electrons@{electrons}|hyperpage}{33}
+\indexentry{electrons@{electrons}!avg\discretionary {-}{}{}Ngamma@{avg\discretionary {-}{}{}Ngamma}|hyperpage}{34}
+\indexentry{avg\discretionary {-}{}{}Ngamma@{avg\discretionary {-}{}{}Ngamma}!electrons@{electrons}|hyperpage}{34}
+\indexentry{electrons@{electrons}!beta@{beta}|hyperpage}{34}
+\indexentry{beta@{beta}!electrons@{electrons}|hyperpage}{34}
+\indexentry{electrons@{electrons}!dgdr@{dgdr}|hyperpage}{34}
+\indexentry{dgdr@{dgdr}!electrons@{electrons}|hyperpage}{34}
+\indexentry{electrons@{electrons}!evolve@{evolve}|hyperpage}{34}
+\indexentry{evolve@{evolve}!electrons@{electrons}|hyperpage}{34}
+\indexentry{electrons@{electrons}!gauss@{gauss}|hyperpage}{35}
+\indexentry{gauss@{gauss}!electrons@{electrons}|hyperpage}{35}
+\indexentry{electrons@{electrons}!gaussmod@{gaussmod}|hyperpage}{35}
+\indexentry{gaussmod@{gaussmod}!electrons@{electrons}|hyperpage}{35}
+\indexentry{electrons@{electrons}!getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma@{getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma}|hyperpage}{35}
+\indexentry{getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma@{getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma}!electrons@{electrons}|hyperpage}{35}
+\indexentry{electrons@{electrons}!get\discretionary {-}{}{}Gamma@{get\discretionary {-}{}{}Gamma}|hyperpage}{35}
+\indexentry{get\discretionary {-}{}{}Gamma@{get\discretionary {-}{}{}Gamma}!electrons@{electrons}|hyperpage}{35}
+\indexentry{electrons@{electrons}!get\discretionary {-}{}{}Ngamma@{get\discretionary {-}{}{}Ngamma}|hyperpage}{36}
+\indexentry{get\discretionary {-}{}{}Ngamma@{get\discretionary {-}{}{}Ngamma}!electrons@{electrons}|hyperpage}{36}
+\indexentry{electrons@{electrons}!if\discretionary {-}{}{}Evol@{if\discretionary {-}{}{}Evol}|hyperpage}{36}
+\indexentry{if\discretionary {-}{}{}Evol@{if\discretionary {-}{}{}Evol}!electrons@{electrons}|hyperpage}{36}
+\indexentry{electrons@{electrons}!inject@{inject}|hyperpage}{36}
+\indexentry{inject@{inject}!electrons@{electrons}|hyperpage}{36}
+\indexentry{electrons@{electrons}!list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{36}
+\indexentry{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!electrons@{electrons}|hyperpage}{36}
+\indexentry{electrons@{electrons}!print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info}|hyperpage}{36}
+\indexentry{print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info}!electrons@{electrons}|hyperpage}{36}
+\indexentry{electrons@{electrons}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{36}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!electrons@{electrons}|hyperpage}{36}
+\indexentry{electrons@{electrons}!save\discretionary {-}{}{}Injection@{save\discretionary {-}{}{}Injection}|hyperpage}{37}
+\indexentry{save\discretionary {-}{}{}Injection@{save\discretionary {-}{}{}Injection}!electrons@{electrons}|hyperpage}{37}
+\indexentry{electrons@{electrons}!save\discretionary {-}{}{}Ngamma@{save\discretionary {-}{}{}Ngamma}|hyperpage}{37}
+\indexentry{save\discretionary {-}{}{}Ngamma@{save\discretionary {-}{}{}Ngamma}!electrons@{electrons}|hyperpage}{37}
+\indexentry{electrons@{electrons}!save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg@{save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg}|hyperpage}{37}
+\indexentry{save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg@{save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg}!electrons@{electrons}|hyperpage}{37}
+\indexentry{electrons@{electrons}!set\discretionary {-}{}{}Energetics@{set\discretionary {-}{}{}Energetics}|hyperpage}{38}
+\indexentry{set\discretionary {-}{}{}Energetics@{set\discretionary {-}{}{}Energetics}!electrons@{electrons}|hyperpage}{38}
+\indexentry{electrons@{electrons}!set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters@{set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters}|hyperpage}{38}
+\indexentry{set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters@{set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters}!electrons@{electrons}|hyperpage}{38}
+\indexentry{electrons@{electrons}!t\discretionary {-}{}{}Q@{t\discretionary {-}{}{}Q}|hyperpage}{38}
+\indexentry{t\discretionary {-}{}{}Q@{t\discretionary {-}{}{}Q}!electrons@{electrons}|hyperpage}{38}
+\indexentry{electrons@{electrons}!tri@{tri}|hyperpage}{39}
+\indexentry{tri@{tri}!electrons@{electrons}|hyperpage}{39}
+\indexentry{electrons@{electrons}!A@{A}|hyperpage}{39}
+\indexentry{A@{A}!electrons@{electrons}|hyperpage}{39}
+\indexentry{electrons@{electrons}!En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{39}
+\indexentry{En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!electrons@{electrons}|hyperpage}{39}
+\indexentry{electrons@{electrons}!gamma@{gamma}|hyperpage}{39}
+\indexentry{gamma@{gamma}!electrons@{electrons}|hyperpage}{39}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{39}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{41}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{41}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{41}
+\indexentry{$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{41}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}|hyperpage}{41}
+\indexentry{calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{41}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!dotg@{dotg}|hyperpage}{42}
+\indexentry{dotg@{dotg}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{42}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!getd\discretionary {-}{}{}Log\discretionary {-}{}{}E@{getd\discretionary {-}{}{}Log\discretionary {-}{}{}E}|hyperpage}{42}
+\indexentry{getd\discretionary {-}{}{}Log\discretionary {-}{}{}E@{getd\discretionary {-}{}{}Log\discretionary {-}{}{}E}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{42}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info@{print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}|hyperpage}{42}
+\indexentry{print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info@{print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{42}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{42}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{42}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!save\discretionary {-}{}{}Luminosity@{save\discretionary {-}{}{}Luminosity}|hyperpage}{43}
+\indexentry{save\discretionary {-}{}{}Luminosity@{save\discretionary {-}{}{}Luminosity}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{43}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!save\discretionary {-}{}{}Upe\discretionary {-}{}{}R@{save\discretionary {-}{}{}Upe\discretionary {-}{}{}R}|hyperpage}{43}
+\indexentry{save\discretionary {-}{}{}Upe\discretionary {-}{}{}R@{save\discretionary {-}{}{}Upe\discretionary {-}{}{}R}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{43}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info@{set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}|hyperpage}{43}
+\indexentry{set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info@{set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{43}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{43}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{43}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!update@{update}|hyperpage}{43}
+\indexentry{update@{update}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{43}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!d\discretionary {-}{}{}Log\discretionary {-}{}{}E@{d\discretionary {-}{}{}Log\discretionary {-}{}{}E}|hyperpage}{44}
+\indexentry{d\discretionary {-}{}{}Log\discretionary {-}{}{}E@{d\discretionary {-}{}{}Log\discretionary {-}{}{}E}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!ele@{ele}|hyperpage}{44}
+\indexentry{ele@{ele}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!ep@{ep}|hyperpage}{44}
+\indexentry{ep@{ep}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!ep\discretionary {-}{}{}Min@{ep\discretionary {-}{}{}Min}|hyperpage}{44}
+\indexentry{ep\discretionary {-}{}{}Min@{ep\discretionary {-}{}{}Min}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r@{flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}|hyperpage}{44}
+\indexentry{flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r@{flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!gamma\discretionary {-}{}{}K\discretionary {-}{}{}N@{gamma\discretionary {-}{}{}K\discretionary {-}{}{}N}|hyperpage}{44}
+\indexentry{gamma\discretionary {-}{}{}K\discretionary {-}{}{}N@{gamma\discretionary {-}{}{}K\discretionary {-}{}{}N}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!inj\discretionary {-}{}{}Rm@{inj\discretionary {-}{}{}Rm}|hyperpage}{44}
+\indexentry{inj\discretionary {-}{}{}Rm@{inj\discretionary {-}{}{}Rm}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!Lpv@{Lpv}|hyperpage}{44}
+\indexentry{Lpv@{Lpv}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu@{luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu}|hyperpage}{44}
+\indexentry{luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu@{luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U@{luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U}|hyperpage}{44}
+\indexentry{luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U@{luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{44}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!Lv\discretionary {-}{}{}Point@{Lv\discretionary {-}{}{}Point}|hyperpage}{45}
+\indexentry{Lv\discretionary {-}{}{}Point@{Lv\discretionary {-}{}{}Point}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg@{Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg}|hyperpage}{45}
+\indexentry{Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg@{Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!upe@{upe}|hyperpage}{45}
+\indexentry{upe@{upe}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!upe\discretionary {-}{}{}\_\discretionary {-}{}{}r@{upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}|hyperpage}{45}
+\indexentry{upe\discretionary {-}{}{}\_\discretionary {-}{}{}r@{upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!vp@{vp}|hyperpage}{45}
+\indexentry{vp@{vp}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!vp\discretionary {-}{}{}Min@{vp\discretionary {-}{}{}Min}|hyperpage}{45}
+\indexentry{vp\discretionary {-}{}{}Min@{vp\discretionary {-}{}{}Min}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!v\discretionary {-}{}{}Point@{v\discretionary {-}{}{}Point}|hyperpage}{45}
+\indexentry{v\discretionary {-}{}{}Point@{v\discretionary {-}{}{}Point}!energyDissProc@{energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{45}
+\indexentry{external\discretionary {-}{}{}Radiation@{external\discretionary {-}{}{}Radiation}|hyperpage}{45}
+\indexentry{external\discretionary {-}{}{}Radiation@{external\discretionary {-}{}{}Radiation}!dotg@{dotg}|hyperpage}{46}
+\indexentry{dotg@{dotg}!externalRadiation@{external\discretionary {-}{}{}Radiation}|hyperpage}{46}
+\indexentry{external\discretionary {-}{}{}Radiation@{external\discretionary {-}{}{}Radiation}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{46}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!externalRadiation@{external\discretionary {-}{}{}Radiation}|hyperpage}{46}
+\indexentry{external\discretionary {-}{}{}Radiation@{external\discretionary {-}{}{}Radiation}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{46}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!externalRadiation@{external\discretionary {-}{}{}Radiation}|hyperpage}{46}
+\indexentry{external\discretionary {-}{}{}Radiation@{external\discretionary {-}{}{}Radiation}!update@{update}|hyperpage}{46}
+\indexentry{update@{update}!externalRadiation@{external\discretionary {-}{}{}Radiation}|hyperpage}{46}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{47}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{48}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{48}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{48}
+\indexentry{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{48}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}|hyperpage}{48}
+\indexentry{calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{48}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!dotg@{dotg}|hyperpage}{49}
+\indexentry{dotg@{dotg}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{49}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!getvext@{getvext}|hyperpage}{49}
+\indexentry{getvext@{getvext}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{49}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{49}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{49}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{49}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{49}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{50}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{50}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}!update@{update}|hyperpage}{50}
+\indexentry{update@{update}!externalRadiationGu@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}|hyperpage}{50}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{50}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{52}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{52}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{52}
+\indexentry{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{52}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}|hyperpage}{53}
+\indexentry{calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{53}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx@{calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx}|hyperpage}{54}
+\indexentry{calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx@{calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{54}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full@{calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full}|hyperpage}{54}
+\indexentry{calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full@{calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{54}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!ctau@{ctau}|hyperpage}{54}
+\indexentry{ctau@{ctau}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{54}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!dotg@{dotg}|hyperpage}{55}
+\indexentry{dotg@{dotg}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{55}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral@{fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral}|hyperpage}{55}
+\indexentry{fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral@{fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{55}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!function\discretionary {-}{}{}\_\discretionary {-}{}{}lum@{function\discretionary {-}{}{}\_\discretionary {-}{}{}lum}|hyperpage}{56}
+\indexentry{function\discretionary {-}{}{}\_\discretionary {-}{}{}lum@{function\discretionary {-}{}{}\_\discretionary {-}{}{}lum}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{56}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!function\discretionary {-}{}{}\_\discretionary {-}{}{}upe@{function\discretionary {-}{}{}\_\discretionary {-}{}{}upe}|hyperpage}{56}
+\indexentry{function\discretionary {-}{}{}\_\discretionary {-}{}{}upe@{function\discretionary {-}{}{}\_\discretionary {-}{}{}upe}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{56}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}|hyperpage}{56}
+\indexentry{getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{56}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!get\discretionary {-}{}{}Rm@{get\discretionary {-}{}{}Rm}|hyperpage}{56}
+\indexentry{get\discretionary {-}{}{}Rm@{get\discretionary {-}{}{}Rm}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{56}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector@{get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector}|hyperpage}{56}
+\indexentry{get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector@{get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{56}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!getvext@{getvext}|hyperpage}{57}
+\indexentry{getvext@{getvext}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{57}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{57}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{57}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R@{save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R}|hyperpage}{57}
+\indexentry{save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R@{save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{57}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}|hyperpage}{57}
+\indexentry{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R@{setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{57}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{57}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{57}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{57}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{57}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!set\discretionary {-}{}{}Rm@{set\discretionary {-}{}{}Rm}|hyperpage}{58}
+\indexentry{set\discretionary {-}{}{}Rm@{set\discretionary {-}{}{}Rm}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{58}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}!update@{update}|hyperpage}{58}
+\indexentry{update@{update}!externalRadiationPlanar@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}|hyperpage}{58}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{58}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{59}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{59}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{60}
+\indexentry{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{60}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}|hyperpage}{60}
+\indexentry{calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{60}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!dotg@{dotg}|hyperpage}{61}
+\indexentry{dotg@{dotg}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{61}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!getvext@{getvext}|hyperpage}{61}
+\indexentry{getvext@{getvext}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{61}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{61}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{61}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{61}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{61}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{61}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{61}
+\indexentry{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}!update@{update}|hyperpage}{62}
+\indexentry{update@{update}!externalRadiationSpherical@{external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}|hyperpage}{62}
+\indexentry{gamma\discretionary {-}{}{}\_\discretionary {-}{}{}break\discretionary {-}{}{}\_\discretionary {-}{}{}params@{gamma\discretionary {-}{}{}\_\discretionary {-}{}{}break\discretionary {-}{}{}\_\discretionary {-}{}{}params}|hyperpage}{62}
+\indexentry{jet\discretionary {-}{}{}Geometry@{jet\discretionary {-}{}{}Geometry}|hyperpage}{62}
+\indexentry{log\discretionary {-}{}{}Geometry@{log\discretionary {-}{}{}Geometry}|hyperpage}{63}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}|hyperpage}{63}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}|hyperpage}{64}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{64}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!$\sim $magnetic\discretionary {-}{}{}Field@{$\sim $magnetic\discretionary {-}{}{}Field}|hyperpage}{64}
+\indexentry{$\sim $magnetic\discretionary {-}{}{}Field@{$\sim $magnetic\discretionary {-}{}{}Field}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{64}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B@{get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}|hyperpage}{64}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B@{get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{64}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B@{get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}|hyperpage}{64}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B@{get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{64}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!get\discretionary {-}{}{}B@{get\discretionary {-}{}{}B}|hyperpage}{65}
+\indexentry{get\discretionary {-}{}{}B@{get\discretionary {-}{}{}B}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{65}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!get\discretionary {-}{}{}B@{get\discretionary {-}{}{}B}|hyperpage}{65}
+\indexentry{get\discretionary {-}{}{}B@{get\discretionary {-}{}{}B}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{65}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!get\discretionary {-}{}{}Max\discretionary {-}{}{}B@{get\discretionary {-}{}{}Max\discretionary {-}{}{}B}|hyperpage}{65}
+\indexentry{get\discretionary {-}{}{}Max\discretionary {-}{}{}B@{get\discretionary {-}{}{}Max\discretionary {-}{}{}B}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{65}
+\indexentry{magnetic\discretionary {-}{}{}Field@{magnetic\discretionary {-}{}{}Field}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{65}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!magneticField@{magnetic\discretionary {-}{}{}Field}|hyperpage}{65}
+\indexentry{observer@{observer}|hyperpage}{66}
+\indexentry{observer@{observer}!observer@{observer}|hyperpage}{67}
+\indexentry{observer@{observer}!observer@{observer}|hyperpage}{67}
+\indexentry{observer@{observer}!$\sim $observer@{$\sim $observer}|hyperpage}{67}
+\indexentry{$\sim $observer@{$\sim $observer}!observer@{observer}|hyperpage}{67}
+\indexentry{observer@{observer}!add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{68}
+\indexentry{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!observer@{observer}|hyperpage}{68}
+\indexentry{observer@{observer}!add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point@{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}|hyperpage}{69}
+\indexentry{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point@{add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}!observer@{observer}|hyperpage}{69}
+\indexentry{observer@{observer}!add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu@{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}|hyperpage}{69}
+\indexentry{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu@{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}!observer@{observer}|hyperpage}{69}
+\indexentry{observer@{observer}!add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl@{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}|hyperpage}{69}
+\indexentry{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl@{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}!observer@{observer}|hyperpage}{69}
+\indexentry{observer@{observer}!add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp@{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}|hyperpage}{69}
+\indexentry{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp@{add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}!observer@{observer}|hyperpage}{69}
+\indexentry{observer@{observer}!add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity@{add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity}|hyperpage}{69}
+\indexentry{add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity@{add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{69}
+\indexentry{observer@{observer}!avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}|hyperpage}{70}
+\indexentry{avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{70}
+\indexentry{observer@{observer}!calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares@{calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares}|hyperpage}{70}
+\indexentry{calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares@{calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares}!observer@{observer}|hyperpage}{70}
+\indexentry{observer@{observer}!calculate\discretionary {-}{}{}Flare@{calculate\discretionary {-}{}{}Flare}|hyperpage}{70}
+\indexentry{calculate\discretionary {-}{}{}Flare@{calculate\discretionary {-}{}{}Flare}!observer@{observer}|hyperpage}{70}
+\indexentry{observer@{observer}!calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}|hyperpage}{71}
+\indexentry{calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{71}
+\indexentry{observer@{observer}!get\discretionary {-}{}{}Freq\discretionary {-}{}{}List@{get\discretionary {-}{}{}Freq\discretionary {-}{}{}List}|hyperpage}{71}
+\indexentry{get\discretionary {-}{}{}Freq\discretionary {-}{}{}List@{get\discretionary {-}{}{}Freq\discretionary {-}{}{}List}!observer@{observer}|hyperpage}{71}
+\indexentry{observer@{observer}!get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size@{get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size}|hyperpage}{71}
+\indexentry{get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size@{get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size}!observer@{observer}|hyperpage}{71}
+\indexentry{observer@{observer}!if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares@{if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares}|hyperpage}{72}
+\indexentry{if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares@{if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares}!observer@{observer}|hyperpage}{72}
+\indexentry{observer@{observer}!interpolate@{interpolate}|hyperpage}{72}
+\indexentry{interpolate@{interpolate}!observer@{observer}|hyperpage}{72}
+\indexentry{observer@{observer}!list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{72}
+\indexentry{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!observer@{observer}|hyperpage}{72}
+\indexentry{observer@{observer}!list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point@{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}|hyperpage}{72}
+\indexentry{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point@{list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}!observer@{observer}|hyperpage}{72}
+\indexentry{observer@{observer}!list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu@{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}|hyperpage}{73}
+\indexentry{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu@{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}!observer@{observer}|hyperpage}{73}
+\indexentry{observer@{observer}!list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl@{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}|hyperpage}{73}
+\indexentry{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl@{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}!observer@{observer}|hyperpage}{73}
+\indexentry{observer@{observer}!list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp@{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}|hyperpage}{73}
+\indexentry{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp@{list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}!observer@{observer}|hyperpage}{73}
+\indexentry{observer@{observer}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{73}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!observer@{observer}|hyperpage}{73}
+\indexentry{observer@{observer}!save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}|hyperpage}{73}
+\indexentry{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{73}
+\indexentry{observer@{observer}!save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}|hyperpage}{74}
+\indexentry{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}!observer@{observer}|hyperpage}{74}
+\indexentry{observer@{observer}!save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}|hyperpage}{74}
+\indexentry{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}!observer@{observer}|hyperpage}{74}
+\indexentry{observer@{observer}!save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}|hyperpage}{74}
+\indexentry{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{74}
+\indexentry{observer@{observer}!save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}|hyperpage}{74}
+\indexentry{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}!observer@{observer}|hyperpage}{74}
+\indexentry{observer@{observer}!save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}|hyperpage}{75}
+\indexentry{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum@{save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}!observer@{observer}|hyperpage}{75}
+\indexentry{observer@{observer}!size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{75}
+\indexentry{size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!observer@{observer}|hyperpage}{75}
+\indexentry{observer@{observer}!size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point@{size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}|hyperpage}{75}
+\indexentry{size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point@{size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}!observer@{observer}|hyperpage}{75}
+\indexentry{observer@{observer}!size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu@{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}|hyperpage}{75}
+\indexentry{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu@{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}!observer@{observer}|hyperpage}{75}
+\indexentry{observer@{observer}!size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl@{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}|hyperpage}{75}
+\indexentry{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl@{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}!observer@{observer}|hyperpage}{75}
+\indexentry{observer@{observer}!size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp@{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}|hyperpage}{76}
+\indexentry{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp@{size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}!observer@{observer}|hyperpage}{76}
+\indexentry{observer@{observer}!sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity@{sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity}|hyperpage}{76}
+\indexentry{sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity@{sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{76}
+\indexentry{observer@{observer}!sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}|hyperpage}{76}
+\indexentry{sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity@{sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}!observer@{observer}|hyperpage}{76}
+\indexentry{observer@{observer}!En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}|hyperpage}{77}
+\indexentry{En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc@{En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}!observer@{observer}|hyperpage}{77}
+\indexentry{observer@{observer}!freq\discretionary {-}{}{}List@{freq\discretionary {-}{}{}List}|hyperpage}{77}
+\indexentry{freq\discretionary {-}{}{}List@{freq\discretionary {-}{}{}List}!observer@{observer}|hyperpage}{77}
+\indexentry{observer@{observer}!v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum@{v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum}|hyperpage}{77}
+\indexentry{v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum@{v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum}!observer@{observer}|hyperpage}{77}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{77}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{78}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{78}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{79}
+\indexentry{$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{79}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!allocate\discretionary {-}{}{}Lv@{allocate\discretionary {-}{}{}Lv}|hyperpage}{79}
+\indexentry{allocate\discretionary {-}{}{}Lv@{allocate\discretionary {-}{}{}Lv}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{79}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!calculate\discretionary {-}{}{}Luminosity@{calculate\discretionary {-}{}{}Luminosity}|hyperpage}{79}
+\indexentry{calculate\discretionary {-}{}{}Luminosity@{calculate\discretionary {-}{}{}Luminosity}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{79}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!calculate\discretionary {-}{}{}Lv@{calculate\discretionary {-}{}{}Lv}|hyperpage}{80}
+\indexentry{calculate\discretionary {-}{}{}Lv@{calculate\discretionary {-}{}{}Lv}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{80}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!get\discretionary {-}{}{}Temperature@{get\discretionary {-}{}{}Temperature}|hyperpage}{80}
+\indexentry{get\discretionary {-}{}{}Temperature@{get\discretionary {-}{}{}Temperature}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{80}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{80}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{80}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!read\discretionary {-}{}{}Template@{read\discretionary {-}{}{}Template}|hyperpage}{81}
+\indexentry{read\discretionary {-}{}{}Template@{read\discretionary {-}{}{}Template}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{81}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!save\discretionary {-}{}{}Template@{save\discretionary {-}{}{}Template}|hyperpage}{81}
+\indexentry{save\discretionary {-}{}{}Template@{save\discretionary {-}{}{}Template}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{81}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!scale\discretionary {-}{}{}Template@{scale\discretionary {-}{}{}Template}|hyperpage}{82}
+\indexentry{scale\discretionary {-}{}{}Template@{scale\discretionary {-}{}{}Template}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{82}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!set\discretionary {-}{}{}Energetics@{set\discretionary {-}{}{}Energetics}|hyperpage}{82}
+\indexentry{set\discretionary {-}{}{}Energetics@{set\discretionary {-}{}{}Energetics}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{82}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}|hyperpage}{82}
+\indexentry{set\discretionary {-}{}{}Radius@{set\discretionary {-}{}{}Radius}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{82}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!R@{R}|hyperpage}{83}
+\indexentry{R@{R}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{83}
+\indexentry{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}!v\discretionary {-}{}{}Template@{v\discretionary {-}{}{}Template}|hyperpage}{83}
+\indexentry{v\discretionary {-}{}{}Template@{v\discretionary {-}{}{}Template}!QuasarAccDisk@{Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}|hyperpage}{83}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{83}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{84}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{84}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{84}
+\indexentry{$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{84}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}|hyperpage}{84}
+\indexentry{calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{84}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!dotg@{dotg}|hyperpage}{85}
+\indexentry{dotg@{dotg}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{85}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{85}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{85}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{85}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{85}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!update@{update}|hyperpage}{86}
+\indexentry{update@{update}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{86}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!B@{B}|hyperpage}{86}
+\indexentry{B@{B}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{86}
+\indexentry{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}!syn@{syn}|hyperpage}{86}
+\indexentry{syn@{syn}!selfSynCompton@{self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}|hyperpage}{86}
+\indexentry{struct@{struct}|hyperpage}{86}
+\indexentry{synchrotron@{synchrotron}|hyperpage}{86}
+\indexentry{synchrotron@{synchrotron}!synchrotron@{synchrotron}|hyperpage}{87}
+\indexentry{synchrotron@{synchrotron}!synchrotron@{synchrotron}|hyperpage}{87}
+\indexentry{synchrotron@{synchrotron}!$\sim $synchrotron@{$\sim $synchrotron}|hyperpage}{88}
+\indexentry{$\sim $synchrotron@{$\sim $synchrotron}!synchrotron@{synchrotron}|hyperpage}{88}
+\indexentry{synchrotron@{synchrotron}!calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}|hyperpage}{88}
+\indexentry{calculate\discretionary {-}{}{}Lpv@{calculate\discretionary {-}{}{}Lpv}!synchrotron@{synchrotron}|hyperpage}{88}
+\indexentry{synchrotron@{synchrotron}!dotg@{dotg}|hyperpage}{89}
+\indexentry{dotg@{dotg}!synchrotron@{synchrotron}|hyperpage}{89}
+\indexentry{synchrotron@{synchrotron}!iterate@{iterate}|hyperpage}{89}
+\indexentry{iterate@{iterate}!synchrotron@{synchrotron}|hyperpage}{89}
+\indexentry{synchrotron@{synchrotron}!print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}|hyperpage}{89}
+\indexentry{print\discretionary {-}{}{}Info@{print\discretionary {-}{}{}Info}!synchrotron@{synchrotron}|hyperpage}{89}
+\indexentry{synchrotron@{synchrotron}!set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}|hyperpage}{89}
+\indexentry{set\discretionary {-}{}{}Lpv@{set\discretionary {-}{}{}Lpv}!synchrotron@{synchrotron}|hyperpage}{89}
+\indexentry{synchrotron@{synchrotron}!update@{update}|hyperpage}{90}
+\indexentry{update@{update}!synchrotron@{synchrotron}|hyperpage}{90}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}|hyperpage}{91}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}|hyperpage}{91}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/base\discretionary {-}{}{}Class.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/base\discretionary {-}{}{}Class.\discretionary {-}{}{}hpp}|hyperpage}{91}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/blazar.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/blazar.\discretionary {-}{}{}hpp}|hyperpage}{92}
+\indexentry{blazar.\discretionary {-}{}{}hpp@{blazar.\discretionary {-}{}{}hpp}!get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches@{get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}|hyperpage}{92}
+\indexentry{get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches@{get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}!blazar.hpp@{blazar.\discretionary {-}{}{}hpp}|hyperpage}{92}
+\indexentry{blazar.\discretionary {-}{}{}hpp@{blazar.\discretionary {-}{}{}hpp}!safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches@{safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}|hyperpage}{93}
+\indexentry{safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches@{safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}!blazar.hpp@{blazar.\discretionary {-}{}{}hpp}|hyperpage}{93}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}|hyperpage}{94}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp}|hyperpage}{94}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}|hyperpage}{94}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}|hyperpage}{95}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp}|hyperpage}{95}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}|hyperpage}{95}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/electrons.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/electrons.\discretionary {-}{}{}hpp}|hyperpage}{96}
+\indexentry{electrons.\discretionary {-}{}{}hpp@{electrons.\discretionary {-}{}{}hpp}!f1@{f1}|hyperpage}{96}
+\indexentry{f1@{f1}!electrons.hpp@{electrons.\discretionary {-}{}{}hpp}|hyperpage}{96}
+\indexentry{electrons.\discretionary {-}{}{}hpp@{electrons.\discretionary {-}{}{}hpp}!f2@{f2}|hyperpage}{96}
+\indexentry{f2@{f2}!electrons.hpp@{electrons.\discretionary {-}{}{}hpp}|hyperpage}{96}
+\indexentry{electrons.\discretionary {-}{}{}hpp@{electrons.\discretionary {-}{}{}hpp}!function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}|hyperpage}{96}
+\indexentry{function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}!electrons.hpp@{electrons.\discretionary {-}{}{}hpp}|hyperpage}{96}
+\indexentry{electrons.\discretionary {-}{}{}hpp@{electrons.\discretionary {-}{}{}hpp}!solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}|hyperpage}{97}
+\indexentry{solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}!electrons.hpp@{electrons.\discretionary {-}{}{}hpp}|hyperpage}{97}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.\discretionary {-}{}{}hpp}|hyperpage}{98}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation.\discretionary {-}{}{}hpp}|hyperpage}{98}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}|hyperpage}{98}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}|hyperpage}{99}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp}|hyperpage}{99}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/magnetic\discretionary {-}{}{}Field.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/magnetic\discretionary {-}{}{}Field.\discretionary {-}{}{}hpp}|hyperpage}{99}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/observer.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/observer.\discretionary {-}{}{}hpp}|hyperpage}{100}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.\discretionary {-}{}{}hpp}|hyperpage}{100}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.\discretionary {-}{}{}hpp}|hyperpage}{100}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/synchrotron.\discretionary {-}{}{}hpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/synchrotron.\discretionary {-}{}{}hpp}|hyperpage}{101}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}|hyperpage}{101}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/base\discretionary {-}{}{}Class.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/base\discretionary {-}{}{}Class.\discretionary {-}{}{}cpp}|hyperpage}{101}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/blazar.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/blazar.\discretionary {-}{}{}cpp}|hyperpage}{102}
+\indexentry{blazar.\discretionary {-}{}{}cpp@{blazar.\discretionary {-}{}{}cpp}!main@{main}|hyperpage}{102}
+\indexentry{main@{main}!blazar.cpp@{blazar.\discretionary {-}{}{}cpp}|hyperpage}{102}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}|hyperpage}{108}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp}|hyperpage}{108}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp}|hyperpage}{108}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}|hyperpage}{108}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp}|hyperpage}{109}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp}|hyperpage}{109}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/electrons.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/electrons.\discretionary {-}{}{}cpp}|hyperpage}{109}
+\indexentry{electrons.\discretionary {-}{}{}cpp@{electrons.\discretionary {-}{}{}cpp}!f1@{f1}|hyperpage}{110}
+\indexentry{f1@{f1}!electrons.cpp@{electrons.\discretionary {-}{}{}cpp}|hyperpage}{110}
+\indexentry{electrons.\discretionary {-}{}{}cpp@{electrons.\discretionary {-}{}{}cpp}!f2@{f2}|hyperpage}{110}
+\indexentry{f2@{f2}!electrons.cpp@{electrons.\discretionary {-}{}{}cpp}|hyperpage}{110}
+\indexentry{electrons.\discretionary {-}{}{}cpp@{electrons.\discretionary {-}{}{}cpp}!function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}|hyperpage}{110}
+\indexentry{function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}!electrons.cpp@{electrons.\discretionary {-}{}{}cpp}|hyperpage}{110}
+\indexentry{electrons.\discretionary {-}{}{}cpp@{electrons.\discretionary {-}{}{}cpp}!solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}|hyperpage}{110}
+\indexentry{solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break@{solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}!electrons.cpp@{electrons.\discretionary {-}{}{}cpp}|hyperpage}{110}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.\discretionary {-}{}{}cpp}|hyperpage}{111}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation.\discretionary {-}{}{}cpp}|hyperpage}{111}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp}|hyperpage}{112}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}|hyperpage}{112}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp}|hyperpage}{112}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/magnetic\discretionary {-}{}{}Field.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/magnetic\discretionary {-}{}{}Field.\discretionary {-}{}{}cpp}|hyperpage}{112}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/observer.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/observer.\discretionary {-}{}{}cpp}|hyperpage}{113}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.\discretionary {-}{}{}cpp}|hyperpage}{113}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.\discretionary {-}{}{}cpp}|hyperpage}{113}
+\indexentry{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/synchrotron.\discretionary {-}{}{}cpp@{/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/synchrotron.\discretionary {-}{}{}cpp}|hyperpage}{113}

@@ -1,0 +1,113 @@
+\hypertarget{classbaseClass}{\section{base\-Class Class Reference}
+\label{classbaseClass}\index{base\-Class@{base\-Class}}
+}
+
+
+{\ttfamily \#include $<$base\-Class.\-hpp$>$}
+
+Inheritance diagram for base\-Class\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.456140cm]{classbaseClass}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Base class for all other classes used in blazar++. Provides unified way of sharing scfgp, id and \hyperlink{classjetGeometry}{jet\-Geometry} \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbaseClass_a5771803aa5b82f52a1dcb6679fc047be}{{\bfseries base\-Class} (scfgp $\ast$\hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}, std\-::string \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id})}\label{classbaseClass_a5771803aa5b82f52a1dcb6679fc047be}
+
+\item 
+std\-::string \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{who\-Am\-I} ()
+\item 
+virtual void \hyperlink{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}{print\-Info} ()
+\item 
+double \hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta} (double x)
+\item 
+int \hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{get\-N} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id}
+\item 
+scfgp $\ast$ \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}
+\item 
+\hyperlink{classjetGeometry}{jet\-Geometry} $\ast$ \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}
+\item 
+int \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbaseClass_a208facecf3a4480b47bebfce91413a39}{\index{base\-Class@{base\-Class}!beta@{beta}}
+\index{beta@{beta}!baseClass@{base\-Class}}
+\subsubsection[{beta}]{\setlength{\rightskip}{0pt plus 5cm}double base\-Class\-::beta (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{classbaseClass_a208facecf3a4480b47bebfce91413a39}
+get beta from Lorentz factor ; it shouldn't probably be here 
+\begin{DoxyCode}
+16 \{ \textcolor{keywordflow}{return} sqrt(1.0-1.0/(x*x)); \}
+\end{DoxyCode}
+\hypertarget{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{\index{base\-Class@{base\-Class}!get\-N@{get\-N}}
+\index{get\-N@{get\-N}!baseClass@{base\-Class}}
+\subsubsection[{get\-N}]{\setlength{\rightskip}{0pt plus 5cm}int base\-Class\-::get\-N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}
+get N 
+\begin{DoxyCode}
+51 \{ \textcolor{keywordflow}{return} \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}; \}
+\end{DoxyCode}
+\hypertarget{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}{\index{base\-Class@{base\-Class}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!baseClass@{base\-Class}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void base\-Class\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}
+print basic information about myself (virtual) 
+
+Reimplemented in \hyperlink{classelectrons_ace657f207a4f68058b2606ff2772f3c5}{electrons}, \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}, \hyperlink{classobserver_a1fbeb6a33647dfadbb1ca9c0d64953bb}{observer}, \hyperlink{classexternalRadiationPlanar_a47e497b12dfa4e71311bffb3a4b384b2}{external\-Radiation\-Planar}, \hyperlink{classmagneticField_a9a0793b3b3a94962aaea1052edfe9b28}{magnetic\-Field}, \hyperlink{classQuasarAccDisk_aab9e9fbad17ba40931219473918896a7}{Quasar\-Acc\-Disk}, \hyperlink{classDtSpherical_a14440ec30b997fe2461c07f4507dd994}{Dt\-Spherical}, \hyperlink{classBlrPlanar_a3321d83625869e16c5794d9419dff073}{Blr\-Planar}, \hyperlink{classsynchrotron_a6a8610b523a6e3c656372537ad28b756}{synchrotron}, \hyperlink{classBlrSpherical_a101b95271855f15f1049fcea9efde235}{Blr\-Spherical}, \hyperlink{classexternalRadiationSpherical_a232684df0d246d8c5ec06e832bbaad0f}{external\-Radiation\-Spherical}, \hyperlink{classDtPlanar_a0d1b6697d54a08030ed50b7e4b5fbfef}{Dt\-Planar}, \hyperlink{classselfSynCompton_a46f692985a0fd74c14a018cc43f25c0b}{self\-Syn\-Compton}, \hyperlink{classAccdPlanar_a51960bc05d15aedf068b65a369d1899c}{Accd\-Planar}, \hyperlink{classexternalRadiationGu_a8aa28d939b0ecf2651f18cc4f5f6ba25}{external\-Radiation\-Gu}, \hyperlink{classBlrSphericalGu_a69de552417b7b01c3634650aaa9413d7}{Blr\-Spherical\-Gu}, \hyperlink{classDtSphericalGu_aeed0bda6440570b686aaf85bf5d2b6b3}{Dt\-Spherical\-Gu}, \hyperlink{classAccdSphericalGu_a672f673606422556c3fb31a1787c6724}{Accd\-Spherical\-Gu}, and \hyperlink{classexternalRadiation_a8747348f3468165fca0c5547e207b5a9}{external\-Radiation}.
+
+
+\begin{DoxyCode}
+45 \{ \};
+\end{DoxyCode}
+\hypertarget{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{\index{base\-Class@{base\-Class}!who\-Am\-I@{who\-Am\-I}}
+\index{who\-Am\-I@{who\-Am\-I}!baseClass@{base\-Class}}
+\subsubsection[{who\-Am\-I}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string base\-Class\-::who\-Am\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbaseClass_a756d5accf10ced9a34024048c95a51c9}
+tell me what is my id 
+\begin{DoxyCode}
+14 \{ \textcolor{keywordflow}{return} \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id}; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{\index{base\-Class@{base\-Class}!cfg@{cfg}}
+\index{cfg@{cfg}!baseClass@{base\-Class}}
+\subsubsection[{cfg}]{\setlength{\rightskip}{0pt plus 5cm}scfgp$\ast$ base\-Class\-::cfg}}\label{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}
+every class needs to have an information about parameters available -\/ this is realized by attaching a pointer to scfgp class \hypertarget{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{\index{base\-Class@{base\-Class}!id@{id}}
+\index{id@{id}!baseClass@{base\-Class}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string base\-Class\-::id}}\label{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}
+id characterizing object \hypertarget{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{\index{base\-Class@{base\-Class}!N@{N}}
+\index{N@{N}!baseClass@{base\-Class}}
+\subsubsection[{N}]{\setlength{\rightskip}{0pt plus 5cm}int base\-Class\-::\-N}}\label{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}
+vectors size -\/ since this is often used will be copied from model at the beginning \hypertarget{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{\index{base\-Class@{base\-Class}!r@{r}}
+\index{r@{r}!baseClass@{base\-Class}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jet\-Geometry}$\ast$ base\-Class\-::r}}\label{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}
+every class needs to have an information of current radius and overal geomtery -\/ this is realized by attaching a pointer to radius class 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{baseClass_8hpp}{base\-Class.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{baseClass_8cpp}{base\-Class.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['_7eaccdplanar',['~AccdPlanar',['../classAccdPlanar.html#a0e4ebd194cbee7b95a16cfe323ea645c',1,'AccdPlanar']]],
+  ['_7eaccdsphericalgu',['~AccdSphericalGu',['../classAccdSphericalGu.html#ad5dfde0d63207ba0c2a14d6e8f9561e4',1,'AccdSphericalGu']]],
+  ['_7eblrplanar',['~BlrPlanar',['../classBlrPlanar.html#ab800d81f438dcec82b9d6837b89dddd2',1,'BlrPlanar']]],
+  ['_7eblrspherical',['~BlrSpherical',['../classBlrSpherical.html#a65f7ff9e2207d6558d0ed4ada8a6f049',1,'BlrSpherical']]],
+  ['_7eblrsphericalgu',['~BlrSphericalGu',['../classBlrSphericalGu.html#ac65ecb74330a83910937e67712170e0f',1,'BlrSphericalGu']]],
+  ['_7edtplanar',['~DtPlanar',['../classDtPlanar.html#a5ce5e082dab0dbeea9b11c2fae22cfb8',1,'DtPlanar']]],
+  ['_7edtspherical',['~DtSpherical',['../classDtSpherical.html#a936d890404936b9aac665554f7b1ae0d',1,'DtSpherical']]],
+  ['_7edtsphericalgu',['~DtSphericalGu',['../classDtSphericalGu.html#a6f5f80e9ef2f5f15283cec5ab074a1bb',1,'DtSphericalGu']]],
+  ['_7eelectrons',['~electrons',['../classelectrons.html#a146d787f88697a2ca2acaa245055d63b',1,'electrons']]],
+  ['_7eenergydissproc',['~energyDissProc',['../classenergyDissProc.html#a0bef95f227129b0a24295451ae9464fd',1,'energyDissProc']]],
+  ['_7eexternalradiationgu',['~externalRadiationGu',['../classexternalRadiationGu.html#afdabb07f9855b4c34a48a5c1901ac467',1,'externalRadiationGu']]],
+  ['_7eexternalradiationplanar',['~externalRadiationPlanar',['../classexternalRadiationPlanar.html#aab75f84c763bf0fb133ba3a3c5f0341c',1,'externalRadiationPlanar']]],
+  ['_7eexternalradiationspherical',['~externalRadiationSpherical',['../classexternalRadiationSpherical.html#a9dbb13ad97d392d224e102a6f3eab62d',1,'externalRadiationSpherical']]],
+  ['_7emagneticfield',['~magneticField',['../classmagneticField.html#a1d7c41029c88b3a2683d8e1bec376e16',1,'magneticField']]],
+  ['_7eobserver',['~observer',['../classobserver.html#acb64c4c8de3e36b5cce282dc139e602c',1,'observer']]],
+  ['_7equasaraccdisk',['~QuasarAccDisk',['../classQuasarAccDisk.html#ab562cc81ade45ea51cf3ab27f7885d07',1,'QuasarAccDisk']]],
+  ['_7eselfsyncompton',['~selfSynCompton',['../classselfSynCompton.html#adc3ac6dc66cc436b48d0a36ab26871fd',1,'selfSynCompton']]],
+  ['_7esynchrotron',['~synchrotron',['../classsynchrotron.html#a5a4aed3b6187a30e25343753ea5e4fa6',1,'synchrotron']]]
+];

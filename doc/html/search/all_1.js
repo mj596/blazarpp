@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['b',['B',['../classselfSynCompton.html#a7f24c41ccf47e77fefab4c946e9397f6',1,'selfSynCompton']]],
+  ['baseclass',['baseClass',['../classbaseClass.html',1,'']]],
+  ['baseclass_2ecpp',['baseClass.cpp',['../baseClass_8cpp.html',1,'']]],
+  ['baseclass_2ehpp',['baseClass.hpp',['../baseClass_8hpp.html',1,'']]],
+  ['beta',['beta',['../classbaseClass.html#a208facecf3a4480b47bebfce91413a39',1,'baseClass::beta()'],['../classelectrons.html#a22aacb80ac20a46f471430db72c95b71',1,'electrons::beta()']]],
+  ['blazar_2ecpp',['blazar.cpp',['../blazar_8cpp.html',1,'']]],
+  ['blazar_2ehpp',['blazar.hpp',['../blazar_8hpp.html',1,'']]],
+  ['blrplanar',['BlrPlanar',['../classBlrPlanar.html',1,'BlrPlanar'],['../classBlrPlanar.html#a3c66d1e3ed46fdaf1cf0a14b4eb2000d',1,'BlrPlanar::BlrPlanar()']]],
+  ['blrplanar_2ecpp',['BlrPlanar.cpp',['../BlrPlanar_8cpp.html',1,'']]],
+  ['blrplanar_2ehpp',['BlrPlanar.hpp',['../BlrPlanar_8hpp.html',1,'']]],
+  ['blrspherical',['BlrSpherical',['../classBlrSpherical.html',1,'BlrSpherical'],['../classBlrSpherical.html#aaa33e7d7429aaf2ece12eca0599b4273',1,'BlrSpherical::BlrSpherical()']]],
+  ['blrspherical_2ecpp',['BlrSpherical.cpp',['../BlrSpherical_8cpp.html',1,'']]],
+  ['blrspherical_2ehpp',['BlrSpherical.hpp',['../BlrSpherical_8hpp.html',1,'']]],
+  ['blrsphericalgu',['BlrSphericalGu',['../classBlrSphericalGu.html',1,'BlrSphericalGu'],['../classBlrSphericalGu.html#a297b6bef804d5653ab02a7534e233334',1,'BlrSphericalGu::BlrSphericalGu()']]],
+  ['blrsphericalgu_2ecpp',['BlrSphericalGu.cpp',['../BlrSphericalGu_8cpp.html',1,'']]],
+  ['blrsphericalgu_2ehpp',['BlrSphericalGu.hpp',['../BlrSphericalGu_8hpp.html',1,'']]]
+];

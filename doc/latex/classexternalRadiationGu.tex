@@ -1,0 +1,286 @@
+\hypertarget{classexternalRadiationGu}{\section{external\-Radiation\-Gu Class Reference}
+\label{classexternalRadiationGu}\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}}
+}
+
+
+{\ttfamily \#include $<$external\-Radiation\-Gu.\-hpp$>$}
+
+Inheritance diagram for external\-Radiation\-Gu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classexternalRadiationGu}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class provides electron energy losses and luminosity calculation for inverse Compton process (E\-R\-C) for seed photons comming from B\-L\-R and H\-D\-R modelled as quasi-\/spherical sources with u\-\_\-ext modified by g\-\_\-u parameter \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classexternalRadiationGu_aad5903b642f08594be10d699cf9fb3b4}{external\-Radiation\-Gu} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classexternalRadiationGu_afdabb07f9855b4c34a48a5c1901ac467}{$\sim$external\-Radiation\-Gu} ()
+\item 
+virtual void \hyperlink{classexternalRadiationGu_a8aa28d939b0ecf2651f18cc4f5f6ba25}{print\-Info} ()
+\item 
+virtual void \hyperlink{classexternalRadiationGu_a730363f393f29aef9927e0bb84087116}{update} ()
+\item 
+virtual double \hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{getvext} (double \-\_\-r)
+\item 
+virtual void \hyperlink{classexternalRadiationGu_a541b2bb7da733f10d83af6225b7ad5f8}{set\-Radius} ()
+\item 
+double \hyperlink{classexternalRadiationGu_a266fc022608ea384a80be8ad840d5957}{dotg} (double g)
+\item 
+double \hyperlink{classexternalRadiationGu_ab49dc8bf55384ec6acf09bc1732194a4}{calculate\-Lpv} (double v, double theta)
+\item 
+void \hyperlink{classexternalRadiationGu_a946369eee3485a821a5619c5ba310497}{set\-Lpv} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classexternalRadiationGu_af9d98a13908450ce5bcea27ea86742a2}{double {\bfseries Gamma}}\label{classexternalRadiationGu_af9d98a13908450ce5bcea27ea86742a2}
+
+\item 
+\hypertarget{classexternalRadiationGu_a4ab4f6256141c4f6de874ef5af2ebb50}{double {\bfseries theta\-Obs}}\label{classexternalRadiationGu_a4ab4f6256141c4f6de874ef5af2ebb50}
+
+\item 
+\hypertarget{classexternalRadiationGu_adb7e3a102fa102262a0d2eea3ca0b1fd}{double {\bfseries m\-B\-H}}\label{classexternalRadiationGu_adb7e3a102fa102262a0d2eea3ca0b1fd}
+
+\item 
+\hypertarget{classexternalRadiationGu_a77edc9892436318a992a39efb291520d}{double {\bfseries e\-Disk}}\label{classexternalRadiationGu_a77edc9892436318a992a39efb291520d}
+
+\item 
+\hypertarget{classexternalRadiationGu_a4352a5309f0dfbd2600f6dd82bb5bead}{double {\bfseries m\-Dot}}\label{classexternalRadiationGu_a4352a5309f0dfbd2600f6dd82bb5bead}
+
+\item 
+\hypertarget{classexternalRadiationGu_ac067f1d23e69bb9c3390f4161913e3fa}{int {\bfseries K\-N}}\label{classexternalRadiationGu_ac067f1d23e69bb9c3390f4161913e3fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classexternalRadiationGu_aad5903b642f08594be10d699cf9fb3b4}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!external\-Radiation\-Gu@{external\-Radiation\-Gu}}
+\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{external\-Radiation\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}external\-Radiation\-Gu\-::external\-Radiation\-Gu (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationGu_aad5903b642f08594be10d699cf9fb3b4}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                                        : 
+      \hyperlink{classenergyDissProc_a0cf0b423089016fbe8a697378c519590}{energyDissProc}( \_cfg, \_r, \_ele, \_id ) \{
+10   \textcolor{comment}{/* requested parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"} + \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id}, 200, &\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"}, 10.0, &Gamma );
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaObs"}, 0.1, &thetaObs );
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"KN"}, 0, &KN );
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mBH"},1.0,&mBH);
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eDisk"},0.1,&eDisk);
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mDot"},1.0,&mDot);
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstU"},0,&\hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU});  
+19   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstNu"},0,&\hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu});  
+20 
+21   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( ); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_afdabb07f9855b4c34a48a5c1901ac467}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!$\sim$external\-Radiation\-Gu@{$\sim$external\-Radiation\-Gu}}
+\index{$\sim$external\-Radiation\-Gu@{$\sim$external\-Radiation\-Gu}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{$\sim$external\-Radiation\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}external\-Radiation\-Gu\-::$\sim$external\-Radiation\-Gu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationGu_afdabb07f9855b4c34a48a5c1901ac467}
+destructor 
+\begin{DoxyCode}
+23                                            \{
+24   freeLpv( );
+25   freeLvPoint( );
+26   freeLvPointAvg( );
+27   freeUpeR( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classexternalRadiationGu_ab49dc8bf55384ec6acf09bc1732194a4}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!calculate\-Lpv@{calculate\-Lpv}}
+\index{calculate\-Lpv@{calculate\-Lpv}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{calculate\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Gu\-::calculate\-Lpv (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{double}]{theta}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationGu_ab49dc8bf55384ec6acf09bc1732194a4}
+calculate intrinsic luminosity 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ frequency (jet co-\/moving frame) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'\-\_\-v 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+36                                                                  \{
+37   \textcolor{keywordtype}{double} Int = 0.0;
+38   \textcolor{keywordtype}{double} e, miu, \hyperlink{classenergyDissProc_a36330825cd7737639d5d223281b1c7e1}{ep};
+39 
+40   e = PLANCK\_H*v/mec2;
+41   miu = -( cos(theta)-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma) )/( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*cos(theta) );
+42   ep = \hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get() )*PLANCK\_H*Gamma/mec2;
+43 
+44   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0;k<\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );k++ )
+45     Int  += bazinga::IntCor( k, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*inverseCompton::f( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->
+      \hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k), \hyperlink{classenergyDissProc_a36330825cd7737639d5d223281b1c7e1}{ep}, e, miu )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}(k)/\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->
+      \hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k);
+46 
+47   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} )
+48     \{ Int *= gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, 0 )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( )/pow( 
+      \hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get() ), 2.0 ); \}
+49   \textcolor{keywordflow}{else} 
+50     \{ Int *= gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( )/pow( 
+      \hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ) ), 2.0 ); \}
+51 
+52   Int *= (3.0*SIGMA\_T*LIGHT\_SPEED)/(4.0*pow(Gamma,2.0));
+53   Int *= v;
+54   \textcolor{keywordflow}{return} Int; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_a266fc022608ea384a80be8ad840d5957}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!dotg@{dotg}}
+\index{dotg@{dotg}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{dotg}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Gu\-::dotg (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationGu_a266fc022608ea384a80be8ad840d5957}
+get d gamma \textbackslash{} d t for particular process 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_a8074e0db5d859a8815e7136c2fc41b46}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+29                                            \{
+30   \textcolor{keywordtype}{double} b, val = 0.0;
+31   b = 4.0*g*\hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get() )*PLANCK\_H*Gamma/mec2;
+32   \textcolor{keywordflow}{if}( b > 1.0 ) \{ \hyperlink{classenergyDissProc_a69ea4be814273e47e69e31e593c3a250}{set\_KN\_info}( g ); \}
+33   val = gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) )*inverseCompton::fKN(b,KN); 
+34   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!getvext@{getvext}}
+\index{getvext@{getvext}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}virtual double external\-Radiation\-Gu\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}
+get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-r} & -\/ radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classBlrSphericalGu_a78d8a3ace3f41082c48df04ea01bc142}{Blr\-Spherical\-Gu}, \hyperlink{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}{Dt\-Spherical\-Gu}, and \hyperlink{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{Accd\-Spherical\-Gu}.
+
+
+\begin{DoxyCode}
+46 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_a8aa28d939b0ecf2651f18cc4f5f6ba25}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Gu\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationGu_a8aa28d939b0ecf2651f18cc4f5f6ba25}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}.
+
+
+
+Reimplemented in \hyperlink{classBlrSphericalGu_a69de552417b7b01c3634650aaa9413d7}{Blr\-Spherical\-Gu}, \hyperlink{classDtSphericalGu_aeed0bda6440570b686aaf85bf5d2b6b3}{Dt\-Spherical\-Gu}, and \hyperlink{classAccdSphericalGu_a672f673606422556c3fb31a1787c6724}{Accd\-Spherical\-Gu}.
+
+
+\begin{DoxyCode}
+38 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_a946369eee3485a821a5619c5ba310497}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!set\-Lpv@{set\-Lpv}}
+\index{set\-Lpv@{set\-Lpv}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{set\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-Gu\-::set\-Lpv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationGu_a946369eee3485a821a5619c5ba310497}
+set intrinsic luminosities 
+
+Reimplemented from \hyperlink{classenergyDissProc_a93a39df53f30801f9f057cd55c05485d}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+56                                   \{
+57   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_Lpv( i, \hyperlink{classexternalRadiationGu_ab49dc8bf55384ec6acf09bc1732194a4}{calculateLpv}( get\_vp(i),thetaObs ) ); \}
+58 \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_a541b2bb7da733f10d83af6225b7ad5f8}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Gu\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationGu_a541b2bb7da733f10d83af6225b7ad5f8}
+set radial boundaries for processes 
+
+Reimplemented in \hyperlink{classBlrSphericalGu_a51161abb05542e2120756bbdba82fc0b}{Blr\-Spherical\-Gu}, \hyperlink{classDtSphericalGu_af8b00665c5f7caca8b4a84034a097e05}{Dt\-Spherical\-Gu}, and \hyperlink{classAccdSphericalGu_a606c270f0d33338544b48373fe294f6b}{Accd\-Spherical\-Gu}.
+
+
+\begin{DoxyCode}
+49 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationGu_a730363f393f29aef9927e0bb84087116}{\index{external\-Radiation\-Gu@{external\-Radiation\-Gu}!update@{update}}
+\index{update@{update}!externalRadiationGu@{external\-Radiation\-Gu}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Gu\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationGu_a730363f393f29aef9927e0bb84087116}
+calculate and set Upe every time with new radius r 
+
+Reimplemented from \hyperlink{classenergyDissProc_a6033524ea3d0fe38056bd74622f6c4ad}{energy\-Diss\-Proc}.
+
+
+
+Reimplemented in \hyperlink{classBlrSphericalGu_a0054a1bc21351e6d68b8b5190ab1a8b0}{Blr\-Spherical\-Gu}, \hyperlink{classDtSphericalGu_ac940befec9ea9886b136f9d96c88620a}{Dt\-Spherical\-Gu}, and \hyperlink{classAccdSphericalGu_a278cae9b07c99dd7398121a77fa069c9}{Accd\-Spherical\-Gu}.
+
+
+\begin{DoxyCode}
+41 \{ \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{externalRadiationGu_8hpp}{external\-Radiation\-Gu.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{externalRadiationGu_8cpp}{external\-Radiation\-Gu.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,205 @@
+\hypertarget{classmagneticField}{\section{magnetic\-Field Class Reference}
+\label{classmagneticField}\index{magnetic\-Field@{magnetic\-Field}}
+}
+
+
+{\ttfamily \#include $<$magnetic\-Field.\-hpp$>$}
+
+Inheritance diagram for magnetic\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmagneticField}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class defining magnetic field across the jet \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmagneticField_ac856f6e43cc63fb2a16c0f013d70123b}{magnetic\-Field} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, std\-::string \-\_\-id)
+\item 
+\hyperlink{classmagneticField_a1d7c41029c88b3a2683d8e1bec376e16}{$\sim$magnetic\-Field} ()
+\item 
+double \hyperlink{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{get\-B} ()
+\item 
+double \hyperlink{classmagneticField_a24bacbdab7f8c280e0bcbbe8ff50e5eb}{get\-B} (double \-\_\-r)
+\item 
+double \hyperlink{classmagneticField_a3b573d12649137290d521539b903da8d}{get\-Max\-B} ()
+\item 
+double \hyperlink{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}{get\-\_\-u\-B} ()
+\item 
+double \hyperlink{classmagneticField_ad9d8d66260564c919d0fd253f4b3c60d}{get\-\_\-u\-B} (double \-\_\-r)
+\item 
+void \hyperlink{classmagneticField_a9a0793b3b3a94962aaea1052edfe9b28}{print\-Info} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmagneticField_ac856f6e43cc63fb2a16c0f013d70123b}{\index{magnetic\-Field@{magnetic\-Field}!magnetic\-Field@{magnetic\-Field}}
+\index{magnetic\-Field@{magnetic\-Field}!magneticField@{magnetic\-Field}}
+\subsubsection[{magnetic\-Field}]{\setlength{\rightskip}{0pt plus 5cm}magnetic\-Field\-::magnetic\-Field (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_ac856f6e43cc63fb2a16c0f013d70123b}
+consructor 
+\begin{DoxyParams}{Parameters}
+{\em scfgp} & \\
+\hline
+{\em \hyperlink{classjetGeometry}{jet\-Geometry}} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+8                                                                           : 
+      \hyperlink{classbaseClass}{baseClass}(\_cfg, \_r, \_id ) \{ 
+9 
+10   \textcolor{comment}{/* request parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"B0"},0.0,&B0);
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"B1"},1.0,&B1);
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"sigmaB"},0.01,&sigmaB);
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"kB"},2.0,&kB);
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{stringliteral}{"magModel"},\textcolor{stringliteral}{"blob"},&magModel);
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"},10.0,&Gamma);
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaJ"},0.1,&thetaJ);
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"injRm"},2.0e17,&injRm);
+19   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eDiss"},0.1,&eDiss);
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eEle"},0.1,&eEle);
+21   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mBH"},1.0,&mBH);
+22   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eJet"},0.3,&eJet);
+23   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mDot"},1.0,&mDot);
+24 
+25   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+26 
+27   \textcolor{comment}{/* set energetics and magnetic flux value if in 'steady' model */}
+28   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"steady"} ) \{
+29     \textcolor{keywordtype}{double} Ledd, Ljet;
+30     Ledd = 1.3e47*mBH;
+31     Ljet = 0.5*eJet*mDot*Ledd;
+32     Lb = sigmaB*(1.0-eDiss)*Ljet/(1.0+sigmaB);
+33     B0steady = sqrt(6.0*Lb/(LIGHT\_SPEED*\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)))/(thetaJ*Gamma); \}
+34 \}
+\end{DoxyCode}
+\hypertarget{classmagneticField_a1d7c41029c88b3a2683d8e1bec376e16}{\index{magnetic\-Field@{magnetic\-Field}!$\sim$magnetic\-Field@{$\sim$magnetic\-Field}}
+\index{$\sim$magnetic\-Field@{$\sim$magnetic\-Field}!magneticField@{magnetic\-Field}}
+\subsubsection[{$\sim$magnetic\-Field}]{\setlength{\rightskip}{0pt plus 5cm}magnetic\-Field\-::$\sim$magnetic\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_a1d7c41029c88b3a2683d8e1bec376e16}
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}{\index{magnetic\-Field@{magnetic\-Field}!get\-\_\-u\-B@{get\-\_\-u\-B}}
+\index{get\-\_\-u\-B@{get\-\_\-u\-B}!magneticField@{magnetic\-Field}}
+\subsubsection[{get\-\_\-u\-B}]{\setlength{\rightskip}{0pt plus 5cm}double magnetic\-Field\-::get\-\_\-u\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}
+get current value of magnetic energy density 
+\begin{DoxyCode}
+65 \{ \textcolor{keywordflow}{return}( DSQR( \hyperlink{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{getB}( ) )/(8.0*M\_PI) ); \}
+\end{DoxyCode}
+\hypertarget{classmagneticField_ad9d8d66260564c919d0fd253f4b3c60d}{\index{magnetic\-Field@{magnetic\-Field}!get\-\_\-u\-B@{get\-\_\-u\-B}}
+\index{get\-\_\-u\-B@{get\-\_\-u\-B}!magneticField@{magnetic\-Field}}
+\subsubsection[{get\-\_\-u\-B}]{\setlength{\rightskip}{0pt plus 5cm}double magnetic\-Field\-::get\-\_\-u\-B (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_ad9d8d66260564c919d0fd253f4b3c60d}
+get value of magnetic energy density at aspecific radius 
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+66 \{ \textcolor{keywordflow}{return}( DSQR( \hyperlink{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{getB}( \_r ) )/(8.0*M\_PI) ); \}
+\end{DoxyCode}
+\hypertarget{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{\index{magnetic\-Field@{magnetic\-Field}!get\-B@{get\-B}}
+\index{get\-B@{get\-B}!magneticField@{magnetic\-Field}}
+\subsubsection[{get\-B}]{\setlength{\rightskip}{0pt plus 5cm}double magnetic\-Field\-::get\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}
+get current value of magnetic field 
+\begin{DoxyCode}
+50                             \{ 
+51   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"steady"} ) \{ \textcolor{keywordflow}{return} B0steady/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ); \};
+52   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"blob"} ) \{ \textcolor{keywordflow}{return} B0+(B1*pow(injRm/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ),0.5*kB)); \}
+53 \}
+\end{DoxyCode}
+\hypertarget{classmagneticField_a24bacbdab7f8c280e0bcbbe8ff50e5eb}{\index{magnetic\-Field@{magnetic\-Field}!get\-B@{get\-B}}
+\index{get\-B@{get\-B}!magneticField@{magnetic\-Field}}
+\subsubsection[{get\-B}]{\setlength{\rightskip}{0pt plus 5cm}double magnetic\-Field\-::get\-B (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_a24bacbdab7f8c280e0bcbbe8ff50e5eb}
+get value of magnetic field at specific radius 
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+55                                       \{ 
+56   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"steady"} ) \{ \textcolor{keywordflow}{return} B0steady/\_r; \};
+57   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"blob"} ) \{ \textcolor{keywordflow}{return} B0+(B1*pow(injRm/\_r,0.5*kB)); \}
+58 \}
+\end{DoxyCode}
+\hypertarget{classmagneticField_a3b573d12649137290d521539b903da8d}{\index{magnetic\-Field@{magnetic\-Field}!get\-Max\-B@{get\-Max\-B}}
+\index{get\-Max\-B@{get\-Max\-B}!magneticField@{magnetic\-Field}}
+\subsubsection[{get\-Max\-B}]{\setlength{\rightskip}{0pt plus 5cm}double magnetic\-Field\-::get\-Max\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmagneticField_a3b573d12649137290d521539b903da8d}
+get maximum value of magnetic field (closest radius 
+\begin{DoxyCode}
+60                                \{
+61   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"steady"} ) \{ \textcolor{keywordflow}{return} B0steady/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( ); \}
+62   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"blob"} ) \{ \textcolor{keywordflow}{return} B0+(B1*pow( injRm/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( ),0.5*kB)); \}
+63 \}
+\end{DoxyCode}
+\hypertarget{classmagneticField_a9a0793b3b3a94962aaea1052edfe9b28}{\index{magnetic\-Field@{magnetic\-Field}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!magneticField@{magnetic\-Field}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void magnetic\-Field\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classmagneticField_a9a0793b3b3a94962aaea1052edfe9b28}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}{base\-Class}.
+
+
+\begin{DoxyCode}
+36                                \{
+37   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+38   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Magnetic field model"},magModel);
+39   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"blob"} ) \{
+40       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"B0"},B0);
+41       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"B1 @ InjRm"},B1);
+42       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"index kB"},kB); \}
+43   
+44   \textcolor{keywordflow}{if}( magModel == \textcolor{stringliteral}{"steady"} ) \{
+45       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"sigmaB"},sigmaB);
+46       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"B @ injRm"},B0steady/injRm);
+47       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Magnetic field flux"}, Lb);
+48       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"thetaJ"}, thetaJ); \} \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{magneticField_8hpp}{magnetic\-Field.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{magneticField_8cpp}{magnetic\-Field.\-cpp}\end{DoxyCompactItemize}

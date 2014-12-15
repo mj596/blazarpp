@@ -1,0 +1,32 @@
+#! /bin/bash
+
+HERE=`pwd`
+CFG=$1
+OUTPUT=`cat ${CFG} | grep "output" | cut -d " " -f 2`
+LOG=`basename ${CFG} .cfg`.log
+echo "Running config file ${CFG} .. with blazarpp ${CFG} >> ${LOG}"
+echo "Output to '${OUTPUT}'"
+blazarpp ${CFG} >> ${CFG}.log
+echo "Moving ${LOG} to '${OUTPUT}'"
+mv ${LOG} ${OUTPUT}
+echo "Copying ${CFG} to ${OUTPUT}"
+cp ${CFG} ${OUTPUT}
+if [ ! -d "${OUTPUT}/plots" ]; then
+    mkdir ${OUTPUT}/plots
+    echo "Create dir ${OUTPUT}/plots'."
+fi
+ROOT=`cat ${CFG} | grep "printRoot" | cut -d " " -f 2`
+echo ${ROOT}
+if [ ${ROOT} -eq 1 ]; then    
+    echo "Moving ROOT *.ps to '${OUTPUT}/plots' if necessary."
+    for i in `ls *.ps`; do mv ${i} ${OUTPUT}; done
+fi
+# In case you want to plot stuff
+###echo "Gnuplotting."
+###cd ${OUTPUT}
+###gnuplot *.gp
+###cd ${HERE}
+###echo `pwd`
+###echo "Moving *.eps to '${OUTPUT}/plots'."
+###mv ${OUTPUT}/*.eps "${OUTPUT}/plots"
+###echo "Done."

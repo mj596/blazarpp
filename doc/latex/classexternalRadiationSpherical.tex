@@ -1,0 +1,298 @@
+\hypertarget{classexternalRadiationSpherical}{\section{external\-Radiation\-Spherical Class Reference}
+\label{classexternalRadiationSpherical}\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}}
+}
+
+
+{\ttfamily \#include $<$external\-Radiation.\-hpp$>$}
+
+Inheritance diagram for external\-Radiation\-Spherical\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classexternalRadiationSpherical}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class provides electron energy losses and luminosity calculation for inverse Compton process (E\-R\-C) for seed photons comming from B\-L\-R and H\-D\-R modelled as spherical sources. Implementation provided by the class is identical to this in original B\-L\-A\-Z\-A\-R code from Moderski et al. (2003). it is not modified O\-R checked for consistency. Use with caution!
+
+Class provides electron energy losses and luminosity calculation for inverse Compton process (E\-R\-C) for seed photons comming from B\-L\-R and H\-D\-R modelled as spherical sources \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classexternalRadiationSpherical_a8bc8c23cc374776d0c4431751dda67ed}{external\-Radiation\-Spherical} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classexternalRadiationSpherical_a9dbb13ad97d392d224e102a6f3eab62d}{$\sim$external\-Radiation\-Spherical} ()
+\item 
+virtual x void \hyperlink{classexternalRadiationSpherical_a560bd33ee97e6bdc7dc0d6138705e9b3}{set\-Radius} ()
+\item 
+virtual void \hyperlink{classexternalRadiationSpherical_a232684df0d246d8c5ec06e832bbaad0f}{print\-Info} ()
+\item 
+virtual void \hyperlink{classexternalRadiationSpherical_a05f5cf91c3a3c7844b167ff4476e64f8}{update} ()
+\item 
+virtual double \hyperlink{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}{getvext} (double \-\_\-r)
+\item 
+double \hyperlink{classexternalRadiationSpherical_a96a2857022de4cc79852824610943910}{dotg} (double g)
+\item 
+double \hyperlink{classexternalRadiationSpherical_ac30f8dcecd62a05ff85140112c4e9b9c}{calculate\-Lpv} (double v, double theta)
+\item 
+void \hyperlink{classexternalRadiationSpherical_a2868df3597900f03c135baef15c825a8}{set\-Lpv} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classexternalRadiationSpherical_aed35674ef479631d23c334fe877b249b}{double {\bfseries cf}}\label{classexternalRadiationSpherical_aed35674ef479631d23c334fe877b249b}
+
+\item 
+\hypertarget{classexternalRadiationSpherical_aa345975e8ba7513f78e8bceedc276ef2}{double {\bfseries e}}\label{classexternalRadiationSpherical_aa345975e8ba7513f78e8bceedc276ef2}
+
+\item 
+\hypertarget{classexternalRadiationSpherical_a2ab4e8e8d8c11d30dfb6995f5dd12fbf}{double {\bfseries Gamma}}\label{classexternalRadiationSpherical_a2ab4e8e8d8c11d30dfb6995f5dd12fbf}
+
+\item 
+\hypertarget{classexternalRadiationSpherical_a55b1d81d349c305d1e0ad8f1f20b1c62}{double {\bfseries theta\-Obs}}\label{classexternalRadiationSpherical_a55b1d81d349c305d1e0ad8f1f20b1c62}
+
+\item 
+\hypertarget{classexternalRadiationSpherical_ae1e077ff5e8eaf52933b242ff6ff4e46}{int {\bfseries K\-N}}\label{classexternalRadiationSpherical_ae1e077ff5e8eaf52933b242ff6ff4e46}
+
+\item 
+\hypertarget{classexternalRadiationSpherical_a77b0da335c6c8442e1e95c0bb3cd5b36}{gsl\-\_\-vector $\ast$ {\bfseries upe}}\label{classexternalRadiationSpherical_a77b0da335c6c8442e1e95c0bb3cd5b36}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classexternalRadiationSpherical_a8bc8c23cc374776d0c4431751dda67ed}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!external\-Radiation\-Spherical@{external\-Radiation\-Spherical}}
+\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{external\-Radiation\-Spherical}]{\setlength{\rightskip}{0pt plus 5cm}external\-Radiation\-Spherical\-::external\-Radiation\-Spherical (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationSpherical_a8bc8c23cc374776d0c4431751dda67ed}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                                            
+                : \hyperlink{classenergyDissProc_a0cf0b423089016fbe8a697378c519590}{energyDissProc}( \_cfg, \_r, \_ele, \_id ) \{
+10   \textcolor{comment}{/* requested parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"} + \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id}, 200, &\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"e"}, 1.0, &e );
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"cf"}, 0.1, &cf );
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"}, 10.0, &Gamma );
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaObs"}, 0.1, &thetaObs );
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"KN"}, 0, &KN );
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstU"},0,&\hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU});  
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstNu"},0,&\hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu});  
+19 
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+21 
+22   \textcolor{comment}{/* allocate space for upe vector */}
+23   upe = gsl\_vector\_alloc( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getMaxIndex( ) );
+24   gsl\_vector\_set\_zero( upe );
+25 
+26   allocateUpeR( ); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a9dbb13ad97d392d224e102a6f3eab62d}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!$\sim$external\-Radiation\-Spherical@{$\sim$external\-Radiation\-Spherical}}
+\index{$\sim$external\-Radiation\-Spherical@{$\sim$external\-Radiation\-Spherical}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{$\sim$external\-Radiation\-Spherical}]{\setlength{\rightskip}{0pt plus 5cm}external\-Radiation\-Spherical\-::$\sim$external\-Radiation\-Spherical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationSpherical_a9dbb13ad97d392d224e102a6f3eab62d}
+destructor 
+\begin{DoxyCode}
+28                                                          \{
+29   freeUpe( );
+30   freeLpv( );
+31   freeLvPoint( );
+32   freeLvPointAvg( );
+33   freeUpeR( );
+34 
+35   \textcolor{comment}{/* free space for upe vector */}
+36   gsl\_vector\_free( upe );
+37   upe = NULL; \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classexternalRadiationSpherical_ac30f8dcecd62a05ff85140112c4e9b9c}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!calculate\-Lpv@{calculate\-Lpv}}
+\index{calculate\-Lpv@{calculate\-Lpv}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{calculate\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Spherical\-::calculate\-Lpv (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{double}]{theta}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationSpherical_ac30f8dcecd62a05ff85140112c4e9b9c}
+calculate intrinsic luminosity 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ frequency (jet co-\/moving frame) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'\-\_\-v 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+46                                                                         \{
+47   \textcolor{keywordtype}{double} Int = 0.0;
+48   \textcolor{keywordtype}{double} e, miu, \hyperlink{classenergyDissProc_a36330825cd7737639d5d223281b1c7e1}{ep};
+49 
+50   e = PLANCK\_H*v/mec2;
+51   miu = -( cos(theta)-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma) )/( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*cos(theta) );
+52   ep = \hyperlink{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ) )*PLANCK\_H*Gamma/mec2;
+53 
+54   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0;k<\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );k++ )
+55     Int  += bazinga::IntCor( k, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*inverseCompton::f( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->
+      \hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k), \hyperlink{classenergyDissProc_a36330825cd7737639d5d223281b1c7e1}{ep}, e, miu )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}(k)/\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->
+      \hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k);
+56 
+57   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} )
+58     Int *= gsl\_vector\_get( upe, 0 )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( )/pow( 
+      \hyperlink{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ) ), 2.0 );
+59   \textcolor{keywordflow}{else} 
+60     Int *= gsl\_vector\_get( upe, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( )/pow( 
+      \hyperlink{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ) ), 2.0 );
+61 
+62   Int *= (3.0*SIGMA\_T*LIGHT\_SPEED)/(4.0*pow(Gamma,2.0));
+63   Int *= v;
+64   \textcolor{keywordflow}{return} Int; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a96a2857022de4cc79852824610943910}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!dotg@{dotg}}
+\index{dotg@{dotg}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{dotg}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Spherical\-::dotg (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationSpherical_a96a2857022de4cc79852824610943910}
+get d gamma \textbackslash{} d t for particular process 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_a8074e0db5d859a8815e7136c2fc41b46}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+39                                                   \{
+40   \textcolor{keywordtype}{double} b, val = 0.0;
+41   b = 4.0*g*\hyperlink{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( ) )*PLANCK\_H*Gamma/mec2;
+42   \textcolor{keywordflow}{if}( b > 1.0 ) \{ \hyperlink{classenergyDissProc_a69ea4be814273e47e69e31e593c3a250}{set\_KN\_info}( g ); \}
+43   val = gsl\_vector\_get( upe, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) )*inverseCompton::fKN(b,KN); 
+44   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!getvext@{getvext}}
+\index{getvext@{getvext}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}virtual double external\-Radiation\-Spherical\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationSpherical_a444023a18bd55023dc806bd0acccb7a0}
+now obsolete virtual double getd\-Ldlnr( double \-\_\-r ) \{ return 0; \} get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-r} & -\/ radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classDtSpherical_a25a9bd3b5a47e2d1428325614686f5ac}{Dt\-Spherical}, and \hyperlink{classBlrSpherical_aaf00f59d04b5e193aa47959dd1cc1065}{Blr\-Spherical}.
+
+
+\begin{DoxyCode}
+52 \{ \textcolor{keywordflow}{return} 0; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a232684df0d246d8c5ec06e832bbaad0f}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Spherical\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationSpherical_a232684df0d246d8c5ec06e832bbaad0f}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}.
+
+
+
+Reimplemented in \hyperlink{classDtSpherical_a14440ec30b997fe2461c07f4507dd994}{Dt\-Spherical}, and \hyperlink{classBlrSpherical_a101b95271855f15f1049fcea9efde235}{Blr\-Spherical}.
+
+
+\begin{DoxyCode}
+41 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a2868df3597900f03c135baef15c825a8}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!set\-Lpv@{set\-Lpv}}
+\index{set\-Lpv@{set\-Lpv}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{set\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-Spherical\-::set\-Lpv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationSpherical_a2868df3597900f03c135baef15c825a8}
+set intrinsic luminosities 
+
+Reimplemented from \hyperlink{classenergyDissProc_a93a39df53f30801f9f057cd55c05485d}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+66                                          \{
+67   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_Lpv( i, \hyperlink{classexternalRadiationSpherical_ac30f8dcecd62a05ff85140112c4e9b9c}{calculateLpv}( get\_vp(i),thetaObs ) ); \}
+68 \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a560bd33ee97e6bdc7dc0d6138705e9b3}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual x void external\-Radiation\-Spherical\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationSpherical_a560bd33ee97e6bdc7dc0d6138705e9b3}
+sets rext if not provided by config file 
+
+Reimplemented in \hyperlink{classDtSpherical_aac1ed31d84f539e4e372bc1a567e4555}{Dt\-Spherical}, and \hyperlink{classBlrSpherical_adc2876b14e36b86f5a35d31c708d5d35}{Blr\-Spherical}.
+
+
+\begin{DoxyCode}
+40 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationSpherical_a05f5cf91c3a3c7844b167ff4476e64f8}{\index{external\-Radiation\-Spherical@{external\-Radiation\-Spherical}!update@{update}}
+\index{update@{update}!externalRadiationSpherical@{external\-Radiation\-Spherical}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Spherical\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationSpherical_a05f5cf91c3a3c7844b167ff4476e64f8}
+calculate and set Upe every time with new radius r 
+
+Reimplemented from \hyperlink{classenergyDissProc_a6033524ea3d0fe38056bd74622f6c4ad}{energy\-Diss\-Proc}.
+
+
+
+Reimplemented in \hyperlink{classDtSpherical_ab9844cfdd3df5bc213bf93dd7b320bb7}{Dt\-Spherical}, and \hyperlink{classBlrSpherical_ad67ab24f0b7f0ec3a0893fd2e3170f6c}{Blr\-Spherical}.
+
+
+\begin{DoxyCode}
+44 \{ \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{externalRadiationSpherical_8hpp}{external\-Radiation\-Spherical.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{externalRadiationSpherical_8cpp}{external\-Radiation\-Spherical.\-cpp}\end{DoxyCompactItemize}

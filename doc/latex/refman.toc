@@ -1,0 +1,425 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Accd\discretionary {-}{}{}Planar Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Accd\discretionary {-}{}{}Planar}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar}{8}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}getvext}{8}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}print\discretionary {-}{}{}Info}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}{9}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}set\discretionary {-}{}{}Radius}{9}{subsubsection.4.1.3.4}
+\contentsline {section}{\numberline {4.2}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu Class Reference}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{10}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{10}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}{10}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}{11}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{11}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}getvext}{11}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}print\discretionary {-}{}{}Info}{11}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}set\discretionary {-}{}{}Radius}{12}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}update}{12}{subsubsection.4.2.3.4}
+\contentsline {section}{\numberline {4.3}base\discretionary {-}{}{}Class Class Reference}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{12}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{13}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}beta}{13}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}get\discretionary {-}{}{}N}{13}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}print\discretionary {-}{}{}Info}{13}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}who\discretionary {-}{}{}Am\discretionary {-}{}{}I}{13}{subsubsection.4.3.2.4}
+\contentsline {subsection}{\numberline {4.3.3}Member Data Documentation}{13}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}cfg}{13}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}id}{14}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}N}{14}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}r}{14}{subsubsection.4.3.3.4}
+\contentsline {section}{\numberline {4.4}Blr\discretionary {-}{}{}Planar Class Reference}{14}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{14}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{15}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Blr\discretionary {-}{}{}Planar}{15}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar}{16}{subsubsection.4.4.2.2}
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{16}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}getvext}{16}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}print\discretionary {-}{}{}Info}{16}{subsubsection.4.4.3.2}
+\contentsline {subsubsection}{\numberline {4.4.3.3}setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}{17}{subsubsection.4.4.3.3}
+\contentsline {subsubsection}{\numberline {4.4.3.4}set\discretionary {-}{}{}Radius}{17}{subsubsection.4.4.3.4}
+\contentsline {section}{\numberline {4.5}Blr\discretionary {-}{}{}Spherical Class Reference}{17}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{18}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{18}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Blr\discretionary {-}{}{}Spherical}{18}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical}{19}{subsubsection.4.5.2.2}
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{19}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}getvext}{19}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}print\discretionary {-}{}{}Info}{19}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}set\discretionary {-}{}{}Radius}{20}{subsubsection.4.5.3.3}
+\contentsline {subsubsection}{\numberline {4.5.3.4}update}{20}{subsubsection.4.5.3.4}
+\contentsline {section}{\numberline {4.6}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu Class Reference}{20}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{20}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{21}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}{21}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}{21}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{22}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}getvext}{22}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}print\discretionary {-}{}{}Info}{23}{subsubsection.4.6.3.2}
+\contentsline {subsubsection}{\numberline {4.6.3.3}set\discretionary {-}{}{}Radius}{23}{subsubsection.4.6.3.3}
+\contentsline {subsubsection}{\numberline {4.6.3.4}update}{23}{subsubsection.4.6.3.4}
+\contentsline {section}{\numberline {4.7}Dt\discretionary {-}{}{}Planar Class Reference}{24}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Constructor \& Destructor Documentation}{24}{subsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.1.1}Dt\discretionary {-}{}{}Planar}{24}{subsubsection.4.7.1.1}
+\contentsline {subsubsection}{\numberline {4.7.1.2}$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar}{25}{subsubsection.4.7.1.2}
+\contentsline {subsection}{\numberline {4.7.2}Member Function Documentation}{25}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}getvext}{25}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}print\discretionary {-}{}{}Info}{25}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}{26}{subsubsection.4.7.2.3}
+\contentsline {subsubsection}{\numberline {4.7.2.4}set\discretionary {-}{}{}Radius}{26}{subsubsection.4.7.2.4}
+\contentsline {section}{\numberline {4.8}Dt\discretionary {-}{}{}Spherical Class Reference}{26}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{26}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{27}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}Dt\discretionary {-}{}{}Spherical}{27}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical}{27}{subsubsection.4.8.2.2}
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{28}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}getvext}{28}{subsubsection.4.8.3.1}
+\contentsline {subsubsection}{\numberline {4.8.3.2}print\discretionary {-}{}{}Info}{28}{subsubsection.4.8.3.2}
+\contentsline {subsubsection}{\numberline {4.8.3.3}set\discretionary {-}{}{}Radius}{28}{subsubsection.4.8.3.3}
+\contentsline {subsubsection}{\numberline {4.8.3.4}update}{29}{subsubsection.4.8.3.4}
+\contentsline {section}{\numberline {4.9}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu Class Reference}{29}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{29}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{30}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}{30}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}{30}{subsubsection.4.9.2.2}
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{30}{subsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.3.1}getvext}{30}{subsubsection.4.9.3.1}
+\contentsline {subsubsection}{\numberline {4.9.3.2}print\discretionary {-}{}{}Info}{31}{subsubsection.4.9.3.2}
+\contentsline {subsubsection}{\numberline {4.9.3.3}set\discretionary {-}{}{}Radius}{31}{subsubsection.4.9.3.3}
+\contentsline {subsubsection}{\numberline {4.9.3.4}update}{31}{subsubsection.4.9.3.4}
+\contentsline {section}{\numberline {4.10}electrons Class Reference}{31}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{32}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{32}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}electrons}{32}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}$\sim $electrons}{33}{subsubsection.4.10.2.2}
+\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{33}{subsection.4.10.3}
+\contentsline {subsubsection}{\numberline {4.10.3.1}add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{33}{subsubsection.4.10.3.1}
+\contentsline {subsubsection}{\numberline {4.10.3.2}avg\discretionary {-}{}{}Ngamma}{34}{subsubsection.4.10.3.2}
+\contentsline {subsubsection}{\numberline {4.10.3.3}beta}{34}{subsubsection.4.10.3.3}
+\contentsline {subsubsection}{\numberline {4.10.3.4}dgdr}{34}{subsubsection.4.10.3.4}
+\contentsline {subsubsection}{\numberline {4.10.3.5}evolve}{34}{subsubsection.4.10.3.5}
+\contentsline {subsubsection}{\numberline {4.10.3.6}gauss}{35}{subsubsection.4.10.3.6}
+\contentsline {subsubsection}{\numberline {4.10.3.7}gaussmod}{35}{subsubsection.4.10.3.7}
+\contentsline {subsubsection}{\numberline {4.10.3.8}getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma}{35}{subsubsection.4.10.3.8}
+\contentsline {subsubsection}{\numberline {4.10.3.9}get\discretionary {-}{}{}Gamma}{35}{subsubsection.4.10.3.9}
+\contentsline {subsubsection}{\numberline {4.10.3.10}get\discretionary {-}{}{}Ngamma}{36}{subsubsection.4.10.3.10}
+\contentsline {subsubsection}{\numberline {4.10.3.11}if\discretionary {-}{}{}Evol}{36}{subsubsection.4.10.3.11}
+\contentsline {subsubsection}{\numberline {4.10.3.12}inject}{36}{subsubsection.4.10.3.12}
+\contentsline {subsubsection}{\numberline {4.10.3.13}list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{36}{subsubsection.4.10.3.13}
+\contentsline {subsubsection}{\numberline {4.10.3.14}print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info}{36}{subsubsection.4.10.3.14}
+\contentsline {subsubsection}{\numberline {4.10.3.15}print\discretionary {-}{}{}Info}{37}{subsubsection.4.10.3.15}
+\contentsline {subsubsection}{\numberline {4.10.3.16}save\discretionary {-}{}{}Injection}{37}{subsubsection.4.10.3.16}
+\contentsline {subsubsection}{\numberline {4.10.3.17}save\discretionary {-}{}{}Ngamma}{37}{subsubsection.4.10.3.17}
+\contentsline {subsubsection}{\numberline {4.10.3.18}save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg}{38}{subsubsection.4.10.3.18}
+\contentsline {subsubsection}{\numberline {4.10.3.19}set\discretionary {-}{}{}Energetics}{38}{subsubsection.4.10.3.19}
+\contentsline {subsubsection}{\numberline {4.10.3.20}set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters}{38}{subsubsection.4.10.3.20}
+\contentsline {subsubsection}{\numberline {4.10.3.21}t\discretionary {-}{}{}Q}{38}{subsubsection.4.10.3.21}
+\contentsline {subsubsection}{\numberline {4.10.3.22}tri}{39}{subsubsection.4.10.3.22}
+\contentsline {subsection}{\numberline {4.10.4}Member Data Documentation}{39}{subsection.4.10.4}
+\contentsline {subsubsection}{\numberline {4.10.4.1}A}{39}{subsubsection.4.10.4.1}
+\contentsline {subsubsection}{\numberline {4.10.4.2}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{39}{subsubsection.4.10.4.2}
+\contentsline {subsubsection}{\numberline {4.10.4.3}gamma}{39}{subsubsection.4.10.4.3}
+\contentsline {section}{\numberline {4.11}energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc Class Reference}{39}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{40}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{41}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{41}{subsubsection.4.11.2.1}
+\contentsline {subsubsection}{\numberline {4.11.2.2}$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{41}{subsubsection.4.11.2.2}
+\contentsline {subsection}{\numberline {4.11.3}Member Function Documentation}{41}{subsection.4.11.3}
+\contentsline {subsubsection}{\numberline {4.11.3.1}calculate\discretionary {-}{}{}Lpv}{41}{subsubsection.4.11.3.1}
+\contentsline {subsubsection}{\numberline {4.11.3.2}dotg}{42}{subsubsection.4.11.3.2}
+\contentsline {subsubsection}{\numberline {4.11.3.3}getd\discretionary {-}{}{}Log\discretionary {-}{}{}E}{42}{subsubsection.4.11.3.3}
+\contentsline {subsubsection}{\numberline {4.11.3.4}print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}{42}{subsubsection.4.11.3.4}
+\contentsline {subsubsection}{\numberline {4.11.3.5}print\discretionary {-}{}{}Info}{43}{subsubsection.4.11.3.5}
+\contentsline {subsubsection}{\numberline {4.11.3.6}save\discretionary {-}{}{}Luminosity}{43}{subsubsection.4.11.3.6}
+\contentsline {subsubsection}{\numberline {4.11.3.7}save\discretionary {-}{}{}Upe\discretionary {-}{}{}R}{43}{subsubsection.4.11.3.7}
+\contentsline {subsubsection}{\numberline {4.11.3.8}set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}{43}{subsubsection.4.11.3.8}
+\contentsline {subsubsection}{\numberline {4.11.3.9}set\discretionary {-}{}{}Lpv}{43}{subsubsection.4.11.3.9}
+\contentsline {subsubsection}{\numberline {4.11.3.10}update}{44}{subsubsection.4.11.3.10}
+\contentsline {subsection}{\numberline {4.11.4}Member Data Documentation}{44}{subsection.4.11.4}
+\contentsline {subsubsection}{\numberline {4.11.4.1}d\discretionary {-}{}{}Log\discretionary {-}{}{}E}{44}{subsubsection.4.11.4.1}
+\contentsline {subsubsection}{\numberline {4.11.4.2}ele}{44}{subsubsection.4.11.4.2}
+\contentsline {subsubsection}{\numberline {4.11.4.3}ep}{44}{subsubsection.4.11.4.3}
+\contentsline {subsubsection}{\numberline {4.11.4.4}ep\discretionary {-}{}{}Min}{44}{subsubsection.4.11.4.4}
+\contentsline {subsubsection}{\numberline {4.11.4.5}flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}{44}{subsubsection.4.11.4.5}
+\contentsline {subsubsection}{\numberline {4.11.4.6}gamma\discretionary {-}{}{}K\discretionary {-}{}{}N}{44}{subsubsection.4.11.4.6}
+\contentsline {subsubsection}{\numberline {4.11.4.7}inj\discretionary {-}{}{}Rm}{44}{subsubsection.4.11.4.7}
+\contentsline {subsubsection}{\numberline {4.11.4.8}Lpv}{44}{subsubsection.4.11.4.8}
+\contentsline {subsubsection}{\numberline {4.11.4.9}luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu}{44}{subsubsection.4.11.4.9}
+\contentsline {subsubsection}{\numberline {4.11.4.10}luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U}{45}{subsubsection.4.11.4.10}
+\contentsline {subsubsection}{\numberline {4.11.4.11}Lv\discretionary {-}{}{}Point}{45}{subsubsection.4.11.4.11}
+\contentsline {subsubsection}{\numberline {4.11.4.12}Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg}{45}{subsubsection.4.11.4.12}
+\contentsline {subsubsection}{\numberline {4.11.4.13}upe}{45}{subsubsection.4.11.4.13}
+\contentsline {subsubsection}{\numberline {4.11.4.14}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}{45}{subsubsection.4.11.4.14}
+\contentsline {subsubsection}{\numberline {4.11.4.15}vp}{45}{subsubsection.4.11.4.15}
+\contentsline {subsubsection}{\numberline {4.11.4.16}vp\discretionary {-}{}{}Min}{45}{subsubsection.4.11.4.16}
+\contentsline {subsubsection}{\numberline {4.11.4.17}v\discretionary {-}{}{}Point}{45}{subsubsection.4.11.4.17}
+\contentsline {section}{\numberline {4.12}external\discretionary {-}{}{}Radiation Class Reference}{45}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Member Function Documentation}{46}{subsection.4.12.1}
+\contentsline {subsubsection}{\numberline {4.12.1.1}dotg}{46}{subsubsection.4.12.1.1}
+\contentsline {subsubsection}{\numberline {4.12.1.2}print\discretionary {-}{}{}Info}{46}{subsubsection.4.12.1.2}
+\contentsline {subsubsection}{\numberline {4.12.1.3}set\discretionary {-}{}{}Lpv}{46}{subsubsection.4.12.1.3}
+\contentsline {subsubsection}{\numberline {4.12.1.4}update}{47}{subsubsection.4.12.1.4}
+\contentsline {section}{\numberline {4.13}external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu Class Reference}{47}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{47}{subsection.4.13.1}
+\contentsline {subsection}{\numberline {4.13.2}Constructor \& Destructor Documentation}{48}{subsection.4.13.2}
+\contentsline {subsubsection}{\numberline {4.13.2.1}external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}{48}{subsubsection.4.13.2.1}
+\contentsline {subsubsection}{\numberline {4.13.2.2}$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}{48}{subsubsection.4.13.2.2}
+\contentsline {subsection}{\numberline {4.13.3}Member Function Documentation}{48}{subsection.4.13.3}
+\contentsline {subsubsection}{\numberline {4.13.3.1}calculate\discretionary {-}{}{}Lpv}{48}{subsubsection.4.13.3.1}
+\contentsline {subsubsection}{\numberline {4.13.3.2}dotg}{49}{subsubsection.4.13.3.2}
+\contentsline {subsubsection}{\numberline {4.13.3.3}getvext}{49}{subsubsection.4.13.3.3}
+\contentsline {subsubsection}{\numberline {4.13.3.4}print\discretionary {-}{}{}Info}{49}{subsubsection.4.13.3.4}
+\contentsline {subsubsection}{\numberline {4.13.3.5}set\discretionary {-}{}{}Lpv}{50}{subsubsection.4.13.3.5}
+\contentsline {subsubsection}{\numberline {4.13.3.6}set\discretionary {-}{}{}Radius}{50}{subsubsection.4.13.3.6}
+\contentsline {subsubsection}{\numberline {4.13.3.7}update}{50}{subsubsection.4.13.3.7}
+\contentsline {section}{\numberline {4.14}external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar Class Reference}{50}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{50}{subsection.4.14.1}
+\contentsline {subsection}{\numberline {4.14.2}Constructor \& Destructor Documentation}{52}{subsection.4.14.2}
+\contentsline {subsubsection}{\numberline {4.14.2.1}external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}{52}{subsubsection.4.14.2.1}
+\contentsline {subsubsection}{\numberline {4.14.2.2}$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}{52}{subsubsection.4.14.2.2}
+\contentsline {subsection}{\numberline {4.14.3}Member Function Documentation}{53}{subsection.4.14.3}
+\contentsline {subsubsection}{\numberline {4.14.3.1}calculate\discretionary {-}{}{}Lpv}{53}{subsubsection.4.14.3.1}
+\contentsline {subsubsection}{\numberline {4.14.3.2}calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx}{54}{subsubsection.4.14.3.2}
+\contentsline {subsubsection}{\numberline {4.14.3.3}calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full}{54}{subsubsection.4.14.3.3}
+\contentsline {subsubsection}{\numberline {4.14.3.4}ctau}{55}{subsubsection.4.14.3.4}
+\contentsline {subsubsection}{\numberline {4.14.3.5}dotg}{55}{subsubsection.4.14.3.5}
+\contentsline {subsubsection}{\numberline {4.14.3.6}fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral}{55}{subsubsection.4.14.3.6}
+\contentsline {subsubsection}{\numberline {4.14.3.7}function\discretionary {-}{}{}\_\discretionary {-}{}{}lum}{56}{subsubsection.4.14.3.7}
+\contentsline {subsubsection}{\numberline {4.14.3.8}function\discretionary {-}{}{}\_\discretionary {-}{}{}upe}{56}{subsubsection.4.14.3.8}
+\contentsline {subsubsection}{\numberline {4.14.3.9}getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}{56}{subsubsection.4.14.3.9}
+\contentsline {subsubsection}{\numberline {4.14.3.10}get\discretionary {-}{}{}Rm}{56}{subsubsection.4.14.3.10}
+\contentsline {subsubsection}{\numberline {4.14.3.11}get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector}{57}{subsubsection.4.14.3.11}
+\contentsline {subsubsection}{\numberline {4.14.3.12}getvext}{57}{subsubsection.4.14.3.12}
+\contentsline {subsubsection}{\numberline {4.14.3.13}print\discretionary {-}{}{}Info}{57}{subsubsection.4.14.3.13}
+\contentsline {subsubsection}{\numberline {4.14.3.14}save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R}{57}{subsubsection.4.14.3.14}
+\contentsline {subsubsection}{\numberline {4.14.3.15}setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}{57}{subsubsection.4.14.3.15}
+\contentsline {subsubsection}{\numberline {4.14.3.16}set\discretionary {-}{}{}Lpv}{57}{subsubsection.4.14.3.16}
+\contentsline {subsubsection}{\numberline {4.14.3.17}set\discretionary {-}{}{}Radius}{58}{subsubsection.4.14.3.17}
+\contentsline {subsubsection}{\numberline {4.14.3.18}set\discretionary {-}{}{}Rm}{58}{subsubsection.4.14.3.18}
+\contentsline {subsubsection}{\numberline {4.14.3.19}update}{58}{subsubsection.4.14.3.19}
+\contentsline {section}{\numberline {4.15}external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical Class Reference}{58}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{59}{subsection.4.15.1}
+\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{59}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}{59}{subsubsection.4.15.2.1}
+\contentsline {subsubsection}{\numberline {4.15.2.2}$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}{60}{subsubsection.4.15.2.2}
+\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{60}{subsection.4.15.3}
+\contentsline {subsubsection}{\numberline {4.15.3.1}calculate\discretionary {-}{}{}Lpv}{60}{subsubsection.4.15.3.1}
+\contentsline {subsubsection}{\numberline {4.15.3.2}dotg}{61}{subsubsection.4.15.3.2}
+\contentsline {subsubsection}{\numberline {4.15.3.3}getvext}{61}{subsubsection.4.15.3.3}
+\contentsline {subsubsection}{\numberline {4.15.3.4}print\discretionary {-}{}{}Info}{61}{subsubsection.4.15.3.4}
+\contentsline {subsubsection}{\numberline {4.15.3.5}set\discretionary {-}{}{}Lpv}{61}{subsubsection.4.15.3.5}
+\contentsline {subsubsection}{\numberline {4.15.3.6}set\discretionary {-}{}{}Radius}{62}{subsubsection.4.15.3.6}
+\contentsline {subsubsection}{\numberline {4.15.3.7}update}{62}{subsubsection.4.15.3.7}
+\contentsline {section}{\numberline {4.16}gamma\discretionary {-}{}{}\_\discretionary {-}{}{}break\discretionary {-}{}{}\_\discretionary {-}{}{}params Struct Reference}{62}{section.4.16}
+\contentsline {section}{\numberline {4.17}jet\discretionary {-}{}{}Geometry Class Reference}{62}{section.4.17}
+\contentsline {section}{\numberline {4.18}log\discretionary {-}{}{}Geometry Class Reference}{63}{section.4.18}
+\contentsline {section}{\numberline {4.19}magnetic\discretionary {-}{}{}Field Class Reference}{63}{section.4.19}
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{63}{subsection.4.19.1}
+\contentsline {subsection}{\numberline {4.19.2}Constructor \& Destructor Documentation}{64}{subsection.4.19.2}
+\contentsline {subsubsection}{\numberline {4.19.2.1}magnetic\discretionary {-}{}{}Field}{64}{subsubsection.4.19.2.1}
+\contentsline {subsubsection}{\numberline {4.19.2.2}$\sim $magnetic\discretionary {-}{}{}Field}{64}{subsubsection.4.19.2.2}
+\contentsline {subsection}{\numberline {4.19.3}Member Function Documentation}{64}{subsection.4.19.3}
+\contentsline {subsubsection}{\numberline {4.19.3.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}{64}{subsubsection.4.19.3.1}
+\contentsline {subsubsection}{\numberline {4.19.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}{65}{subsubsection.4.19.3.2}
+\contentsline {subsubsection}{\numberline {4.19.3.3}get\discretionary {-}{}{}B}{65}{subsubsection.4.19.3.3}
+\contentsline {subsubsection}{\numberline {4.19.3.4}get\discretionary {-}{}{}B}{65}{subsubsection.4.19.3.4}
+\contentsline {subsubsection}{\numberline {4.19.3.5}get\discretionary {-}{}{}Max\discretionary {-}{}{}B}{65}{subsubsection.4.19.3.5}
+\contentsline {subsubsection}{\numberline {4.19.3.6}print\discretionary {-}{}{}Info}{65}{subsubsection.4.19.3.6}
+\contentsline {section}{\numberline {4.20}observer Class Reference}{66}{section.4.20}
+\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{66}{subsection.4.20.1}
+\contentsline {subsection}{\numberline {4.20.2}Constructor \& Destructor Documentation}{67}{subsection.4.20.2}
+\contentsline {subsubsection}{\numberline {4.20.2.1}observer}{67}{subsubsection.4.20.2.1}
+\contentsline {subsubsection}{\numberline {4.20.2.2}$\sim $observer}{67}{subsubsection.4.20.2.2}
+\contentsline {subsection}{\numberline {4.20.3}Member Function Documentation}{68}{subsection.4.20.3}
+\contentsline {subsubsection}{\numberline {4.20.3.1}add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{68}{subsubsection.4.20.3.1}
+\contentsline {subsubsection}{\numberline {4.20.3.2}add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}{69}{subsubsection.4.20.3.2}
+\contentsline {subsubsection}{\numberline {4.20.3.3}add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}{69}{subsubsection.4.20.3.3}
+\contentsline {subsubsection}{\numberline {4.20.3.4}add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}{69}{subsubsection.4.20.3.4}
+\contentsline {subsubsection}{\numberline {4.20.3.5}add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}{69}{subsubsection.4.20.3.5}
+\contentsline {subsubsection}{\numberline {4.20.3.6}add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity}{69}{subsubsection.4.20.3.6}
+\contentsline {subsubsection}{\numberline {4.20.3.7}avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}{70}{subsubsection.4.20.3.7}
+\contentsline {subsubsection}{\numberline {4.20.3.8}calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares}{70}{subsubsection.4.20.3.8}
+\contentsline {subsubsection}{\numberline {4.20.3.9}calculate\discretionary {-}{}{}Flare}{70}{subsubsection.4.20.3.9}
+\contentsline {subsubsection}{\numberline {4.20.3.10}calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}{71}{subsubsection.4.20.3.10}
+\contentsline {subsubsection}{\numberline {4.20.3.11}get\discretionary {-}{}{}Freq\discretionary {-}{}{}List}{71}{subsubsection.4.20.3.11}
+\contentsline {subsubsection}{\numberline {4.20.3.12}get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size}{72}{subsubsection.4.20.3.12}
+\contentsline {subsubsection}{\numberline {4.20.3.13}if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares}{72}{subsubsection.4.20.3.13}
+\contentsline {subsubsection}{\numberline {4.20.3.14}interpolate}{72}{subsubsection.4.20.3.14}
+\contentsline {subsubsection}{\numberline {4.20.3.15}list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{72}{subsubsection.4.20.3.15}
+\contentsline {subsubsection}{\numberline {4.20.3.16}list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}{73}{subsubsection.4.20.3.16}
+\contentsline {subsubsection}{\numberline {4.20.3.17}list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}{73}{subsubsection.4.20.3.17}
+\contentsline {subsubsection}{\numberline {4.20.3.18}list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}{73}{subsubsection.4.20.3.18}
+\contentsline {subsubsection}{\numberline {4.20.3.19}list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}{73}{subsubsection.4.20.3.19}
+\contentsline {subsubsection}{\numberline {4.20.3.20}print\discretionary {-}{}{}Info}{73}{subsubsection.4.20.3.20}
+\contentsline {subsubsection}{\numberline {4.20.3.21}save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}{74}{subsubsection.4.20.3.21}
+\contentsline {subsubsection}{\numberline {4.20.3.22}save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}{74}{subsubsection.4.20.3.22}
+\contentsline {subsubsection}{\numberline {4.20.3.23}save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}{74}{subsubsection.4.20.3.23}
+\contentsline {subsubsection}{\numberline {4.20.3.24}save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}{74}{subsubsection.4.20.3.24}
+\contentsline {subsubsection}{\numberline {4.20.3.25}save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}{75}{subsubsection.4.20.3.25}
+\contentsline {subsubsection}{\numberline {4.20.3.26}save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}{75}{subsubsection.4.20.3.26}
+\contentsline {subsubsection}{\numberline {4.20.3.27}size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{75}{subsubsection.4.20.3.27}
+\contentsline {subsubsection}{\numberline {4.20.3.28}size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}{75}{subsubsection.4.20.3.28}
+\contentsline {subsubsection}{\numberline {4.20.3.29}size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}{75}{subsubsection.4.20.3.29}
+\contentsline {subsubsection}{\numberline {4.20.3.30}size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}{76}{subsubsection.4.20.3.30}
+\contentsline {subsubsection}{\numberline {4.20.3.31}size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}{76}{subsubsection.4.20.3.31}
+\contentsline {subsubsection}{\numberline {4.20.3.32}sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity}{76}{subsubsection.4.20.3.32}
+\contentsline {subsubsection}{\numberline {4.20.3.33}sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}{76}{subsubsection.4.20.3.33}
+\contentsline {subsection}{\numberline {4.20.4}Member Data Documentation}{77}{subsection.4.20.4}
+\contentsline {subsubsection}{\numberline {4.20.4.1}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}{77}{subsubsection.4.20.4.1}
+\contentsline {subsubsection}{\numberline {4.20.4.2}freq\discretionary {-}{}{}List}{77}{subsubsection.4.20.4.2}
+\contentsline {subsubsection}{\numberline {4.20.4.3}v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum}{77}{subsubsection.4.20.4.3}
+\contentsline {section}{\numberline {4.21}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk Class Reference}{77}{section.4.21}
+\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{78}{subsection.4.21.1}
+\contentsline {subsection}{\numberline {4.21.2}Constructor \& Destructor Documentation}{78}{subsection.4.21.2}
+\contentsline {subsubsection}{\numberline {4.21.2.1}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}{78}{subsubsection.4.21.2.1}
+\contentsline {subsubsection}{\numberline {4.21.2.2}$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}{79}{subsubsection.4.21.2.2}
+\contentsline {subsection}{\numberline {4.21.3}Member Function Documentation}{79}{subsection.4.21.3}
+\contentsline {subsubsection}{\numberline {4.21.3.1}allocate\discretionary {-}{}{}Lv}{79}{subsubsection.4.21.3.1}
+\contentsline {subsubsection}{\numberline {4.21.3.2}calculate\discretionary {-}{}{}Luminosity}{79}{subsubsection.4.21.3.2}
+\contentsline {subsubsection}{\numberline {4.21.3.3}calculate\discretionary {-}{}{}Lv}{80}{subsubsection.4.21.3.3}
+\contentsline {subsubsection}{\numberline {4.21.3.4}get\discretionary {-}{}{}Temperature}{80}{subsubsection.4.21.3.4}
+\contentsline {subsubsection}{\numberline {4.21.3.5}print\discretionary {-}{}{}Info}{80}{subsubsection.4.21.3.5}
+\contentsline {subsubsection}{\numberline {4.21.3.6}read\discretionary {-}{}{}Template}{81}{subsubsection.4.21.3.6}
+\contentsline {subsubsection}{\numberline {4.21.3.7}save\discretionary {-}{}{}Template}{81}{subsubsection.4.21.3.7}
+\contentsline {subsubsection}{\numberline {4.21.3.8}scale\discretionary {-}{}{}Template}{82}{subsubsection.4.21.3.8}
+\contentsline {subsubsection}{\numberline {4.21.3.9}set\discretionary {-}{}{}Energetics}{82}{subsubsection.4.21.3.9}
+\contentsline {subsubsection}{\numberline {4.21.3.10}set\discretionary {-}{}{}Radius}{83}{subsubsection.4.21.3.10}
+\contentsline {subsection}{\numberline {4.21.4}Member Data Documentation}{83}{subsection.4.21.4}
+\contentsline {subsubsection}{\numberline {4.21.4.1}R}{83}{subsubsection.4.21.4.1}
+\contentsline {subsubsection}{\numberline {4.21.4.2}v\discretionary {-}{}{}Template}{83}{subsubsection.4.21.4.2}
+\contentsline {section}{\numberline {4.22}self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton Class Reference}{83}{section.4.22}
+\contentsline {subsection}{\numberline {4.22.1}Detailed Description}{83}{subsection.4.22.1}
+\contentsline {subsection}{\numberline {4.22.2}Constructor \& Destructor Documentation}{84}{subsection.4.22.2}
+\contentsline {subsubsection}{\numberline {4.22.2.1}self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}{84}{subsubsection.4.22.2.1}
+\contentsline {subsubsection}{\numberline {4.22.2.2}$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}{84}{subsubsection.4.22.2.2}
+\contentsline {subsection}{\numberline {4.22.3}Member Function Documentation}{84}{subsection.4.22.3}
+\contentsline {subsubsection}{\numberline {4.22.3.1}calculate\discretionary {-}{}{}Lpv}{84}{subsubsection.4.22.3.1}
+\contentsline {subsubsection}{\numberline {4.22.3.2}dotg}{85}{subsubsection.4.22.3.2}
+\contentsline {subsubsection}{\numberline {4.22.3.3}print\discretionary {-}{}{}Info}{85}{subsubsection.4.22.3.3}
+\contentsline {subsubsection}{\numberline {4.22.3.4}set\discretionary {-}{}{}Lpv}{86}{subsubsection.4.22.3.4}
+\contentsline {subsubsection}{\numberline {4.22.3.5}update}{86}{subsubsection.4.22.3.5}
+\contentsline {subsection}{\numberline {4.22.4}Member Data Documentation}{86}{subsection.4.22.4}
+\contentsline {subsubsection}{\numberline {4.22.4.1}B}{86}{subsubsection.4.22.4.1}
+\contentsline {subsubsection}{\numberline {4.22.4.2}syn}{86}{subsubsection.4.22.4.2}
+\contentsline {section}{\numberline {4.23}struct Class Reference}{86}{section.4.23}
+\contentsline {subsection}{\numberline {4.23.1}Detailed Description}{86}{subsection.4.23.1}
+\contentsline {section}{\numberline {4.24}synchrotron Class Reference}{86}{section.4.24}
+\contentsline {subsection}{\numberline {4.24.1}Detailed Description}{87}{subsection.4.24.1}
+\contentsline {subsection}{\numberline {4.24.2}Constructor \& Destructor Documentation}{87}{subsection.4.24.2}
+\contentsline {subsubsection}{\numberline {4.24.2.1}synchrotron}{87}{subsubsection.4.24.2.1}
+\contentsline {subsubsection}{\numberline {4.24.2.2}$\sim $synchrotron}{88}{subsubsection.4.24.2.2}
+\contentsline {subsection}{\numberline {4.24.3}Member Function Documentation}{88}{subsection.4.24.3}
+\contentsline {subsubsection}{\numberline {4.24.3.1}calculate\discretionary {-}{}{}Lpv}{88}{subsubsection.4.24.3.1}
+\contentsline {subsubsection}{\numberline {4.24.3.2}dotg}{89}{subsubsection.4.24.3.2}
+\contentsline {subsubsection}{\numberline {4.24.3.3}iterate}{89}{subsubsection.4.24.3.3}
+\contentsline {subsubsection}{\numberline {4.24.3.4}print\discretionary {-}{}{}Info}{89}{subsubsection.4.24.3.4}
+\contentsline {subsubsection}{\numberline {4.24.3.5}set\discretionary {-}{}{}Lpv}{90}{subsubsection.4.24.3.5}
+\contentsline {subsubsection}{\numberline {4.24.3.6}update}{90}{subsubsection.4.24.3.6}
+\contentsline {chapter}{\numberline {5}File Documentation}{91}{chapter.5}
+\contentsline {section}{\numberline {5.1}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.hpp File Reference}{91}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{91}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.hpp File Reference}{91}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{91}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/base\discretionary {-}{}{}Class.hpp File Reference}{91}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{92}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/blazar.hpp File Reference}{92}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{92}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Function Documentation}{92}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}{92}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}{93}{subsubsection.5.4.2.2}
+\contentsline {section}{\numberline {5.5}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.hpp File Reference}{94}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{94}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.hpp File Reference}{94}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{94}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.hpp File Reference}{94}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{94}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.hpp File Reference}{95}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{95}{subsection.5.8.1}
+\contentsline {section}{\numberline {5.9}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.hpp File Reference}{95}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{95}{subsection.5.9.1}
+\contentsline {section}{\numberline {5.10}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.hpp File Reference}{95}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{95}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.11}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/electrons.hpp File Reference}{96}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{96}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}Function Documentation}{96}{subsection.5.11.2}
+\contentsline {subsubsection}{\numberline {5.11.2.1}f1}{96}{subsubsection.5.11.2.1}
+\contentsline {subsubsection}{\numberline {5.11.2.2}f2}{96}{subsubsection.5.11.2.2}
+\contentsline {subsubsection}{\numberline {5.11.2.3}function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}{96}{subsubsection.5.11.2.3}
+\contentsline {subsubsection}{\numberline {5.11.2.4}solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}{97}{subsubsection.5.11.2.4}
+\contentsline {section}{\numberline {5.12}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.hpp File Reference}{98}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{98}{subsection.5.12.1}
+\contentsline {section}{\numberline {5.13}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation.hpp File Reference}{98}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{98}{subsection.5.13.1}
+\contentsline {section}{\numberline {5.14}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.hpp File Reference}{98}{section.5.14}
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{98}{subsection.5.14.1}
+\contentsline {section}{\numberline {5.15}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.hpp File Reference}{99}{section.5.15}
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{99}{subsection.5.15.1}
+\contentsline {section}{\numberline {5.16}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.hpp File Reference}{99}{section.5.16}
+\contentsline {subsection}{\numberline {5.16.1}Detailed Description}{99}{subsection.5.16.1}
+\contentsline {section}{\numberline {5.17}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/magnetic\discretionary {-}{}{}Field.hpp File Reference}{99}{section.5.17}
+\contentsline {subsection}{\numberline {5.17.1}Detailed Description}{99}{subsection.5.17.1}
+\contentsline {section}{\numberline {5.18}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/observer.hpp File Reference}{100}{section.5.18}
+\contentsline {subsection}{\numberline {5.18.1}Detailed Description}{100}{subsection.5.18.1}
+\contentsline {section}{\numberline {5.19}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.hpp File Reference}{100}{section.5.19}
+\contentsline {subsection}{\numberline {5.19.1}Detailed Description}{100}{subsection.5.19.1}
+\contentsline {section}{\numberline {5.20}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.hpp File Reference}{100}{section.5.20}
+\contentsline {subsection}{\numberline {5.20.1}Detailed Description}{100}{subsection.5.20.1}
+\contentsline {section}{\numberline {5.21}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/synchrotron.hpp File Reference}{101}{section.5.21}
+\contentsline {subsection}{\numberline {5.21.1}Detailed Description}{101}{subsection.5.21.1}
+\contentsline {section}{\numberline {5.22}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.cpp File Reference}{101}{section.5.22}
+\contentsline {subsection}{\numberline {5.22.1}Detailed Description}{101}{subsection.5.22.1}
+\contentsline {section}{\numberline {5.23}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/base\discretionary {-}{}{}Class.cpp File Reference}{101}{section.5.23}
+\contentsline {subsection}{\numberline {5.23.1}Detailed Description}{101}{subsection.5.23.1}
+\contentsline {section}{\numberline {5.24}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/blazar.cpp File Reference}{102}{section.5.24}
+\contentsline {subsection}{\numberline {5.24.1}Detailed Description}{102}{subsection.5.24.1}
+\contentsline {subsection}{\numberline {5.24.2}Function Documentation}{102}{subsection.5.24.2}
+\contentsline {subsubsection}{\numberline {5.24.2.1}main}{102}{subsubsection.5.24.2.1}
+\contentsline {section}{\numberline {5.25}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.cpp File Reference}{108}{section.5.25}
+\contentsline {subsection}{\numberline {5.25.1}Detailed Description}{108}{subsection.5.25.1}
+\contentsline {section}{\numberline {5.26}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.cpp File Reference}{108}{section.5.26}
+\contentsline {subsection}{\numberline {5.26.1}Detailed Description}{108}{subsection.5.26.1}
+\contentsline {section}{\numberline {5.27}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.cpp File Reference}{108}{section.5.27}
+\contentsline {subsection}{\numberline {5.27.1}Detailed Description}{108}{subsection.5.27.1}
+\contentsline {section}{\numberline {5.28}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.cpp File Reference}{108}{section.5.28}
+\contentsline {subsection}{\numberline {5.28.1}Detailed Description}{109}{subsection.5.28.1}
+\contentsline {section}{\numberline {5.29}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.cpp File Reference}{109}{section.5.29}
+\contentsline {subsection}{\numberline {5.29.1}Detailed Description}{109}{subsection.5.29.1}
+\contentsline {section}{\numberline {5.30}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.cpp File Reference}{109}{section.5.30}
+\contentsline {subsection}{\numberline {5.30.1}Detailed Description}{109}{subsection.5.30.1}
+\contentsline {section}{\numberline {5.31}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/electrons.cpp File Reference}{109}{section.5.31}
+\contentsline {subsection}{\numberline {5.31.1}Detailed Description}{109}{subsection.5.31.1}
+\contentsline {subsection}{\numberline {5.31.2}Function Documentation}{110}{subsection.5.31.2}
+\contentsline {subsubsection}{\numberline {5.31.2.1}f1}{110}{subsubsection.5.31.2.1}
+\contentsline {subsubsection}{\numberline {5.31.2.2}f2}{110}{subsubsection.5.31.2.2}
+\contentsline {subsubsection}{\numberline {5.31.2.3}function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}{110}{subsubsection.5.31.2.3}
+\contentsline {subsubsection}{\numberline {5.31.2.4}solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}{110}{subsubsection.5.31.2.4}
+\contentsline {section}{\numberline {5.32}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.cpp File Reference}{111}{section.5.32}
+\contentsline {subsection}{\numberline {5.32.1}Detailed Description}{111}{subsection.5.32.1}
+\contentsline {section}{\numberline {5.33}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation.cpp File Reference}{111}{section.5.33}
+\contentsline {subsection}{\numberline {5.33.1}Detailed Description}{111}{subsection.5.33.1}
+\contentsline {section}{\numberline {5.34}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.cpp File Reference}{112}{section.5.34}
+\contentsline {subsection}{\numberline {5.34.1}Detailed Description}{112}{subsection.5.34.1}
+\contentsline {section}{\numberline {5.35}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.cpp File Reference}{112}{section.5.35}
+\contentsline {subsection}{\numberline {5.35.1}Detailed Description}{112}{subsection.5.35.1}
+\contentsline {section}{\numberline {5.36}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.cpp File Reference}{112}{section.5.36}
+\contentsline {subsection}{\numberline {5.36.1}Detailed Description}{112}{subsection.5.36.1}
+\contentsline {section}{\numberline {5.37}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/magnetic\discretionary {-}{}{}Field.cpp File Reference}{112}{section.5.37}
+\contentsline {subsection}{\numberline {5.37.1}Detailed Description}{112}{subsection.5.37.1}
+\contentsline {section}{\numberline {5.38}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/observer.cpp File Reference}{113}{section.5.38}
+\contentsline {subsection}{\numberline {5.38.1}Detailed Description}{113}{subsection.5.38.1}
+\contentsline {section}{\numberline {5.39}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.cpp File Reference}{113}{section.5.39}
+\contentsline {subsection}{\numberline {5.39.1}Detailed Description}{113}{subsection.5.39.1}
+\contentsline {section}{\numberline {5.40}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.cpp File Reference}{113}{section.5.40}
+\contentsline {subsection}{\numberline {5.40.1}Detailed Description}{113}{subsection.5.40.1}
+\contentsline {section}{\numberline {5.41}/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/synchrotron.cpp File Reference}{113}{section.5.41}
+\contentsline {subsection}{\numberline {5.41.1}Detailed Description}{113}{subsection.5.41.1}
+\contentsline {chapter}{Index}{114}{section*.70}

@@ -1,0 +1,7 @@
+#! /usr/bin/env python
+import numpy as np
+import libCheckIndex
+index = np.arange(-2.0, 4.0, 0.1)
+for i in index:
+    print libCheckIndex
+

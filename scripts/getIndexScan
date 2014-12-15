@@ -1,0 +1,72 @@
+#! /usr/bin/env python
+
+def get_index( x_low, x_high, filename ):
+    import numpy as np
+    import math
+
+    file = open( filename, 'r' )
+    x = []
+    y = []
+    for line in file.readlines():
+        temp = line.split()
+        if float(temp[0]) != 0 and float(temp[1]) != 0:
+            x.append( float(temp[0]) )
+            y.append( float(temp[1]) )
+        
+    file.close()
+
+    y = np.log10( y )
+    x = np.log10( x )
+
+    x_low = math.log10( float( x_low ) )
+    x_high = math.log10( float( x_high ) )
+
+    x_fit = []
+    y_fit = []
+    for i in range( len(x) ):
+        if x_low <= x[i] and x[i] <= x_high:
+            x_fit.append( x[i] )
+            y_fit.append( y[i] )
+
+    def f( x, a, b ):
+        y = []
+        for i in x:
+            y.append( a*i+b )
+        return y
+
+    if len(x_fit) > 0:
+        [ [a, b], CM ] = np.polyfit( x_fit, y_fit, 1, full=False, cov=True )
+        da = math.sqrt( np.diag( CM )[0] )
+        y_fitted = f( x, a, b )
+#        import matplotlib.pyplot as plt
+#        plt.plot( x, y )
+#        plt.plot( x_fit, y_fit, '.')
+#        plt.plot( x, y_fitted, '-')
+#        plt.show()
+        return [a,da*len(x_fit)]
+    else:
+        return ['-nan','-nan']
+
+
+
+
+import sys
+
+e2keV = 4.83603e+17
+e10keV = 2.41801e+18
+e80keV = 1.93441e+19
+e100MeV = 2.41801e+22
+e1GeV = 2.41801e+23
+e100GeV = 2.41801e+25
+
+# 1 2-10keV
+# 2 10-80keV
+# 3 100MeV-1GeV
+# 4 1GeV-100GeV
+
+a1, da1 = get_index( e2keV, e10keV, sys.argv[1] )
+a2, da2 = get_index( e10keV, e80keV, sys.argv[1] )
+a3, da3 = get_index( e100MeV, e1GeV, sys.argv[1] )
+a4, da4 = get_index( e1GeV, e100GeV, sys.argv[1] )
+
+print sys.argv[2], a1, da1, a2, da2, a3, da3, a4, da4

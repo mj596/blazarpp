@@ -1,0 +1,143 @@
+\hypertarget{blazar_8hpp}{\section{/home/mjaniak/\-Soft/blazar++/include/blazar.hpp File Reference}
+\label{blazar_8hpp}\index{/home/mjaniak/\-Soft/blazar++/include/blazar.\-hpp@{/home/mjaniak/\-Soft/blazar++/include/blazar.\-hpp}}
+}
+{\ttfamily \#include $<$scfgp.\-hpp$>$}\\*
+{\ttfamily \#include $<$bazinga.\-hpp$>$}\\*
+{\ttfamily \#include \char`\"{}electrons.\-hpp\char`\"{}}\\*
+
+
+\subsection{Detailed Description}
+Main blazar++'s header file
+
+\begin{DoxyAuthor}{Author}
+Mateusz Janiak 
+\end{DoxyAuthor}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{blazar_8hpp_aa336cd7d684b9456fd23e34deb31bd7f}{get\-Config\-Switches} (scfgp $\ast$\-\_\-cfg)
+\item 
+void \hyperlink{blazar_8hpp_aa73d1988fad45eadd6960ac0ec4a7e9e}{safety\-Config\-Switches} (scfgp $\ast$\-\_\-cfg, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{blazar_8hpp_aa336cd7d684b9456fd23e34deb31bd7f}{\index{blazar.\-hpp@{blazar.\-hpp}!get\-Config\-Switches@{get\-Config\-Switches}}
+\index{get\-Config\-Switches@{get\-Config\-Switches}!blazar.hpp@{blazar.\-hpp}}
+\subsubsection[{get\-Config\-Switches}]{\setlength{\rightskip}{0pt plus 5cm}void get\-Config\-Switches (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg}
+\end{DoxyParamCaption}
+)}}\label{blazar_8hpp_aa336cd7d684b9456fd23e34deb31bd7f}
+Read main config switches from configuration file 
+\begin{DoxyParams}{Parameters}
+{\em scfgp} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+20                                       \{
+21   \_cfg -> add<int>(\textcolor{stringliteral}{"lumSyn"},0);
+22   \_cfg -> add<int>(\textcolor{stringliteral}{"lumSsc"},0);
+23   \_cfg -> add<int>(\textcolor{stringliteral}{"lumExt1"},0);
+24   \_cfg -> add<int>(\textcolor{stringliteral}{"lumExt2"},0);
+25   \_cfg -> add<int>(\textcolor{stringliteral}{"lumBlrPl"},0);
+26   \_cfg -> add<int>(\textcolor{stringliteral}{"lumDtPl"},0);
+27   \_cfg -> add<int>(\textcolor{stringliteral}{"lumAccd"},0);
+28   \_cfg -> add<int>(\textcolor{stringliteral}{"lumBlrSp"},0);
+29   \_cfg -> add<int>(\textcolor{stringliteral}{"lumDtSp"},0);
+30   \_cfg -> add<int>(\textcolor{stringliteral}{"lumBlrGu"},0);
+31   \_cfg -> add<int>(\textcolor{stringliteral}{"lumDtGu"},0);
+32   \_cfg -> add<int>(\textcolor{stringliteral}{"lumAccdGu"},0);
+33   \_cfg -> add<int>(\textcolor{stringliteral}{"lumSynPoint"},0);
+34   \_cfg -> add<int>(\textcolor{stringliteral}{"lumSscPoint"},0);
+35   \_cfg -> add<int>(\textcolor{stringliteral}{"lumExt1Point"},0);
+36   \_cfg -> add<int>(\textcolor{stringliteral}{"lumExt2Point"},0);
+37   \_cfg -> add<int>(\textcolor{stringliteral}{"lumBlrPlPoint"},0);
+38   \_cfg -> add<int>(\textcolor{stringliteral}{"lumDtPlPoint"},0);
+39   \_cfg -> add<int>(\textcolor{stringliteral}{"lumAccdPoint"},0);
+40   \_cfg -> add<int>(\textcolor{stringliteral}{"lumBlrSpPoint"},0);
+41   \_cfg -> add<int>(\textcolor{stringliteral}{"lumDtSpPoint"},0);
+42   \_cfg -> add<int>(\textcolor{stringliteral}{"lumBlrGuPoint"},0);
+43   \_cfg -> add<int>(\textcolor{stringliteral}{"lumDtGuPoint"},0);
+44   \_cfg -> add<int>(\textcolor{stringliteral}{"lumAccdGuPoint"},0);
+45   \_cfg -> add<int>(\textcolor{stringliteral}{"Adiabatic"},0);
+46   \_cfg -> add<int>(\textcolor{stringliteral}{"Syn"},0);
+47   \_cfg -> add<int>(\textcolor{stringliteral}{"Ssc"},0);
+48   \_cfg -> add<int>(\textcolor{stringliteral}{"Ext1"},0);
+49   \_cfg -> add<int>(\textcolor{stringliteral}{"Ext2"},0);
+50   \_cfg -> add<int>(\textcolor{stringliteral}{"BlrPl"},0);
+51   \_cfg -> add<int>(\textcolor{stringliteral}{"DtPl"},0);
+52   \_cfg -> add<int>(\textcolor{stringliteral}{"BlrSp"},0);
+53   \_cfg -> add<int>(\textcolor{stringliteral}{"DtSp"},0);
+54   \_cfg -> add<int>(\textcolor{stringliteral}{"Accd"},0);
+55   \_cfg -> add<int>(\textcolor{stringliteral}{"BlrGu"},0);
+56   \_cfg -> add<int>(\textcolor{stringliteral}{"DtGu"},0);
+57   \_cfg -> add<int>(\textcolor{stringliteral}{"AccdGu"},0);
+58   \_cfg -> add<int>(\textcolor{stringliteral}{"QAccd"},0);
+59   \_cfg -> add<int>(\textcolor{stringliteral}{"SABS"},0);
+60   \_cfg -> add<double>(\textcolor{stringliteral}{"AdiabaticABG"},0.666667);
+61   \_cfg -> add<std::string>(\textcolor{stringliteral}{"output"},\textcolor{stringliteral}{"blazar\_out"});
+62   \_cfg -> add<int>(\textcolor{stringliteral}{"saveElectrons"},1);
+63   \_cfg -> add<int>(\textcolor{stringliteral}{"saveElectronsAvg"},1);
+64   \_cfg -> add<int>(\textcolor{stringliteral}{"saveLum"},1);
+65   \_cfg -> add<int>(\textcolor{stringliteral}{"saveLumPoint"},1);
+66   \_cfg -> add<int>(\textcolor{stringliteral}{"root"},1);
+67   \_cfg -> add<int>(\textcolor{stringliteral}{"printRoot"},1);
+68   
+69   \_cfg -> updateAddedParameters( ); \}
+\end{DoxyCode}
+\hypertarget{blazar_8hpp_aa73d1988fad45eadd6960ac0ec4a7e9e}{\index{blazar.\-hpp@{blazar.\-hpp}!safety\-Config\-Switches@{safety\-Config\-Switches}}
+\index{safety\-Config\-Switches@{safety\-Config\-Switches}!blazar.hpp@{blazar.\-hpp}}
+\subsubsection[{safety\-Config\-Switches}]{\setlength{\rightskip}{0pt plus 5cm}void safety\-Config\-Switches (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele}
+\end{DoxyParamCaption}
+)}}\label{blazar_8hpp_aa73d1988fad45eadd6960ac0ec4a7e9e}
+After reading parameters apply some necessary changes to them 
+\begin{DoxyParams}{Parameters}
+{\em scfgp} & \\
+\hline
+{\em electrons} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+77                                                           \{
+78   \textcolor{comment}{/* some safety features */}
+79   \textcolor{keywordflow}{if}( \_ele -> ifEvol( ) &&  \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Syn"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSyn"},1); \}
+80   \textcolor{keywordflow}{if}( \_ele -> ifEvol( ) &&  \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSsc"},1); \}
+81 
+82   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSynPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSyn"},1); \}
+83   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSscPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSsc"},1); \}
+84   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt1Point"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt1"},1); \}
+85   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt2Point"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt2"},1); \}
+86   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrPlPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrPl"},1); \}
+87   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtPlPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtPl"},1); \}
+88   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccd"},1); \}
+89   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrSpPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrSp"},1); \}
+90   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtSpPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtSp"},1); \}
+91   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrGuPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrGu"},1); \}
+92   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtGuPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtGu"},1); \}
+93   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdGuPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdGu"},1); \}
+94 
+95   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSsc"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Syn"},1); \}
+96   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSsc"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSyn"},1); \}
+97 
+98   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSyn"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Syn"},1); \}
+99   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSsc"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"},1); \}
+100   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt1"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext1"},1); \}
+101   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt2"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext2"},1); \}
+102   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrPl"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrPl"},1); \}
+103   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtPl"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtPl"},1); \}
+104   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccd"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Accd"},1); \}
+105   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrSp"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrSp"},1); \}
+106   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtSp"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtSp"},1); \}
+107   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrGu"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrGu"},1); \}
+108   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtGu"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtGu"},1); \}
+109   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdGu"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"AccdGu"},1); \}
+110 
+111   \textcolor{keywordflow}{if}( \_cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSscPoint"}) ) \{ \_cfg->modify<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSynPoint"},1); \}
+112 \}
+\end{DoxyCode}

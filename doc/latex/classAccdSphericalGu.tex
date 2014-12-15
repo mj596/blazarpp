@@ -1,0 +1,208 @@
+\hypertarget{classAccdSphericalGu}{\section{Accd\-Spherical\-Gu Class Reference}
+\label{classAccdSphericalGu}\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}}
+}
+
+
+{\ttfamily \#include $<$Accd\-Spherical\-Gu.\-hpp$>$}
+
+Inheritance diagram for Accd\-Spherical\-Gu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classAccdSphericalGu}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Parameters used by class (defaults) 
+\begin{DoxyParams}{Parameters}
+{\em rext} & -\/ accretion disk inner radius \\
+\hline
+\end{DoxyParams}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAccdSphericalGu_a0ce695a3b46e6027bb770e6b9c2ac2ae}{Accd\-Spherical\-Gu} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classAccdSphericalGu_ad5dfde0d63207ba0c2a14d6e8f9561e4}{$\sim$\-Accd\-Spherical\-Gu} ()
+\item 
+void \hyperlink{classAccdSphericalGu_a672f673606422556c3fb31a1787c6724}{print\-Info} ()
+\item 
+void \hyperlink{classAccdSphericalGu_a278cae9b07c99dd7398121a77fa069c9}{update} ()
+\item 
+double \hyperlink{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{getvext} (double \-\_\-r)
+\item 
+void \hyperlink{classAccdSphericalGu_a606c270f0d33338544b48373fe294f6b}{set\-Radius} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAccdSphericalGu_a0ce695a3b46e6027bb770e6b9c2ac2ae}{\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}}
+\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!AccdSphericalGu@{Accd\-Spherical\-Gu}}
+\subsubsection[{Accd\-Spherical\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}Accd\-Spherical\-Gu\-::\-Accd\-Spherical\-Gu (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classAccdSphericalGu_a0ce695a3b46e6027bb770e6b9c2ac2ae}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                            : 
+      \hyperlink{classexternalRadiationGu_aad5903b642f08594be10d699cf9fb3b4}{externalRadiationGu}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}, \textcolor{keywordtype}{id} ) \{
+10   \textcolor{comment}{/* requested parameters */}
+11 \textcolor{comment}{//  cfg -> request<double>(id + "e", 10.0, &e );}
+12 \textcolor{comment}{//  cfg -> request<double>(id + "cf", 0.1, &cf );}
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"rext"}, 0.0, &rext );
+14 \textcolor{comment}{//  cfg -> request<double>(id + "k", 3.0, &k );}
+15 \textcolor{comment}{//}
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+17 
+18   \textcolor{keywordflow}{if}( rext == 0.0 ) \{ \hyperlink{classAccdSphericalGu_a606c270f0d33338544b48373fe294f6b}{setRadius}( ); \}
+19   \textcolor{keywordflow}{else} \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Overwritting rext value from config file!"}); \}
+20   
+21   \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin} = 0.01*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMin( ) )*\hyperlink{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRMax() );
+22   vpMax = 100.0*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMax( ) )*\hyperlink{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0() );
+23 
+24   allocateUpeR( ); \textcolor{comment}{// this is for storing vector information about Upe(r) }
+25   allocateLpv( );
+26   allocateLvPoint( );
+27   allocateLvPointAvg( );
+28 
+29   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+30 \}
+\end{DoxyCode}
+\hypertarget{classAccdSphericalGu_ad5dfde0d63207ba0c2a14d6e8f9561e4}{\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!$\sim$\-Accd\-Spherical\-Gu@{$\sim$\-Accd\-Spherical\-Gu}}
+\index{$\sim$\-Accd\-Spherical\-Gu@{$\sim$\-Accd\-Spherical\-Gu}!AccdSphericalGu@{Accd\-Spherical\-Gu}}
+\subsubsection[{$\sim$\-Accd\-Spherical\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}Accd\-Spherical\-Gu\-::$\sim$\-Accd\-Spherical\-Gu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classAccdSphericalGu_ad5dfde0d63207ba0c2a14d6e8f9561e4}
+destructor 
+\begin{DoxyCode}
+33 \{ \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!getvext@{getvext}}
+\index{getvext@{getvext}!AccdSphericalGu@{Accd\-Spherical\-Gu}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}double Accd\-Spherical\-Gu\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}
+get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-r} & -\/ radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+32                                            \{
+33   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+34   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+35   \textcolor{keywordtype}{double} vext = 0.0;
+36   \textcolor{keywordtype}{double} Fdisk;
+37   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ Fdisk = (3.0*G\_CONST*mBH*1e09*MSUN)*mDot*Ledd/( DSQR(
+      LIGHT\_SPEED)*8.0*M\_PI*pow(\_r,3.0) ); \}
+38   \textcolor{keywordflow}{else} \{ Fdisk = (3.0*G\_CONST*mBH*1e09*MSUN)*mDot*Ledd/( DSQR(LIGHT\_SPEED)*8.0*M\_PI*pow(\_r,3.0) ); \}
+39   \textcolor{keywordtype}{double} Teff = pow( Fdisk/SIGMA\_SB, 0.25 );
+40   vext = 3.92*Teff*K\_BOLTZMAN/PLANCK\_H;
+41   \textcolor{keywordflow}{return} vext; \}
+\end{DoxyCode}
+\hypertarget{classAccdSphericalGu_a672f673606422556c3fb31a1787c6724}{\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!AccdSphericalGu@{Accd\-Spherical\-Gu}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Accd\-Spherical\-Gu\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdSphericalGu_a672f673606422556c3fb31a1787c6724}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classexternalRadiationGu_a8aa28d939b0ecf2651f18cc4f5f6ba25}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+55                                  \{
+56   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+57   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+58   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg energy (in external frame)"},\hyperlink{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0())*PLANCK\_H,\textcolor{stringliteral}{"eV"});
+59   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg frequency (in external frame)"},\hyperlink{classAccdSphericalGu_a802ac0782b844446953d4b59da160e46}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0()),\textcolor{stringliteral}{"Hz"});
+60   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius rext"},rext,\textcolor{stringliteral}{"cm"});
+61   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMin"},\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},\textcolor{stringliteral}{"Hz"});
+62   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMax"},vpMax,\textcolor{stringliteral}{"Hz"});
+63 \}
+\end{DoxyCode}
+\hypertarget{classAccdSphericalGu_a606c270f0d33338544b48373fe294f6b}{\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!AccdSphericalGu@{Accd\-Spherical\-Gu}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Accd\-Spherical\-Gu\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdSphericalGu_a606c270f0d33338544b48373fe294f6b}
+sets rext if not provided by config file 
+
+Reimplemented from \hyperlink{classexternalRadiationGu_a541b2bb7da733f10d83af6225b7ad5f8}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+65                                   \{
+66   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+67   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+68   \textcolor{keywordtype}{double} R\_sub = 1.6e-5*sqrt( Ldisk );
+69   \textcolor{keywordtype}{double} Rg = mBH*1e09*MSUN*G\_CONST/DSQR(LIGHT\_SPEED);
+70   rext = Rg; \}
+\end{DoxyCode}
+\hypertarget{classAccdSphericalGu_a278cae9b07c99dd7398121a77fa069c9}{\index{Accd\-Spherical\-Gu@{Accd\-Spherical\-Gu}!update@{update}}
+\index{update@{update}!AccdSphericalGu@{Accd\-Spherical\-Gu}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Accd\-Spherical\-Gu\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdSphericalGu_a278cae9b07c99dd7398121a77fa069c9}
+calculate and set Upe every time with new radius r 
+
+Reimplemented from \hyperlink{classexternalRadiationGu_a730363f393f29aef9927e0bb84087116}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+43                                \{
+44   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+45   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+46   \textcolor{keywordtype}{double} temp\_upe = 0.0;
+47   \textcolor{keywordtype}{double} temp\_cf = 0.0;
+48   temp\_cf = 0.75*(((0.28*rext)/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get())+(1.0/(4.0*DSQR(Gamma)*DSQR(Gamma))));
+49   temp\_upe = (temp\_cf*Ldisk*DSQR(Gamma))/(3.0*M\_PI*DSQR(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get())*LIGHT\_SPEED);
+50   gsl\_vector\_set( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ), temp\_upe );
+51   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Upe"},gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) ) );
+52   set\_upe\_r( gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) ) );
+53   \hyperlink{classenergyDissProc_a7b51925f603e271657cab66afe822591}{flag\_upe\_r} = \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{AccdSphericalGu_8hpp}{Accd\-Spherical\-Gu.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/Accd\-Spherical\-Gu.\-cpp\end{DoxyCompactItemize}

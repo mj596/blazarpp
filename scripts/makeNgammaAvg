@@ -1,0 +1,134 @@
+#! /usr/bin/env python
+import os
+import sys
+import math
+import numpy as np
+
+DIR = sys.argv[1]
+OUT = os.listdir(DIR+'/out')
+CONF = os.listdir(DIR+'/conf')
+LOG = os.listdir(DIR+'/log')
+
+R0=[]
+SEARCH_FOR = ['accd', 'blr', 'dt', 'syn', 'ssc', 'ext1', 'ext2']
+FOUND = []
+for i in range(len(LOG)):
+    file = open( DIR+'/log/'+LOG[i] )
+    data=[]
+    for line in file.readlines():
+        for element in line.split():
+            data.append( element )
+    file.close()
+    for i in range(len(data)):
+        if data[i] == 'R0':
+            R0.append( data[i+2] )
+            break;
+
+file = open( DIR+'/log/'+LOG[0] )
+data=[]
+for line in file.readlines():
+    for element in line.split():
+        data.append( element )
+file.close()
+for i in range(len(data)):
+    if data[i] == 'id':
+        for item in SEARCH_FOR:
+            if data[i+2] == item:
+                FOUND.append( item )
+                
+ymin = 1.0e100
+ymax = 0.0
+for i in range(len(OUT)):
+    file = open( DIR+'/out/'+OUT[i]+'/Ngamma_Avg' )
+    data = []
+    for line in file.readlines():
+        split = line.split()
+        value = float(split[0])*float(split[0])*float(split[1])
+        if value < ymin:
+            ymin = value
+        if value > ymax:
+            ymax = value
+    file.close()
+
+ymax *= 1.2
+
+file = open( DIR+'/conf/'+CONF[0] )
+data = []
+for line in file.readlines():
+    for element in line.split():
+        data.append( element )
+file.close()
+for i in range(len(data)):
+    if data[i] == 'ELEP1':
+        p1 = float(data[i+1])
+    if data[i] == 'ELEP2':
+        p2 = float(data[i+1])
+
+def print_exp_func( p1, p2, file ):
+    for i in range (30,62,2):
+        file.write('fp1'+str(i)+'(x)=1e'+str(i)+'*x**('+str(-1.0*p1+2.0)+')\n')
+        file.write('fp2'+str(i)+'(x)=1e'+str(i)+'*x**('+str(-1.0*p2+2.0)+')\n')
+        file.write('fp3'+str(i)+'(x)=1e'+str(i)+'*x**('+str(-1.0*p2+3.0)+')\n')
+
+def print_exp_func_line( p1, p2, file ):
+    for i in range (30,62,2):
+        if i == 30:
+            file.write('fp1'+str(i)+'(x) w l lw 2 lt 4 lc rgb \"light-gray\" title \"s='+str(p1)+'\",\\\n ')
+            file.write('fp2'+str(i)+'(x) w l lw 2 lt 2 lc rgb \"light-gray\" title \"s='+str(p2)+'\",\\\n ')
+            file.write('fp3'+str(i)+'(x) w l lw 2 lt 6 lc rgb \"light-gray\" title \"s='+str(p2+1.0)+'\",\\\n ')
+        else:
+            file.write('fp1'+str(i)+'(x) w l lw 2 lt 4 lc rgb \"light-gray\" notitle, \\\n')
+            file.write('fp2'+str(i)+'(x) w l lw 2 lt 2 lc rgb \"light-gray\" notitle, \\\n')
+            file.write('fp3'+str(i)+'(x) w l lw 2 lt 6 lc rgb \"light-gray\" notitle, \\\n')
+
+OUTFILE = open( DIR+'/plotNgammaAvg.gp','w' )
+OUTFILE.write('# NgammaAvg vs r\n')
+OUTFILE.write('set logscale xy\n')
+OUTFILE.write('set key right top\n')
+OUTFILE.write('set key outside\n')
+OUTFILE.write('set border lw 2\n')
+OUTFILE.write('set grid\n')
+OUTFILE.write('set format y "10^{%L}"\n')
+OUTFILE.write('set yrange ['+str(ymin)+':'+str(ymax)+']\n')
+OUTFILE.write('set format x "10^{%L}"\n')
+OUTFILE.write('set xlabel \"{/Symbol g}\"\n')
+OUTFILE.write('set ylabel \"{/Symbol g}^2 N_{/Symbol g}\"\n')
+line = 'set title \"NgammaAvg vs r -'
+for i in FOUND:
+    line += ' '+i 
+line += '\"\n'
+OUTFILE.write(line)
+OUTFILE.write('set terminal postscript enhanced color\n')
+OUTFILE.write('set output \"NgammaAvg_vs_r.eps\"\n')
+
+def line_color( x ):
+    if x<1.0e13:
+        return 'black'
+    if x<1.0e14 and x>=1.0e13:
+        return 'red'
+    if x<1.0e15 and x>=1.0e14:
+        return 'blue'
+    if x<1.0e16 and x>=1.0e15:
+        return 'green'
+    if x<1.0e17 and x>=1.0e16:
+        return 'grey'
+    if x<1.0e18 and x>=1.0e17:
+        return 'brown'
+    if x<1.0e19 and x>=1.0e18:
+        return 'purple'
+    if x<1.0e20 and x>=1.0e19:
+        return 'light-blue'
+    if x>=1.0e20:
+        return 'light-red'
+
+print_exp_func(p1,p2,OUTFILE)
+
+OUTFILE.write('plot \\\n')
+print_exp_func_line(p1,p2,OUTFILE)
+for i in range(len(OUT)):
+    OUTFILE.write('\"./out/'+OUT[i]+'/Ngamma_Avg\" using ($1):($1**2*$2) w l lw 3 lc rgb \"'+str(line_color(float(R0[i])))+'\" title \"'+"%.1e" % float(R0[i])+'\"')
+    if i != len(OUT)-1:
+        OUTFILE.write(', \\\n')
+    else:
+        OUTFILE.write('\n')
+    

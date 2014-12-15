@@ -1,0 +1,126 @@
+\hypertarget{classexternalRadiation}{\section{external\-Radiation Class Reference}
+\label{classexternalRadiation}\index{external\-Radiation@{external\-Radiation}}
+}
+Inheritance diagram for external\-Radiation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classexternalRadiation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classexternalRadiation_af5a905e2a45845747dfcb1035ed69069}{{\bfseries external\-Radiation} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)}\label{classexternalRadiation_af5a905e2a45845747dfcb1035ed69069}
+
+\item 
+double \hyperlink{classexternalRadiation_af3011c765884717fac63035c51c4b0a2}{dotg} (double g)
+\item 
+void \hyperlink{classexternalRadiation_aa458ea6aefe596525520b06fd6065ffd}{update} ()
+\item 
+void \hyperlink{classexternalRadiation_a57048bff39c56bb1d9ec1e9c88d39323}{set\-Lpv} ()
+\item 
+\hypertarget{classexternalRadiation_a7ee57d513164aff07202d27b743406c9}{double {\bfseries calculate\-Lpv} (double v, double theta)}\label{classexternalRadiation_a7ee57d513164aff07202d27b743406c9}
+
+\item 
+void \hyperlink{classexternalRadiation_a8747348f3468165fca0c5547e207b5a9}{print\-Info} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classexternalRadiation_af3011c765884717fac63035c51c4b0a2}{\index{external\-Radiation@{external\-Radiation}!dotg@{dotg}}
+\index{dotg@{dotg}!externalRadiation@{external\-Radiation}}
+\subsubsection[{dotg}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-::dotg (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiation_af3011c765884717fac63035c51c4b0a2}
+get d gamma \textbackslash{} d t for particular process 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_a8074e0db5d859a8815e7136c2fc41b46}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+72                                          \{
+73   \textcolor{keywordtype}{double} b, sum, val = 0.0;
+74   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+75       b = 4.0*get\_ep(i)*g;
+76       \textcolor{keywordflow}{if}( b > 1.0 ) \{ \hyperlink{classenergyDissProc_a69ea4be814273e47e69e31e593c3a250}{set\_KN\_info}( g ); \}
+77       sum += bazinga::IntCor(i,N)*get\_ep(i)*get\_upe(i)*inverseCompton::fKN(b,KN); \}
+78 
+79   val = \hyperlink{classenergyDissProc_a270fdc20de5c26f9cc499f28dd32fb7b}{dLogE}*sum;
+80   set\_upe\_r( val );
+81   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiation_a8747348f3468165fca0c5547e207b5a9}{\index{external\-Radiation@{external\-Radiation}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!externalRadiation@{external\-Radiation}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiation_a8747348f3468165fca0c5547e207b5a9}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+57                                    \{
+58   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+59   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+60   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius R"},extr,\textcolor{stringliteral}{"cm"});
+61   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Index kERC"},extk);
+62   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"(in electrons co-moving frame)"});
+63   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg energy"},exte,\textcolor{stringliteral}{"eV"});
+64   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Energy density"},extu,\textcolor{stringliteral}{"erg cm-3"}); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiation_a57048bff39c56bb1d9ec1e9c88d39323}{\index{external\-Radiation@{external\-Radiation}!set\-Lpv@{set\-Lpv}}
+\index{set\-Lpv@{set\-Lpv}!externalRadiation@{external\-Radiation}}
+\subsubsection[{set\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-::set\-Lpv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiation_a57048bff39c56bb1d9ec1e9c88d39323}
+set intrinsic luminosities 
+
+Reimplemented from \hyperlink{classenergyDissProc_a93a39df53f30801f9f057cd55c05485d}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+83                                 \{
+84   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_Lpv( i, calculateLpv( get\_vp(i), thetaObs ) ); \}
+85 \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiation_aa458ea6aefe596525520b06fd6065ffd}{\index{external\-Radiation@{external\-Radiation}!update@{update}}
+\index{update@{update}!externalRadiation@{external\-Radiation}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiation_aa458ea6aefe596525520b06fd6065ffd}
+update all process internal parameters to current radius 
+
+Reimplemented from \hyperlink{classenergyDissProc_a6033524ea3d0fe38056bd74622f6c4ad}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+66                                  \{
+67   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+68     ksi = get\_ep(i)/TempX;
+69     set\_upe( i, normA*pow(ksi,3)/(exp(ksi)-1.0)/(1.0e0+pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()/extr,extk) ) ); \}
+70   \hyperlink{classenergyDissProc_a7b51925f603e271657cab66afe822591}{flag\_upe\_r} = \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{externalRadiation_8hpp}{external\-Radiation.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{externalRadiation_8cpp}{external\-Radiation.\-cpp}\end{DoxyCompactItemize}

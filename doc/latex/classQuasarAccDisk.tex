@@ -1,0 +1,464 @@
+\hypertarget{classQuasarAccDisk}{\section{Quasar\-Acc\-Disk Class Reference}
+\label{classQuasarAccDisk}\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}}
+}
+
+
+{\ttfamily \#include $<$Quasar\-Acc\-Disk.\-hpp$>$}
+
+Inheritance diagram for Quasar\-Acc\-Disk\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQuasarAccDisk}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class used to process quasar radiation template and add it to calculated jet radiation; at the moment quasar radiation is not stricty calculated but a radius-\/loud quasar radiation template from Elvis et al. (1994) is used. Class has some basic methods to calculate standard multitemperature Shakura-\/\-Sunyayev disk radiation but it is not used currently as it need much, much detailed study and modelling of dusty torus, coronae etc \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQuasarAccDisk_af3ebbefab21b01d1a4d86199fb2f643c}{Quasar\-Acc\-Disk} (scfgp $\ast$\-\_\-cfg, std\-::string \-\_\-id)
+\item 
+\hyperlink{classQuasarAccDisk_ab562cc81ade45ea51cf3ab27f7885d07}{$\sim$\-Quasar\-Acc\-Disk} ()
+\item 
+void \hyperlink{classQuasarAccDisk_aab9e9fbad17ba40931219473918896a7}{print\-Info} ()
+\item 
+double \hyperlink{classQuasarAccDisk_ac4abec686db321e73e0186ae8c6cd16c}{get\-Temperature} (double \-\_\-r)
+\item 
+double \hyperlink{classQuasarAccDisk_a8a29f029fd2e38784bce7dbe8f9533d2}{calculate\-Lv} (double v, int radius\-\_\-index)
+\item 
+void \hyperlink{classQuasarAccDisk_a60c8439e66b7a9933e35eeb6fe12dd89}{calculate\-Luminosity} ()
+\item 
+void \hyperlink{classQuasarAccDisk_ad565b960520076ca8e82d10286e05aef}{set\-Radius} ()
+\item 
+void \hyperlink{classQuasarAccDisk_a8f1f855a229a0247e3b4af731b9d7b29}{set\-Energetics} ()
+\item 
+int \hyperlink{classQuasarAccDisk_a8e81488ad8604d0b4b1ebb904a5830da}{read\-Template} ()
+\item 
+void \hyperlink{classQuasarAccDisk_a632f415a0df6afd015f27c8ae447129b}{scale\-Template} ()
+\item 
+int \hyperlink{classQuasarAccDisk_a64ce6d4ea6be61e97b9bc5c1a87398e5}{save\-Template} ()
+\item 
+void \hyperlink{classQuasarAccDisk_a88d65d7d654293daedabbb0ecbd81d72}{allocate\-Lv} ()
+\item 
+\hypertarget{classQuasarAccDisk_a5369e43384d98b527114e81412445b56}{void {\bfseries free\-Lv} ()}\label{classQuasarAccDisk_a5369e43384d98b527114e81412445b56}
+
+\item 
+\hypertarget{classQuasarAccDisk_ac9ad8e0fd51bfa2fa8fdd6140e4f1830}{void {\bfseries allocate\-Lv\-Template} ()}\label{classQuasarAccDisk_ac9ad8e0fd51bfa2fa8fdd6140e4f1830}
+
+\item 
+\hypertarget{classQuasarAccDisk_a43bf4ee038beb51661aede7e8bea452a}{void {\bfseries free\-Lv\-Template} ()}\label{classQuasarAccDisk_a43bf4ee038beb51661aede7e8bea452a}
+
+\item 
+\hypertarget{classQuasarAccDisk_a9bd872ab0f30ba940185a801174d0ee4}{void {\bfseries set\-\_\-v} (int i, double val)}\label{classQuasarAccDisk_a9bd872ab0f30ba940185a801174d0ee4}
+
+\item 
+\hypertarget{classQuasarAccDisk_a0fc9028abafdf012d4f0edb99f9624db}{void {\bfseries set\-\_\-\-Lv} (int i, double val)}\label{classQuasarAccDisk_a0fc9028abafdf012d4f0edb99f9624db}
+
+\item 
+\hypertarget{classQuasarAccDisk_a4384e3fbeae13417a9ad69b6fed5a609}{int {\bfseries get\-N} ()}\label{classQuasarAccDisk_a4384e3fbeae13417a9ad69b6fed5a609}
+
+\item 
+\hypertarget{classQuasarAccDisk_a7dfc8b822bc5f71a9d481a6467edc466}{gsl\-\_\-vector $\ast$ {\bfseries get\-\_\-v} ()}\label{classQuasarAccDisk_a7dfc8b822bc5f71a9d481a6467edc466}
+
+\item 
+\hypertarget{classQuasarAccDisk_adc29e040d3f5f4362379a71f584d8186}{gsl\-\_\-vector $\ast$ {\bfseries get\-\_\-\-Lv} ()}\label{classQuasarAccDisk_adc29e040d3f5f4362379a71f584d8186}
+
+\item 
+\hypertarget{classQuasarAccDisk_a7adca85d6b441a5f911ffd395a0ac179}{int {\bfseries get\-\_\-save\-\_\-\-Lr} ()}\label{classQuasarAccDisk_a7adca85d6b441a5f911ffd395a0ac179}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+gsl\-\_\-vector $\ast$ \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{v\-Template}
+\item 
+\hypertarget{classQuasarAccDisk_a85f88e9936d636004014fa3893de6abe}{gsl\-\_\-vector $\ast$ {\bfseries Lv\-Template}}\label{classQuasarAccDisk_a85f88e9936d636004014fa3893de6abe}
+
+\item 
+\hyperlink{classlogGeometry}{log\-Geometry} $\ast$ \hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQuasarAccDisk_af3ebbefab21b01d1a4d86199fb2f643c}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}}
+\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{Quasar\-Acc\-Disk}]{\setlength{\rightskip}{0pt plus 5cm}Quasar\-Acc\-Disk\-::\-Quasar\-Acc\-Disk (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_af3ebbefab21b01d1a4d86199fb2f643c}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em scfgp} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+8                                                          : \hyperlink{classbaseClass}{baseClass}( \_cfg, NULL, \_id ) \{
+9   \textcolor{comment}{/* requested parameters */}
+10   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mBH"},1.0,&mBH);
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mDot"},1.0,&mDot);
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eDisk"},0.1,&eDisk);
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"} + \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id}, 200, &N );
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"R1"}, 0.0, &R1 );
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"R2"}, 0.0, &R2 );
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"TemplateFilename"}, \textcolor{stringliteral}{"dat/elvisRL.dat"}, &templateFilename );
+17 
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"SaveLr"}, 0, &save\_Lr);
+19 
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+21 
+22   \hyperlink{classQuasarAccDisk_a8f1f855a229a0247e3b4af731b9d7b29}{setEnergetics}( );
+23 
+24   \textcolor{keywordflow}{if}( R1 == 0.0 || R2 == 0.0 ) \{ \hyperlink{classQuasarAccDisk_ad565b960520076ca8e82d10286e05aef}{setRadius}( ); \}
+25 
+26   vMin = 1.0e12;
+27   vMax = 1.0e18;
+28 
+29   numLines = 0;
+30 
+31   \hyperlink{classQuasarAccDisk_a88d65d7d654293daedabbb0ecbd81d72}{allocateLv}( );
+32 
+33   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<N;i++ ) \{ set\_v( i, vMin*pow( vMax/vMin,(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+34   \hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R} = \textcolor{keyword}{new} \hyperlink{classlogGeometry}{logGeometry}( R1, R2, 1000 );
+35 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_ab562cc81ade45ea51cf3ab27f7885d07}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!$\sim$\-Quasar\-Acc\-Disk@{$\sim$\-Quasar\-Acc\-Disk}}
+\index{$\sim$\-Quasar\-Acc\-Disk@{$\sim$\-Quasar\-Acc\-Disk}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{$\sim$\-Quasar\-Acc\-Disk}]{\setlength{\rightskip}{0pt plus 5cm}Quasar\-Acc\-Disk\-::$\sim$\-Quasar\-Acc\-Disk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_ab562cc81ade45ea51cf3ab27f7885d07}
+destructor 
+\begin{DoxyCode}
+37                                \{
+38   freeLv( );
+39   freeLvTemplate( );
+40 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQuasarAccDisk_a88d65d7d654293daedabbb0ecbd81d72}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!allocate\-Lv@{allocate\-Lv}}
+\index{allocate\-Lv@{allocate\-Lv}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{allocate\-Lv}]{\setlength{\rightskip}{0pt plus 5cm}void Quasar\-Acc\-Disk\-::allocate\-Lv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a88d65d7d654293daedabbb0ecbd81d72}
+methods to allocate and free memory 
+\begin{DoxyCode}
+173                                 \{
+174   v = gsl\_vector\_alloc( N );
+175   Lv = gsl\_vector\_alloc( N );
+176   bazinga::print\_GSLVector\_allocated\_memory( \textcolor{keywordtype}{id}, v );
+177   bazinga::print\_GSLVector\_allocated\_memory( \textcolor{keywordtype}{id}, Lv );
+178   gsl\_vector\_set\_zero( v );
+179   gsl\_vector\_set\_zero( Lv ); \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_a60c8439e66b7a9933e35eeb6fe12dd89}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!calculate\-Luminosity@{calculate\-Luminosity}}
+\index{calculate\-Luminosity@{calculate\-Luminosity}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{calculate\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void Quasar\-Acc\-Disk\-::calculate\-Luminosity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a60c8439e66b7a9933e35eeb6fe12dd89}
+calculate a whole disk luminosity 
+\begin{DoxyCode}
+197                                          \{
+198   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Calculating luminosity."});
+199   gsl\_vector* tempLv = gsl\_vector\_alloc( N );
+200 
+201   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->getMaxIndex();i++ ) \{
+202     \hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R} -> update( i );
+203     gsl\_vector\_set\_zero( tempLv );
+204 
+205     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0;j<N;j++ ) \{
+206       \textcolor{keywordflow}{if}( save\_Lr ) \{
+207     gsl\_vector\_set( tempLv, j, \hyperlink{classQuasarAccDisk_a8a29f029fd2e38784bce7dbe8f9533d2}{calculateLv}( gsl\_vector\_get(v,j), i ) ); \}
+208       gsl\_vector\_set( Lv, j, gsl\_vector\_get( Lv, j ) + \hyperlink{classQuasarAccDisk_a8a29f029fd2e38784bce7dbe8f9533d2}{calculateLv}( gsl\_vector\_get(v,j), i ) );
+209     \}
+210 
+211     \textcolor{keywordflow}{if}( save\_Lr ) \{
+212       std::string type = \textcolor{stringliteral}{"Lv\_"};
+213       type += this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+214       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving QLuminosity."},\hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->get( )/\hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->getR0( ));
+215       bazinga::save\_GSLVector( type, v, tempLv, \hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->get( )/\hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->getR0( ), \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"})
+       ); \}
+216   \}
+217 
+218   gsl\_vector\_free( tempLv );
+219   tempLv = NULL;
+220 
+221   std::string type = \textcolor{stringliteral}{"Lv\_"};
+222   type += this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+223   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving QLuminosity."});
+224   bazinga::save\_GSLVector( type, v, Lv, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) );
+225 
+226   \textcolor{keywordtype}{double} integral = 0.0;
+227   tempLv = gsl\_vector\_alloc( N );
+228   gsl\_vector\_set\_zero( tempLv );
+229   gsl\_vector\_memcpy( tempLv, Lv );
+230   gsl\_vector\_mul( tempLv, v );
+231   integral = loglogIntegrate( v, tempLv );
+232   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Acc Disk Lbol"}, integral );    
+233 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_a8a29f029fd2e38784bce7dbe8f9533d2}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!calculate\-Lv@{calculate\-Lv}}
+\index{calculate\-Lv@{calculate\-Lv}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{calculate\-Lv}]{\setlength{\rightskip}{0pt plus 5cm}double Quasar\-Acc\-Disk\-::calculate\-Lv (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{int}]{radius\-\_\-index}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a8a29f029fd2e38784bce7dbe8f9533d2}
+calculate disk luminosity 
+\begin{DoxyParams}{Parameters}
+{\em frequency} & v \\
+\hline
+{\em radius\-\_\-index} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+235                                                    \{
+236   \textcolor{keywordtype}{double} val = ( 16.0*pow(M\_PI,2)*PLANCK\_H*cos(0.0)*pow(v,3) )/( pow(LIGHT\_SPEED,2) );
+237   \textcolor{keywordflow}{return} val*( \hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->get(i)*\hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->getDr(i) )/( exp( (PLANCK\_H*v)/(K\_BOLTZMAN*
+      \hyperlink{classQuasarAccDisk_ac4abec686db321e73e0186ae8c6cd16c}{getTemperature}(\hyperlink{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{R}->get(i)) ) ) - 1.0 );
+238 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_ac4abec686db321e73e0186ae8c6cd16c}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!get\-Temperature@{get\-Temperature}}
+\index{get\-Temperature@{get\-Temperature}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{get\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}double Quasar\-Acc\-Disk\-::get\-Temperature (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_ac4abec686db321e73e0186ae8c6cd16c}
+get B\-B temperature at distance r (S\-S disk) 
+\begin{DoxyParams}{Parameters}
+{\em radius} & r \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+168                                                 \{
+169   \textcolor{keywordtype}{double} Risco = 6.0*Rg;
+170   \textcolor{keywordflow}{return} pow( ( 3.0*G\_CONST*1.3e56*pow(mBH,2)*MSUN*mDot )*( 1.0-sqrt(Risco/\_r) )/( 8.0*M\_PI*pow(\_r, 3)*
+      SIGMA\_SB*pow(LIGHT\_SPEED,2) ), 0.25 );
+171 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_aab9e9fbad17ba40931219473918896a7}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Quasar\-Acc\-Disk\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQuasarAccDisk_aab9e9fbad17ba40931219473918896a7}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}{base\-Class}.
+
+
+\begin{DoxyCode}
+154                                \{
+155   bazinga::info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Info"} );
+156   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"N"}, N );
+157   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Gravitational radius"}, Rg, \textcolor{stringliteral}{"cm"} );
+158   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"R1"}, R1, \textcolor{stringliteral}{"cm"} );
+159   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"R2"}, R2, \textcolor{stringliteral}{"cm"} );
+160   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Save luminosity"}, save\_Lr );
+161   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"BH mass"},mBH);
+162   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"eta disk"},eDisk);
+163   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"m dot"},mDot);
+164   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Eddington luminosity"},Ledd,\textcolor{stringliteral}{"erg/s"});
+165   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Accretion disk luminosity"}, Ldisk, \textcolor{stringliteral}{"erg/s"});
+166 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_a8e81488ad8604d0b4b1ebb904a5830da}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!read\-Template@{read\-Template}}
+\index{read\-Template@{read\-Template}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{read\-Template}]{\setlength{\rightskip}{0pt plus 5cm}int Quasar\-Acc\-Disk\-::read\-Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a8e81488ad8604d0b4b1ebb904a5830da}
+read quasar radiation template \begin{DoxyReturn}{Returns}
+1 if success; 0 otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+115                                 \{
+116   std::ifstream input( templateFilename.c\_str() );
+117   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Reading quasar template data from file "},templateFilename.c\_str());
+118      \textcolor{keywordflow}{if}( input == NULL )
+119     \{
+120       bazinga::error(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Opening file:"},templateFilename);
+121       \textcolor{keywordflow}{return} 1;
+122     \}
+123       \textcolor{keywordflow}{else}
+124     \{
+125       \textcolor{comment}{// check how many lines there are}
+126       std::string unused;
+127       \textcolor{keywordflow}{while} ( std::getline(input, unused) )
+128         ++numLines;
+129       
+130       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Found"},numLines,\textcolor{stringliteral}{"lines"});
+131       
+132       \textcolor{comment}{// allocate space for vectors}
+133       allocateLvTemplate( );
+134 
+135       \textcolor{comment}{// read data from template}
+136       input.clear();
+137       input.seekg(0, std::ios::beg);
+138       \textcolor{keywordtype}{double} x, y;
+139       \textcolor{keywordtype}{int} i = 0; \textcolor{comment}{// gsl counter}
+140       \textcolor{keywordflow}{while}( std::getline(input, unused) ) \{
+141       std::istringstream ss(unused);
+142       std::istream\_iterator<std::string> begin(ss), end;
+143       
+144       \textcolor{comment}{//putting all the tokens in the vector}
+145       std::vector<std::string> arrayTokens(begin, end); 
+146       
+147       gsl\_vector\_set( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i, atof( arrayTokens[0].c\_str() ) );
+148       gsl\_vector\_set( LvTemplate, i, atof( arrayTokens[1].c\_str() ) );           
+149       ++i; \}
+150       \textcolor{keywordflow}{return} 0;
+151     \}
+152 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_a64ce6d4ea6be61e97b9bc5c1a87398e5}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!save\-Template@{save\-Template}}
+\index{save\-Template@{save\-Template}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{save\-Template}]{\setlength{\rightskip}{0pt plus 5cm}int Quasar\-Acc\-Disk\-::save\-Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a64ce6d4ea6be61e97b9bc5c1a87398e5}
+save scaled quasar radiation template 
+\begin{DoxyCode}
+101                                  \{
+102   std::string type = \textcolor{stringliteral}{"LvTemplate\_"}+this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+103   bazinga::info(this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ),\textcolor{stringliteral}{"Saving luminosity."});
+104 
+105   gsl\_vector* LvTemplateTemp = gsl\_vector\_alloc( numLines );
+106   gsl\_vector\_set\_zero( LvTemplateTemp );
+107   gsl\_vector\_memcpy( LvTemplateTemp, LvTemplate );
+108   gsl\_vector\_div( LvTemplateTemp, \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate} );
+109     
+110   bazinga::save\_GSLVector( type, this->\hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, LvTemplateTemp, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output
+      "}) );
+111   gsl\_vector\_free( LvTemplateTemp );
+112   LvTemplateTemp = NULL;
+113  \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_a632f415a0df6afd015f27c8ae447129b}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!scale\-Template@{scale\-Template}}
+\index{scale\-Template@{scale\-Template}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{scale\-Template}]{\setlength{\rightskip}{0pt plus 5cm}void Quasar\-Acc\-Disk\-::scale\-Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a632f415a0df6afd015f27c8ae447129b}
+scale quasar radiation template to match set accretion disk efficiency 
+\begin{DoxyCode}
+49                                    \{
+50   \textcolor{keywordtype}{double} integral = loglogIntegrate( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, LvTemplate );
+51   \textcolor{keywordtype}{double} correctionFactor = Ldisk/integral;
+52   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Template correction factor"}, correctionFactor );
+53   gsl\_vector\_scale( LvTemplate, correctionFactor );
+54   integral = loglogIntegrate( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, LvTemplate );
+55   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"Template Lbol after correction"}, integral );
+56   
+57   \textcolor{comment}{// Find peak in IR, Optical and X-ray}
+58   \textcolor{keywordtype}{double} IRmin = 1.0e10;
+59   \textcolor{keywordtype}{double} IRmax = 2.0e14;
+60   \textcolor{keywordtype}{double} OPTmin = IRmax;
+61   \textcolor{keywordtype}{double} OPTmax = 7.0e16;
+62   \textcolor{keywordtype}{double} Xmin = OPTmax;
+63   \textcolor{keywordtype}{double} Xmax = 1.0e20;
+64 
+65   \textcolor{keywordtype}{double} vIRpeak = 0.0;
+66   \textcolor{keywordtype}{double} vOPTpeak = 0.0;
+67   \textcolor{keywordtype}{double} vXpeak = 0.0;
+68 
+69   \textcolor{keywordtype}{double} vLvIRpeak = 0.0;
+70   \textcolor{keywordtype}{double} vLvOPTpeak = 0.0;
+71   \textcolor{keywordtype}{double} vLvXpeak = 0.0;
+72   
+73   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}->size-1; ++i ) \{
+74     \textcolor{keywordflow}{if}( gsl\_vector\_get( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ) >= IRmin && gsl\_vector\_get( 
+      \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ) <= IRmax )
+75       \textcolor{keywordflow}{if}( gsl\_vector\_get( LvTemplate, i ) > vLvIRpeak ) \{
+76     vLvIRpeak = gsl\_vector\_get( LvTemplate, i );
+77     vIRpeak = gsl\_vector\_get( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ); \}
+78   \}
+79   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"IR template v peak"}, vIRpeak );
+80   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"IR template vLv peak"}, vLvIRpeak );
+81 
+82   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}->size-1; ++i ) \{
+83     \textcolor{keywordflow}{if}( gsl\_vector\_get( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ) >= OPTmin && gsl\_vector\_get( 
+      \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ) <= OPTmax )
+84       \textcolor{keywordflow}{if}( gsl\_vector\_get( LvTemplate, i ) > vLvOPTpeak ) \{
+85     vLvOPTpeak = gsl\_vector\_get( LvTemplate, i );
+86     vOPTpeak = gsl\_vector\_get( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ); \}
+87   \}
+88   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"OPT template v peak"}, vOPTpeak );
+89   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"OPT template vLv peak"}, vLvOPTpeak );
+90 
+91   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}->size-1; ++i ) \{
+92     \textcolor{keywordflow}{if}( gsl\_vector\_get( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ) >= Xmin && gsl\_vector\_get( 
+      \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ) <= Xmax )
+93       \textcolor{keywordflow}{if}( gsl\_vector\_get( LvTemplate, i ) > vLvXpeak ) \{
+94     vLvXpeak = gsl\_vector\_get( LvTemplate, i );
+95     vXpeak = gsl\_vector\_get( \hyperlink{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{vTemplate}, i ); \}
+96   \}
+97   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"X template v peak"}, vXpeak );
+98   bazinga::print\_info( \textcolor{keywordtype}{id}, \textcolor{stringliteral}{"X template vLv peak"}, vLvXpeak );
+99 \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_a8f1f855a229a0247e3b4af731b9d7b29}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!set\-Energetics@{set\-Energetics}}
+\index{set\-Energetics@{set\-Energetics}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{set\-Energetics}]{\setlength{\rightskip}{0pt plus 5cm}void Quasar\-Acc\-Disk\-::set\-Energetics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_a8f1f855a229a0247e3b4af731b9d7b29}
+set energetics for further calculations 
+\begin{DoxyCode}
+247                                    \{
+248    Ledd = 1.3e47*mBH;
+249    Ldisk = eDisk*mDot*Ledd; \}
+\end{DoxyCode}
+\hypertarget{classQuasarAccDisk_ad565b960520076ca8e82d10286e05aef}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Quasar\-Acc\-Disk\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuasarAccDisk_ad565b960520076ca8e82d10286e05aef}
+set accretion disk radial boundaries 
+\begin{DoxyCode}
+240                                \{
+241   \textcolor{comment}{/* gravitational radius */}
+242   Rg = (2.0*G\_CONST*mBH*1.0e9*MSUN)/pow(LIGHT\_SPEED,2);
+243   R1 = 6.0*Rg;
+244   \textcolor{keywordtype}{double} R\_sub = 1.6e-5*sqrt( Ldisk );
+245   R2 = R\_sub; \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!R@{R}}
+\index{R@{R}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf log\-Geometry}$\ast$ Quasar\-Acc\-Disk\-::\-R}}\label{classQuasarAccDisk_a470359d2a40c176d5eef36a7bf2fc5bf}
+\hyperlink{classlogGeometry}{log\-Geometry} to store log-\/spaced data for loglog-\/interpolation \hypertarget{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}{\index{Quasar\-Acc\-Disk@{Quasar\-Acc\-Disk}!v\-Template@{v\-Template}}
+\index{v\-Template@{v\-Template}!QuasarAccDisk@{Quasar\-Acc\-Disk}}
+\subsubsection[{v\-Template}]{\setlength{\rightskip}{0pt plus 5cm}gsl\-\_\-vector$\ast$ Quasar\-Acc\-Disk\-::v\-Template}}\label{classQuasarAccDisk_a9ec136403f3df7f3a2582968a28fdfcb}
+vectors to store data 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{QuasarAccDisk_8hpp}{Quasar\-Acc\-Disk.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{QuasarAccDisk_8cpp}{Quasar\-Acc\-Disk.\-cpp}\end{DoxyCompactItemize}

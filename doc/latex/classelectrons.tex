@@ -1,0 +1,670 @@
+\hypertarget{classelectrons}{\section{electrons Class Reference}
+\label{classelectrons}\index{electrons@{electrons}}
+}
+
+
+{\ttfamily \#include $<$electrons.\-hpp$>$}
+
+Inheritance diagram for electrons\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classelectrons}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class to hold all detaild for electrons in the jet (all calculated in jet co-\/moving frame); it is responsible for calculating energy losses, solving propagation equation, electron energy spectrum etc. \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelectrons_a5532b5fbcb8b735e50116227aa8f2ebc}{electrons} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, std\-::string \-\_\-id)
+\item 
+\hyperlink{classelectrons_a146d787f88697a2ca2acaa245055d63b}{$\sim$electrons} ()
+\item 
+double \hyperlink{classelectrons_aefdd16f24a2f35cef7f5d01930da00ee}{t\-Q} (double g, double \-\_\-radius)
+\item 
+double \hyperlink{classelectrons_aa47f9474892a92a011f952731bf1cdeb}{gauss} (double \-\_\-radius)
+\item 
+double \hyperlink{classelectrons_aa9fa0208f23e0a28f50652606a7f7481}{gaussmod} (double \-\_\-radius)
+\item 
+double \hyperlink{classelectrons_a75b123e6b9d2ff587bee4a4be4fa3bbe}{tri} (double \-\_\-radius)
+\item 
+double \hyperlink{classelectrons_ae87edc2ea2e2ce2050fa554da90f2852}{inject} ()
+\item 
+void \hyperlink{classelectrons_a4e45b3bf040e39dad560d3b7e6572c90}{evolve} ()
+\item 
+double \hyperlink{classelectrons_afe0e0014e58c500a9bcf62357f781263}{dgdr} (double g)
+\item 
+double \hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{get\-Gamma} (int i)
+\item 
+double \hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{get\-Ngamma} (int i)
+\item 
+void \hyperlink{classelectrons_a41db9252c408dd206342f0d23c8edb96}{add\-En\-Diss\-Proc} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classelectrons_a771ec6a114df4f41d09273f1c57db07d}{list\-En\-Diss\-Proc} ()
+\item 
+void \hyperlink{classelectrons_ace657f207a4f68058b2606ff2772f3c5}{print\-Info} ()
+\item 
+void \hyperlink{classelectrons_a6e630bdecdc411683d02bbcf8aa82a56}{print\-Cooling\-Info} (double g)
+\item 
+void \hyperlink{classelectrons_af5e619dff4d9716328664a9625b6e8dd}{avg\-Ngamma} ()
+\item 
+void \hyperlink{classelectrons_ad94a7b6cc694ef0e70f7efaadef8463d}{set\-Injection\-Parameters} ()
+\item 
+void \hyperlink{classelectrons_aac9514f742569f37097d13b3ea04239a}{set\-Energetics} ()
+\item 
+\hypertarget{classelectrons_ad94d84888078393333deedf0fbdad3dd}{double {\bfseries get\-Gamma\-Min} ()}\label{classelectrons_ad94d84888078393333deedf0fbdad3dd}
+
+\item 
+\hypertarget{classelectrons_aa5dfd8ba29a4bc1b7de5bf7bf64d69e3}{double {\bfseries get\-Gamma\-Max} ()}\label{classelectrons_aa5dfd8ba29a4bc1b7de5bf7bf64d69e3}
+
+\item 
+double \hyperlink{classelectrons_a22aacb80ac20a46f471430db72c95b71}{beta} (double x)
+\item 
+double \hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getd\-Log\-Gamma} ()
+\item 
+int \hyperlink{classelectrons_a18a3cd4a19f833931632da1f9800141f}{if\-Evol} ()
+\item 
+void \hyperlink{classelectrons_ab509cb088f16247eec3a15b9c35bc23e}{save\-Injection} ()
+\item 
+void \hyperlink{classelectrons_ae1bc246f7783a9b65bd1f1678bfe5cd2}{save\-Ngamma} ()
+\item 
+void \hyperlink{classelectrons_aac83390f974136b1bc365b36ef460723}{save\-Ngamma\-Avg} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ $>$ \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{En\-Diss\-Proc}
+\item 
+gsl\-\_\-vector $\ast$ \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}
+\item 
+\hypertarget{classelectrons_ac2a11c35da2adfdf2f9ad915be55ca33}{gsl\-\_\-vector $\ast$ {\bfseries Ngamma}}\label{classelectrons_ac2a11c35da2adfdf2f9ad915be55ca33}
+
+\item 
+\hypertarget{classelectrons_aaea12887510456458b7a318edf62d4f0}{gsl\-\_\-vector $\ast$ {\bfseries Ngamma\-Avg}}\label{classelectrons_aaea12887510456458b7a318edf62d4f0}
+
+\item 
+gsl\-\_\-vector $\ast$ \hyperlink{classelectrons_a5d1c72cf1ee40f0e918fbb2d9d13393b}{A}
+\item 
+\hypertarget{classelectrons_a7ec0598cb033a2e77c2af1c5ef852658}{gsl\-\_\-vector $\ast$ {\bfseries B}}\label{classelectrons_a7ec0598cb033a2e77c2af1c5ef852658}
+
+\item 
+\hypertarget{classelectrons_ace04a2cb2a5ce764d53bb4a99461e709}{gsl\-\_\-vector $\ast$ {\bfseries C}}\label{classelectrons_ace04a2cb2a5ce764d53bb4a99461e709}
+
+\item 
+\hypertarget{classelectrons_ade5ba73efe54cddda0550d8de323e91d}{gsl\-\_\-vector $\ast$ {\bfseries S}}\label{classelectrons_ade5ba73efe54cddda0550d8de323e91d}
+
+\item 
+\hypertarget{classelectrons_afcef79a408b1a8f956573b85de8fb4ba}{gsl\-\_\-vector $\ast$ {\bfseries U}}\label{classelectrons_afcef79a408b1a8f956573b85de8fb4ba}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classelectrons_a5532b5fbcb8b735e50116227aa8f2ebc}{\index{electrons@{electrons}!electrons@{electrons}}
+\index{electrons@{electrons}!electrons@{electrons}}
+\subsubsection[{electrons}]{\setlength{\rightskip}{0pt plus 5cm}electrons\-::electrons (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a5532b5fbcb8b735e50116227aa8f2ebc}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em scfgp} & \\
+\hline
+{\em \hyperlink{classjetGeometry}{jet\-Geometry}} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+10                                                                   : \hyperlink{classbaseClass}{baseClass}(\_cfg, \_r, \_id ) \{
+11   \textcolor{comment}{/* requested parameters */}
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"}+\hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id},200,&\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{stringliteral}{"eleModel"},\textcolor{stringliteral}{"blob"},&eleModel);
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{stringliteral}{"injModel"},\textcolor{stringliteral}{"REC"},&injModel);
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{stringliteral}{"lumModel"},\textcolor{stringliteral}{"blob"},&lumModel);
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"p1"},2.0,&p1);
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"p2"},2.0,&p2);
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"gammaMin"},1.0,&gammaMin);
+19   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"gammaBreak"},0.0,&gammaBreak);
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"gammaMax"},1.0e2,&gammaMax);
+21   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"injRm"},2.0e17,&injRm);
+22   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"injSigma"},0.6,&injSigma);
+23   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eleK"},0.0,&eleK);
+24   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eEle"},0.1,&eEle);
+25   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eDiss"},0.1,&eDiss);
+26   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"},10.0,&Gamma);
+27   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"NeNp"},0.1,&NeNp);
+28   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mBH"},1.0,&mBH);
+29   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eDisk"},0.1,&eDisk);
+30   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mDot"},1.0,&mDot);
+31   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eJet"},0.3,&eJet);
+32   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"sigmaB"},0.1,&sigmaB);
+33   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"evol"},0,&evol);
+34   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"saveElectrons"},1,&saveElectrons);
+35   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"saveElectronsAvg"},1,&saveElectronsAvg);
+36 
+37   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+38 
+39   \textcolor{comment}{/* check if spectral indices are OK; for steady model p1 must be lower than 1 and p2 must be greater than
+       2; otherwise calculation of break electron energy will fail;}
+40 \textcolor{comment}{     for blob model it is all good to set any indices you like */}
+41   \textcolor{keywordflow}{if}( (p1 > 1.0 || p2 < 2.0) && eleModel == \textcolor{stringliteral}{"steady"} && gammaBreak == 0.0 ) \{
+42     bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Can't use steady model with p1>1.0 or p2<2.0!"});
+43     bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"To overwrite that you can set gammaBreak explicity."});
+44     bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Quit."});
+45     exit(0); \}
+46 
+47   allocateGamma( );
+48   allocateTridiag( );
+49   
+50   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<=\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}+1;i++ ) \{ gsl\_vector\_set( \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, i, pow( gammaMax,(\textcolor{keywordtype}{double})i/(\textcolor{keywordtype}{double})
+      \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} )); \}
+51 
+52   \hyperlink{classelectrons_aac9514f742569f37097d13b3ea04239a}{setEnergetics}( );
+53   \hyperlink{classelectrons_ad94a7b6cc694ef0e70f7efaadef8463d}{setInjectionParameters}( );
+54   dLogGamma = log( gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},1)/gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},0) ); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a146d787f88697a2ca2acaa245055d63b}{\index{electrons@{electrons}!$\sim$electrons@{$\sim$electrons}}
+\index{$\sim$electrons@{$\sim$electrons}!electrons@{electrons}}
+\subsubsection[{$\sim$electrons}]{\setlength{\rightskip}{0pt plus 5cm}electrons\-::$\sim$electrons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a146d787f88697a2ca2acaa245055d63b}
+destructor 
+\begin{DoxyCode}
+140                        \{
+141   freeGamma( );
+142   freeTridiag( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classelectrons_a41db9252c408dd206342f0d23c8edb96}{\index{electrons@{electrons}!add\-En\-Diss\-Proc@{add\-En\-Diss\-Proc}}
+\index{add\-En\-Diss\-Proc@{add\-En\-Diss\-Proc}!electrons@{electrons}}
+\subsubsection[{add\-En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::add\-En\-Diss\-Proc (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a41db9252c408dd206342f0d23c8edb96}
+add process to energy dissipation 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+234 \{ \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.push\_back( \_obj ); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_af5e619dff4d9716328664a9625b6e8dd}{\index{electrons@{electrons}!avg\-Ngamma@{avg\-Ngamma}}
+\index{avg\-Ngamma@{avg\-Ngamma}!electrons@{electrons}}
+\subsubsection[{avg\-Ngamma}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::avg\-Ngamma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_af5e619dff4d9716328664a9625b6e8dd}
+calculate averaged electron distribution 
+\begin{DoxyCode}
+361                            \{
+362   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ gsl\_vector\_set( NgammaAvg, i, gsl\_vector\_get( NgammaAvg, i ) + 
+      \hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}( i ) ); \} 
+363 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a22aacb80ac20a46f471430db72c95b71}{\index{electrons@{electrons}!beta@{beta}}
+\index{beta@{beta}!electrons@{electrons}}
+\subsubsection[{beta}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::beta (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a22aacb80ac20a46f471430db72c95b71}
+probably doubled from \hyperlink{classbaseClass}{base\-Class}?? 
+\begin{DoxyCode}
+373 \{ \textcolor{keywordflow}{return} sqrt(1.0-1.0/(x*x)); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_afe0e0014e58c500a9bcf62357f781263}{\index{electrons@{electrons}!dgdr@{dgdr}}
+\index{dgdr@{dgdr}!electrons@{electrons}}
+\subsubsection[{dgdr}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::dgdr (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_afe0e0014e58c500a9bcf62357f781263}
+get electron cooling details 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+222                                  \{
+223   \textcolor{keywordtype}{double} dotg = 0.0;
+224   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); i++ ) \{ dotg += \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[i]->dotg( g ); \}  
+225   dotg *= A43sigTmec; \textcolor{comment}{/* multiply by common factor */}
+226   dotg *= g*g;
+227   dotg *= 1.0/(\hyperlink{classelectrons_a22aacb80ac20a46f471430db72c95b71}{beta}(Gamma)*LIGHT\_SPEED*Gamma); \textcolor{comment}{/* convert from time to radius */}  
+228   \textcolor{keywordflow}{if}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Adiabatic"}) ) \{ dotg += 0.666667*g/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get(); \} \textcolor{comment}{/* adiabatic cooling */}
+229   \textcolor{keywordflow}{return} dotg; \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a4e45b3bf040e39dad560d3b7e6572c90}{\index{electrons@{electrons}!evolve@{evolve}}
+\index{evolve@{evolve}!electrons@{electrons}}
+\subsubsection[{evolve}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::evolve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a4e45b3bf040e39dad560d3b7e6572c90}
+main electron evolution function; used gsl\-\_\-tridiag to solve evolution equation 
+\begin{DoxyCode}
+145                         \{
+146   \textcolor{keywordtype}{double} err = 0.0;
+147   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Cooling details:"});
+148   \textcolor{comment}{/* print info about cooling */}
+149   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ gammaMIN:"});
+150   \hyperlink{classelectrons_a6e630bdecdc411683d02bbcf8aa82a56}{printCoolingInfo}( gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},0) );
+151   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ gammaMAX:"});
+152   \hyperlink{classelectrons_a6e630bdecdc411683d02bbcf8aa82a56}{printCoolingInfo}( gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}-1) );
+153 
+154   \textcolor{keywordflow}{if}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ) \{ bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Ssc loop:"}); \}
+155   \textcolor{keywordflow}{do} \{
+156     \textcolor{comment}{/* solve equations for electrons */}
+157     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ )
+158       \{ gsl\_vector\_set( B, i, 1.0+\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getDr()*\hyperlink{classelectrons_afe0e0014e58c500a9bcf62357f781263}{dgdr}( 0.5*(gsl\_vector\_get(
+      \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i)+gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i+1)) )/(0.5*(gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i+2)-gsl\_vector\_get(
+      \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i))) ); \}
+159     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<N-1;i++ ) 
+160       \{ gsl\_vector\_set( C, i, -\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getDr()*\hyperlink{classelectrons_afe0e0014e58c500a9bcf62357f781263}{dgdr}(0.5*(gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i+1)+gsl\_vector\_get(
+      \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i+2)) )/(0.5*(gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i+2)-gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i))));    \}
+161     
+162     gsl\_linalg\_solve\_tridiag(B,C,\hyperlink{classelectrons_a5d1c72cf1ee40f0e918fbb2d9d13393b}{A},S,U);
+163 
+164     gsl\_vector\_memcpy( Ngamma, U );      
+165     
+166     \textcolor{keywordflow}{if} ( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ) \{ \textcolor{comment}{/* in order to calculate corrected model for ssc after electron
+       evolution we need to first identify which pointer in array corresponds to synchrotron */}
+167       \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j<\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); j++ )
+168     \textcolor{keywordflow}{if}( \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[j]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ) == \textcolor{stringliteral}{"syn"} ) \{ 
+169       err = ( \textcolor{keyword}{static\_cast<}\hyperlink{classsynchrotron}{synchrotron}*\textcolor{keyword}{>}( \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[j] ) ) -> iterate( );
+170       bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"  iteration error"},err); \}
+171     \}
+172   \} \textcolor{keywordflow}{while} ( err > ESP ); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_aa47f9474892a92a011f952731bf1cdeb}{\index{electrons@{electrons}!gauss@{gauss}}
+\index{gauss@{gauss}!electrons@{electrons}}
+\subsubsection[{gauss}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::gauss (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-radius}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_aa47f9474892a92a011f952731bf1cdeb}
+gaussian radial injection profile 
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+204                                         \{
+205   \textcolor{keywordtype}{double} x = \_radius/injRm;
+206   \textcolor{keywordflow}{return} exp( -pow(x-1.0,2)/(pow( injSigma,2)) ); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_aa9fa0208f23e0a28f50652606a7f7481}{\index{electrons@{electrons}!gaussmod@{gaussmod}}
+\index{gaussmod@{gaussmod}!electrons@{electrons}}
+\subsubsection[{gaussmod}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::gaussmod (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-radius}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_aa9fa0208f23e0a28f50652606a7f7481}
+modified gaussian radial injection profile 
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+208                                            \{
+209   \textcolor{keywordtype}{double} x = \_radius/injRm;
+210   \textcolor{keywordflow}{return} x*exp( (1-x)*(x+pow( injSigma,2)-1.0 )/pow( injSigma,2) ) ; \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a4e3d4179ce211bd732580b49914874e6}{\index{electrons@{electrons}!getd\-Log\-Gamma@{getd\-Log\-Gamma}}
+\index{getd\-Log\-Gamma@{getd\-Log\-Gamma}!electrons@{electrons}}
+\subsubsection[{getd\-Log\-Gamma}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::getd\-Log\-Gamma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelectrons_a4e3d4179ce211bd732580b49914874e6}
+get d gamma in log scale \begin{DoxyReturn}{Returns}
+d\-Log\-Gamma 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+130 \{ \textcolor{keywordflow}{return} dLogGamma; \}
+\end{DoxyCode}
+\hypertarget{classelectrons_afb0d9365f13787f44d23fb489732fc90}{\index{electrons@{electrons}!get\-Gamma@{get\-Gamma}}
+\index{get\-Gamma@{get\-Gamma}!electrons@{electrons}}
+\subsubsection[{get\-Gamma}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::get\-Gamma (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_afb0d9365f13787f44d23fb489732fc90}
+get electron gamma factor 
+\begin{DoxyParams}{Parameters}
+{\em vector} & index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+electron gamma factor 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+231 \{ \textcolor{keywordflow}{return} gsl\_vector\_get( \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma},i+1 ); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{\index{electrons@{electrons}!get\-Ngamma@{get\-Ngamma}}
+\index{get\-Ngamma@{get\-Ngamma}!electrons@{electrons}}
+\subsubsection[{get\-Ngamma}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::get\-Ngamma (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}
+get electron Ngamma 
+\begin{DoxyParams}{Parameters}
+{\em vector} & index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+electron Ngamma 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+232 \{ \textcolor{keywordflow}{return} gsl\_vector\_get( Ngamma,i ); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a18a3cd4a19f833931632da1f9800141f}{\index{electrons@{electrons}!if\-Evol@{if\-Evol}}
+\index{if\-Evol@{if\-Evol}!electrons@{electrons}}
+\subsubsection[{if\-Evol}]{\setlength{\rightskip}{0pt plus 5cm}int electrons\-::if\-Evol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelectrons_a18a3cd4a19f833931632da1f9800141f}
+check if we should do electron evolution 
+\begin{DoxyCode}
+133 \{ \textcolor{keywordflow}{return} evol; \}
+\end{DoxyCode}
+\hypertarget{classelectrons_ae87edc2ea2e2ce2050fa554da90f2852}{\index{electrons@{electrons}!inject@{inject}}
+\index{inject@{inject}!electrons@{electrons}}
+\subsubsection[{inject}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::inject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_ae87edc2ea2e2ce2050fa554da90f2852}
+electron injection function 
+\begin{DoxyCode}
+175                           \{
+176   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=1;i<=\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ )
+177     \textcolor{keywordflow}{if}( evol ) \{ gsl\_vector\_set( S, i-1, gsl\_vector\_get(Ngamma,i-1)+\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getDr()*
+      \hyperlink{classelectrons_aefdd16f24a2f35cef7f5d01930da00ee}{tQ}( gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, i), \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )) ); \}
+178     \textcolor{keywordflow}{else} \{ gsl\_vector\_set( Ngamma, i-1, gsl\_vector\_get(Ngamma,i-1)+\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getDr()*
+      \hyperlink{classelectrons_aefdd16f24a2f35cef7f5d01930da00ee}{tQ}( gsl\_vector\_get(\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, i), \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()) ); \}
+179 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a771ec6a114df4f41d09273f1c57db07d}{\index{electrons@{electrons}!list\-En\-Diss\-Proc@{list\-En\-Diss\-Proc}}
+\index{list\-En\-Diss\-Proc@{list\-En\-Diss\-Proc}!electrons@{electrons}}
+\subsubsection[{list\-En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::list\-En\-Diss\-Proc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a771ec6a114df4f41d09273f1c57db07d}
+list available and active energy dissipation processes 
+\begin{DoxyCode}
+236                                 \{
+237   std::stringstream s;
+238   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); i++ ) \{ s << \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[i]->whoAmI() << \textcolor{stringliteral}{" "}; \}
+239   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Processes used in electron cooling"},s.str( )); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a6e630bdecdc411683d02bbcf8aa82a56}{\index{electrons@{electrons}!print\-Cooling\-Info@{print\-Cooling\-Info}}
+\index{print\-Cooling\-Info@{print\-Cooling\-Info}!electrons@{electrons}}
+\subsubsection[{print\-Cooling\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::print\-Cooling\-Info (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a6e630bdecdc411683d02bbcf8aa82a56}
+print information about cooling details for active processes  electron Lorentz factor 
+\begin{DoxyCode}
+217                                            \{
+218   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); i++ ) \{ bazinga::print\_info(\textcolor{keywordtype}{id},
+      \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}(),\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[i]->dotg( g )*A43sigTmec*g*g/(
+      \hyperlink{classelectrons_a22aacb80ac20a46f471430db72c95b71}{beta}(Gamma)*LIGHT\_SPEED*Gamma)); \} 
+219   \textcolor{keywordflow}{if}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Adiabatic"}) ) \{ bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"adiabatic"},\hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<\textcolor{keywordtype}{double}>(\textcolor{stringliteral}{"
+      AdiabaticABG"})*g/\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )); \}
+220 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_ace657f207a4f68058b2606ff2772f3c5}{\index{electrons@{electrons}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!electrons@{electrons}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelectrons_ace657f207a4f68058b2606ff2772f3c5}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}{base\-Class}.
+
+
+\begin{DoxyCode}
+99                            \{
+100   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+101   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"evol"},evol);
+102   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Electron model"},eleModel);
+103   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Injection model"},injModel);
+104   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+105   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Index p 1"},p1);
+106   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Index p 2"},p2);
+107   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Gamma MIN"},gammaMin);
+108   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Gamma MAX"},gammaMax);
+109   
+110   \textcolor{keywordflow}{if}( injModel == \textcolor{stringliteral}{"GAUSS"} || injModel == \textcolor{stringliteral}{"GAUSSMOD"} ) \{
+111     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"injection maximium R\_m"}, injRm);
+112     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"injection disspersion sigma"},injSigma); \}
+113   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( injModel == \textcolor{stringliteral}{"TRI"}) \{
+114     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"injection maximium R\_m"},injRm); \}
+115   
+116   \textcolor{keywordflow}{if}( eleModel == \textcolor{stringliteral}{"steady"} && gammaBreak ) \{ bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Injection average gamma"},avgGamma); \}
+117   
+118   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Gamma break"},gammaBreak);
+119   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Electron normalization"},eleK);
+120 
+121   \textcolor{keywordflow}{if}( eleModel == \textcolor{stringliteral}{"steady"}) \{
+122     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Luminosity model"},lumModel);
+123     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"eta electrons"},eEle);
+124     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"eta dissipation"},eDiss);
+125     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Jet Lorentz factor"},Gamma);
+126     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"n\_e/n\_p"},NeNp);
+127     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"BH mass"},mBH);
+128     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"eta disk"},eDisk);
+129     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"m dot"},mDot);
+130     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"eta jet"},eJet);
+131     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"magnetic sigma"},sigmaB);
+132     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Eddington luminosity"},Ledd,\textcolor{stringliteral}{"erg/s"});
+133     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Accretion disk luminosity"},Ldisk,\textcolor{stringliteral}{"erg/s"});
+134     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Jet power before dissipation"},Ljet,\textcolor{stringliteral}{"erg/s"});
+135     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Jet power after dissipation"},LjetDiss,\textcolor{stringliteral}{"erg/s"});
+136     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Magnetic energy flux"},Lb,\textcolor{stringliteral}{"erg/s"});
+137     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Kinetic energy of cold protons"},Lprot,\textcolor{stringliteral}{"erg/s"}); \}
+138 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_ab509cb088f16247eec3a15b9c35bc23e}{\index{electrons@{electrons}!save\-Injection@{save\-Injection}}
+\index{save\-Injection@{save\-Injection}!electrons@{electrons}}
+\subsubsection[{save\-Injection}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::save\-Injection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_ab509cb088f16247eec3a15b9c35bc23e}
+save injected electron spectrum 
+\begin{DoxyCode}
+375                                \{
+376   \textcolor{keywordflow}{if}( saveElectrons && \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->ifSaveRadius( ) ) \{ 
+377     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving injection"});
+378     bazinga::save\_GSLVectorEle( \textcolor{stringliteral}{"Injection"}, \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, S, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getPosition( ), 
+      \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+379 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_ae1bc246f7783a9b65bd1f1678bfe5cd2}{\index{electrons@{electrons}!save\-Ngamma@{save\-Ngamma}}
+\index{save\-Ngamma@{save\-Ngamma}!electrons@{electrons}}
+\subsubsection[{save\-Ngamma}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::save\-Ngamma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_ae1bc246f7783a9b65bd1f1678bfe5cd2}
+save current electron spectrum 
+\begin{DoxyCode}
+381                             \{
+382   \textcolor{keywordflow}{if}( saveElectrons && \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->ifSaveRadius( ) ) \{
+383     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving Ngamma"});
+384     bazinga::save\_GSLVectorEle( \textcolor{stringliteral}{"Ngamma"}, \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, Ngamma, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getPosition( ), 
+      \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+385 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_aac83390f974136b1bc365b36ef460723}{\index{electrons@{electrons}!save\-Ngamma\-Avg@{save\-Ngamma\-Avg}}
+\index{save\-Ngamma\-Avg@{save\-Ngamma\-Avg}!electrons@{electrons}}
+\subsubsection[{save\-Ngamma\-Avg}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::save\-Ngamma\-Avg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_aac83390f974136b1bc365b36ef460723}
+save averaged electron spectrum 
+\begin{DoxyCode}
+387                                \{
+388   \textcolor{keywordflow}{if}( saveElectronsAvg ) \{ 
+389     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving NgammaAvg"});
+390     bazinga::save\_GSLVectorEle( \textcolor{stringliteral}{"Ngamma\_Avg"}, \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, NgammaAvg, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); 
+      \}
+391 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_aac9514f742569f37097d13b3ea04239a}{\index{electrons@{electrons}!set\-Energetics@{set\-Energetics}}
+\index{set\-Energetics@{set\-Energetics}!electrons@{electrons}}
+\subsubsection[{set\-Energetics}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::set\-Energetics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_aac9514f742569f37097d13b3ea04239a}
+set jet energetics 
+\begin{DoxyCode}
+365                                \{
+366    Ledd = 1.3e47*mBH;
+367    Ldisk = eDisk*mDot*Ledd;
+368    Ljet = 0.5*eJet*mDot*Ledd;
+369    LjetDiss = (1.0-eDiss)*Ljet;
+370    Lprot = (1.0-eDiss)*Ljet/(1.0+sigmaB);
+371    Lb = sigmaB*(1.0-eDiss)*Ljet/(1.0+sigmaB); \}
+\end{DoxyCode}
+\hypertarget{classelectrons_ad94a7b6cc694ef0e70f7efaadef8463d}{\index{electrons@{electrons}!set\-Injection\-Parameters@{set\-Injection\-Parameters}}
+\index{set\-Injection\-Parameters@{set\-Injection\-Parameters}!electrons@{electrons}}
+\subsubsection[{set\-Injection\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void electrons\-::set\-Injection\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_ad94a7b6cc694ef0e70f7efaadef8463d}
+set electron injection parameters 
+\begin{DoxyCode}
+281                                         \{
+282   \textcolor{keywordflow}{if}( eleModel == \textcolor{stringliteral}{"steady"} ) \{
+283     \textcolor{keywordflow}{if}( !gammaBreak || !eleK ) \{
+284       avgGamma = mpme*eEle*eDiss*(Gamma-1.0)*(1.0+sigmaB)/( NeNp*(1.0-eDiss)*Gamma );
+285       avgGamma += 1.0;
+286       
+287       gammaBreak = \hyperlink{electrons_8cpp_aae35005445fafd6ebf5d7eebf42e48ce}{solveGammaBreak}( p1, p2, gammaMin, gammaMax, avgGamma );
+288       
+289       eleK = eEle*eDiss*Ljet/( (avgGamma-1.0)*mec2 );
+290       eleK /= \hyperlink{electrons_8cpp_aaf2d21d8e8a007dc3b820258a16b6a27}{f2}( p1, p2, gammaMin, gammaMax, gammaBreak ); \}
+291     \textcolor{keywordflow}{else} \{ bazinga::error(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Set both gammaBreak and eleK or do not set any of them."}); \}
+292 
+293     \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"steady"} ) \{ eleK /= (\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getNinj( )); \}
+294   \}
+295 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_aefdd16f24a2f35cef7f5d01930da00ee}{\index{electrons@{electrons}!t\-Q@{t\-Q}}
+\index{t\-Q@{t\-Q}!electrons@{electrons}}
+\subsubsection[{t\-Q}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::t\-Q (
+\begin{DoxyParamCaption}
+\item[{double}]{g, }
+\item[{double}]{\-\_\-radius}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_aefdd16f24a2f35cef7f5d01930da00ee}
+electron injection function 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ gamma Lorentz factor \\
+\hline
+{\em \-\_\-radius} & -\/ radius at which injection occurs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\-\_\-gamma 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+181                                                \{
+182   \textcolor{keywordtype}{double} x;
+183 
+184   \textcolor{keywordflow}{if}( eleModel == \textcolor{stringliteral}{"steady"} ) \{
+185     \textcolor{keywordflow}{if}( g >= gammaMin && g <= gammaMax && \_radius >= \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( ) && \_radius <= 
+      \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( ) ) \{
+186       \textcolor{keywordflow}{if}( g <= gammaBreak ) \{ x = eleK*pow( gammaBreak, p1-p2 )*pow( g, -p1 ); \}
+187       \textcolor{keywordflow}{else} \{ x = eleK*pow( g, -p2 ); \}
+188     \}
+189     \textcolor{keywordflow}{else} \{ x = 0.0; \}
+190     \textcolor{keywordflow}{return} x/(LIGHT\_SPEED*\hyperlink{classelectrons_a22aacb80ac20a46f471430db72c95b71}{beta}(Gamma)*Gamma); \}
+191 
+192   \textcolor{keywordflow}{if}( eleModel == \textcolor{stringliteral}{"blob"} ) \{
+193     \textcolor{keywordtype}{double} corr = 1.0;
+194     \textcolor{keywordflow}{if}( injModel == \textcolor{stringliteral}{"GAUSS"} ) \{ corr = \hyperlink{classelectrons_aa47f9474892a92a011f952731bf1cdeb}{gauss}( \_radius ); \}
+195     \textcolor{keywordflow}{if}( injModel == \textcolor{stringliteral}{"GAUSSMOD"} ) \{ corr = \hyperlink{classelectrons_aa9fa0208f23e0a28f50652606a7f7481}{gaussmod}( \_radius ); \}
+196     \textcolor{keywordflow}{if}( injModel == \textcolor{stringliteral}{"TRI"} ) \{ corr = \hyperlink{classelectrons_a75b123e6b9d2ff587bee4a4be4fa3bbe}{tri}( \_radius ); \}
+197 
+198     \textcolor{keywordflow}{if}( g >= gammaMin && g <= gammaMax && \_radius >= \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( ) && \_radius <= 
+      \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( ) ) \{
+199       x = eleK*pow(g,-p1)*pow(1.0 + pow(g/gammaBreak,4.0),(p1-p2)/4.0)/(LIGHT\_SPEED*
+      \hyperlink{classelectrons_a22aacb80ac20a46f471430db72c95b71}{beta}(Gamma)*Gamma); \}
+200     \textcolor{keywordflow}{else} \{ x = 0.0; \}
+201     \textcolor{keywordflow}{return} corr*x; \}
+202 \}
+\end{DoxyCode}
+\hypertarget{classelectrons_a75b123e6b9d2ff587bee4a4be4fa3bbe}{\index{electrons@{electrons}!tri@{tri}}
+\index{tri@{tri}!electrons@{electrons}}
+\subsubsection[{tri}]{\setlength{\rightskip}{0pt plus 5cm}double electrons\-::tri (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-radius}
+\end{DoxyParamCaption}
+)}}\label{classelectrons_a75b123e6b9d2ff587bee4a4be4fa3bbe}
+triangle radial injection profile 
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+212                                       \{
+213   \textcolor{keywordflow}{if}( \_radius < injRm ) \{ \textcolor{keywordflow}{return} 0.5+0.5*(\_radius-\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( ))/(injRm-\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( )); \}
+214   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( \_radius >= injRm ) \{ \textcolor{keywordflow}{return} 1.0+0.5*(\_radius-injRm)/(injRm-\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( )); \}
+215 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classelectrons_a5d1c72cf1ee40f0e918fbb2d9d13393b}{\index{electrons@{electrons}!A@{A}}
+\index{A@{A}!electrons@{electrons}}
+\subsubsection[{A}]{\setlength{\rightskip}{0pt plus 5cm}gsl\-\_\-vector$\ast$ electrons\-::\-A}}\label{classelectrons_a5d1c72cf1ee40f0e918fbb2d9d13393b}
+tridag vectors \hypertarget{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{\index{electrons@{electrons}!En\-Diss\-Proc@{En\-Diss\-Proc}}
+\index{En\-Diss\-Proc@{En\-Diss\-Proc}!electrons@{electrons}}
+\subsubsection[{En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf energy\-Diss\-Proc}$\ast$$>$ electrons\-::\-En\-Diss\-Proc}}\label{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}
+vector to hold active energy dissipation processes \hypertarget{classelectrons_aba72b6575be27358efcb13cc3415df68}{\index{electrons@{electrons}!gamma@{gamma}}
+\index{gamma@{gamma}!electrons@{electrons}}
+\subsubsection[{gamma}]{\setlength{\rightskip}{0pt plus 5cm}gsl\-\_\-vector$\ast$ electrons\-::gamma}}\label{classelectrons_aba72b6575be27358efcb13cc3415df68}
+vectors to store electron spectrum data 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{electrons_8hpp}{electrons.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{electrons_8cpp}{electrons.\-cpp}\end{DoxyCompactItemize}

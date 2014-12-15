@@ -1,0 +1,81 @@
+Blazar++ 
+@author Mateusz Janiak (mjaniak@camk.edu.pl)
+@date 15/12/2014
+@version 0.00001 forever I suppose
+
+################################################### INSTALLATION ######################################################
+To compile blazar++ you need to take a look at its Makefile. Since blazar++ uses scfgp library (SimpleConGiGParser) 
+for parsing configuration file and bazinga library (where all the printing and saving stuff is) you need to set some 
+global variables:
+(in bash)
+    # scfgp
+    export SCFGP_DIR=<scfgp main DIR>
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SCFGP_DIR/lib
+    # bazinga
+    export BAZINGA_DIR=<bazinga main DIR>
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BAZINGA_DIR/lib
+
+You may want to add that to your ~/.bashrc
+
+Blazar++ is using GSL (GNU Scientific Library) and optionally ROOT (for plotting purposes).
+You can enable or disable ROOT in Makefile by changing this line:
+
+    ROOT=NO or ROOT=YES
+
+Having set up all that you can just type 'make' and you should have blazar++ compiled. 
+Type 'make clean' to get rid of compiled executables and other garbage.
+
+################################################### DIRECTORIES ########################################################
+Directory structure:
+	  - src - source *.cpp files
+	  - include - header *.hpp files
+	  - config - configuration file(s)
+	  - dat - additional data files
+	  - scripts - additional scripts useful for post-processing or preparing calculations (not documented yet)
+	  - doc - documentation files (doxygen)
+	  - README - this file
+	  - blazar++ - executable file
+	  
+################################################### DOCUMENTATION ######################################################
+- This file (README)
+- In 'doc' directory check for refman.pdf file. If it is not there type 'doxygen Doxyfile' to create it (check either 'html' output or 'latex' output).
+
+################################################### (VERY BASIC) TUTORIAL ##############################################
+This basic tutorial shows how to use basic configuration file config/main.cfg. In the config file you can read
+dscriptions of parameters used. 
+
+An example calculation is a 'steady-state' model with enable adiabatic (conical jet),synchrotron, SSC and spherical BLR and HDR energy losses. Luminosities ('point source') are calculated for synchrotron, SSC and spherical BLR and HDR. You can read all the other parameters from a configuration file.
+
+WARNING: This example is meant to be quick so numerical accuracy is farily low resulting is very poor quality output plots! If you want to get real, accurate results change accuracy values from '200' to '1000' or '2000' at the end of your configuration file. 
+
+To run this example type:
+
+	    ./blazar++ config/main.cfg
+
+Calculations should start. There is usually lots of output - you may want to save it and check at least beginning of this 
+log to verify if parameters you specified in config file are actually used. Output directory 'test_config' is created with
+output files.
+
+In 'test_config' you can see several types of files:
+   - 'Injection_*' - injected electron energy spectrum at radius *
+   - 'Ngamma_*' - evolved electron energy spectrum at radius *
+   - 'LvPoint_<process>_*' - 'point-source' luminosities for <process> at radius *
+   - 'LvPoint_obs_*' - summed 'point-source' luminosities for all processes
+     		       at radius *
+   - 'LvPointAvg_<process>' - 'point-source' luminosities for <process>
+     			      averaged over all s-cells
+   - 'LvPointAvg_obs' - summed 'point-source' luminosities averaged 
+     			      over all s-cells
+   - '*.gp' - gnuplot scripts to create quick plots to diagnose calculations
+
+After having done the calculations you may want to inspect gnuplot plots. Type:
+      	     
+	     gnuplot *.gp
+
+which should create *.eps files:
+   - <process>Point.eps - plot of vLv spectrum evolution and averaged spectrum for <process>
+   - <process>PointVsEle.eps - plot of vLv spectrum evolution and averaged spectrum for <process> vs electron energy \gamma - this is actually useless now and it there for 'historical' reasons
+   - Ngamma.eps - plot of electron spectrum evolution and averaged electron spectrum. Mind that if you set RMax > RInjMax you'll have your y axis range completely wrong. You may want to modify it to include only evolution in dissipation region.
+   - UpeR.eps - energy density vs radius plot for all active processes. Mind that if you are calculating SSC you'll have your y axis wrong. You may want to modify it to include only highest values (in this example: add 'set yrange [1.0e-4:]' to your 'UpeR.gp' file and rnu gnuplot again).
+
+This is all!

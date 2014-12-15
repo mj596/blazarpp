@@ -1,0 +1,507 @@
+\hypertarget{blazar_8cpp}{\section{/home/mjaniak/\-Soft/blazar++/src/blazar.cpp File Reference}
+\label{blazar_8cpp}\index{/home/mjaniak/\-Soft/blazar++/src/blazar.\-cpp@{/home/mjaniak/\-Soft/blazar++/src/blazar.\-cpp}}
+}
+{\ttfamily \#include $<$scfgp.\-hpp$>$}\\*
+{\ttfamily \#include $<$bazinga.\-hpp$>$}\\*
+{\ttfamily \#include \char`\"{}blazar.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}base\-Class.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}jet\-Geometry.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}electrons.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}magnetic\-Field.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}observer.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}synchrotron.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}plots.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}self\-Syn\-Compton.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}external\-Radiation.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Blr\-Planar.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Dt\-Planar.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Accd\-Planar.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Blr\-Spherical.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Dt\-Spherical.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Blr\-Spherical\-Gu.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Dt\-Spherical\-Gu.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Accd\-Spherical\-Gu.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Quasar\-Acc\-Disk.\-hpp\char`\"{}}\\*
+
+
+\subsection{Detailed Description}
+Main blazar++ file
+
+\begin{DoxyAuthor}{Author}
+Mateusz Janiak 
+\end{DoxyAuthor}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{blazar_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{blazar_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{blazar.\-cpp@{blazar.\-cpp}!main@{main}}
+\index{main@{main}!blazar.cpp@{blazar.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{blazar_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+Main programme starts here 
+\begin{DoxyCode}
+32 \{
+33   bazinga::print\_section( );
+34   bazinga::print\_info(\textcolor{stringliteral}{"\(\backslash\)t\(\backslash\)tBlazar++"});
+35   bazinga::print\_section( );
+36 
+37   scfgp *cfg = \textcolor{keyword}{new} scfgp( ); \textcolor{comment}{/* Initialize config file reader */}
+38   
+39   \textcolor{keywordflow}{if}( argc != 1 ) \{ cfg->addConfigFile( argv[1] ); \}
+40   \textcolor{keywordflow}{else} \{
+41     bazinga::error(\textcolor{stringliteral}{"main"},\textcolor{stringliteral}{"No config file given. You forgot about it?"});;
+42     exit( 0 ); \}
+43 
+44   \textcolor{comment}{/* Gather information about processes used */}
+45   \hyperlink{blazar_8hpp_aa336cd7d684b9456fd23e34deb31bd7f}{getConfigSwitches}( cfg );
+46 
+47   \textcolor{comment}{/* initialize jet geometry */}
+48   \hyperlink{classjetGeometry}{jetGeometry}* rJet = \textcolor{keyword}{new} \hyperlink{classjetGeometry}{jetGeometry}( cfg );
+49   rJet -> printInfo( );
+50 
+51   \textcolor{comment}{/* initialize electrons*/}
+52   \hyperlink{classelectrons}{electrons}* ele = \textcolor{keyword}{new} \hyperlink{classelectrons}{electrons}( cfg, rJet, \textcolor{stringliteral}{"ele"} );
+53   ele -> printInfo( );
+54 
+55   \textcolor{comment}{/* initialize magnetic field */}
+56   \hyperlink{classmagneticField}{magneticField}* B = \textcolor{keyword}{new} \hyperlink{classmagneticField}{magneticField}( cfg, rJet, \textcolor{stringliteral}{"mag"} );
+57   B -> printInfo( );
+58 
+59   \textcolor{comment}{/* initialize observer to caluclate luminosities  */}
+60   \hyperlink{classobserver}{observer}* obs = \textcolor{keyword}{new} \hyperlink{classobserver}{observer}( cfg, rJet, \textcolor{stringliteral}{"obs"} );
+61   obs -> printInfo( );
+62 
+63   \textcolor{comment}{/* gather information about processes used */}
+64   \hyperlink{blazar_8hpp_aa73d1988fad45eadd6960ac0ec4a7e9e}{safetyConfigSwitches}( cfg, ele );
+65 
+66   \textcolor{comment}{/* initialize Synchroton */}
+67   \hyperlink{classenergyDissProc}{energyDissProc}* Syn = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Syn"}) ? \textcolor{keyword}{new} \hyperlink{classsynchrotron}{synchrotron}( cfg, rJet, ele, B,
+       \textcolor{stringliteral}{"syn"} ) : NULL;
+68   
+69   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Syn"}) ) \{ Syn -> printInfo( ); \}
+70   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Syn"}) ) \{ ele -> addEnDissProc( Syn ); \}
+71   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSyn"}) ) \{ obs -> addEnDissProc( Syn ); \}
+72   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSynPoint"}) ) \{ obs -> addEnDissProcPoint( Syn ); \}
+73 
+74   \textcolor{comment}{/* initialize synchrotron self Compton */}
+75   \hyperlink{classenergyDissProc}{energyDissProc}* Ssc = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ? \textcolor{keyword}{new} \hyperlink{classselfSynCompton}{selfSynCompton}( cfg, rJet, 
+      ele, B, \textcolor{stringliteral}{"ssc"} ) : NULL;
+76 
+77   \textcolor{comment}{/* I probably should not be doing that dynamic\_cast but I really have no better idea ... */}
+78   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ) \{ \textcolor{keyword}{dynamic\_cast<}\hyperlink{classselfSynCompton}{selfSynCompton}*\textcolor{keyword}{>}(Ssc)->syn=Syn; \}
+79 
+80   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ) \{ Ssc -> printInfo( ); \}
+81   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ssc"}) ) \{ ele -> addEnDissProc( Ssc ); \}
+82   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSsc"}) ) \{ obs -> addEnDissProc( Ssc ); \}
+83   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumSscPoint"}) ) \{ obs -> addEnDissProcPoint( Ssc ); \}
+84 
+85   \textcolor{comment}{/* initialize External Radiation - Blr */}
+86   \hyperlink{classenergyDissProc}{energyDissProc}* Ext1 = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext1"}) ? \textcolor{keyword}{new} 
+      \hyperlink{classexternalRadiation}{externalRadiation}( cfg, rJet, ele, \textcolor{stringliteral}{"ext1"} ) : NULL;  
+87   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext1"}) ) \{ Ext1 -> printInfo( ); \}
+88   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext1"}) ) \{ ele->\hyperlink{classelectrons_a41db9252c408dd206342f0d23c8edb96}{addEnDissProc}( Ext1 ); \}
+89   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt1"}) ) \{ obs->\hyperlink{classobserver_a0e5aaaf485e52230ade3ebc034956608}{addEnDissProc}( Ext1 ); \}
+90   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt1Point"}) ) \{ obs->\hyperlink{classobserver_a9e6f78fade71b521003ee502c0eafaab}{addEnDissProcPoint}( Ext1 ); \}
+91 
+92   \textcolor{comment}{/* initialize External Radiation - Dt */}
+93   \hyperlink{classenergyDissProc}{energyDissProc}* Ext2 = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext2"}) ? \textcolor{keyword}{new} 
+      \hyperlink{classexternalRadiation}{externalRadiation}( cfg, rJet, ele, \textcolor{stringliteral}{"ext2"} ) : NULL;  
+94   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext2"}) ) \{ Ext2 -> printInfo( ); \}
+95   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Ext2"}) ) \{ ele->\hyperlink{classelectrons_a41db9252c408dd206342f0d23c8edb96}{addEnDissProc}( Ext2 ); \}
+96   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt2"}) ) \{ obs->\hyperlink{classobserver_a0e5aaaf485e52230ade3ebc034956608}{addEnDissProc}( Ext2 ); \}
+97   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumExt2Point"}) ) \{ obs->\hyperlink{classobserver_a9e6f78fade71b521003ee502c0eafaab}{addEnDissProcPoint}( Ext2 ); \}
+98 
+99   \textcolor{comment}{/* initialize External Radiation Planar Geometry  - BlrPl */}
+100   \hyperlink{classenergyDissProc}{energyDissProc}* BlrPl = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrPl"}) ? \textcolor{keyword}{new} \hyperlink{classBlrPlanar}{BlrPlanar}( cfg, rJet, ele, \textcolor{stringliteral}{"
+      blrPl"} ) : NULL;
+101   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrPl"}) ) \{ BlrPl -> printInfo( ); \}
+102   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrPl"}) ) \{ ele -> addEnDissProc( BlrPl ); \}
+103   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrPl"}) ) \{ obs -> addExtPl( BlrPl ); \}
+104   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrPl"}) ) \{ obs -> addEnDissProc( BlrPl ); \}
+105   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrPlPoint"}) ) \{ obs -> addEnDissProcPoint( BlrPl ); \}
+106 
+107   \textcolor{comment}{/* initialize External Radiation Planar Geometry - DtPl */}
+108   \hyperlink{classenergyDissProc}{energyDissProc}* DtPl = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtPl"}) ? \textcolor{keyword}{new} \hyperlink{classDtPlanar}{DtPlanar}( cfg, rJet, ele, \textcolor{stringliteral}{"dtPl"}
+       ) : NULL;
+109   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtPl"}) ) \{ DtPl -> printInfo( ); \}
+110   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtPl"}) ) \{ ele -> addEnDissProc( DtPl ); \}
+111   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtPl"}) ) \{ obs -> addExtPl( DtPl ); \}
+112   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtPl"}) ) \{ obs -> addEnDissProc( DtPl ); \}
+113   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtPlPoint"}) ) \{ obs -> addEnDissProcPoint( DtPl ); \}
+114 
+115   \textcolor{comment}{/* initialize External Radiation Planar Geometry - Accd */}
+116   \hyperlink{classenergyDissProc}{energyDissProc}* Accd = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Accd"}) ? \textcolor{keyword}{new} \hyperlink{classAccdPlanar}{AccdPlanar}( cfg, rJet, ele, \textcolor{stringliteral}{"
+      accd"} ) : NULL;
+117   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Accd"}) ) \{ Accd -> printInfo( ); \}
+118   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Accd"}) ) \{ ele -> addEnDissProc( Accd ); \}
+119   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"Accd"}) ) \{ obs -> addExtPl( Accd ); \}
+120   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccd"}) ) \{ obs -> addEnDissProc( Accd ); \}
+121   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdPoint"}) ) \{ obs -> addEnDissProcPoint( Accd ); \}
+122 
+123   \textcolor{comment}{/* initialize External Radiation Spherical Geometry  - BlrSp */}
+124   \hyperlink{classenergyDissProc}{energyDissProc}* BlrSp = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrSp"}) ? \textcolor{keyword}{new} 
+      \hyperlink{classBlrSpherical}{BlrSpherical}( cfg, rJet, ele, \textcolor{stringliteral}{"blrSp"} ) : NULL;
+125   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrSp"}) ) \{ BlrSp -> printInfo( ); \}
+126   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrSp"}) ) \{ ele -> addEnDissProc( BlrSp ); \}
+127   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrSp"}) ) \{ obs -> addExtSp( BlrSp ); \}
+128   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrSp"}) ) \{ obs -> addEnDissProc( BlrSp ); \}
+129   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrSpPoint"}) ) \{ obs -> addEnDissProcPoint( BlrSp ); \}
+130 
+131   \textcolor{comment}{/* initialize External Radiation Spherical Geometry - DtSp */}
+132   \hyperlink{classenergyDissProc}{energyDissProc}* DtSp = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtSp"}) ? \textcolor{keyword}{new} \hyperlink{classDtSpherical}{DtSpherical}( cfg, rJet, ele, \textcolor{stringliteral}{
+      "dtSp"} ) : NULL;
+133   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtSp"}) ) \{ DtSp -> printInfo( ); \}
+134   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtSp"}) ) \{ ele -> addEnDissProc( DtSp ); \}
+135   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtSp"}) ) \{ obs -> addExtSp( DtSp ); \}
+136   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtSp"}) ) \{ obs -> addEnDissProc( DtSp ); \}
+137   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtSpPoint"}) ) \{ obs -> addEnDissProcPoint( DtSp ); \}
+138 
+139   \textcolor{comment}{/* initialize External Radiation Gu - Blr */}
+140   \hyperlink{classenergyDissProc}{energyDissProc}* BlrGu = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrGu"}) ? \textcolor{keyword}{new} 
+      \hyperlink{classBlrSphericalGu}{BlrSphericalGu}( cfg, rJet, ele, \textcolor{stringliteral}{"blrGu"} ) : NULL;  
+141   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrGu"}) ) \{ BlrGu -> printInfo( ); \}
+142   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrGu"}) ) \{ ele->\hyperlink{classelectrons_a41db9252c408dd206342f0d23c8edb96}{addEnDissProc}( BlrGu ); \}
+143   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"BlrGu"}) ) \{ obs -> addExtGu( BlrGu ); \}
+144   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrGu"}) ) \{ obs->\hyperlink{classobserver_a0e5aaaf485e52230ade3ebc034956608}{addEnDissProc}( BlrGu ); \}
+145   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumBlrGuPoint"}) ) \{ obs->\hyperlink{classobserver_a9e6f78fade71b521003ee502c0eafaab}{addEnDissProcPoint}( BlrGu ); \}
+146 
+147   \textcolor{comment}{/* initialize External Radiation Gu - Dt */}
+148   \hyperlink{classenergyDissProc}{energyDissProc}* DtGu = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtGu"}) ? \textcolor{keyword}{new} \hyperlink{classDtSphericalGu}{DtSphericalGu}( cfg, rJet, 
+      ele, \textcolor{stringliteral}{"dtGu"} ) : NULL;  
+149   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtGu"}) ) \{ DtGu -> printInfo( ); \}
+150   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtGu"}) ) \{ ele->\hyperlink{classelectrons_a41db9252c408dd206342f0d23c8edb96}{addEnDissProc}( DtGu ); \}
+151   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"DtGu"}) ) \{ obs -> addExtGu( DtGu ); \}
+152   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtGu"}) ) \{ obs->\hyperlink{classobserver_a0e5aaaf485e52230ade3ebc034956608}{addEnDissProc}( DtGu ); \}
+153   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumDtGuPoint"}) ) \{ obs->\hyperlink{classobserver_a9e6f78fade71b521003ee502c0eafaab}{addEnDissProcPoint}( DtGu ); \}
+154 
+155   \textcolor{comment}{/* initialize External Radiation Gu - Accd */}
+156   \hyperlink{classenergyDissProc}{energyDissProc}* AccdGu = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"AccdGu"}) ? \textcolor{keyword}{new} 
+      \hyperlink{classAccdSphericalGu}{AccdSphericalGu}( cfg, rJet, ele, \textcolor{stringliteral}{"accdGu"} ) : NULL;  
+157   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"AccdGu"}) ) \{ AccdGu -> printInfo( ); \}
+158   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"AccdGu"}) ) \{ ele->\hyperlink{classelectrons_a41db9252c408dd206342f0d23c8edb96}{addEnDissProc}( AccdGu ); \}
+159   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"AccdGu"}) ) \{ obs -> addExtGu( AccdGu ); \}
+160   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdGu"}) ) \{ obs->\hyperlink{classobserver_a0e5aaaf485e52230ade3ebc034956608}{addEnDissProc}( AccdGu ); \}
+161   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"lumAccdGuPoint"}) ) \{ obs->\hyperlink{classobserver_a9e6f78fade71b521003ee502c0eafaab}{addEnDissProcPoint}( AccdGu ); \}
+162 
+163   \textcolor{comment}{/* initialize Quasar Accretion Disk */}
+164   \hyperlink{classQuasarAccDisk}{QuasarAccDisk}* QAccd = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ? \textcolor{keyword}{new} \hyperlink{classQuasarAccDisk}{QuasarAccDisk}( cfg, \textcolor{stringliteral}{"QAccd"}
+       ) : NULL;  
+165   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ QAccd -> printInfo( ); \}
+166 
+167   \textcolor{comment}{/* read QAccd template data */}
+168   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ QAccd -> readTemplate( ); \}
+169   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ QAccd -> scaleTemplate( ); \}
+170   \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ QAccd -> saveTemplate( ); \}
+171 
+172   bazinga::print\_section( );
+173   \textcolor{comment}{/* Before proceeding further show us what you're going to do */}
+174   ele -> listEnDissProc( );
+175   
+176   \textcolor{comment}{/* Before proceeding further show us what luminosities are you going to calculate */}
+177   obs -> listEnDissProc( );
+178   obs -> listEnDissProcPoint( );
+179   obs -> listExtPl( );
+180   obs -> listExtSp( );
+181   obs -> listExtGu( );
+182   
+183   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+184   \textcolor{comment}{/* BEGIN root Canvases and Graphs */}
+185   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+186 
+187 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+188 \textcolor{preprocessor}{}\textcolor{comment}{/* Create TApplication */}
+189 TApplication* theApp = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ? \textcolor{keyword}{new} TApplication(\textcolor{stringliteral}{"App"},0,0) : NULL;
+190 
+191   \textcolor{comment}{/* Create all the necessary TCanvas */}
+192   \textcolor{comment}{/* First row - electrons*/}
+193 TCanvas *eleInjCanvas = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && ele->\hyperlink{classelectrons_a18a3cd4a19f833931632da1f9800141f}{ifEvol}() ? \textcolor{keyword}{new} TCanvas(\textcolor{stringliteral}{"EleInj"},\textcolor{stringliteral}{"Electron
+       injection"},0,0,400,400) : NULL;   
+194   TCanvas *eleCanvas = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ? \textcolor{keyword}{new} TCanvas(\textcolor{stringliteral}{"EleEvo"},\textcolor{stringliteral}{"Electron evolution"},400,0,400,400) : 
+      NULL;
+195   \textcolor{comment}{/* Second row - luminosities */}
+196   TCanvas *intLumCanvas = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && obs->\hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{sizeEnDissProc}( ) ? \textcolor{keyword}{new} TCanvas(\textcolor{stringliteral}{"
+      IntLum"},\textcolor{stringliteral}{"Intrinsic luminosities"},0,430,400,400) : NULL;
+197   TCanvas *lumPointCanvas = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ? \textcolor{keyword}{new} 
+      TCanvas(\textcolor{stringliteral}{"LumPoint"},\textcolor{stringliteral}{"Point luminosities"},400,430,400,400) : NULL;
+198   TCanvas *lumPointAvgCanvas = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ? \textcolor{keyword}{
+      new} TCanvas(\textcolor{stringliteral}{"LumPointAvg"},\textcolor{stringliteral}{"Avg Point luminosities"},800,430,400,400) : NULL;
+199 
+200   gSystem -> ProcessEvents();
+201 
+202   \textcolor{comment}{/* Create all the necessary TMultiGraph */}
+203   TMultiGraph* mgInjNgamma = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && ele->\hyperlink{classelectrons_a18a3cd4a19f833931632da1f9800141f}{ifEvol}( ) ? \textcolor{keyword}{new} TMultiGraph(\textcolor{stringliteral}{"EleInj"},\textcolor{stringliteral}{"
+      Electron injection;log #gamma;log #gamma^\{2\} N\_\{#gamma\}"}) : NULL;
+204   TMultiGraph* mgNgamma = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ? \textcolor{keyword}{new} TMultiGraph(\textcolor{stringliteral}{"EleEvo"},\textcolor{stringliteral}{"Electron evolution;log
+       #gamma;log #gamma^\{2\} N\_\{#gamma\}"}) : NULL;
+205   TMultiGraph* mgIntLum = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && obs->\hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{sizeEnDissProc}( ) ? \textcolor{keyword}{new} TMultiGraph(\textcolor{stringliteral}{"
+      IntLum"},\textcolor{stringliteral}{"Intrinsic luminosities;log #nu;log #nu L\_\{#nu\}"}) : NULL;
+206   TMultiGraph* mgLumPoint = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ? \textcolor{keyword}{new} 
+      TMultiGraph(\textcolor{stringliteral}{"LumPoint"},\textcolor{stringliteral}{"Point luminosities;log #nu;log #nu L\_\{#nu\}"}) : NULL;
+207   TMultiGraph* mgLumAvgPoint = cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ? \textcolor{keyword}{
+      new} TMultiGraph(\textcolor{stringliteral}{"LumPointAvg"},\textcolor{stringliteral}{"Avg Point luminosities;log #nu;log #nu L\_\{#nu\}"}) : NULL;
+208 \textcolor{preprocessor}{#endif}
+209 \textcolor{preprocessor}{}
+210   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+211   \textcolor{comment}{/* END root Canvases and Graphs */}
+212   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+213   
+214   bazinga::print\_section( );
+215 
+216   \textcolor{keywordflow}{if}( ele->\hyperlink{classelectrons_a18a3cd4a19f833931632da1f9800141f}{ifEvol}( ) ) \{
+217     bazinga::info( \textcolor{stringliteral}{"main"}, \textcolor{stringliteral}{"Starting electron evolution loop ..."});
+218     bazinga::print\_section( ); \}
+219   \textcolor{keywordflow}{else} \{
+220     bazinga::info(\textcolor{stringliteral}{"main"}, \textcolor{stringliteral}{"No electron evolution. Injection only."});
+221     bazinga::print\_section( ); \}
+222 
+223   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+224   \textcolor{comment}{/* MAIN LOOP STARTS HERE */}
+225   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+226 
+227   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<rJet->getMaxIndex( );i++ ) \{
+228     rJet->update( i );
+229     rJet->show( );
+230     \textcolor{comment}{/* inject electrons */}
+231     ele -> inject( );
+232     
+233     \textcolor{comment}{/* update the data about processes that will cool electrons */}
+234     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<ele->\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); i++ ) \{
+235       bazinga::info( ele->\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[i]->whoAmI( ), \textcolor{stringliteral}{"Updating"} );
+236       ele -> EnDissProc[i] -> update( ); \}
+237     
+238     \textcolor{comment}{/* show some info about magnetic field */}
+239     bazinga::print\_info( B->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}(), \textcolor{stringliteral}{"Magnetic field"}, B->\hyperlink{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{getB}(), \textcolor{stringliteral}{"Gauss"});
+240 
+241     \textcolor{comment}{/* electrons evolution taking part here*/}
+242     \textcolor{keywordflow}{if}( ele -> ifEvol( ) ) \{
+243       \textcolor{comment}{/* save injected electrons */}
+244       ele -> saveInjection( );
+245       
+246 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+247 \textcolor{preprocessor}{}      \textcolor{comment}{/* make ROOT plot */}
+248       \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && ele -> ifEvol( ) ) \{ makeNgammaPlotROOT( ele->
+      \hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, ele->S, eleInjCanvas, mgInjNgamma, ele->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}(), rJet ); \}
+249 \textcolor{preprocessor}{#endif}
+250 \textcolor{preprocessor}{}      
+251       \textcolor{comment}{/* solve evolution equations for electrons */}
+252       ele -> evolve( ); \}
+253       
+254     \textcolor{comment}{/* save electrons */}
+255     ele -> saveNgamma( );
+256     \textcolor{comment}{/* calculate AvgNgamma; this is just an update with the newest Ngamma so is has to be run everytime in
+       a loop */}
+257     ele -> avgNgamma();
+258     
+259 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+260 \textcolor{preprocessor}{}    \textcolor{comment}{/* make ROOT plot */}
+261     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ makeNgammaPlotROOT( ele->\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, ele->Ngamma, eleCanvas, mgNgamma, 
+      ele->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}(), rJet ); \}
+262 \textcolor{preprocessor}{#endif}
+263 \textcolor{preprocessor}{}    
+264     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+265     \textcolor{comment}{/* BEGIN Calculate intrinsic luminosities */}
+266     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+267     \textcolor{comment}{/* take electrons from the previous step - either evolved, only injected or read from a file */}
+268     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j<obs->\hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{sizeEnDissProc}(); j++ ) \{
+269       bazinga::info( obs -> EnDissProc[j ]-> whoAmI( ), \textcolor{stringliteral}{"Calculating intrinsic luminosity."} );
+270       \textcolor{comment}{/* set luminosities */}
+271       obs -> EnDissProc[j] -> setLpv( );
+272       obs -> EnDissProc[j] -> saveLuminosity( );
+273 
+274 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+275 \textcolor{preprocessor}{}      \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ makeLPlotROOT( obs->\hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[j]->vp, obs->
+      \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[j]->Lpv, intLumCanvas, mgIntLum, obs->\hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[j]->whoAmI( ), rJet ); \}
+276 \textcolor{preprocessor}{#endif}
+277 \textcolor{preprocessor}{}    \}
+278     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+279     \textcolor{comment}{/* END Calculate intrinsic luminosities */}
+280     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+281 
+282     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+283     \textcolor{comment}{/* BEGIN Calculate point luminosities */}
+284     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+285     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j<obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}(); j++ ) \{
+286       obs -> calculatePointLuminosity( obs->EnDissProcPoint[j] );
+287       obs -> savePointLuminosity( obs->EnDissProcPoint[j] );
+288 
+289 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+290 \textcolor{preprocessor}{}      \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ makeLPlotROOT( obs->EnDissProcPoint[j]->vPoint, obs->EnDissProcPoint[j]
+      ->LvPoint, lumPointCanvas, mgLumPoint, obs->EnDissProcPoint[j]->whoAmI( ), rJet ); \}
+291 \textcolor{preprocessor}{#endif}
+292 \textcolor{preprocessor}{}      
+293       \textcolor{comment}{/* Averaging spectra */}
+294       obs -> avgPointLuminosity( obs->EnDissProcPoint[j] ); \}
+295     
+296     \textcolor{comment}{/* Calculate accretion disk luminosity - QAccd */}
+297     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ QAccd -> calculateLuminosity( ); \}
+298     
+299     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+300     \textcolor{comment}{/* END Calculate point luminosities */}
+301     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+302     
+303     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+304     \textcolor{comment}{/* BEGIN Sum point luminosities */}
+305     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+306     \textcolor{keywordflow}{if}( obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ) \{
+307       obs -> sumPointLuminosity( );
+308       obs -> savePointLuminositySum( ele->\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma} );
+309 
+310 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+311 \textcolor{preprocessor}{}      \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ makeLSumPlotROOT( obs->\hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, obs->LvPointSum, 
+      lumPointCanvas, mgLumPoint, obs->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), rJet ); \}
+312 \textcolor{preprocessor}{#endif}
+313 \textcolor{preprocessor}{}    \}
+314     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+315     \textcolor{comment}{/* END Sum point luminosities */}
+316     \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}  
+317 
+318     \textcolor{comment}{/* save information on upe vs radius */}
+319     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j < obs->\hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{sizeEnDissProc}( ); j++ ) \{ obs ->  EnDissProc[j] -> saveUpeR( ); \}
+320 
+321     \textcolor{comment}{/* save information on Rm vs radius for ExtPl */}
+322     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j < obs->\hyperlink{classobserver_aa8290de1b8b9345c889ded609c7cd2d1}{sizeExtPl}( ); j++ ) \{ \textcolor{keyword}{dynamic\_cast<}
+      \hyperlink{classexternalRadiationPlanar}{externalRadiationPlanar}*\textcolor{keyword}{>}( obs->ExtPl[j] ) -> saveRmVsR( ); \}
+323   \}
+324   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+325   \textcolor{comment}{/* MAIN LOOP ENDS HERE */}
+326   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+327   
+328   \textcolor{keywordflow}{if}( ele->\hyperlink{classelectrons_a18a3cd4a19f833931632da1f9800141f}{ifEvol}( ) ) \{
+329     bazinga::info( ele->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), \textcolor{stringliteral}{"Ending electron evolution loop."});
+330     bazinga::print\_section( ); \}
+331   \textcolor{keywordflow}{else} \{
+332     bazinga::info( ele->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), \textcolor{stringliteral}{"Ending electron loop."});
+333     bazinga::print\_section( ); \}
+334 
+335   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+336   
+337   \textcolor{comment}{/* save information about NgammaAvg */}
+338   ele -> saveNgammaAvg( );
+339   
+340   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+341   \textcolor{comment}{/* BEGIN Save average spectra */}
+342   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+343   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j < obs -> sizeEnDissProcPoint(); j++ ) \{
+344     obs -> saveAveragedPointLuminosity( obs -> EnDissProcPoint[j] );
+345     
+346 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+347 \textcolor{preprocessor}{}  \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ makeLPlotROOT( obs->\hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[j]->vPoint, obs->
+      \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[j]->LvPointAvg, lumPointAvgCanvas, mgLumAvgPoint, obs->EnDissProcPoint[j]->whoAmI( ), 
+      rJet ); \}
+348 \textcolor{preprocessor}{#endif}
+349 \textcolor{preprocessor}{}  \}
+350 
+351   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+352   \textcolor{comment}{/* END Save average spectra */}
+353   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+354 
+355   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+356   \textcolor{comment}{/* BEGIN Sum and save averaged point sum spectra */}
+357   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+358   
+359     \textcolor{keywordflow}{if}( obs -> sizeEnDissProcPoint( ) ) \{
+360       obs -> sumPointAvgLuminosity( );
+361       
+362       \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ obs -> addQAccdLuminosity( QAccd ); \}
+363 
+364       obs -> saveAveragedPointLuminositySum( ele->\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma} );
+365       
+366 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+367 \textcolor{preprocessor}{}    \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ makeLSumPlotROOT( obs->\hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, obs->LvPointAvgSum, 
+      lumPointAvgCanvas, mgLumAvgPoint, obs->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), rJet ); \}
+368 \textcolor{preprocessor}{#endif}
+369 \textcolor{preprocessor}{}    \}
+370     
+371   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+372   \textcolor{comment}{/* END Sum and save averaged sum spectra */}
+373   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+374 
+375   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+376   \textcolor{comment}{/* BEGIN Calculating flares */}
+377   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+378     obs -> calculateAllFlares( );
+379   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+380   \textcolor{comment}{/* END Calculating flares */}
+381   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+382 
+383   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+384   \textcolor{comment}{/* BEGIN make gnuplot plots */}
+385   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+386     bazinga::print\_section( );
+387     bazinga::info(\textcolor{stringliteral}{"main"},\textcolor{stringliteral}{"Preparing gnuplot files."});
+388     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"saveElectrons"}) ) \{ makeNgammaPlots( ele, cfg, rJet ); \} \textcolor{comment}{/* electron plot */}
+389     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"saveLumPoint"}) ) \{ makeLPointPlots( obs, cfg, rJet ); \} \textcolor{comment}{/* point source luminosities
+       */}
+390     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"saveLumPoint"}) ) \{ makeLPointVsElePlots( obs, cfg, rJet ); \} \textcolor{comment}{/* point source
+       luminosities */}
+391     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"saveLumPoint"}) ) \{ makeLPointSumPlots( obs, cfg, rJet ); \} \textcolor{comment}{/* point source
+       luminosity sum */}
+392     \textcolor{keywordflow}{if}( obs->\hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{sizeEnDissProc}( ) ) \{ makeUpeRPlots( obs, cfg, rJet ); \} \textcolor{comment}{/* make Upe vs radius
+       plots */}
+393     \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"QAccd"}) ) \{ makeLQAccdPlots( QAccd, cfg ); \} \textcolor{comment}{/* make QAccd plots -  template and
+       accretion disk multicolor blackbody */}
+394 
+395     \textcolor{keywordflow}{if}( obs->\hyperlink{classobserver_aa8290de1b8b9345c889ded609c7cd2d1}{sizeExtPl}( ) ) \{
+396       makeRmPlots( obs, cfg, rJet ); \textcolor{comment}{/* make Rm vs radius plots */}
+397       makeExtPldLdRPlots( obs, cfg, rJet ); \} \textcolor{comment}{/* make dLdR vs R plots for ExtPl */}
+398  
+399     \textcolor{comment}{/* flare plots */}
+400     \textcolor{keywordflow}{if}( obs -> ifCalculateFlares( ) ) \{ makePointFlare( obs, cfg, rJet ); \}
+401     
+402     bazinga::info(\textcolor{stringliteral}{"main"},\textcolor{stringliteral}{"Gnuplot files ready."});
+403   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+404   \textcolor{comment}{/* END make gnuplot plots */}
+405   \textcolor{comment}{/* ---------------------------------------------------------------------------------------------- */}
+406 
+407 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+408 \textcolor{preprocessor}{}    \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) && cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"printRoot"}) ) \{
+409     bazinga::print\_section( );
+410     bazinga::info(\textcolor{stringliteral}{"main"},\textcolor{stringliteral}{"Priniting ROOT canvases"});
+411     eleCanvas -> Print();
+412     \textcolor{keywordflow}{if}( ele->\hyperlink{classelectrons_a18a3cd4a19f833931632da1f9800141f}{ifEvol}( ) ) \{ eleInjCanvas -> Print(); \}
+413     \textcolor{keywordflow}{if}( obs->\hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{sizeEnDissProc}( ) ) \{ intLumCanvas -> Print(); \}
+414     \textcolor{keywordflow}{if}( obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ) \{ lumPointCanvas -> Print(); \}
+415     \textcolor{keywordflow}{if}( obs->\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}( ) ) \{ lumPointAvgCanvas -> Print(); \}
+416   \}
+417 \textcolor{preprocessor}{#endif}
+418 \textcolor{preprocessor}{}
+419   bazinga::print\_section( );
+420     \textcolor{comment}{/* print KN info */}
+421     \textcolor{comment}{/* go along the jet once again */}
+422   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<rJet->getMaxIndex();i++ ) \{
+423     rJet -> update( i );
+424     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j < ele->\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); j++ ) \{ ele->\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[j]->print\_KN\_info
+      ( ); \}
+425   \}
+426 
+427 bazinga::print\_section( );
+428 bazinga::info(\textcolor{stringliteral}{"main"},\textcolor{stringliteral}{"Merci beaucoup. I'm done here."});
+429 
+430 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+431 \textcolor{preprocessor}{} \textcolor{keywordflow}{if}( cfg->get<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"root"}) ) \{ bazinga::info(\textcolor{stringliteral}{"main"},\textcolor{stringliteral}{"PRESS 'ENTER' TO QUIT."});
+432   std::cin.ignore(); \}
+433 \textcolor{preprocessor}{#endif}
+434 \textcolor{preprocessor}{}
+435   \textcolor{comment}{/* free memory */}
+436  bazinga::info(\textcolor{stringliteral}{"BLAZAR"},\textcolor{stringliteral}{"Let's free some memory:"});
+437   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j<ele->\hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}.size(); j++ ) \{ \textcolor{keyword}{delete} ele->
+      \hyperlink{classelectrons_a2c90bebdf0a961a720dc9b70306fb6ea}{EnDissProc}[j]; \}
+438   \textcolor{keyword}{delete} obs;
+439   \textcolor{keyword}{delete} ele;
+440   \textcolor{keyword}{delete} rJet;
+441   \textcolor{keyword}{delete} cfg;
+442   \textcolor{keyword}{delete} QAccd;
+443 \textcolor{preprocessor}{#ifdef USE\_ROOT}
+444 \textcolor{preprocessor}{}  \textcolor{keyword}{delete} theApp;
+445 \textcolor{preprocessor}{#endif}
+446 \textcolor{preprocessor}{}\textcolor{keywordflow}{return} 0;
+447 \}
+\end{DoxyCode}

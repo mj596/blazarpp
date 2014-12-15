@@ -1,0 +1,917 @@
+\hypertarget{classobserver}{\section{observer Class Reference}
+\label{classobserver}\index{observer@{observer}}
+}
+
+
+{\ttfamily \#include $<$observer.\-hpp$>$}
+
+Inheritance diagram for observer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classobserver}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class is mainly used to calculate observed values from intrinsic jet properties such as observed luminosities instead of luminosities in jet co-\/moving frame or flare \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classobserver_a42314af9846ce37a6cdadd7a027eed12}{observer} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, std\-::string \-\_\-id)
+\item 
+\hyperlink{classobserver_acb64c4c8de3e36b5cce282dc139e602c}{$\sim$observer} ()
+\item 
+void \hyperlink{classobserver_a1fbeb6a33647dfadbb1ca9c0d64953bb}{print\-Info} ()
+\item 
+int \hyperlink{classobserver_aa28bd51f0a5bda86584ae35cd32603d6}{if\-Calculate\-Flares} ()
+\item 
+int \hyperlink{classobserver_af12e74dd21611778bc53e1766cbd4349}{get\-Freq\-List\-Size} ()
+\item 
+double \hyperlink{classobserver_a36e7c21680cd2ba038fb7cf3e6dfb77b}{get\-Freq\-List} (int i)
+\item 
+void \hyperlink{classobserver_a0e5aaaf485e52230ade3ebc034956608}{add\-En\-Diss\-Proc} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_a0bfece68d09337e339436326fdf2eabc}{list\-En\-Diss\-Proc} ()
+\item 
+int \hyperlink{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{size\-En\-Diss\-Proc} ()
+\item 
+void \hyperlink{classobserver_a9e6f78fade71b521003ee502c0eafaab}{add\-En\-Diss\-Proc\-Point} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_ac92a23cc40135eff9c9d443becd9dfa2}{list\-En\-Diss\-Proc\-Point} ()
+\item 
+int \hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{size\-En\-Diss\-Proc\-Point} ()
+\item 
+void \hyperlink{classobserver_a7755eb84eb5fc1bb7a5e84463034bf18}{add\-Ext\-Pl} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_a86d811d98a5273c8e97444a2ac6606a1}{list\-Ext\-Pl} ()
+\item 
+int \hyperlink{classobserver_aa8290de1b8b9345c889ded609c7cd2d1}{size\-Ext\-Pl} ()
+\item 
+void \hyperlink{classobserver_a29d26dd051772217e0ca16b051ecd93f}{add\-Ext\-Sp} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_aabb0a1a3fefbdb04844ae3555b13d038}{list\-Ext\-Sp} ()
+\item 
+int \hyperlink{classobserver_af0d03462bd4a837269c12d69f6b9199e}{size\-Ext\-Sp} ()
+\item 
+void \hyperlink{classobserver_a5f8d7efc385940222eb28d33378558b1}{add\-Ext\-Gu} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_a06bd3a882a44a4bb4120aa18163a50f2}{list\-Ext\-Gu} ()
+\item 
+int \hyperlink{classobserver_ae0bf73a28d20debaa0066e4fbbac4395}{size\-Ext\-Gu} ()
+\item 
+void \hyperlink{classobserver_a341825cd835514e888203ffcf15ca5e6}{calculate\-Point\-Luminosity} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_a2cdb4ba6523c5dbd3cb8383d4430a02f}{sum\-Point\-Luminosity} ()
+\item 
+void \hyperlink{classobserver_a78441d4287eb3e3991bfd8b19b74ef6e}{avg\-Point\-Luminosity} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj)
+\item 
+void \hyperlink{classobserver_a1906c04333220b8b121eda23e838fe63}{sum\-Point\-Avg\-Luminosity} ()
+\item 
+void \hyperlink{classobserver_ad34fc6b2013c4ce294c936c790747405}{add\-Q\-Accd\-Luminosity} (\hyperlink{classQuasarAccDisk}{Quasar\-Acc\-Disk} $\ast$Q\-Accd)
+\item 
+double \hyperlink{classobserver_a26080f0ca55ac7ae6f306bc11d18263d}{calculate\-Flare} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$\-\_\-obj, double nu)
+\item 
+void \hyperlink{classobserver_ade82015679a882a1052e6594dca46cb8}{calculate\-All\-Flares} ()
+\item 
+double \hyperlink{classobserver_af7fe35310b73997a7dab21cd6d4141db}{interpolate} (gsl\-\_\-vector $\ast$x, gsl\-\_\-vector $\ast$y, double x\-To\-Interpolate)
+\item 
+void \hyperlink{classobserver_a9b5776b8a4d70f92cc82630e30b7bfeb}{save\-Point\-Luminosity} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$x)
+\item 
+void \hyperlink{classobserver_a6785229b7211bfa2e161e6a27953caf3}{save\-Point\-Luminosity\-Sum} ()
+\item 
+void \hyperlink{classobserver_a339e054afe8cda7d6707b1b0f8c59127}{save\-Point\-Luminosity\-Sum} (gsl\-\_\-vector $\ast$gamma)
+\item 
+void \hyperlink{classobserver_aa01a0e777fe58f4b88dd80da83677a62}{save\-Averaged\-Point\-Luminosity} (\hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$x)
+\item 
+void \hyperlink{classobserver_a779e4c80cec4aa433fcb204fe0043ed7}{save\-Averaged\-Point\-Luminosity\-Sum} ()
+\item 
+void \hyperlink{classobserver_a2e7b0b16db25865c6fd6f7ce251ffd5d}{save\-Averaged\-Point\-Luminosity\-Sum} (gsl\-\_\-vector $\ast$gamma)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ $>$ \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{En\-Diss\-Proc}
+\item 
+\hypertarget{classobserver_a18c7cc72d61f5610f8d56ec80c758251}{std\-::vector$<$ \hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ $>$ {\bfseries En\-Diss\-Proc\-Point}}\label{classobserver_a18c7cc72d61f5610f8d56ec80c758251}
+
+\item 
+\hypertarget{classobserver_ab825bcea700d3d9cb6dfba26edcda166}{std\-::vector$<$ \hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ $>$ {\bfseries Ext\-Pl}}\label{classobserver_ab825bcea700d3d9cb6dfba26edcda166}
+
+\item 
+\hypertarget{classobserver_a1d6a26b2cbfc866024c762525a048aaf}{std\-::vector$<$ \hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ $>$ {\bfseries Ext\-Sp}}\label{classobserver_a1d6a26b2cbfc866024c762525a048aaf}
+
+\item 
+\hypertarget{classobserver_ac69c17944b5eef96e875afc47f07f363}{std\-::vector$<$ \hyperlink{classenergyDissProc}{energy\-Diss\-Proc} $\ast$ $>$ {\bfseries Ext\-Gu}}\label{classobserver_ac69c17944b5eef96e875afc47f07f363}
+
+\item 
+gsl\-\_\-vector $\ast$ \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{v\-Point\-Sum}
+\item 
+\hypertarget{classobserver_a57f1a467bfc7855bec6b6ce971cc7c7e}{gsl\-\_\-vector $\ast$ {\bfseries Lv\-Point\-Sum}}\label{classobserver_a57f1a467bfc7855bec6b6ce971cc7c7e}
+
+\item 
+\hypertarget{classobserver_a1894b3a158640b8c93d6de5ce72cb775}{gsl\-\_\-vector $\ast$ {\bfseries Lv\-Point\-Avg\-Sum}}\label{classobserver_a1894b3a158640b8c93d6de5ce72cb775}
+
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freq\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classobserver_a42314af9846ce37a6cdadd7a027eed12}{\index{observer@{observer}!observer@{observer}}
+\index{observer@{observer}!observer@{observer}}
+\subsubsection[{observer}]{\setlength{\rightskip}{0pt plus 5cm}observer\-::observer (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a42314af9846ce37a6cdadd7a027eed12}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em scfgp} & \\
+\hline
+{\em jetgeometry} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+10                                                                 : \hyperlink{classbaseClass}{baseClass}(\_cfg, \_r, \_id ) \{ 
+11   \textcolor{comment}{/* request parameters */}
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"}+\hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id},1000,&\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaObs"},0.1,&thetaObs);
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaJ"},0.1,&thetaJ);
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"nu1"},0,&nu1);
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"nu2"},0,&nu2);
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"nu3"},0,&nu3);
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"nu4"},0,&nu4);
+19   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"nu5"},0,&nu5);
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"nu6"},0,&nu6);
+21   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"},10.0,&Gamma);
+22   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{stringliteral}{"lumModel"},\textcolor{stringliteral}{"blob"},&lumModel);
+23   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"saveLumPoint"},0,&saveLumPoint);
+24   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"saveLumPointAvg"},0,&saveLumPointAvg);
+25   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"saveExtPlVsRm"},0,&saveExtPlVsRm);
+26 
+27   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+28   
+29   allocateLvPointSum( );
+30   allocateLvPointAvgSum( ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_acb64c4c8de3e36b5cce282dc139e602c}{\index{observer@{observer}!$\sim$observer@{$\sim$observer}}
+\index{$\sim$observer@{$\sim$observer}!observer@{observer}}
+\subsubsection[{$\sim$observer}]{\setlength{\rightskip}{0pt plus 5cm}observer\-::$\sim$observer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_acb64c4c8de3e36b5cce282dc139e602c}
+destructor 
+\begin{DoxyCode}
+32                      \{
+33   freeLvPointSum( );
+34   freeLvPointAvgSum( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classobserver_a0e5aaaf485e52230ade3ebc034956608}{\index{observer@{observer}!add\-En\-Diss\-Proc@{add\-En\-Diss\-Proc}}
+\index{add\-En\-Diss\-Proc@{add\-En\-Diss\-Proc}!observer@{observer}}
+\subsubsection[{add\-En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::add\-En\-Diss\-Proc (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a0e5aaaf485e52230ade3ebc034956608}
+add energy dissipation process to list of active ones 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+79 \{ \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}.push\_back( \_obj ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a9e6f78fade71b521003ee502c0eafaab}{\index{observer@{observer}!add\-En\-Diss\-Proc\-Point@{add\-En\-Diss\-Proc\-Point}}
+\index{add\-En\-Diss\-Proc\-Point@{add\-En\-Diss\-Proc\-Point}!observer@{observer}}
+\subsubsection[{add\-En\-Diss\-Proc\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::add\-En\-Diss\-Proc\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a9e6f78fade71b521003ee502c0eafaab}
+add energy dissipation process to list of those for which we have to calculate 'point source' luminosity 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+80 \{ EnDissProcPoint.push\_back( \_obj ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a5f8d7efc385940222eb28d33378558b1}{\index{observer@{observer}!add\-Ext\-Gu@{add\-Ext\-Gu}}
+\index{add\-Ext\-Gu@{add\-Ext\-Gu}!observer@{observer}}
+\subsubsection[{add\-Ext\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::add\-Ext\-Gu (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a5f8d7efc385940222eb28d33378558b1}
+add Ext\-Gu process to list of active ones 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+83 \{ ExtGu.push\_back( \_obj ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a7755eb84eb5fc1bb7a5e84463034bf18}{\index{observer@{observer}!add\-Ext\-Pl@{add\-Ext\-Pl}}
+\index{add\-Ext\-Pl@{add\-Ext\-Pl}!observer@{observer}}
+\subsubsection[{add\-Ext\-Pl}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::add\-Ext\-Pl (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a7755eb84eb5fc1bb7a5e84463034bf18}
+add Ext\-Pl process to list of active ones 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+81 \{ ExtPl.push\_back( \_obj ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a29d26dd051772217e0ca16b051ecd93f}{\index{observer@{observer}!add\-Ext\-Sp@{add\-Ext\-Sp}}
+\index{add\-Ext\-Sp@{add\-Ext\-Sp}!observer@{observer}}
+\subsubsection[{add\-Ext\-Sp}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::add\-Ext\-Sp (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a29d26dd051772217e0ca16b051ecd93f}
+add Ext\-Sp process to list of active ones 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+82 \{ ExtSp.push\_back( \_obj ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_ad34fc6b2013c4ce294c936c790747405}{\index{observer@{observer}!add\-Q\-Accd\-Luminosity@{add\-Q\-Accd\-Luminosity}}
+\index{add\-Q\-Accd\-Luminosity@{add\-Q\-Accd\-Luminosity}!observer@{observer}}
+\subsubsection[{add\-Q\-Accd\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::add\-Q\-Accd\-Luminosity (
+\begin{DoxyParamCaption}
+\item[{{\bf Quasar\-Acc\-Disk} $\ast$}]{Q\-Accd}
+\end{DoxyParamCaption}
+)}}\label{classobserver_ad34fc6b2013c4ce294c936c790747405}
+add Quasar Template to calculated luminosities 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classQuasarAccDisk}{Quasar\-Acc\-Disk}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+171                                                         \{
+172   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Adding QAccd spectra to averaged point source luminosities ..."});
+173 
+174   \textcolor{keywordtype}{double} QAccd\_vmin = gsl\_vector\_min( QAccd -> vTemplate );
+175   \textcolor{keywordtype}{double} QAccd\_vmax = gsl\_vector\_max( QAccd -> vTemplate );
+176   bazinga::print\_info(\textcolor{keywordtype}{id}, \textcolor{stringliteral}{"QAccd vmin"}, QAccd\_vmin );
+177   bazinga::print\_info(\textcolor{keywordtype}{id}, \textcolor{stringliteral}{"QAccd vmax"}, QAccd\_vmax );
+178 
+179   \textcolor{keywordtype}{double} interpolatedValue = 0.0;
+180   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+181     interpolatedValue = gsl\_vector\_get( LvPointAvgSum, i );
+182     \textcolor{keywordflow}{if}( gsl\_vector\_get( \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, i ) > QAccd\_vmin && gsl\_vector\_get( 
+      \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, i ) < QAccd\_vmax )
+183       interpolatedValue += \hyperlink{classobserver_af7fe35310b73997a7dab21cd6d4141db}{interpolate}( QAccd -> vTemplate, QAccd -> LvTemplate, gsl\_vector\_get(
+       \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, i ) );
+184     
+185     gsl\_vector\_set( LvPointAvgSum, i, interpolatedValue );
+186   \}
+187 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a78441d4287eb3e3991bfd8b19b74ef6e}{\index{observer@{observer}!avg\-Point\-Luminosity@{avg\-Point\-Luminosity}}
+\index{avg\-Point\-Luminosity@{avg\-Point\-Luminosity}!observer@{observer}}
+\subsubsection[{avg\-Point\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::avg\-Point\-Luminosity (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a78441d4287eb3e3991bfd8b19b74ef6e}
+calculate averaged 'point-\/source' luminosity; avergaed over all s-\/cells in the jet avtive region 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+125                                                      \{
+126   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Averaging spectra"}, x -> \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ) );
+127   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<x->N;i++ ) \{
+128     \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"blob"} ) \{ x->set\_LvPointAvg( i, x->get\_LvPointAvg( i ) + x->get\_LvPoint( i )/
+      \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getNinj( ) ); \}
+129     \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"steady"} ) \{ x->set\_LvPointAvg( i, x->get\_LvPointAvg( i ) + x->get\_LvPoint( i ) ); \}
+130   \}
+131 \}
+\end{DoxyCode}
+\hypertarget{classobserver_ade82015679a882a1052e6594dca46cb8}{\index{observer@{observer}!calculate\-All\-Flares@{calculate\-All\-Flares}}
+\index{calculate\-All\-Flares@{calculate\-All\-Flares}!observer@{observer}}
+\subsubsection[{calculate\-All\-Flares}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::calculate\-All\-Flares (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_ade82015679a882a1052e6594dca46cb8}
+calculate all flares 
+\begin{DoxyCode}
+40                                    \{
+41   \textcolor{keywordflow}{if}( nu1 || nu2 || nu3 || nu4 || nu5 || nu6 ) \{
+42     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Calculating flares"});
+43     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j=0; j<\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}(); j++ ) \{
+44       bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Calculating point source flare"},EnDissProcPoint[j]->
+      \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ));
+45       \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0; k<\hyperlink{classobserver_af12e74dd21611778bc53e1766cbd4349}{getFreqListSize}(); k++ ) \{
+46     \hyperlink{classobserver_a26080f0ca55ac7ae6f306bc11d18263d}{calculateFlare}( \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[j], \hyperlink{classobserver_a36e7c21680cd2ba038fb7cf3e6dfb77b}{getFreqList}(k) );
+47     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"frequency"},\hyperlink{classobserver_a36e7c21680cd2ba038fb7cf3e6dfb77b}{getFreqList}(k),\textcolor{stringliteral}{"Hz"}); \}
+48     \}
+49   \}
+50 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a26080f0ca55ac7ae6f306bc11d18263d}{\index{observer@{observer}!calculate\-Flare@{calculate\-Flare}}
+\index{calculate\-Flare@{calculate\-Flare}!observer@{observer}}
+\subsubsection[{calculate\-Flare}]{\setlength{\rightskip}{0pt plus 5cm}double observer\-::calculate\-Flare (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj, }
+\item[{double}]{nu}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a26080f0ca55ac7ae6f306bc11d18263d}
+calculate flares 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+{\em frequency} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+229                                                                 \{
+230   gsl\_vector* temp\_x = gsl\_vector\_alloc( obj->N );
+231   gsl\_vector* temp\_y = gsl\_vector\_alloc( obj->N );
+232   
+233   gsl\_vector* rad = gsl\_vector\_alloc( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getMaxIndex() );
+234   gsl\_vector* flare = gsl\_vector\_alloc( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getMaxIndex() );
+235   
+236   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getMaxIndex();i++ ) \{
+237     gsl\_vector\_set\_zero( temp\_x );
+238     gsl\_vector\_set\_zero( temp\_y );
+239     
+240     \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->update( i );
+241       
+242     gsl\_vector\_memcpy( temp\_x, obj->vPoint );
+243     gsl\_vector\_memcpy( temp\_y, obj->LvPoint );
+244     gsl\_vector\_mul( temp\_y, temp\_x );
+245     
+246     gsl\_vector\_set( rad, i, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get() );
+247     gsl\_vector\_set( flare, i, \hyperlink{classobserver_af7fe35310b73997a7dab21cd6d4141db}{interpolate}( temp\_x, temp\_y, nu ) ); \}
+248   
+249   std::string type = \textcolor{stringliteral}{"FlarePoint\_"};
+250   type += obj->whoAmI( );
+251   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving flare."});
+252   bazinga::save\_GSLVectorFlare( type, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRadius\_GSLVector( ), flare, nu, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"
+      output"}) );
+253 
+254   gsl\_vector\_free( temp\_x );
+255   gsl\_vector\_free( temp\_y );
+256   
+257   gsl\_vector\_free( rad );
+258   gsl\_vector\_free( flare ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a341825cd835514e888203ffcf15ca5e6}{\index{observer@{observer}!calculate\-Point\-Luminosity@{calculate\-Point\-Luminosity}}
+\index{calculate\-Point\-Luminosity@{calculate\-Point\-Luminosity}!observer@{observer}}
+\subsubsection[{calculate\-Point\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::calculate\-Point\-Luminosity (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{\-\_\-obj}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a341825cd835514e888203ffcf15ca5e6}
+caluclate 'point-\/source' luminosity 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+115                                                            \{
+116   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Calculating point source luminosity"}, x -> \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ) );
+117   \textcolor{keywordtype}{double} Doppler = 1.0/(Gamma*(1.0-cos( thetaObs )*\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)));
+118   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<x->N;i++ ) \{
+119     x->set\_vPoint( i, x->get\_vp( i )*Doppler );
+120     \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"blob"} ) \{ x->set\_LvPoint( i, x->get\_Lpv( i )*pow(Doppler, 3) ); \}
+121     \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"steady"} ) \{ x->set\_LvPoint( i, x->get\_Lpv( i )*pow(Doppler, 2)/Gamma ); \}
+122   \}
+123 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a36e7c21680cd2ba038fb7cf3e6dfb77b}{\index{observer@{observer}!get\-Freq\-List@{get\-Freq\-List}}
+\index{get\-Freq\-List@{get\-Freq\-List}!observer@{observer}}
+\subsubsection[{get\-Freq\-List}]{\setlength{\rightskip}{0pt plus 5cm}double observer\-::get\-Freq\-List (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a36e7c21680cd2ba038fb7cf3e6dfb77b}
+get frequency 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+i-\/th frequency 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+38 \{ \textcolor{keywordflow}{return} \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}[i]; \}
+\end{DoxyCode}
+\hypertarget{classobserver_af12e74dd21611778bc53e1766cbd4349}{\index{observer@{observer}!get\-Freq\-List\-Size@{get\-Freq\-List\-Size}}
+\index{get\-Freq\-List\-Size@{get\-Freq\-List\-Size}!observer@{observer}}
+\subsubsection[{get\-Freq\-List\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::get\-Freq\-List\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_af12e74dd21611778bc53e1766cbd4349}
+check how many frequencies to look at wen calculating flares \begin{DoxyReturn}{Returns}
+number of frequencies 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+36 \{ \textcolor{keywordflow}{return} \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.size(); \}
+\end{DoxyCode}
+\hypertarget{classobserver_aa28bd51f0a5bda86584ae35cd32603d6}{\index{observer@{observer}!if\-Calculate\-Flares@{if\-Calculate\-Flares}}
+\index{if\-Calculate\-Flares@{if\-Calculate\-Flares}!observer@{observer}}
+\subsubsection[{if\-Calculate\-Flares}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::if\-Calculate\-Flares (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_aa28bd51f0a5bda86584ae35cd32603d6}
+check if you should calculate flares \begin{DoxyReturn}{Returns}
+1 if yes, 0 if no 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+357                                  \{
+358   \textcolor{keywordflow}{if}( nu1 || nu2 || nu3 || nu4 || nu5 || nu6 ) \{ \textcolor{keywordflow}{return} 1; \}
+359   \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{return} 0; \}
+360 \}
+\end{DoxyCode}
+\hypertarget{classobserver_af7fe35310b73997a7dab21cd6d4141db}{\index{observer@{observer}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!observer@{observer}}
+\subsubsection[{interpolate}]{\setlength{\rightskip}{0pt plus 5cm}double observer\-::interpolate (
+\begin{DoxyParamCaption}
+\item[{gsl\-\_\-vector $\ast$}]{x, }
+\item[{gsl\-\_\-vector $\ast$}]{y, }
+\item[{double}]{x\-To\-Interpolate}
+\end{DoxyParamCaption}
+)}}\label{classobserver_af7fe35310b73997a7dab21cd6d4141db}
+technical\-: interpolate data y( x ) 
+\begin{DoxyParams}{Parameters}
+{\em gsl\-\_\-vector} & x \\
+\hline
+{\em gsl\-\_\-vector} & y \\
+\hline
+{\em x\-\_\-value} & to calculate y( x\-\_\-value ) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+260                                                                       \{
+261   \textcolor{keywordtype}{double} interpolatedValue;
+262   \textcolor{keywordtype}{double} xmin, xmax = 0.0;
+263   
+264   \textcolor{keywordflow}{if}( \_x < gsl\_vector\_min( x ) || \_x > gsl\_vector\_max( x ) ) \{ interpolatedValue = 1.0; \}
+265   
+266   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<x->size-1; i++ ) \{
+267     \textcolor{keywordflow}{if}( gsl\_vector\_get( x, i ) > \_x ) \{
+268       \textcolor{keywordflow}{if}( gsl\_vector\_get( y, i ) == 0 || gsl\_vector\_get( y, i+1 ) == 0 ) \{ interpolatedValue = 0.0; \}
+269       \textcolor{keywordflow}{else} \{
+270     interpolatedValue = log( gsl\_vector\_get( y, i ) ) + log(gsl\_vector\_get( y, i+1 )/gsl\_vector\_get( y, i )
+      )/log(gsl\_vector\_get( x, i+1 )/gsl\_vector\_get( x, i ))*log(\_x/gsl\_vector\_get( x, i ) );
+271       \}
+272       interpolatedValue = exp(interpolatedValue);
+273       \textcolor{comment}{//      interpolatedValue = 0.5*( gsl\_vector\_get( y, i ) + gsl\_vector\_get( y, i+1 ) );}
+274       \textcolor{keywordflow}{break}; \}
+275   \}   
+276 
+277   \textcolor{keywordflow}{return} interpolatedValue; \}
+\end{DoxyCode}
+\hypertarget{classobserver_a0bfece68d09337e339436326fdf2eabc}{\index{observer@{observer}!list\-En\-Diss\-Proc@{list\-En\-Diss\-Proc}}
+\index{list\-En\-Diss\-Proc@{list\-En\-Diss\-Proc}!observer@{observer}}
+\subsubsection[{list\-En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::list\-En\-Diss\-Proc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a0bfece68d09337e339436326fdf2eabc}
+show active energy dissipation processes 
+\begin{DoxyCode}
+105                                \{
+106   std::stringstream s;
+107   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}.size(); i++ ) s << \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}[i]->
+      \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}() << \textcolor{stringliteral}{" "};
+108   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Processes used to calculate intrinsic lumonisities"},s.str()); \}
+\end{DoxyCode}
+\hypertarget{classobserver_ac92a23cc40135eff9c9d443becd9dfa2}{\index{observer@{observer}!list\-En\-Diss\-Proc\-Point@{list\-En\-Diss\-Proc\-Point}}
+\index{list\-En\-Diss\-Proc\-Point@{list\-En\-Diss\-Proc\-Point}!observer@{observer}}
+\subsubsection[{list\-En\-Diss\-Proc\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::list\-En\-Diss\-Proc\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_ac92a23cc40135eff9c9d443becd9dfa2}
+show active energy dissipation processes for which we have to calculate 'point source' luminosity 
+\begin{DoxyCode}
+110                                     \{
+111   std::stringstream s;
+112   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<EnDissProcPoint.size(); i++ ) s << EnDissProcPoint[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}() << \textcolor{stringliteral}{" "};
+113   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Processes used to calculate point lumonisities"},s.str()); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a06bd3a882a44a4bb4120aa18163a50f2}{\index{observer@{observer}!list\-Ext\-Gu@{list\-Ext\-Gu}}
+\index{list\-Ext\-Gu@{list\-Ext\-Gu}!observer@{observer}}
+\subsubsection[{list\-Ext\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::list\-Ext\-Gu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a06bd3a882a44a4bb4120aa18163a50f2}
+show active Ext\-Gu energy dissipation processes 
+\begin{DoxyCode}
+100                           \{
+101   std::stringstream s;
+102   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<ExtGu.size(); i++ ) s << ExtGu[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}() << \textcolor{stringliteral}{" "};
+103   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"External Radiation Gu Sources"},s.str()); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a86d811d98a5273c8e97444a2ac6606a1}{\index{observer@{observer}!list\-Ext\-Pl@{list\-Ext\-Pl}}
+\index{list\-Ext\-Pl@{list\-Ext\-Pl}!observer@{observer}}
+\subsubsection[{list\-Ext\-Pl}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::list\-Ext\-Pl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a86d811d98a5273c8e97444a2ac6606a1}
+show active Ext\-Pl energy dissipation processes 
+\begin{DoxyCode}
+90                           \{
+91   std::stringstream s;
+92   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<ExtPl.size(); i++ ) s << ExtPl[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}() << \textcolor{stringliteral}{" "};
+93   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"External Radiation Planar Sources"},s.str()); \}
+\end{DoxyCode}
+\hypertarget{classobserver_aabb0a1a3fefbdb04844ae3555b13d038}{\index{observer@{observer}!list\-Ext\-Sp@{list\-Ext\-Sp}}
+\index{list\-Ext\-Sp@{list\-Ext\-Sp}!observer@{observer}}
+\subsubsection[{list\-Ext\-Sp}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::list\-Ext\-Sp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_aabb0a1a3fefbdb04844ae3555b13d038}
+show active Ext\-Sp energy dissipation processes 
+\begin{DoxyCode}
+95                           \{
+96   std::stringstream s;
+97   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<ExtSp.size(); i++ ) s << ExtSp[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}() << \textcolor{stringliteral}{" "};
+98   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"External Radiation Spherical Sources"},s.str()); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a1fbeb6a33647dfadbb1ca9c0d64953bb}{\index{observer@{observer}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!observer@{observer}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classobserver_a1fbeb6a33647dfadbb1ca9c0d64953bb}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classbaseClass_a67f911cca483b620b908c69dfa4f3ad7}{base\-Class}.
+
+
+\begin{DoxyCode}
+52                           \{
+53   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+54   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+55   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Observer @"},thetaObs,\textcolor{stringliteral}{"rad"});
+56   \textcolor{keywordflow}{if}( nu1 || nu2 || nu3 || nu4 || nu5 || nu6 ) \{
+57       bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Calculating flares"});
+58       \textcolor{keywordflow}{if}( nu1 ) \{
+59     \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.push\_back( nu1 );
+60     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ frequency"},nu1); \}
+61       \textcolor{keywordflow}{if}( nu2 ) \{
+62     \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.push\_back( nu2 );
+63     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ frequency"},nu2); \}
+64       \textcolor{keywordflow}{if}( nu3 ) \{
+65     \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.push\_back( nu3 );
+66     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ frequency"},nu3); \}
+67       \textcolor{keywordflow}{if}( nu4 ) \{
+68     \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.push\_back( nu4 );
+69     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ frequency"},nu4); \}
+70       \textcolor{keywordflow}{if}( nu5 ) \{
+71     \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.push\_back( nu5 );
+72     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ frequency"},nu5); \}
+73       \textcolor{keywordflow}{if}( nu6 ) \{
+74     \hyperlink{classobserver_a64f3e868a83ea1c693a329aba1f83560}{freqList}.push\_back( nu6 );
+75     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"@ frequency"},nu6); \}
+76   \}
+77 \}
+\end{DoxyCode}
+\hypertarget{classobserver_aa01a0e777fe58f4b88dd80da83677a62}{\index{observer@{observer}!save\-Averaged\-Point\-Luminosity@{save\-Averaged\-Point\-Luminosity}}
+\index{save\-Averaged\-Point\-Luminosity@{save\-Averaged\-Point\-Luminosity}!observer@{observer}}
+\subsubsection[{save\-Averaged\-Point\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::save\-Averaged\-Point\-Luminosity (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{classobserver_aa01a0e777fe58f4b88dd80da83677a62}
+save averaged 'point-\/source' luminosity 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+336                                                               \{
+337   \textcolor{keywordflow}{if}( saveLumPointAvg ) \{ 
+338     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving averaged point luminosities."});
+339     std::string type = \textcolor{stringliteral}{"LvPointAvg\_"} + x->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+340     bazinga::save\_GSLVector( type, x->\hyperlink{classenergyDissProc_a1f075543ccaa902a20787c032822d8f4}{vPoint}, x->\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, x->
+      \hyperlink{classenergyDissProc_a25546d40225b971c1b3dddb8e8f71258}{LvPointAvg}, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+341 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a779e4c80cec4aa433fcb204fe0043ed7}{\index{observer@{observer}!save\-Averaged\-Point\-Luminosity\-Sum@{save\-Averaged\-Point\-Luminosity\-Sum}}
+\index{save\-Averaged\-Point\-Luminosity\-Sum@{save\-Averaged\-Point\-Luminosity\-Sum}!observer@{observer}}
+\subsubsection[{save\-Averaged\-Point\-Luminosity\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::save\-Averaged\-Point\-Luminosity\-Sum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a779e4c80cec4aa433fcb204fe0043ed7}
+save summed averaged 'point-\/source' luminosity 
+\begin{DoxyCode}
+343                                                \{
+344   \textcolor{keywordflow}{if}( saveLumPointAvg  ) \{
+345     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving summed averaged point luminosities."});
+346     std::string type = \textcolor{stringliteral}{"LvPointAvg\_"} + this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+347     bazinga::save\_GSLVector( type, \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, LvPointAvgSum, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) );
+       \}
+348 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a2e7b0b16db25865c6fd6f7ce251ffd5d}{\index{observer@{observer}!save\-Averaged\-Point\-Luminosity\-Sum@{save\-Averaged\-Point\-Luminosity\-Sum}}
+\index{save\-Averaged\-Point\-Luminosity\-Sum@{save\-Averaged\-Point\-Luminosity\-Sum}!observer@{observer}}
+\subsubsection[{save\-Averaged\-Point\-Luminosity\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::save\-Averaged\-Point\-Luminosity\-Sum (
+\begin{DoxyParamCaption}
+\item[{gsl\-\_\-vector $\ast$}]{gamma}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a2e7b0b16db25865c6fd6f7ce251ffd5d}
+save summed averaged 'point-\/source' luminosity along with electron gamma values (obsolete) 
+\begin{DoxyParams}{Parameters}
+{\em gsl\-\_\-vector} & gamma \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+350                                                                  \{
+351   \textcolor{keywordflow}{if}( saveLumPointAvg  ) \{
+352     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving summed averaged point luminosities."});
+353     std::string type = \textcolor{stringliteral}{"LvPointAvg\_"} + this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+354     bazinga::save\_GSLVector( type, \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, gamma, LvPointAvgSum, \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"
+      output"}) ); \}
+355 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a9b5776b8a4d70f92cc82630e30b7bfeb}{\index{observer@{observer}!save\-Point\-Luminosity@{save\-Point\-Luminosity}}
+\index{save\-Point\-Luminosity@{save\-Point\-Luminosity}!observer@{observer}}
+\subsubsection[{save\-Point\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::save\-Point\-Luminosity (
+\begin{DoxyParamCaption}
+\item[{{\bf energy\-Diss\-Proc} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a9b5776b8a4d70f92cc82630e30b7bfeb}
+save 'point-\/source' luminosity 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classenergyDissProc}{energy\-Diss\-Proc}} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+315                                                       \{
+316   \textcolor{keywordflow}{if}( saveLumPoint && \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->ifSaveRadius( ) ) \{
+317     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving point luminosities."});
+318     std::string type = \textcolor{stringliteral}{"LvPoint\_"} + x -> \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+319     bazinga::save\_GSLVector( type, x->\hyperlink{classenergyDissProc_a1f075543ccaa902a20787c032822d8f4}{vPoint}, x->\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_aba72b6575be27358efcb13cc3415df68}{gamma}, x->
+      \hyperlink{classenergyDissProc_aa8463250da28ef23c71540b1efb24ee4}{LvPoint}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getPosition( ), \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+320 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a6785229b7211bfa2e161e6a27953caf3}{\index{observer@{observer}!save\-Point\-Luminosity\-Sum@{save\-Point\-Luminosity\-Sum}}
+\index{save\-Point\-Luminosity\-Sum@{save\-Point\-Luminosity\-Sum}!observer@{observer}}
+\subsubsection[{save\-Point\-Luminosity\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::save\-Point\-Luminosity\-Sum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a6785229b7211bfa2e161e6a27953caf3}
+save summed 'point-\/source' luminosity 
+\begin{DoxyCode}
+322                                        \{
+323   \textcolor{keywordflow}{if}( saveLumPoint && \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->ifSaveRadius( ) ) \{
+324     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving summed point luminosities."});
+325     std::string type = \textcolor{stringliteral}{"LvPoint\_"} + \textcolor{keyword}{this} -> \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+326     bazinga::save\_GSLVector( type, \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, LvPointSum, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getPosition( ), 
+      \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+327 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a339e054afe8cda7d6707b1b0f8c59127}{\index{observer@{observer}!save\-Point\-Luminosity\-Sum@{save\-Point\-Luminosity\-Sum}}
+\index{save\-Point\-Luminosity\-Sum@{save\-Point\-Luminosity\-Sum}!observer@{observer}}
+\subsubsection[{save\-Point\-Luminosity\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::save\-Point\-Luminosity\-Sum (
+\begin{DoxyParamCaption}
+\item[{gsl\-\_\-vector $\ast$}]{gamma}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a339e054afe8cda7d6707b1b0f8c59127}
+save summed 'point-\/source' luminosity along with electron gamma values (obsolete) 
+\begin{DoxyParams}{Parameters}
+{\em gsl\-\_\-vector} & gamma \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+329                                                          \{
+330   \textcolor{keywordflow}{if}( saveLumPoint && \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->ifSaveRadius( ) ) \{
+331     bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving summed point luminosities."});
+332     std::string type = \textcolor{stringliteral}{"LvPoint\_"} + \textcolor{keyword}{this} -> \hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( );
+333     bazinga::save\_GSLVector( type, \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, gamma, LvPointSum, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getPosition( ), 
+      \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+334 \}
+\end{DoxyCode}
+\hypertarget{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}{\index{observer@{observer}!size\-En\-Diss\-Proc@{size\-En\-Diss\-Proc}}
+\index{size\-En\-Diss\-Proc@{size\-En\-Diss\-Proc}!observer@{observer}}
+\subsubsection[{size\-En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::size\-En\-Diss\-Proc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a3455cd549f8a75cbe2f5c068ae88ec79}
+show how many active energy dissipation processes there are \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+84 \{ \textcolor{keywordflow}{return} \hyperlink{classobserver_aeb5a8afa2221e268e06f74600acac7af}{EnDissProc}.size(); \}
+\end{DoxyCode}
+\hypertarget{classobserver_ade865c5881df7e3fc884b50ca812c52e}{\index{observer@{observer}!size\-En\-Diss\-Proc\-Point@{size\-En\-Diss\-Proc\-Point}}
+\index{size\-En\-Diss\-Proc\-Point@{size\-En\-Diss\-Proc\-Point}!observer@{observer}}
+\subsubsection[{size\-En\-Diss\-Proc\-Point}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::size\-En\-Diss\-Proc\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_ade865c5881df7e3fc884b50ca812c52e}
+show how many active energy dissipation processes for which we have to calculate 'point source' luminosity there are \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+85 \{ \textcolor{keywordflow}{return} EnDissProcPoint.size(); \}
+\end{DoxyCode}
+\hypertarget{classobserver_ae0bf73a28d20debaa0066e4fbbac4395}{\index{observer@{observer}!size\-Ext\-Gu@{size\-Ext\-Gu}}
+\index{size\-Ext\-Gu@{size\-Ext\-Gu}!observer@{observer}}
+\subsubsection[{size\-Ext\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::size\-Ext\-Gu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_ae0bf73a28d20debaa0066e4fbbac4395}
+show how many active Ext\-Gu energy dissipation processes there are \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+88 \{ \textcolor{keywordflow}{return} ExtGu.size(); \}
+\end{DoxyCode}
+\hypertarget{classobserver_aa8290de1b8b9345c889ded609c7cd2d1}{\index{observer@{observer}!size\-Ext\-Pl@{size\-Ext\-Pl}}
+\index{size\-Ext\-Pl@{size\-Ext\-Pl}!observer@{observer}}
+\subsubsection[{size\-Ext\-Pl}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::size\-Ext\-Pl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_aa8290de1b8b9345c889ded609c7cd2d1}
+show how many active Ext\-Pl energy dissipation processes there are \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+86 \{ \textcolor{keywordflow}{return} ExtPl.size(); \}
+\end{DoxyCode}
+\hypertarget{classobserver_af0d03462bd4a837269c12d69f6b9199e}{\index{observer@{observer}!size\-Ext\-Sp@{size\-Ext\-Sp}}
+\index{size\-Ext\-Sp@{size\-Ext\-Sp}!observer@{observer}}
+\subsubsection[{size\-Ext\-Sp}]{\setlength{\rightskip}{0pt plus 5cm}int observer\-::size\-Ext\-Sp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_af0d03462bd4a837269c12d69f6b9199e}
+show how many active Ext\-Sp energy dissipation processes there are \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+87 \{ \textcolor{keywordflow}{return} ExtSp.size(); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a1906c04333220b8b121eda23e838fe63}{\index{observer@{observer}!sum\-Point\-Avg\-Luminosity@{sum\-Point\-Avg\-Luminosity}}
+\index{sum\-Point\-Avg\-Luminosity@{sum\-Point\-Avg\-Luminosity}!observer@{observer}}
+\subsubsection[{sum\-Point\-Avg\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::sum\-Point\-Avg\-Luminosity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a1906c04333220b8b121eda23e838fe63}
+caculate a sum of all averaged 'point-\/source' luminosities from every process involved 
+\begin{DoxyCode}
+190 \{
+191   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Summing calculated averaged point source luminosities ..."});
+192 
+193   \textcolor{comment}{/* preparing vector for interpolated data */}
+194   gsl\_vector* xx = gsl\_vector\_alloc( \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+195   gsl\_vector* yy = gsl\_vector\_alloc( \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+196   
+197   gsl\_vector\_set\_zero( xx );
+198   gsl\_vector\_set\_zero( yy );
+199   
+200   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ gsl\_vector\_set( xx, i, vmin*pow(vmax/vmin,(\textcolor{keywordtype}{double})i/(\textcolor{keywordtype}{double})N) ); \}
+201     
+202   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}(); i++ ) \{
+203     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Add"},EnDissProcPoint[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}());
+204     
+205     \textcolor{comment}{/* we will copy actual values stores in matrices to gsl\_vectors; y vector is nu L nu!! */}
+206     gsl\_vector* temp\_x = gsl\_vector\_alloc( EnDissProcPoint[i]->N );
+207     gsl\_vector* temp\_y = gsl\_vector\_alloc( EnDissProcPoint[i]->N );
+208       
+209     gsl\_vector\_memcpy( temp\_x, EnDissProcPoint[i]->vPoint );
+210     gsl\_vector\_memcpy( temp\_y, EnDissProcPoint[i]->LvPointAvg );
+211     
+212     \textcolor{comment}{/* nu F nu! */}
+213     gsl\_vector\_mul( temp\_y, temp\_x );
+214     
+215     \textcolor{comment}{/* fill in the final vector and add only those values which are within boundaries */}
+216     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0; k<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}; k++ ) \{ gsl\_vector\_set( yy, k, gsl\_vector\_get( yy, k ) + 
+      \hyperlink{classobserver_af7fe35310b73997a7dab21cd6d4141db}{interpolate}( temp\_x, temp\_y, gsl\_vector\_get( xx, k ) ) ); \}
+217 
+218     gsl\_vector\_free( temp\_x );
+219     gsl\_vector\_free( temp\_y ); \}
+220   
+221   \textcolor{comment}{/* copy vector to matrix */}
+222   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+223     gsl\_vector\_set( \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, i, gsl\_vector\_get( xx, i ) );    
+224     gsl\_vector\_set( LvPointAvgSum, i, gsl\_vector\_get( yy, i ) ); \}
+225   
+226   gsl\_vector\_free( xx );
+227   gsl\_vector\_free( yy ); \}
+\end{DoxyCode}
+\hypertarget{classobserver_a2cdb4ba6523c5dbd3cb8383d4430a02f}{\index{observer@{observer}!sum\-Point\-Luminosity@{sum\-Point\-Luminosity}}
+\index{sum\-Point\-Luminosity@{sum\-Point\-Luminosity}!observer@{observer}}
+\subsubsection[{sum\-Point\-Luminosity}]{\setlength{\rightskip}{0pt plus 5cm}void observer\-::sum\-Point\-Luminosity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classobserver_a2cdb4ba6523c5dbd3cb8383d4430a02f}
+caculate a sum of all 'point-\/source' luminosities from every process involved 
+\begin{DoxyCode}
+133                                    \{
+134   \textcolor{comment}{/* preparing vector for interpolated data */}
+135   gsl\_vector* xx = gsl\_vector\_alloc( \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+136   gsl\_vector* yy = gsl\_vector\_alloc( \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+137   
+138   gsl\_vector\_set\_zero( xx );
+139   gsl\_vector\_set\_zero( yy );
+140   
+141   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ gsl\_vector\_set( xx, i, vmin*pow(vmax/vmin,(\textcolor{keywordtype}{double})i/(\textcolor{keywordtype}{double})N) ); \}
+142   
+143   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0; i<\hyperlink{classobserver_ade865c5881df7e3fc884b50ca812c52e}{sizeEnDissProcPoint}(); i++ ) \{
+144     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Add"},EnDissProcPoint[i]->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}());
+145     
+146     \textcolor{comment}{/* we will copy actual values stores in matrices to gsl\_vectors; y vector is nu L nu!! */}
+147     gsl\_vector* temp\_x = gsl\_vector\_alloc( EnDissProcPoint[i]->N );
+148     gsl\_vector* temp\_y = gsl\_vector\_alloc( EnDissProcPoint[i]->N );
+149     
+150     gsl\_vector\_memcpy( temp\_x, EnDissProcPoint[i]->vPoint );
+151     gsl\_vector\_memcpy( temp\_y, EnDissProcPoint[i]->LvPoint );
+152       
+153     \textcolor{comment}{/* nu F nu! */}
+154     gsl\_vector\_mul( temp\_y, temp\_x );
+155       
+156     \textcolor{comment}{/* fill in the final vector and add only those values which are within boundaries */}
+157     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0; k<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}; k++ ) \{ gsl\_vector\_set( yy, k, gsl\_vector\_get( yy, k ) + 
+      \hyperlink{classobserver_af7fe35310b73997a7dab21cd6d4141db}{interpolate}( temp\_x, temp\_y, gsl\_vector\_get( xx, k ) ) ); \}
+158     
+159     gsl\_vector\_free( temp\_x );
+160     gsl\_vector\_free( temp\_y ); \}
+161   
+162   \textcolor{comment}{/* copy vector to matrix */}
+163   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+164     gsl\_vector\_set( \hyperlink{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{vPointSum}, i, gsl\_vector\_get( xx, i ) );    
+165     gsl\_vector\_set( LvPointSum, i, gsl\_vector\_get( yy, i ) );
+166  \}
+167   
+168   gsl\_vector\_free( xx );
+169   gsl\_vector\_free( yy ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classobserver_aeb5a8afa2221e268e06f74600acac7af}{\index{observer@{observer}!En\-Diss\-Proc@{En\-Diss\-Proc}}
+\index{En\-Diss\-Proc@{En\-Diss\-Proc}!observer@{observer}}
+\subsubsection[{En\-Diss\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf energy\-Diss\-Proc}$\ast$$>$ observer\-::\-En\-Diss\-Proc}}\label{classobserver_aeb5a8afa2221e268e06f74600acac7af}
+vectors to hold processes being used in calculations \hypertarget{classobserver_a64f3e868a83ea1c693a329aba1f83560}{\index{observer@{observer}!freq\-List@{freq\-List}}
+\index{freq\-List@{freq\-List}!observer@{observer}}
+\subsubsection[{freq\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ observer\-::freq\-List}}\label{classobserver_a64f3e868a83ea1c693a329aba1f83560}
+frequency list \hypertarget{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}{\index{observer@{observer}!v\-Point\-Sum@{v\-Point\-Sum}}
+\index{v\-Point\-Sum@{v\-Point\-Sum}!observer@{observer}}
+\subsubsection[{v\-Point\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}gsl\-\_\-vector$\ast$ observer\-::v\-Point\-Sum}}\label{classobserver_aef3c4770dc82fdb0d2ac7143e184cbc3}
+vectors to store summed luminosities 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{observer_8hpp}{observer.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{observer_8cpp}{observer.\-cpp}\end{DoxyCompactItemize}

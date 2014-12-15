@@ -1,0 +1,22 @@
+#! /usr/bin/env python
+import numpy as np
+import sys
+file = open(str(sys.argv[1]),'r')
+x=[]
+y=[]
+for line in file.readlines():
+    temp = line.split()
+    x.append( float(temp[0]) )
+    y.append( float(temp[1]) )
+
+# x=np.array(x)
+# y=np.array(y)
+# import matplotlib.pyplot as plt
+# plt.loglog(x,x*y,'o')
+# plt.show()
+
+integral=0
+for i in range(len(x)-1):
+    integral += 0.5*(y[i]+y[i+1])*(x[i+1]-x[i])
+
+print "%1.2e" % integral

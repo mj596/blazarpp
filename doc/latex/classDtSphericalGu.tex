@@ -1,0 +1,211 @@
+\hypertarget{classDtSphericalGu}{\section{Dt\-Spherical\-Gu Class Reference}
+\label{classDtSphericalGu}\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}}
+}
+
+
+{\ttfamily \#include $<$Dt\-Spherical\-Gu.\-hpp$>$}
+
+Inheritance diagram for Dt\-Spherical\-Gu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classDtSphericalGu}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Parameters used by class (defaults) 
+\begin{DoxyParams}{Parameters}
+{\em e} & (\hyperlink{classexternalRadiationGu}{external\-Radiation\-Gu}) -\/ energy (ext) in e\-V (e = 0.\-6203) \\
+\hline
+{\em cf} & (external\-Radiation\-Spherical\-Gu) -\/ covering factor (cf = 0.\-1) \\
+\hline
+{\em rext} & -\/ blr radius (rext = 1.\-0$\ast$r\-\_\-sub) \\
+\hline
+{\em k} & -\/ u\-\_\-ext vs r index = 2 \\
+\hline
+\end{DoxyParams}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDtSphericalGu_ac10430f174e0e5c62da42b2bdae446d3}{Dt\-Spherical\-Gu} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classDtSphericalGu_a6f5f80e9ef2f5f15283cec5ab074a1bb}{$\sim$\-Dt\-Spherical\-Gu} ()
+\item 
+void \hyperlink{classDtSphericalGu_aeed0bda6440570b686aaf85bf5d2b6b3}{print\-Info} ()
+\item 
+void \hyperlink{classDtSphericalGu_ac940befec9ea9886b136f9d96c88620a}{update} ()
+\item 
+double \hyperlink{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}{getvext} (double \-\_\-r)
+\item 
+void \hyperlink{classDtSphericalGu_af8b00665c5f7caca8b4a84034a097e05}{set\-Radius} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDtSphericalGu_ac10430f174e0e5c62da42b2bdae446d3}{\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}}
+\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!DtSphericalGu@{Dt\-Spherical\-Gu}}
+\subsubsection[{Dt\-Spherical\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}Dt\-Spherical\-Gu\-::\-Dt\-Spherical\-Gu (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classDtSphericalGu_ac10430f174e0e5c62da42b2bdae446d3}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                        : 
+      \hyperlink{classexternalRadiationGu_aad5903b642f08594be10d699cf9fb3b4}{externalRadiationGu}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}, \textcolor{keywordtype}{id} ) \{
+10   \textcolor{comment}{/* requested parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"e"}, 0.6203, &e );
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"cf"}, 0.1, &cf );
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"rext"}, 0.0, &rext );
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} + \textcolor{stringliteral}{"k"}, 2.0, &k );
+15 
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+17 
+18   \textcolor{keywordflow}{if}( rext == 0.0 ) \{ \hyperlink{classDtSphericalGu_af8b00665c5f7caca8b4a84034a097e05}{setRadius}( ); \}
+19   \textcolor{keywordflow}{else} \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Overwritting rext value from config file!"}); \}
+20   
+21   \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin} = 0.01*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMin( ) )*\hyperlink{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRMax() );
+22   vpMax = 100.0*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMax( ) )*\hyperlink{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0() );
+23 
+24   allocateUpeR( ); \textcolor{comment}{// this is for storing vector information about Upe(r) }
+25   allocateLpv( );
+26   allocateLvPoint( );
+27   allocateLvPointAvg( );
+28 
+29   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+30 \}
+\end{DoxyCode}
+\hypertarget{classDtSphericalGu_a6f5f80e9ef2f5f15283cec5ab074a1bb}{\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!$\sim$\-Dt\-Spherical\-Gu@{$\sim$\-Dt\-Spherical\-Gu}}
+\index{$\sim$\-Dt\-Spherical\-Gu@{$\sim$\-Dt\-Spherical\-Gu}!DtSphericalGu@{Dt\-Spherical\-Gu}}
+\subsubsection[{$\sim$\-Dt\-Spherical\-Gu}]{\setlength{\rightskip}{0pt plus 5cm}Dt\-Spherical\-Gu\-::$\sim$\-Dt\-Spherical\-Gu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDtSphericalGu_a6f5f80e9ef2f5f15283cec5ab074a1bb}
+destructor 
+\begin{DoxyCode}
+35 \{ \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}{\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!getvext@{getvext}}
+\index{getvext@{getvext}!DtSphericalGu@{Dt\-Spherical\-Gu}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}double Dt\-Spherical\-Gu\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}
+get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-r} & -\/ radius \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classexternalRadiationGu_ab7e1abcc40cf0538404e88a0febdfb02}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+32                                          \{
+33   \textcolor{keywordtype}{double} vext;
+34   vext = e*eV2erg/PLANCK\_H;
+35   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ \textcolor{keywordflow}{return} vext; \}
+36   \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{return} vext*rext/\_r; \}
+37 \}
+\end{DoxyCode}
+\hypertarget{classDtSphericalGu_aeed0bda6440570b686aaf85bf5d2b6b3}{\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!DtSphericalGu@{Dt\-Spherical\-Gu}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Dt\-Spherical\-Gu\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtSphericalGu_aeed0bda6440570b686aaf85bf5d2b6b3}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classexternalRadiationGu_a8aa28d939b0ecf2651f18cc4f5f6ba25}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+52                                \{
+53   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+54   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+55   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg energy (in external frame)"},e,\textcolor{stringliteral}{"eV"});
+56   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg frequency (in external frame)"},\hyperlink{classDtSphericalGu_a78218d880e1c9374058b6084ca939804}{getvext}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0()),\textcolor{stringliteral}{"Hz"});
+57   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Clouds covering factor cf"},cf);
+58   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius rext"},rext,\textcolor{stringliteral}{"cm"});
+59   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"strat index k"},k);
+60   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMin"},\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},\textcolor{stringliteral}{"Hz"});
+61   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMax"},vpMax,\textcolor{stringliteral}{"Hz"});
+62 \}
+\end{DoxyCode}
+\hypertarget{classDtSphericalGu_af8b00665c5f7caca8b4a84034a097e05}{\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!DtSphericalGu@{Dt\-Spherical\-Gu}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Dt\-Spherical\-Gu\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtSphericalGu_af8b00665c5f7caca8b4a84034a097e05}
+sets rext if not provided by config file 
+
+Reimplemented from \hyperlink{classexternalRadiationGu_a541b2bb7da733f10d83af6225b7ad5f8}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+64                                 \{
+65   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+66   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+67   \textcolor{keywordtype}{double} R\_sub = 1.6e-5*sqrt( Ldisk );
+68   rext = R\_sub; \}
+\end{DoxyCode}
+\hypertarget{classDtSphericalGu_ac940befec9ea9886b136f9d96c88620a}{\index{Dt\-Spherical\-Gu@{Dt\-Spherical\-Gu}!update@{update}}
+\index{update@{update}!DtSphericalGu@{Dt\-Spherical\-Gu}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Dt\-Spherical\-Gu\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtSphericalGu_ac940befec9ea9886b136f9d96c88620a}
+calculate and set Upe every time with new radius r 
+
+Reimplemented from \hyperlink{classexternalRadiationGu_a730363f393f29aef9927e0bb84087116}{external\-Radiation\-Gu}.
+
+
+\begin{DoxyCode}
+39                              \{
+40   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+41   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+42   \textcolor{keywordtype}{double} temp\_upe = 0.0;
+43   \textcolor{keywordtype}{double} temp\_cf = 0.0;
+44   temp\_cf = cf;
+45   temp\_cf *= pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()/rext,2)/(1.0+pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()/rext,k));
+46   temp\_upe = (temp\_cf*Ldisk*DSQR(Gamma))/(3.0*M\_PI*DSQR(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get())*LIGHT\_SPEED);
+47   gsl\_vector\_set( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ), temp\_upe );
+48   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Upe"},gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) ) );
+49   set\_upe\_r( gsl\_vector\_get( \hyperlink{classenergyDissProc_ac925d66519c79f36421f75a6bc9f0965}{upe\_r}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) ) );
+50   \hyperlink{classenergyDissProc_a7b51925f603e271657cab66afe822591}{flag\_upe\_r} = \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{DtSphericalGu_8hpp}{Dt\-Spherical\-Gu.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{DtSphericalGu_8cpp}{Dt\-Spherical\-Gu.\-cpp}\end{DoxyCompactItemize}

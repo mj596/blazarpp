@@ -1,0 +1,158 @@
+#! /usr/bin/env python
+import os
+import sys
+import math
+
+DIR = sys.argv[1]
+OUT = os.listdir(DIR+'/out')
+CONF = os.listdir(DIR+'/conf')
+LOG = os.listdir(DIR+'/log')
+
+LOGFILE = DIR+'/log/'+LOG[0]
+SEARCH_FOR = ['accd', 'blrSp', 'dtSp', 'syn', 'ssc', 'blrPl', 'dtPl']
+FOUND = []
+R1 = []
+R2 = []
+
+file = open( LOGFILE, 'r' )
+data = []
+for line in file.readlines():
+    for element in line.split():    
+        data.append( element )
+    
+file.close()
+        
+for i in range(len(data)):
+    if data[i] == 'id':
+        for item in SEARCH_FOR:
+            if data[i+2] == item:
+                FOUND.append( item )
+                print data[i], data[i+1], data[i+2]
+                foundR1 = False
+                foundR2 = False
+                for j in range(i,i+20):
+                    if data[j] == 'R1':
+                        print data[j], data[j+1], data[j+2]
+                        R1.append( data[j+2] )
+                        foundR1 = True
+                    if data[j] == 'R2':
+                        print data[j], data[j+1], data[j+2]
+                        R2.append( data[j+2] )
+                        foundR2 = True
+                if foundR1 == False:
+                    R1.append(str(0.0))
+                if foundR2 == False:
+                    R2.append(str(0.0))
+
+R0 = []
+RMAX = []
+for logfile in LOG:
+    file = open( DIR+'/log/'+logfile, 'r' )
+    data = []
+    for line in file.readlines():
+        for element in line.split():    
+            data.append( element )
+            
+            file.close()
+    for i in range( len(data) ):
+        if data[i] == 'R0':
+            R0.append( float(data[i+2]) )
+        if data[i] == 'RMAX':
+            RMAX.append( float(data[i+2]) )
+
+# sort FOUND, R1, R2
+sorted_found=[]
+sorted_r1=[]
+sorted_r2=[]
+for i in range(len(FOUND)):
+    if FOUND[i] == 'accd':
+        sorted_found.append( FOUND[i] )
+        sorted_r1.append( R1[i] )
+        sorted_r2.append( R2[i] )
+
+for i in range(len(FOUND)):
+    if FOUND[i] != 'accd':
+        sorted_found.append( FOUND[i] )
+        sorted_r1.append( R1[i] )
+        sorted_r2.append( R2[i] )
+
+FOUND = sorted_found
+R1 = sorted_r1
+R2 = sorted_r2
+
+print FOUND
+print R1
+print R2
+
+import numpy as np
+rmin = np.min( np.array(R0) )
+rmax = np.max( np.array(RMAX) )
+
+OUTFILE = open( DIR+'/plotUpe_vs_R.gp','w' )
+OUTFILE.write('# Upe vs r\n')
+OUTFILE.write('set logscale xy\n')
+OUTFILE.write('set logscale x2\n')
+OUTFILE.write('set grid\n')
+OUTFILE.write('set key left bottom\n')
+OUTFILE.write('set border lw 2\n')
+OUTFILE.write('set format y "10^{%L}"\n')
+OUTFILE.write('set format x "10^{%L}"\n')
+OUTFILE.write('set format x2 "10^{%L}"\n')
+OUTFILE.write('set xtics nomirror \n')
+OUTFILE.write('set x2tics\n')
+OUTFILE.write('set xlabel \"r [cm]\"\n')
+OUTFILE.write('set ylabel \"U\'(r)\"\n')
+OUTFILE.write('set x2label \"r [pc]\"\n')
+line = 'set xrange ['+str(rmin)+':'+str(rmax)+']\n'
+OUTFILE.write(line)
+line = 'set x2range ['+str(rmin)+'/3.086e18:'+str(rmax)+'/3.086e18]\n'
+OUTFILE.write(line)
+line = 'set title \"U(r) vs r -'
+for i in FOUND:
+    line += ' '+i 
+line += '\"\n'
+OUTFILE.write(line)
+OUTFILE.write('set terminal postscript enhanced color\n')
+OUTFILE.write('set output \"upe_vs_r.eps\"\n')
+
+def fill_rect_color( x ):
+    if x == 'blr':
+        return 'light-blue'
+    if x == 'dt':
+        return 'light-green'
+    if x == 'accd':
+        return 'gray'
+
+def fill_line_color( x ):
+    if x == 'blr':
+        return 'blue'
+    if x == 'dt':
+        return 'red'
+    if x == 'accd':
+        return 'black'
+    if x == 'syn':
+        return 'green'
+    if x == 'ssc':
+        return 'brown'
+
+for i in range(len(FOUND)):
+    if R1[i] != '0.0' and R2[i] != '0.0':
+        OUTFILE.write('set obj rect from '+str(R1[i])+',1.0e-40 to '+str(R2[i])+',1.0e10 fillcolor rgb\"'+fill_rect_color( FOUND[i] )+'\" behind\n')
+        OUTFILE.write('set label \"'+str(FOUND[i])+'\" at '+str( 10**(0.5*(math.log10(float(R1[i]))+math.log10(float(R2[i])))) )+',3.0e-6\n')
+        OUTFILE.write('set arrow from '+str(R1[i])+',1.0e-6 to '+str(R2[i])+',1.0e-6 heads\n')
+OUTFILE.write('plot \\\n')
+for j in range(len(FOUND)):
+    for i in range(len(OUT)):
+        if FOUND[j] == 'ssc':
+            OUTFILE.write('\"./out/'+OUT[i]+'/UpeR_'+FOUND[j]+'\" every ::1 using ($1):($2) w l lt 4 lw 3 lc rgb \"'+fill_line_color( FOUND[j] )+'\" ')
+        else:
+            OUTFILE.write('\"./out/'+OUT[i]+'/UpeR_'+FOUND[j]+'\" using ($1):($2) w l lt 4 lw 3 lc rgb \"'+fill_line_color( FOUND[j] )+'\" ')
+        if i == 0:
+            OUTFILE.write('title \"'+FOUND[j]+'\"')
+        else:
+            OUTFILE.write('notitle')
+        if i != len(OUT)-1 or j != len(FOUND)-1:
+            OUTFILE.write(', \\\n')
+        else:
+            OUTFILE.write('\n')
+    

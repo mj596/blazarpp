@@ -1,0 +1,1006 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{8}
+  \item {$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{11}
+  \item {$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{16}
+  \item {$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{19}
+  \item {$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{21}
+  \item {$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{25}
+  \item {$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{27}
+  \item {$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{30}
+  \item {$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{79}
+  \item {$\sim $electrons}
+    \subitem {electrons}, \hyperpage{33}
+  \item {$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{41}
+  \item {$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{48}
+  \item {$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{52}
+  \item {$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{60}
+  \item {$\sim $magnetic\discretionary {-}{}{}Field}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{64}
+  \item {$\sim $observer}
+    \subitem {observer}, \hyperpage{67}
+  \item {$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{84}
+  \item {$\sim $synchrotron}
+    \subitem {synchrotron}, \hyperpage{88}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}, 
+		\hyperpage{91}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}, 
+		\hyperpage{91}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}, 
+		\hyperpage{94}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp}, 
+		\hyperpage{94}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}, 
+		\hyperpage{94}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}, 
+		\hyperpage{95}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp}, 
+		\hyperpage{95}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}, 
+		\hyperpage{95}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.\discretionary {-}{}{}hpp}, 
+		\hyperpage{100}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/base\discretionary {-}{}{}Class.\discretionary {-}{}{}hpp}, 
+		\hyperpage{91}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/blazar.\discretionary {-}{}{}hpp}, 
+		\hyperpage{92}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/electrons.\discretionary {-}{}{}hpp}, 
+		\hyperpage{96}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.\discretionary {-}{}{}hpp}, 
+		\hyperpage{98}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation.\discretionary {-}{}{}hpp}, 
+		\hyperpage{98}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.\discretionary {-}{}{}hpp}, 
+		\hyperpage{98}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.\discretionary {-}{}{}hpp}, 
+		\hyperpage{99}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.\discretionary {-}{}{}hpp}, 
+		\hyperpage{99}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/magnetic\discretionary {-}{}{}Field.\discretionary {-}{}{}hpp}, 
+		\hyperpage{99}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/observer.\discretionary {-}{}{}hpp}, 
+		\hyperpage{100}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.\discretionary {-}{}{}hpp}, 
+		\hyperpage{100}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/include/synchrotron.\discretionary {-}{}{}hpp}, 
+		\hyperpage{101}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}, 
+		\hyperpage{101}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}, 
+		\hyperpage{108}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp}, 
+		\hyperpage{108}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp}, 
+		\hyperpage{108}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}, 
+		\hyperpage{108}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp}, 
+		\hyperpage{109}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp}, 
+		\hyperpage{109}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk.\discretionary {-}{}{}cpp}, 
+		\hyperpage{113}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/base\discretionary {-}{}{}Class.\discretionary {-}{}{}cpp}, 
+		\hyperpage{101}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/blazar.\discretionary {-}{}{}cpp}, 
+		\hyperpage{102}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/electrons.\discretionary {-}{}{}cpp}, 
+		\hyperpage{109}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc.\discretionary {-}{}{}cpp}, 
+		\hyperpage{111}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation.\discretionary {-}{}{}cpp}, 
+		\hyperpage{111}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu.\discretionary {-}{}{}cpp}, 
+		\hyperpage{112}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar.\discretionary {-}{}{}cpp}, 
+		\hyperpage{112}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical.\discretionary {-}{}{}cpp}, 
+		\hyperpage{112}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/magnetic\discretionary {-}{}{}Field.\discretionary {-}{}{}cpp}, 
+		\hyperpage{112}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/observer.\discretionary {-}{}{}cpp}, 
+		\hyperpage{113}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton.\discretionary {-}{}{}cpp}, 
+		\hyperpage{113}
+  \item {/home/mjaniak/\discretionary {-}{}{}Soft/blazar++/src/synchrotron.\discretionary {-}{}{}cpp}, 
+		\hyperpage{113}
+
+  \indexspace
+
+  \item {A}
+    \subitem {electrons}, \hyperpage{39}
+  \item {Accd\discretionary {-}{}{}Planar}, \hyperpage{7}
+    \subitem {$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Planar}, 
+		\hyperpage{8}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{8}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{8}
+    \subitem {getvext}, \hyperpage{8}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{9}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{9}
+    \subitem {setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}, 
+		\hyperpage{9}
+  \item {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{10}
+    \subitem {$\sim $\discretionary {-}{}{}Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{11}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{10}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{10}
+    \subitem {getvext}, \hyperpage{11}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{11}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{12}
+    \subitem {update}, \hyperpage{12}
+  \item {add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}
+    \subitem {electrons}, \hyperpage{33}
+    \subitem {observer}, \hyperpage{68}
+  \item {add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}
+    \subitem {observer}, \hyperpage{69}
+  \item {add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}
+    \subitem {observer}, \hyperpage{69}
+  \item {add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}
+    \subitem {observer}, \hyperpage{69}
+  \item {add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}
+    \subitem {observer}, \hyperpage{69}
+  \item {add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{69}
+  \item {allocate\discretionary {-}{}{}Lv}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{79}
+  \item {avg\discretionary {-}{}{}Ngamma}
+    \subitem {electrons}, \hyperpage{34}
+  \item {avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{70}
+
+  \indexspace
+
+  \item {B}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{86}
+  \item {base\discretionary {-}{}{}Class}, \hyperpage{12}
+    \subitem {beta}, \hyperpage{13}
+    \subitem {cfg}, \hyperpage{13}
+    \subitem {get\discretionary {-}{}{}N}, \hyperpage{13}
+    \subitem {id}, \hyperpage{13}
+    \subitem {N}, \hyperpage{14}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{13}
+    \subitem {r}, \hyperpage{14}
+    \subitem {who\discretionary {-}{}{}Am\discretionary {-}{}{}I}, 
+		\hyperpage{13}
+  \item {beta}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{13}
+    \subitem {electrons}, \hyperpage{34}
+  \item {blazar.\discretionary {-}{}{}cpp}
+    \subitem {main}, \hyperpage{102}
+  \item {blazar.\discretionary {-}{}{}hpp}
+    \subitem {get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}, 
+		\hyperpage{92}
+    \subitem {safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}, 
+		\hyperpage{93}
+  \item {Blr\discretionary {-}{}{}Planar}, \hyperpage{14}
+    \subitem {$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Planar}, 
+		\hyperpage{16}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{15}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{15}
+    \subitem {getvext}, \hyperpage{16}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{16}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{17}
+    \subitem {setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}, 
+		\hyperpage{16}
+  \item {Blr\discretionary {-}{}{}Spherical}, \hyperpage{17}
+    \subitem {$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical}, 
+		\hyperpage{19}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{18}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{18}
+    \subitem {getvext}, \hyperpage{19}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{19}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{19}
+    \subitem {update}, \hyperpage{20}
+  \item {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{20}
+    \subitem {$\sim $\discretionary {-}{}{}Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{21}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{21}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{21}
+    \subitem {getvext}, \hyperpage{22}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{23}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{23}
+    \subitem {update}, \hyperpage{23}
+
+  \indexspace
+
+  \item {calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares}
+    \subitem {observer}, \hyperpage{70}
+  \item {calculate\discretionary {-}{}{}Flare}
+    \subitem {observer}, \hyperpage{70}
+  \item {calculate\discretionary {-}{}{}Lpv}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{41}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{48}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{53}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{60}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{84}
+    \subitem {synchrotron}, \hyperpage{88}
+  \item {calculate\discretionary {-}{}{}Luminosity}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{79}
+  \item {calculate\discretionary {-}{}{}Lv}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{80}
+  \item {calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{71}
+  \item {calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{54}
+  \item {calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{54}
+  \item {cfg}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{13}
+  \item {ctau}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{54}
+
+  \indexspace
+
+  \item {d\discretionary {-}{}{}Log\discretionary {-}{}{}E}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {dgdr}
+    \subitem {electrons}, \hyperpage{34}
+  \item {dotg}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{42}
+    \subitem {external\discretionary {-}{}{}Radiation}, \hyperpage{46}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{49}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{55}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{61}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{85}
+    \subitem {synchrotron}, \hyperpage{89}
+  \item {Dt\discretionary {-}{}{}Planar}, \hyperpage{24}
+    \subitem {$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Planar}, 
+		\hyperpage{25}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{24}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{24}
+    \subitem {getvext}, \hyperpage{25}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{25}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{26}
+    \subitem {setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}, 
+		\hyperpage{25}
+  \item {Dt\discretionary {-}{}{}Spherical}, \hyperpage{26}
+    \subitem {$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical}, 
+		\hyperpage{27}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{27}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{27}
+    \subitem {getvext}, \hyperpage{28}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{28}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{28}
+    \subitem {update}, \hyperpage{28}
+  \item {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{29}
+    \subitem {$\sim $\discretionary {-}{}{}Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{30}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{30}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{30}
+    \subitem {getvext}, \hyperpage{30}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{30}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{31}
+    \subitem {update}, \hyperpage{31}
+
+  \indexspace
+
+  \item {ele}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {electrons}, \hyperpage{31}
+    \subitem {$\sim $electrons}, \hyperpage{33}
+    \subitem {A}, \hyperpage{39}
+    \subitem {add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{33}
+    \subitem {avg\discretionary {-}{}{}Ngamma}, \hyperpage{34}
+    \subitem {beta}, \hyperpage{34}
+    \subitem {dgdr}, \hyperpage{34}
+    \subitem {electrons}, \hyperpage{32}
+    \subitem {En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{39}
+    \subitem {evolve}, \hyperpage{34}
+    \subitem {gamma}, \hyperpage{39}
+    \subitem {gauss}, \hyperpage{35}
+    \subitem {gaussmod}, \hyperpage{35}
+    \subitem {get\discretionary {-}{}{}Gamma}, \hyperpage{35}
+    \subitem {get\discretionary {-}{}{}Ngamma}, \hyperpage{36}
+    \subitem {getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma}, 
+		\hyperpage{35}
+    \subitem {if\discretionary {-}{}{}Evol}, \hyperpage{36}
+    \subitem {inject}, \hyperpage{36}
+    \subitem {list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{36}
+    \subitem {print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info}, 
+		\hyperpage{36}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{36}
+    \subitem {save\discretionary {-}{}{}Injection}, \hyperpage{37}
+    \subitem {save\discretionary {-}{}{}Ngamma}, \hyperpage{37}
+    \subitem {save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg}, 
+		\hyperpage{37}
+    \subitem {set\discretionary {-}{}{}Energetics}, \hyperpage{38}
+    \subitem {set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters}, 
+		\hyperpage{38}
+    \subitem {t\discretionary {-}{}{}Q}, \hyperpage{38}
+    \subitem {tri}, \hyperpage{39}
+  \item {electrons.\discretionary {-}{}{}cpp}
+    \subitem {f1}, \hyperpage{110}
+    \subitem {f2}, \hyperpage{110}
+    \subitem {function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}, 
+		\hyperpage{110}
+    \subitem {solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}, 
+		\hyperpage{110}
+  \item {electrons.\discretionary {-}{}{}hpp}
+    \subitem {f1}, \hyperpage{96}
+    \subitem {f2}, \hyperpage{96}
+    \subitem {function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}, 
+		\hyperpage{96}
+    \subitem {solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}, 
+		\hyperpage{97}
+  \item {En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}
+    \subitem {electrons}, \hyperpage{39}
+    \subitem {observer}, \hyperpage{77}
+  \item {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{39}
+    \subitem {$\sim $energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{41}
+    \subitem {calculate\discretionary {-}{}{}Lpv}, \hyperpage{41}
+    \subitem {d\discretionary {-}{}{}Log\discretionary {-}{}{}E}, 
+		\hyperpage{44}
+    \subitem {dotg}, \hyperpage{42}
+    \subitem {ele}, \hyperpage{44}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{41}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{41}
+    \subitem {ep}, \hyperpage{44}
+    \subitem {ep\discretionary {-}{}{}Min}, \hyperpage{44}
+    \subitem {flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}, 
+		\hyperpage{44}
+    \subitem {gamma\discretionary {-}{}{}K\discretionary {-}{}{}N}, 
+		\hyperpage{44}
+    \subitem {getd\discretionary {-}{}{}Log\discretionary {-}{}{}E}, 
+		\hyperpage{42}
+    \subitem {inj\discretionary {-}{}{}Rm}, \hyperpage{44}
+    \subitem {Lpv}, \hyperpage{44}
+    \subitem {luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu}, 
+		\hyperpage{44}
+    \subitem {luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U}, 
+		\hyperpage{44}
+    \subitem {Lv\discretionary {-}{}{}Point}, \hyperpage{45}
+    \subitem {Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg}, 
+		\hyperpage{45}
+    \subitem {print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
+		\hyperpage{42}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{42}
+    \subitem {save\discretionary {-}{}{}Luminosity}, \hyperpage{43}
+    \subitem {save\discretionary {-}{}{}Upe\discretionary {-}{}{}R}, 
+		\hyperpage{43}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
+		\hyperpage{43}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{43}
+    \subitem {update}, \hyperpage{43}
+    \subitem {upe}, \hyperpage{45}
+    \subitem {upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}, 
+		\hyperpage{45}
+    \subitem {v\discretionary {-}{}{}Point}, \hyperpage{45}
+    \subitem {vp}, \hyperpage{45}
+    \subitem {vp\discretionary {-}{}{}Min}, \hyperpage{45}
+  \item {ep}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {ep\discretionary {-}{}{}Min}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {evolve}
+    \subitem {electrons}, \hyperpage{34}
+  \item {external\discretionary {-}{}{}Radiation}, \hyperpage{45}
+    \subitem {dotg}, \hyperpage{46}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{46}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{46}
+    \subitem {update}, \hyperpage{46}
+  \item {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{47}
+    \subitem {$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{48}
+    \subitem {calculate\discretionary {-}{}{}Lpv}, \hyperpage{48}
+    \subitem {dotg}, \hyperpage{49}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{48}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{48}
+    \subitem {getvext}, \hyperpage{49}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{49}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{49}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{50}
+    \subitem {update}, \hyperpage{50}
+  \item {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{50}
+    \subitem {$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{52}
+    \subitem {calculate\discretionary {-}{}{}Lpv}, \hyperpage{53}
+    \subitem {calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Approx}, 
+		\hyperpage{54}
+    \subitem {calculate\discretionary {-}{}{}Upe\discretionary {-}{}{}Full}, 
+		\hyperpage{54}
+    \subitem {ctau}, \hyperpage{54}
+    \subitem {dotg}, \hyperpage{55}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{52}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{52}
+    \subitem {fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral}, 
+		\hyperpage{55}
+    \subitem {function\discretionary {-}{}{}\_\discretionary {-}{}{}lum}, 
+		\hyperpage{56}
+    \subitem {function\discretionary {-}{}{}\_\discretionary {-}{}{}upe}, 
+		\hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Rm}, \hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector}, 
+		\hyperpage{56}
+    \subitem {getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}, 
+		\hyperpage{56}
+    \subitem {getvext}, \hyperpage{57}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{57}
+    \subitem {save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R}, 
+		\hyperpage{57}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{57}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{57}
+    \subitem {set\discretionary {-}{}{}Rm}, \hyperpage{58}
+    \subitem {setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}, 
+		\hyperpage{57}
+    \subitem {update}, \hyperpage{58}
+  \item {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{58}
+    \subitem {$\sim $external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{60}
+    \subitem {calculate\discretionary {-}{}{}Lpv}, \hyperpage{60}
+    \subitem {dotg}, \hyperpage{61}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{59}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{59}
+    \subitem {getvext}, \hyperpage{61}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{61}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{61}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{61}
+    \subitem {update}, \hyperpage{62}
+
+  \indexspace
+
+  \item {f1}
+    \subitem {electrons.\discretionary {-}{}{}cpp}, \hyperpage{110}
+    \subitem {electrons.\discretionary {-}{}{}hpp}, \hyperpage{96}
+  \item {f2}
+    \subitem {electrons.\discretionary {-}{}{}cpp}, \hyperpage{110}
+    \subitem {electrons.\discretionary {-}{}{}hpp}, \hyperpage{96}
+  \item {flag\discretionary {-}{}{}\_\discretionary {-}{}{}upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {freq\discretionary {-}{}{}List}
+    \subitem {observer}, \hyperpage{77}
+  \item {fsc\discretionary {-}{}{}\_\discretionary {-}{}{}integral}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{55}
+  \item {function\discretionary {-}{}{}\_\discretionary {-}{}{}lum}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{56}
+  \item {function\discretionary {-}{}{}\_\discretionary {-}{}{}upe}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{56}
+  \item {function\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}
+    \subitem {electrons.\discretionary {-}{}{}cpp}, \hyperpage{110}
+    \subitem {electrons.\discretionary {-}{}{}hpp}, \hyperpage{96}
+
+  \indexspace
+
+  \item {gamma}
+    \subitem {electrons}, \hyperpage{39}
+  \item {gamma\discretionary {-}{}{}\_\discretionary {-}{}{}break\discretionary {-}{}{}\_\discretionary {-}{}{}params}, 
+		\hyperpage{62}
+  \item {gamma\discretionary {-}{}{}K\discretionary {-}{}{}N}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {gauss}
+    \subitem {electrons}, \hyperpage{35}
+  \item {gaussmod}
+    \subitem {electrons}, \hyperpage{35}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{64}
+  \item {get\discretionary {-}{}{}B}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{65}
+  \item {get\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}
+    \subitem {blazar.\discretionary {-}{}{}hpp}, \hyperpage{92}
+  \item {get\discretionary {-}{}{}Freq\discretionary {-}{}{}List}
+    \subitem {observer}, \hyperpage{71}
+  \item {get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size}
+    \subitem {observer}, \hyperpage{71}
+  \item {get\discretionary {-}{}{}Gamma}
+    \subitem {electrons}, \hyperpage{35}
+  \item {get\discretionary {-}{}{}Max\discretionary {-}{}{}B}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{65}
+  \item {get\discretionary {-}{}{}N}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{13}
+  \item {get\discretionary {-}{}{}Ngamma}
+    \subitem {electrons}, \hyperpage{36}
+  \item {get\discretionary {-}{}{}Rm}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Rm\discretionary {-}{}{}Vector}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Temperature}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{80}
+  \item {getd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{56}
+  \item {getd\discretionary {-}{}{}Log\discretionary {-}{}{}E}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{42}
+  \item {getd\discretionary {-}{}{}Log\discretionary {-}{}{}Gamma}
+    \subitem {electrons}, \hyperpage{35}
+  \item {getvext}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{8}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{11}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{16}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{19}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{22}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{25}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{28}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{30}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{49}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{57}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{61}
+
+  \indexspace
+
+  \item {id}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{13}
+  \item {if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares}
+    \subitem {observer}, \hyperpage{72}
+  \item {if\discretionary {-}{}{}Evol}
+    \subitem {electrons}, \hyperpage{36}
+  \item {inj\discretionary {-}{}{}Rm}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {inject}
+    \subitem {electrons}, \hyperpage{36}
+  \item {interpolate}
+    \subitem {observer}, \hyperpage{72}
+  \item {iterate}
+    \subitem {synchrotron}, \hyperpage{89}
+
+  \indexspace
+
+  \item {jet\discretionary {-}{}{}Geometry}, \hyperpage{62}
+
+  \indexspace
+
+  \item {list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}
+    \subitem {electrons}, \hyperpage{36}
+    \subitem {observer}, \hyperpage{72}
+  \item {list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}
+    \subitem {observer}, \hyperpage{72}
+  \item {list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}
+    \subitem {observer}, \hyperpage{73}
+  \item {list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}
+    \subitem {observer}, \hyperpage{73}
+  \item {list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}
+    \subitem {observer}, \hyperpage{73}
+  \item {log\discretionary {-}{}{}Geometry}, \hyperpage{63}
+  \item {Lpv}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}Nu}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {luminosity\discretionary {-}{}{}Const\discretionary {-}{}{}U}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{44}
+  \item {Lv\discretionary {-}{}{}Point}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+  \item {Lv\discretionary {-}{}{}Point\discretionary {-}{}{}Avg}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+
+  \indexspace
+
+  \item {magnetic\discretionary {-}{}{}Field}, \hyperpage{63}
+    \subitem {$\sim $magnetic\discretionary {-}{}{}Field}, 
+		\hyperpage{64}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}u\discretionary {-}{}{}B}, 
+		\hyperpage{64}
+    \subitem {get\discretionary {-}{}{}B}, \hyperpage{65}
+    \subitem {get\discretionary {-}{}{}Max\discretionary {-}{}{}B}, 
+		\hyperpage{65}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{64}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{64}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{65}
+  \item {main}
+    \subitem {blazar.\discretionary {-}{}{}cpp}, \hyperpage{102}
+
+  \indexspace
+
+  \item {N}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{14}
+
+  \indexspace
+
+  \item {observer}, \hyperpage{66}
+    \subitem {$\sim $observer}, \hyperpage{67}
+    \subitem {add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{68}
+    \subitem {add\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}, 
+		\hyperpage{69}
+    \subitem {add\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}, 
+		\hyperpage{69}
+    \subitem {add\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}, 
+		\hyperpage{69}
+    \subitem {add\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}, 
+		\hyperpage{69}
+    \subitem {add\discretionary {-}{}{}Q\discretionary {-}{}{}Accd\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{69}
+    \subitem {avg\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{70}
+    \subitem {calculate\discretionary {-}{}{}All\discretionary {-}{}{}Flares}, 
+		\hyperpage{70}
+    \subitem {calculate\discretionary {-}{}{}Flare}, \hyperpage{70}
+    \subitem {calculate\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{71}
+    \subitem {En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{77}
+    \subitem {freq\discretionary {-}{}{}List}, \hyperpage{77}
+    \subitem {get\discretionary {-}{}{}Freq\discretionary {-}{}{}List}, 
+		\hyperpage{71}
+    \subitem {get\discretionary {-}{}{}Freq\discretionary {-}{}{}List\discretionary {-}{}{}Size}, 
+		\hyperpage{71}
+    \subitem {if\discretionary {-}{}{}Calculate\discretionary {-}{}{}Flares}, 
+		\hyperpage{72}
+    \subitem {interpolate}, \hyperpage{72}
+    \subitem {list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{72}
+    \subitem {list\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}, 
+		\hyperpage{72}
+    \subitem {list\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}, 
+		\hyperpage{73}
+    \subitem {list\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}, 
+		\hyperpage{73}
+    \subitem {list\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}, 
+		\hyperpage{73}
+    \subitem {observer}, \hyperpage{67}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{73}
+    \subitem {save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{73}
+    \subitem {save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}, 
+		\hyperpage{74}
+    \subitem {save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{74}
+    \subitem {save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}, 
+		\hyperpage{74, 75}
+    \subitem {size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{75}
+    \subitem {size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}, 
+		\hyperpage{75}
+    \subitem {size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}, 
+		\hyperpage{75}
+    \subitem {size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}, 
+		\hyperpage{75}
+    \subitem {size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}, 
+		\hyperpage{76}
+    \subitem {sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{76}
+    \subitem {sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{76}
+    \subitem {v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum}, 
+		\hyperpage{77}
+
+  \indexspace
+
+  \item {print\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{42}
+  \item {print\discretionary {-}{}{}Cooling\discretionary {-}{}{}Info}
+    \subitem {electrons}, \hyperpage{36}
+  \item {print\discretionary {-}{}{}Info}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{9}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{11}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{13}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{16}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{19}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{23}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{25}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{28}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{30}
+    \subitem {electrons}, \hyperpage{36}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{42}
+    \subitem {external\discretionary {-}{}{}Radiation}, \hyperpage{46}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{49}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{57}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{61}
+    \subitem {magnetic\discretionary {-}{}{}Field}, \hyperpage{65}
+    \subitem {observer}, \hyperpage{73}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{80}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{85}
+    \subitem {synchrotron}, \hyperpage{89}
+
+  \indexspace
+
+  \item {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{77}
+    \subitem {$\sim $\discretionary {-}{}{}Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{79}
+    \subitem {allocate\discretionary {-}{}{}Lv}, \hyperpage{79}
+    \subitem {calculate\discretionary {-}{}{}Luminosity}, 
+		\hyperpage{79}
+    \subitem {calculate\discretionary {-}{}{}Lv}, \hyperpage{80}
+    \subitem {get\discretionary {-}{}{}Temperature}, \hyperpage{80}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{80}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{78}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{78}
+    \subitem {R}, \hyperpage{83}
+    \subitem {read\discretionary {-}{}{}Template}, \hyperpage{81}
+    \subitem {save\discretionary {-}{}{}Template}, \hyperpage{81}
+    \subitem {scale\discretionary {-}{}{}Template}, \hyperpage{82}
+    \subitem {set\discretionary {-}{}{}Energetics}, \hyperpage{82}
+    \subitem {set\discretionary {-}{}{}Radius}, \hyperpage{82}
+    \subitem {v\discretionary {-}{}{}Template}, \hyperpage{83}
+
+  \indexspace
+
+  \item {R}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{83}
+  \item {r}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{14}
+  \item {read\discretionary {-}{}{}Template}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{81}
+
+  \indexspace
+
+  \item {safety\discretionary {-}{}{}Config\discretionary {-}{}{}Switches}
+    \subitem {blazar.\discretionary {-}{}{}hpp}, \hyperpage{93}
+  \item {save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{73}
+  \item {save\discretionary {-}{}{}Averaged\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}
+    \subitem {observer}, \hyperpage{74}
+  \item {save\discretionary {-}{}{}Injection}
+    \subitem {electrons}, \hyperpage{37}
+  \item {save\discretionary {-}{}{}Luminosity}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{43}
+  \item {save\discretionary {-}{}{}Ngamma}
+    \subitem {electrons}, \hyperpage{37}
+  \item {save\discretionary {-}{}{}Ngamma\discretionary {-}{}{}Avg}
+    \subitem {electrons}, \hyperpage{37}
+  \item {save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{74}
+  \item {save\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity\discretionary {-}{}{}Sum}
+    \subitem {observer}, \hyperpage{74, 75}
+  \item {save\discretionary {-}{}{}Rm\discretionary {-}{}{}Vs\discretionary {-}{}{}R}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{57}
+  \item {save\discretionary {-}{}{}Template}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{81}
+  \item {save\discretionary {-}{}{}Upe\discretionary {-}{}{}R}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{43}
+  \item {scale\discretionary {-}{}{}Template}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{82}
+  \item {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{83}
+    \subitem {$\sim $self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{84}
+    \subitem {B}, \hyperpage{86}
+    \subitem {calculate\discretionary {-}{}{}Lpv}, \hyperpage{84}
+    \subitem {dotg}, \hyperpage{85}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{85}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{84}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{84}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{85}
+    \subitem {syn}, \hyperpage{86}
+    \subitem {update}, \hyperpage{86}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}K\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}info}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{43}
+  \item {set\discretionary {-}{}{}Energetics}
+    \subitem {electrons}, \hyperpage{38}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{82}
+  \item {set\discretionary {-}{}{}Injection\discretionary {-}{}{}Parameters}
+    \subitem {electrons}, \hyperpage{38}
+  \item {set\discretionary {-}{}{}Lpv}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{43}
+    \subitem {external\discretionary {-}{}{}Radiation}, \hyperpage{46}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{49}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{57}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{61}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{85}
+    \subitem {synchrotron}, \hyperpage{89}
+  \item {set\discretionary {-}{}{}Radius}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{9}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{12}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{17}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{19}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{23}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{26}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{28}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{31}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{50}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{57}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{61}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{82}
+  \item {set\discretionary {-}{}{}Rm}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{58}
+  \item {setd\discretionary {-}{}{}Ld\discretionary {-}{}{}R}
+    \subitem {Accd\discretionary {-}{}{}Planar}, \hyperpage{9}
+    \subitem {Blr\discretionary {-}{}{}Planar}, \hyperpage{16}
+    \subitem {Dt\discretionary {-}{}{}Planar}, \hyperpage{25}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{57}
+  \item {size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}
+    \subitem {observer}, \hyperpage{75}
+  \item {size\discretionary {-}{}{}En\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc\discretionary {-}{}{}Point}
+    \subitem {observer}, \hyperpage{75}
+  \item {size\discretionary {-}{}{}Ext\discretionary {-}{}{}Gu}
+    \subitem {observer}, \hyperpage{75}
+  \item {size\discretionary {-}{}{}Ext\discretionary {-}{}{}Pl}
+    \subitem {observer}, \hyperpage{75}
+  \item {size\discretionary {-}{}{}Ext\discretionary {-}{}{}Sp}
+    \subitem {observer}, \hyperpage{76}
+  \item {solve\discretionary {-}{}{}Gamma\discretionary {-}{}{}Break}
+    \subitem {electrons.\discretionary {-}{}{}cpp}, \hyperpage{110}
+    \subitem {electrons.\discretionary {-}{}{}hpp}, \hyperpage{97}
+  \item {struct}, \hyperpage{86}
+  \item {sum\discretionary {-}{}{}Point\discretionary {-}{}{}Avg\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{76}
+  \item {sum\discretionary {-}{}{}Point\discretionary {-}{}{}Luminosity}
+    \subitem {observer}, \hyperpage{76}
+  \item {syn}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{86}
+  \item {synchrotron}, \hyperpage{86}
+    \subitem {$\sim $synchrotron}, \hyperpage{88}
+    \subitem {calculate\discretionary {-}{}{}Lpv}, \hyperpage{88}
+    \subitem {dotg}, \hyperpage{89}
+    \subitem {iterate}, \hyperpage{89}
+    \subitem {print\discretionary {-}{}{}Info}, \hyperpage{89}
+    \subitem {set\discretionary {-}{}{}Lpv}, \hyperpage{89}
+    \subitem {synchrotron}, \hyperpage{87}
+    \subitem {update}, \hyperpage{90}
+
+  \indexspace
+
+  \item {t\discretionary {-}{}{}Q}
+    \subitem {electrons}, \hyperpage{38}
+  \item {tri}
+    \subitem {electrons}, \hyperpage{39}
+
+  \indexspace
+
+  \item {update}
+    \subitem {Accd\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{12}
+    \subitem {Blr\discretionary {-}{}{}Spherical}, \hyperpage{20}
+    \subitem {Blr\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{23}
+    \subitem {Dt\discretionary {-}{}{}Spherical}, \hyperpage{28}
+    \subitem {Dt\discretionary {-}{}{}Spherical\discretionary {-}{}{}Gu}, 
+		\hyperpage{31}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{43}
+    \subitem {external\discretionary {-}{}{}Radiation}, \hyperpage{46}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Gu}, 
+		\hyperpage{50}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Planar}, 
+		\hyperpage{58}
+    \subitem {external\discretionary {-}{}{}Radiation\discretionary {-}{}{}Spherical}, 
+		\hyperpage{62}
+    \subitem {self\discretionary {-}{}{}Syn\discretionary {-}{}{}Compton}, 
+		\hyperpage{86}
+    \subitem {synchrotron}, \hyperpage{90}
+  \item {upe}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+  \item {upe\discretionary {-}{}{}\_\discretionary {-}{}{}r}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+
+  \indexspace
+
+  \item {v\discretionary {-}{}{}Point}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+  \item {v\discretionary {-}{}{}Point\discretionary {-}{}{}Sum}
+    \subitem {observer}, \hyperpage{77}
+  \item {v\discretionary {-}{}{}Template}
+    \subitem {Quasar\discretionary {-}{}{}Acc\discretionary {-}{}{}Disk}, 
+		\hyperpage{83}
+  \item {vp}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+  \item {vp\discretionary {-}{}{}Min}
+    \subitem {energy\discretionary {-}{}{}Diss\discretionary {-}{}{}Proc}, 
+		\hyperpage{45}
+
+  \indexspace
+
+  \item {who\discretionary {-}{}{}Am\discretionary {-}{}{}I}
+    \subitem {base\discretionary {-}{}{}Class}, \hyperpage{13}
+
+\end{theindex}

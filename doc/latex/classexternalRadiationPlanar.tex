@@ -1,0 +1,662 @@
+\hypertarget{classexternalRadiationPlanar}{\section{external\-Radiation\-Planar Class Reference}
+\label{classexternalRadiationPlanar}\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}}
+}
+
+
+{\ttfamily \#include $<$external\-Radiation\-Planar.\-hpp$>$}
+
+Inheritance diagram for external\-Radiation\-Planar\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classexternalRadiationPlanar}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class provides electron energy losses and luminosity calculation for inverse Compton process (E\-R\-C) for seed photons comming from accretion disk, B\-L\-R and H\-D\-R modelled as planar source. Incoming photons are Doppler shifted depending on the geometry. Energy density of seed photons is calculated consistently based on the source characteristics in the accretion disk plane 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & -\/ radiation vs R slope index \\
+\hline
+{\em R1} & -\/ inner edge \\
+\hline
+{\em R2} & -\/ outer edge \\
+\hline
+{\em s} & -\/ radiation vs R slope index \\
+\hline
+{\em approx} & -\/ approximation calculations switch \\
+\hline
+{\em fixed\-Upe} & -\/ fix u\-\_\-ext vs r \\
+\hline
+{\em save\-Rm} & -\/ switch to save information about R\-\_\-m \\
+\hline
+{\em R} & -\/ hirozontal disk plane radius \\
+\hline
+{\em rm} & -\/ R\-\_\-m vector info \\
+\hline
+{\em d\-Ld\-R} & -\/ vector to store information about d\-Ld\-R \\
+\hline
+\end{DoxyParams}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classexternalRadiationPlanar_a6254e3256914a093886b7af1f1dc4876}{external\-Radiation\-Planar} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classexternalRadiationPlanar_aab75f84c763bf0fb133ba3a3c5f0341c}{$\sim$external\-Radiation\-Planar} ()
+\item 
+virtual void \hyperlink{classexternalRadiationPlanar_a47e497b12dfa4e71311bffb3a4b384b2}{print\-Info} ()
+\item 
+virtual void \hyperlink{classexternalRadiationPlanar_a710859cda6258d75098ccb31e60ab261}{set\-Radius} ()
+\item 
+virtual double \hyperlink{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{getvext} (double \-\_\-\-R)
+\item 
+virtual void \hyperlink{classexternalRadiationPlanar_a7914df2de2d822755ac1c9e6d860e22b}{setd\-Ld\-R} ()
+\item 
+void \hyperlink{classexternalRadiationPlanar_acfddae49394d11c89d1d47229ba8a3f7}{update} ()
+\item 
+double \hyperlink{classexternalRadiationPlanar_a14eca037d735b9cd1ad6d8f433052c62}{calculate\-Upe\-Full} ()
+\item 
+double \hyperlink{classexternalRadiationPlanar_a963d1270de3666c72509d5b1d405d72a}{calculate\-Upe\-Approx} (int index, bool flag)
+\item 
+double \hyperlink{classexternalRadiationPlanar_a90d75353e72674994f5a00d9de745f38}{function\-\_\-upe} (int index)
+\item 
+double \hyperlink{classexternalRadiationPlanar_a351a13f462898c59bae55ce606829648}{ctau} ()
+\item 
+double \hyperlink{classexternalRadiationPlanar_a7facfb7bbb0dfa8586ec30ae6d293aab}{getd\-Ld\-R} (int index)
+\item 
+double \hyperlink{classexternalRadiationPlanar_a4f49eec94e9d935df18534fe021c750c}{dotg} (double g)
+\item 
+void \hyperlink{classexternalRadiationPlanar_a8023104635baec445f038e9f1ca6c3bc}{set\-Lpv} ()
+\item 
+double \hyperlink{classexternalRadiationPlanar_a82753cf790d39965e72c07818a1bfa5e}{calculate\-Lpv} (double v, double theta)
+\item 
+double \hyperlink{classexternalRadiationPlanar_aaebb696a7bc742d22f9f8aadbcb4faaf}{fsc\-\_\-integral} (double v, double theta, double R)
+\item 
+double \hyperlink{classexternalRadiationPlanar_ab8c43b04bfea46ca0bc5e122ee12cc32}{function\-\_\-lum} (int index, double v, double theta)
+\item 
+\hypertarget{classexternalRadiationPlanar_aacba4508f03b16a8b19246cb6cb41eaa}{void {\bfseries allocate\-Rm} ()}\label{classexternalRadiationPlanar_aacba4508f03b16a8b19246cb6cb41eaa}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a6a42790e6070c19e8808a5527830727f}{void {\bfseries allocated\-Ld\-R} ()}\label{classexternalRadiationPlanar_a6a42790e6070c19e8808a5527830727f}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_afce8fb037ad7ea93d3be175418186068}{void {\bfseries free\-Rm} ()}\label{classexternalRadiationPlanar_afce8fb037ad7ea93d3be175418186068}
+
+\item 
+double \hyperlink{classexternalRadiationPlanar_a3d9b58ccd4fcc4cdf50e583891897954}{get\-Rm} ()
+\item 
+void \hyperlink{classexternalRadiationPlanar_ad66a3f1f4fcc90ea0eeb40a9c3e1379a}{set\-Rm} (double val)
+\item 
+gsl\-\_\-vector $\ast$ \hyperlink{classexternalRadiationPlanar_a34bd0bdbb03089fce3f0a416dc4a4b72}{get\-Rm\-Vector} ()
+\item 
+void \hyperlink{classexternalRadiationPlanar_a1ca992aea51a737bf043a34c9f276055}{save\-Rm\-Vs\-R} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classexternalRadiationPlanar_ad699086f216c0565e9246d86ef458a40}{double {\bfseries alpha}}\label{classexternalRadiationPlanar_ad699086f216c0565e9246d86ef458a40}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a20c946fc02d2cecf3f97278657a02044}{double {\bfseries R1}}\label{classexternalRadiationPlanar_a20c946fc02d2cecf3f97278657a02044}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a384b0f8bc9f8c57febeec6f4a86adcf7}{double {\bfseries R2}}\label{classexternalRadiationPlanar_a384b0f8bc9f8c57febeec6f4a86adcf7}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a2394ef823ede5bfb9222e3b73c001084}{double {\bfseries s}}\label{classexternalRadiationPlanar_a2394ef823ede5bfb9222e3b73c001084}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a77cc88ceca22b308e008cbd77c8b177e}{int {\bfseries approx}}\label{classexternalRadiationPlanar_a77cc88ceca22b308e008cbd77c8b177e}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a7446ecfda605a060bc0333cc460edbee}{double {\bfseries fixed\-Upe}}\label{classexternalRadiationPlanar_a7446ecfda605a060bc0333cc460edbee}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_aa8f7460cdd0cc700fe6f1acd1f688a2f}{double {\bfseries Gamma}}\label{classexternalRadiationPlanar_aa8f7460cdd0cc700fe6f1acd1f688a2f}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a5036c94e73a39de03905eeb37a8043a8}{double {\bfseries theta\-Obs}}\label{classexternalRadiationPlanar_a5036c94e73a39de03905eeb37a8043a8}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_ad25e39c6394ce3a08d7114f69b13990e}{int {\bfseries K\-N}}\label{classexternalRadiationPlanar_ad25e39c6394ce3a08d7114f69b13990e}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a04213265fbd5eca612b2709fea7cde25}{double {\bfseries m\-B\-H}}\label{classexternalRadiationPlanar_a04213265fbd5eca612b2709fea7cde25}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_ac24e3609b5c2adec4382d05d0e75bb82}{double {\bfseries e\-Disk}}\label{classexternalRadiationPlanar_ac24e3609b5c2adec4382d05d0e75bb82}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a97e8ef6270b823ad876bbbcff29613ce}{double {\bfseries m\-Dot}}\label{classexternalRadiationPlanar_a97e8ef6270b823ad876bbbcff29613ce}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a6861b183760a624b958e1d53f098e858}{int {\bfseries save\-Rm}}\label{classexternalRadiationPlanar_a6861b183760a624b958e1d53f098e858}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a1dcd19343fa54db14337ac94cdb4cc1b}{\hyperlink{classlogGeometry}{log\-Geometry} $\ast$ {\bfseries R}}\label{classexternalRadiationPlanar_a1dcd19343fa54db14337ac94cdb4cc1b}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_af6ba59b997f297ff1d7fd82942789a4d}{gsl\-\_\-vector $\ast$ {\bfseries rm}}\label{classexternalRadiationPlanar_af6ba59b997f297ff1d7fd82942789a4d}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a5382cffc8c19cf1d8128bc9808f16716}{gsl\-\_\-vector $\ast$ {\bfseries d\-Ld\-R}}\label{classexternalRadiationPlanar_a5382cffc8c19cf1d8128bc9808f16716}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_af139b17f705a15a96de40d81a8904df1}{double {\bfseries Rm}}\label{classexternalRadiationPlanar_af139b17f705a15a96de40d81a8904df1}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_a4bc11ce418aa033a86da524a5bba338d}{double {\bfseries Upe}}\label{classexternalRadiationPlanar_a4bc11ce418aa033a86da524a5bba338d}
+
+\item 
+\hypertarget{classexternalRadiationPlanar_acab7261d9c8a7f9dd0085171bcd4940c}{int {\bfseries Rm\-\_\-index}}\label{classexternalRadiationPlanar_acab7261d9c8a7f9dd0085171bcd4940c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classexternalRadiationPlanar_a6254e3256914a093886b7af1f1dc4876}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!external\-Radiation\-Planar@{external\-Radiation\-Planar}}
+\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{external\-Radiation\-Planar}]{\setlength{\rightskip}{0pt plus 5cm}external\-Radiation\-Planar\-::external\-Radiation\-Planar (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a6254e3256914a093886b7af1f1dc4876}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                                            
+          : \hyperlink{classenergyDissProc_a0cf0b423089016fbe8a697378c519590}{energyDissProc}( \_cfg, \_r, \_ele, \_id ) \{
+10   \textcolor{comment}{/* requested parameters */}
+11   \textcolor{comment}{/* R1, R2, s, alpha - needed by Accd, BlrPl, DtPl */}
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"} + \hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id}, 200, &\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} +  \textcolor{stringliteral}{"R1"}, 0.0, &R1 );
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} +  \textcolor{stringliteral}{"R2"}, 0.0, &R2 );
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} +  \textcolor{stringliteral}{"s"}, 0.0, &s );
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{keywordtype}{id} +  \textcolor{stringliteral}{"alpha"}, 0.0, &alpha );
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"}, 10.0, &Gamma );
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaObs"}, 0.1, &thetaObs );
+19   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"KN"}, 0, &KN );
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mBH"},1.0,&mBH);
+21   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"eDisk"},0.1,&eDisk);
+22   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"mDot"},1.0,&mDot);
+23   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstU"},0,&\hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU});  
+24   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstNu"},0,&\hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu});  
+25 
+26   \textcolor{comment}{/* works for both stratifications and for Accd */}
+27   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"extPlApp"},0,&approx);
+28   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"saveRmVsR"},0,&saveRm);
+29   
+30   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+31   
+32   allocatedLdR( );
+33   allocateRm( ); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_aab75f84c763bf0fb133ba3a3c5f0341c}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!$\sim$external\-Radiation\-Planar@{$\sim$external\-Radiation\-Planar}}
+\index{$\sim$external\-Radiation\-Planar@{$\sim$external\-Radiation\-Planar}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{$\sim$external\-Radiation\-Planar}]{\setlength{\rightskip}{0pt plus 5cm}external\-Radiation\-Planar\-::$\sim$external\-Radiation\-Planar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_aab75f84c763bf0fb133ba3a3c5f0341c}
+destructor 
+\begin{DoxyCode}
+35                                                    \{
+36   freeLpv( );
+37   freeLvPoint( );
+38   freeLvPointAvg( );
+39   freeUpe( );
+40   freeRm( );
+41   
+42   \textcolor{keyword}{delete} R;
+43   R = NULL; \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classexternalRadiationPlanar_a82753cf790d39965e72c07818a1bfa5e}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!calculate\-Lpv@{calculate\-Lpv}}
+\index{calculate\-Lpv@{calculate\-Lpv}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{calculate\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::calculate\-Lpv (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{double}]{theta}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a82753cf790d39965e72c07818a1bfa5e}
+calculate intrinsic luminosity 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ frequency (jet co-\/moving frame) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'\-\_\-v 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+152                                                                      \{
+153   \textcolor{keywordtype}{double} val = 0.0;
+154   \textcolor{keywordflow}{if}( approx ) \{ val = \hyperlink{classexternalRadiationPlanar_ab8c43b04bfea46ca0bc5e122ee12cc32}{function\_lum}( Rm\_index, v, theta )*Rm; \}
+155   \textcolor{keywordflow}{else} \{
+156     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<R->getMaxIndex();i++ ) \{
+157       R -> \hyperlink{classexternalRadiationPlanar_acfddae49394d11c89d1d47229ba8a3f7}{update}( i );
+158       val += bazinga::IntCor( i, R->getN( ) )*\hyperlink{classexternalRadiationPlanar_ab8c43b04bfea46ca0bc5e122ee12cc32}{function\_lum}( i, v, theta )*R->getDr(i); \}
+159   \}
+160 
+161   val *= 3.0*SIGMA\_T/(16.0*M\_PI);
+162   val *= v;
+163   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a963d1270de3666c72509d5b1d405d72a}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!calculate\-Upe\-Approx@{calculate\-Upe\-Approx}}
+\index{calculate\-Upe\-Approx@{calculate\-Upe\-Approx}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{calculate\-Upe\-Approx}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::calculate\-Upe\-Approx (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a963d1270de3666c72509d5b1d405d72a}
+caculate u'\-\_\-ext in the jet co-\/moving frame using approximate equations 
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ index in radius R at which u'\-\_\-ext is calculated \\
+\hline
+{\em flag} & -\/ obsolete ? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+u'\-\_\-ext 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+89 \{ \textcolor{keywordflow}{return} \hyperlink{classexternalRadiationPlanar_a90d75353e72674994f5a00d9de745f38}{function\_upe}( index )*R->get(index); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a14eca037d735b9cd1ad6d8f433052c62}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!calculate\-Upe\-Full@{calculate\-Upe\-Full}}
+\index{calculate\-Upe\-Full@{calculate\-Upe\-Full}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{calculate\-Upe\-Full}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::calculate\-Upe\-Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a14eca037d735b9cd1ad6d8f433052c62}
+caculate u'\-\_\-ext in the jet co-\/moving frame using full equations \begin{DoxyReturn}{Returns}
+u'\-\_\-ext 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+72                                                   \{
+73   \textcolor{keywordtype}{double} \_Int = 0.0;
+74   gsl\_vector *\_temp\_function\_upe\_vector = gsl\_vector\_alloc( \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+75   \textcolor{keywordtype}{double} \_function\_upe\_value = 0;
+76 
+77   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<R->getMaxIndex();i++ ) \{
+78     gsl\_vector\_set( \_temp\_function\_upe\_vector, i, \hyperlink{classexternalRadiationPlanar_a90d75353e72674994f5a00d9de745f38}{function\_upe}( i ) );
+79     \_Int += bazinga::IntCor( i, R->getN( ) )*gsl\_vector\_get( \_temp\_function\_upe\_vector, i)*R->getDr(i);
+80   \}
+81   
+82   \textcolor{comment}{/* before quit save \_temp\_function\_upe\_vector */}
+83   bazinga::save\_GSLVector( \textcolor{stringliteral}{"dUpedR\_"}+this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), R->getRadius\_GSLVector( ), 
+      \_temp\_function\_upe\_vector, R->getPosition( ), \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) );
+84   gsl\_vector\_free( \_temp\_function\_upe\_vector );
+85   \_temp\_function\_upe\_vector = NULL;
+86   
+87   \textcolor{keywordflow}{return} \_Int; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a351a13f462898c59bae55ce606829648}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!ctau@{ctau}}
+\index{ctau@{ctau}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{ctau}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::ctau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a351a13f462898c59bae55ce606829648}
+auxillary function to alculate u'\-\_\-ext -\/ normalization factor 
+\begin{DoxyCode}
+98                                       \{
+99   \textcolor{keywordtype}{double} val = 0.0;
+100   \textcolor{keywordflow}{if}( s == 1 ) \{ val = 1.0/log(R2/R1); \}
+101   \textcolor{keywordflow}{else} \{ val = (1.0-s)/(pow(R2,1.0-s)-pow(R1,1.0-s)); \}
+102   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a4f49eec94e9d935df18534fe021c750c}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!dotg@{dotg}}
+\index{dotg@{dotg}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{dotg}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::dotg (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_a4f49eec94e9d935df18534fe021c750c}
+get d gamma \textbackslash{} d t for particular process 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_a8074e0db5d859a8815e7136c2fc41b46}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+106                                                \{
+107   \textcolor{keywordtype}{double} val = 0.0;
+108   \textcolor{keywordtype}{double} b = 0.0;
+109   \textcolor{keywordtype}{double} r2R2 = pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get(),2.0)+pow(Rm,2.0);
+110   
+111   \textcolor{keywordtype}{double} doppler\_ext = 1.0/( Gamma*( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()/sqrt(r2R2)) ) );  
+112   \textcolor{comment}{/* as e\_ext max we take e\_ext @ Rm where it is maximum; in case of BLRPL it makes no difference at all */}
+113   b = 4.0*g*\hyperlink{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{getvext}( Rm )*PLANCK\_H/(mec2*doppler\_ext);
+114 
+115   \textcolor{keywordflow}{if}( b > 1.0 ) \{ \hyperlink{classenergyDissProc_a69ea4be814273e47e69e31e593c3a250}{set\_KN\_info}( g ); \}
+116   val = Upe*inverseCompton::FKN( b, alpha, KN ); \textcolor{comment}{/* fKN not used anymore; using FKN instead */}
+117 
+118   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_aaebb696a7bc742d22f9f8aadbcb4faaf}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!fsc\-\_\-integral@{fsc\-\_\-integral}}
+\index{fsc\-\_\-integral@{fsc\-\_\-integral}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{fsc\-\_\-integral}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::fsc\-\_\-integral (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{double}]{theta, }
+\item[{double}]{R}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_aaebb696a7bc742d22f9f8aadbcb4faaf}
+function that calculates intrinsic E\-R\-C luminosity 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ frequency \\
+\hline
+{\em theta} & -\/ observer angle \\
+\hline
+{\em R} & -\/ radius in the accretion disk plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L' 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+122                                                                                \{
+123   \textcolor{keywordtype}{double} Int = 0.0;
+124   \textcolor{keywordtype}{double} ee = PLANCK\_H*v/(ELECTRON\_MASS*LIGHT\_SPEED*LIGHT\_SPEED);
+125   \textcolor{keywordtype}{double} miu = -(cos(theta)-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma))/(1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*cos(theta));
+126 
+127   \textcolor{keywordtype}{double} r2R2, doppler\_ext;
+128   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} ) \{
+129     r2R2 = pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( ),2.0)+pow(R,2.0);
+130     doppler\_ext = 1.0/( Gamma*( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( )/sqrt(r2R2)) ) ); \}
+131   \textcolor{keywordflow}{else} \{    
+132     r2R2 = pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get(),2.0)+pow(R,2.0);
+133     doppler\_ext = 1.0/( Gamma*( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()/sqrt(r2R2)) ) ); \}
+134 
+135   \textcolor{comment}{/* integration loop over electrons */}
+136   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} k=0;k<\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );k++ ) \{ Int += bazinga::IntCor( k, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->
+      \hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*inverseCompton::f(\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k), PLANCK\_H*\hyperlink{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{getvext}( R )/(mec2*doppler\_ext
+      ), ee, miu )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}(k)/\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(k); \}
+137   
+138   Int *= \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( );
+139   \textcolor{keywordflow}{return} Int; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_ab8c43b04bfea46ca0bc5e122ee12cc32}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!function\-\_\-lum@{function\-\_\-lum}}
+\index{function\-\_\-lum@{function\-\_\-lum}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{function\-\_\-lum}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::function\-\_\-lum (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{double}]{v, }
+\item[{double}]{theta}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_ab8c43b04bfea46ca0bc5e122ee12cc32}
+auxillary function to calculate L' 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index in radius R at which L' is calculated \\
+\hline
+{\em v} & -\/ frequency \\
+\hline
+{\em theta} & -\/ observer angle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+141                                                                                 \{
+142   \textcolor{keywordtype}{double} r2R2, doppler\_ext;
+143   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} ) \{
+144     r2R2 = pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( ),2.0)+pow(R->get(index),2.0);
+145     doppler\_ext = 1.0/( Gamma*( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRInjMax( )/sqrt(r2R2)) ) ); \}
+146   \textcolor{keywordflow}{else} \{    
+147      r2R2 = pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get(),2.0)+pow(R->get(index),2.0);
+148     doppler\_ext = 1.0/( Gamma*( 1.0-\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get()/sqrt(r2R2)) ) ); \}
+149 
+150   \textcolor{keywordflow}{return} \hyperlink{classexternalRadiationPlanar_a7facfb7bbb0dfa8586ec30ae6d293aab}{getdLdR}(index)*\hyperlink{classexternalRadiationPlanar_aaebb696a7bc742d22f9f8aadbcb4faaf}{fsc\_integral}( v, theta, R->get(index) )/(r2R2*pow( 
+      \hyperlink{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{getvext}( R->get(index) ), 2 )); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a90d75353e72674994f5a00d9de745f38}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!function\-\_\-upe@{function\-\_\-upe}}
+\index{function\-\_\-upe@{function\-\_\-upe}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{function\-\_\-upe}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::function\-\_\-upe (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a90d75353e72674994f5a00d9de745f38}
+auxillary function to calculate u'\-\_\-ext 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index in radius R at which u'\-\_\-ext is calculated \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+91                                                         \{
+92   \textcolor{keywordtype}{double} val;
+93   \textcolor{keywordtype}{double} r2R2 = pow(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get(),2.0)+pow(R->get(index),2);
+94   val = \hyperlink{classexternalRadiationPlanar_a7facfb7bbb0dfa8586ec30ae6d293aab}{getdLdR}(index)*pow(1.0-((\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get())/sqrt(r2R2)),2)/r2R2;
+95   val *= pow(Gamma,2)/(4.0*M\_PI*LIGHT\_SPEED);
+96   \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a7facfb7bbb0dfa8586ec30ae6d293aab}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!getd\-Ld\-R@{getd\-Ld\-R}}
+\index{getd\-Ld\-R@{getd\-Ld\-R}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{getd\-Ld\-R}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::getd\-Ld\-R (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a7facfb7bbb0dfa8586ec30ae6d293aab}
+get fd\-Ld\-R 
+\begin{DoxyParams}{Parameters}
+{\em index} & in radius R at which d\-Ld\-R is calculated \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+104 \{ \textcolor{keywordflow}{return} gsl\_vector\_get( dLdR, index ); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a3d9b58ccd4fcc4cdf50e583891897954}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!get\-Rm@{get\-Rm}}
+\index{get\-Rm@{get\-Rm}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{get\-Rm}]{\setlength{\rightskip}{0pt plus 5cm}double external\-Radiation\-Planar\-::get\-Rm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classexternalRadiationPlanar_a3d9b58ccd4fcc4cdf50e583891897954}
+get R\-\_\-m -\/ radius at which contribution of u'\-\_\-ext is maximal \begin{DoxyReturn}{Returns}
+R\-\_\-m 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+126 \{ \textcolor{keywordflow}{return} gsl\_vector\_get( rm, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ) ); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a34bd0bdbb03089fce3f0a416dc4a4b72}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!get\-Rm\-Vector@{get\-Rm\-Vector}}
+\index{get\-Rm\-Vector@{get\-Rm\-Vector}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{get\-Rm\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}gsl\-\_\-vector$\ast$ external\-Radiation\-Planar\-::get\-Rm\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classexternalRadiationPlanar_a34bd0bdbb03089fce3f0a416dc4a4b72}
+get vector with R\-\_\-m values stored 
+\begin{DoxyCode}
+134 \{ \textcolor{keywordflow}{return} rm; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!getvext@{getvext}}
+\index{getvext@{getvext}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}virtual double external\-Radiation\-Planar\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-\-R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}
+get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-\-R} & -\/ radius in accretion disk plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classBlrPlanar_abe8831b3b2d9ea5d632a354f1305bf86}{Blr\-Planar}, \hyperlink{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}{Dt\-Planar}, and \hyperlink{classAccdPlanar_a1f9a8eadf2626c50ecf0a56d5b9a17de}{Accd\-Planar}.
+
+
+\begin{DoxyCode}
+68 \{ \textcolor{keywordflow}{return} 0; \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a47e497b12dfa4e71311bffb3a4b384b2}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Planar\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_a47e497b12dfa4e71311bffb3a4b384b2}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}.
+
+
+
+Reimplemented in \hyperlink{classBlrPlanar_a3321d83625869e16c5794d9419dff073}{Blr\-Planar}, \hyperlink{classDtPlanar_a0d1b6697d54a08030ed50b7e4b5fbfef}{Dt\-Planar}, and \hyperlink{classAccdPlanar_a51960bc05d15aedf068b65a369d1899c}{Accd\-Planar}.
+
+
+\begin{DoxyCode}
+60 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a1ca992aea51a737bf043a34c9f276055}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!save\-Rm\-Vs\-R@{save\-Rm\-Vs\-R}}
+\index{save\-Rm\-Vs\-R@{save\-Rm\-Vs\-R}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{save\-Rm\-Vs\-R}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-Planar\-::save\-Rm\-Vs\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classexternalRadiationPlanar_a1ca992aea51a737bf043a34c9f276055}
+save vector with R\-\_\-m values stored 
+\begin{DoxyCode}
+175                                          \{
+176  \textcolor{keywordflow}{if}( saveRm ) \{ bazinga::save\_GSLVector( \textcolor{stringliteral}{"Rm\_"}+ this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getRadius\_GSLVector( ), 
+      \hyperlink{classexternalRadiationPlanar_a34bd0bdbb03089fce3f0a416dc4a4b72}{getRmVector}( ), \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+177 \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a7914df2de2d822755ac1c9e6d860e22b}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!setd\-Ld\-R@{setd\-Ld\-R}}
+\index{setd\-Ld\-R@{setd\-Ld\-R}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{setd\-Ld\-R}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Planar\-::setd\-Ld\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_a7914df2de2d822755ac1c9e6d860e22b}
+set d\-L/d\-R for particulat source 
+
+Reimplemented in \hyperlink{classBlrPlanar_afcd6617d32754c8377b123317531b613}{Blr\-Planar}, \hyperlink{classDtPlanar_a6445269d74ae176c5d299ac71cd7ac87}{Dt\-Planar}, and \hyperlink{classAccdPlanar_ab4fdeb7f7898f380e2f9e333d430b2de}{Accd\-Planar}.
+
+
+\begin{DoxyCode}
+71 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a8023104635baec445f038e9f1ca6c3bc}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!set\-Lpv@{set\-Lpv}}
+\index{set\-Lpv@{set\-Lpv}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{set\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-Planar\-::set\-Lpv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_a8023104635baec445f038e9f1ca6c3bc}
+set intrinsic luminosities 
+
+Reimplemented from \hyperlink{classenergyDissProc_a93a39df53f30801f9f057cd55c05485d}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+120 \{ \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) set\_Lpv( i, \hyperlink{classexternalRadiationPlanar_a82753cf790d39965e72c07818a1bfa5e}{calculateLpv}( get\_vp(i), thetaObs )); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_a710859cda6258d75098ccb31e60ab261}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual void external\-Radiation\-Planar\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_a710859cda6258d75098ccb31e60ab261}
+sets rext if not provided by config file 
+
+Reimplemented in \hyperlink{classBlrPlanar_a549653fdf0d0f5c91a5f5822a5b422c1}{Blr\-Planar}, \hyperlink{classDtPlanar_aaa8956b3aa5b8ecff5e746a8ba84a67c}{Dt\-Planar}, and \hyperlink{classAccdPlanar_a4e540b445accba0d2159f141ea682be3}{Accd\-Planar}.
+
+
+\begin{DoxyCode}
+63 \{ \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_ad66a3f1f4fcc90ea0eeb40a9c3e1379a}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!set\-Rm@{set\-Rm}}
+\index{set\-Rm@{set\-Rm}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{set\-Rm}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-Planar\-::set\-Rm (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classexternalRadiationPlanar_ad66a3f1f4fcc90ea0eeb40a9c3e1379a}
+set R\-\_\-m -\/ radius at which contribution of u'\-\_\-ext is maximal 
+\begin{DoxyParams}{Parameters}
+{\em val} & -\/ current R\-\_\-m \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+131 \{ gsl\_vector\_set( rm, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getIndex( ), val ); \}
+\end{DoxyCode}
+\hypertarget{classexternalRadiationPlanar_acfddae49394d11c89d1d47229ba8a3f7}{\index{external\-Radiation\-Planar@{external\-Radiation\-Planar}!update@{update}}
+\index{update@{update}!externalRadiationPlanar@{external\-Radiation\-Planar}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void external\-Radiation\-Planar\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classexternalRadiationPlanar_acfddae49394d11c89d1d47229ba8a3f7}
+update all process internal parameters to current radius 
+
+Reimplemented from \hyperlink{classenergyDissProc_a6033524ea3d0fe38056bd74622f6c4ad}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+46                                        \{
+47   \textcolor{comment}{/* even though we use full version we need to calculate the Rm for gamma\_dot */}
+48   \textcolor{keywordtype}{double} oldUpe, currentUpe = 0.0;
+49   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<R->getMaxIndex();i++ ) \{
+50     R -> \hyperlink{classexternalRadiationPlanar_acfddae49394d11c89d1d47229ba8a3f7}{update}( i );   
+51     oldUpe = currentUpe;
+52     currentUpe = \hyperlink{classexternalRadiationPlanar_a963d1270de3666c72509d5b1d405d72a}{calculateUpeApprox}( i, \textcolor{keyword}{false} );
+53     set\_upe( i, currentUpe );
+54     \textcolor{keywordflow}{if}( currentUpe > oldUpe ) \{
+55       Rm = R->get( );
+56       Rm\_index = i; \}
+57     
+58     \textcolor{keywordflow}{if}( Rm < R1 ) \{ Rm = R1; Rm\_index = 0; \}
+59     \textcolor{keywordflow}{if}( Rm > R2 ) \{ Rm = R2; Rm\_index = R -> getMaxIndex( ); \}
+60   \}
+61   
+62   \hyperlink{classexternalRadiationPlanar_ad66a3f1f4fcc90ea0eeb40a9c3e1379a}{setRm}( Rm );
+63   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Radius Rm"}, \hyperlink{classexternalRadiationPlanar_a3d9b58ccd4fcc4cdf50e583891897954}{getRm}( ) );
+64   
+65   \textcolor{keywordflow}{if}( approx ) \{ Upe = \hyperlink{classexternalRadiationPlanar_a963d1270de3666c72509d5b1d405d72a}{calculateUpeApprox}( Rm\_index, \textcolor{keyword}{true} ); \}  \textcolor{comment}{/* approximate version */}
+66   \textcolor{keywordflow}{else} \{ Upe = \hyperlink{classexternalRadiationPlanar_a14eca037d735b9cd1ad6d8f433052c62}{calculateUpeFull}( ); \}  \textcolor{comment}{/* full integral version */}
+67   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Upe"},Upe);
+68   
+69   set\_upe\_r( Upe ); \textcolor{comment}{/* this is to make a plot gamma\_dot vs r */}
+70   \hyperlink{classenergyDissProc_a7b51925f603e271657cab66afe822591}{flag\_upe\_r} = \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{externalRadiationPlanar_8hpp}{external\-Radiation\-Planar.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{externalRadiationPlanar_8cpp}{external\-Radiation\-Planar.\-cpp}\end{DoxyCompactItemize}

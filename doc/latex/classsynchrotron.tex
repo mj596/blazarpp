@@ -1,0 +1,308 @@
+\hypertarget{classsynchrotron}{\section{synchrotron Class Reference}
+\label{classsynchrotron}\index{synchrotron@{synchrotron}}
+}
+
+
+{\ttfamily \#include $<$synchrotron.\-hpp$>$}
+
+Inheritance diagram for synchrotron\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classsynchrotron}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Class provides synchrotron electron energy losses and synchrotron luminosity calculation \subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsynchrotron_ab02aaf0264ad332a77524487993e122b}{synchrotron} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, \hyperlink{classmagneticField}{magnetic\-Field} $\ast$\-\_\-\-B, std\-::string \-\_\-id)
+\item 
+\hyperlink{classsynchrotron_a5a4aed3b6187a30e25343753ea5e4fa6}{$\sim$synchrotron} ()
+\item 
+void \hyperlink{classsynchrotron_a6a8610b523a6e3c656372537ad28b756}{print\-Info} ()
+\item 
+double \hyperlink{classsynchrotron_a0587f0a1da199ec87019a96589fcb58c}{iterate} ()
+\item 
+double \hyperlink{classsynchrotron_a577e2fa11ba90bf288099e88f02c756f}{dotg} (double g)
+\item 
+void \hyperlink{classsynchrotron_a52ec26284de15395bd203037024b7ae4}{update} ()
+\item 
+void \hyperlink{classsynchrotron_adf30d0e7cbba05a39a16b60957d02321}{set\-Lpv} ()
+\item 
+double \hyperlink{classsynchrotron_ab12acf6ee2bdc60011e2739ba42cd32a}{calculate\-Lpv} (double v)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsynchrotron_ab02aaf0264ad332a77524487993e122b}{\index{synchrotron@{synchrotron}!synchrotron@{synchrotron}}
+\index{synchrotron@{synchrotron}!synchrotron@{synchrotron}}
+\subsubsection[{synchrotron}]{\setlength{\rightskip}{0pt plus 5cm}synchrotron\-::synchrotron (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{{\bf magnetic\-Field} $\ast$}]{\-\_\-\-B, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classsynchrotron_ab02aaf0264ad332a77524487993e122b}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-\-B} & -\/ magnetic field class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                                           :
+       \hyperlink{classenergyDissProc_a0cf0b423089016fbe8a697378c519590}{energyDissProc}( \_cfg, \_r, \_ele, \_id ), B(\_B) \{
+10   \textcolor{comment}{/* requested parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"N"}+\hyperlink{classbaseClass_a4d5ff386a69bcbe21b5976f55b624df6}{id},200,&\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<std::string>(\textcolor{stringliteral}{"lumModel"},\textcolor{stringliteral}{"blob"},&lumModel);
+13   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"thetaJ"},0.1,&thetaJ);
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>(\textcolor{stringliteral}{"Gamma"},10.0,&Gamma);
+15   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"SABS"},1,&SABS);
+16   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstU"},0,&\hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU});  
+17   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{keywordtype}{id}+\textcolor{stringliteral}{"LuminosityConstNu"},0,&\hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu});  
+18   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<int>(\textcolor{stringliteral}{"setSSCBlob"},0,&setSSCBlob);  
+19 
+20   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+21 
+22   \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin} = 1.0;
+23   \textcolor{comment}{/* here we set vpMAX to a maximum value specified by maximal value of magnetic field at R0 */}
+24   vpMax = 100.0*A43*DSQR(\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->getGammaMax( ))*( B->\hyperlink{classmagneticField_a3b573d12649137290d521539b903da8d}{getMaxB}( )/B\_CR )*mec2h;
+25   \hyperlink{classenergyDissProc_a57aee74ef8fc4cb9220127a9c345174a}{epMin} = PLANCK\_H/mec2;
+26   epMax = vpMax/mec2h;
+27   
+28   allocateUpe( );
+29   allocateUpeR( );
+30   allocateLpv( );
+31   allocateLvPoint( );
+32   allocateLvPointAvg( );
+33 
+34   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+35     set\_ep( i, epMax*pow( epMax/epMin,(\textcolor{keywordtype}{double})i/(\textcolor{keywordtype}{double})(N-1)) );
+36     set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+37 
+38   \hyperlink{classenergyDissProc_a270fdc20de5c26f9cc499f28dd32fb7b}{dLogE} = log(get\_ep(1)/get\_ep(0)); \}
+\end{DoxyCode}
+\hypertarget{classsynchrotron_a5a4aed3b6187a30e25343753ea5e4fa6}{\index{synchrotron@{synchrotron}!$\sim$synchrotron@{$\sim$synchrotron}}
+\index{$\sim$synchrotron@{$\sim$synchrotron}!synchrotron@{synchrotron}}
+\subsubsection[{$\sim$synchrotron}]{\setlength{\rightskip}{0pt plus 5cm}synchrotron\-::$\sim$synchrotron (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsynchrotron_a5a4aed3b6187a30e25343753ea5e4fa6}
+destructor 
+\begin{DoxyCode}
+40                            \{
+41   freeLpv( );
+42   freeLvPoint( );
+43   freeLvPointAvg( );
+44   freeUpe( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsynchrotron_ab12acf6ee2bdc60011e2739ba42cd32a}{\index{synchrotron@{synchrotron}!calculate\-Lpv@{calculate\-Lpv}}
+\index{calculate\-Lpv@{calculate\-Lpv}!synchrotron@{synchrotron}}
+\subsubsection[{calculate\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}double synchrotron\-::calculate\-Lpv (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsynchrotron_ab12acf6ee2bdc60011e2739ba42cd32a}
+calculate intrinsic luminosity 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ frequency (jet co-\/moving frame) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'\-\_\-v 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_aed17a9ce8a970cbd1e250c59947407ac}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+91                                            \{
+92   \textcolor{keywordtype}{double} a,jS,sigmaS,corr;
+93   \textcolor{keywordtype}{double} vB,h,t,L,tau;
+94   
+95   vB = ELECTRON\_CHARGE*B->\hyperlink{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{getB}( )/(2.0*M\_PI*ELECTRON\_MASS*LIGHT\_SPEED);
+96   h = \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a4e3d4179ce211bd732580b49914874e6}{getdLogGamma}( );
+97   L = tau = 0.0e0;
+98 
+99   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( );i++) \{
+100       t = v/(3.0*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(i))*vB );
+101       FS(t,&jS,&sigmaS);
+102       tau += bazinga::IntCor( i, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*sigmaS*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}(i)/pow(
+      \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(i),4);
+103       L += bazinga::IntCor( i, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classbaseClass_a6ba5c4ce24742db73f45064337cf6963}{getN}( ) )*\hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_afb0d9365f13787f44d23fb489732fc90}{getGamma}(i)*
+      \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}->\hyperlink{classelectrons_a24fbbed0acac968ce6b2ef2c5043dee4}{getNgamma}(i)*jS; \}
+104 
+105   
+106   \textcolor{keywordflow}{if}( SABS && (\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )>=\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( )) ) \{
+107       \textcolor{comment}{/* since in a there is r-r0 then first luminosity wont have absorption; original blazar code had
+       different naming: }
+108 \textcolor{comment}{     all quantities calculated at r were tagged as r+rd - we do not follow this approach thus r>*
+      (model->R0) and not }
+109 \textcolor{comment}{     r>=R0 (it gives errors) */}
+110       \textcolor{comment}{/* I cheat; I set DR to be dr for r=R0; is it a bad approximation? I dunno */}
+111       \textcolor{keywordtype}{double} DR = 0;
+112       \textcolor{keywordflow}{if}( \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get() == \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( ) ) \{ DR = \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getDr(); \}
+113       \textcolor{keywordflow}{else} \{ DR = \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )-(\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getR0( )); \}
+114 
+115       a = 2.0*DR/(\hyperlink{classbaseClass_a208facecf3a4480b47bebfce91413a39}{beta}(Gamma)*Gamma);
+116       tau *= h*3.0/(4.0*M\_PI*a*a)*2.0*sqrt(3.0)*M\_PI/15.0*ELECTRON\_CHARGE/B->
+      \hyperlink{classmagneticField_ac345cd6d5a111f0b96db08dadf65ff76}{getB}( );
+117       corr = (tau>1.0e-5) ? (1.0-exp(-tau))/tau : (1.0-0.5*tau+1.0/6.0*tau*tau-1.0/24.0*pow(tau,3)+1.0/120.
+      0*pow(tau,4)-1.0/720.0*pow(tau,5));
+118   \} \textcolor{keywordflow}{else} \{ corr = 1.0e0; \}
+119   
+120   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} || \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{   L *= h*3.0*sqrt(3.0)*
+      SIGMA\_T*LIGHT\_SPEED*B->\hyperlink{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}{get\_uB}( \hyperlink{classenergyDissProc_af1c1d91f8ef5f49f2f5831776052b651}{injRm} )/(M\_PI*vB)*corr; \}
+121   \textcolor{keywordflow}{else} \{   L *= h*3.0*sqrt(3.0)*SIGMA\_T*LIGHT\_SPEED*B->\hyperlink{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}{get\_uB}( )/(M\_PI*vB)*corr; \}
+122   
+123   \textcolor{keywordflow}{return} L; \}
+\end{DoxyCode}
+\hypertarget{classsynchrotron_a577e2fa11ba90bf288099e88f02c756f}{\index{synchrotron@{synchrotron}!dotg@{dotg}}
+\index{dotg@{dotg}!synchrotron@{synchrotron}}
+\subsubsection[{dotg}]{\setlength{\rightskip}{0pt plus 5cm}double synchrotron\-::dotg (
+\begin{DoxyParamCaption}
+\item[{double}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsynchrotron_a577e2fa11ba90bf288099e88f02c756f}
+get d gamma \textbackslash{} d t for particular process 
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ electron Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d gamma \textbackslash{} d t 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classenergyDissProc_a8074e0db5d859a8815e7136c2fc41b46}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+58 \{ \textcolor{keywordflow}{return} B->\hyperlink{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}{get\_uB}( ); \}
+\end{DoxyCode}
+\hypertarget{classsynchrotron_a0587f0a1da199ec87019a96589fcb58c}{\index{synchrotron@{synchrotron}!iterate@{iterate}}
+\index{iterate@{iterate}!synchrotron@{synchrotron}}
+\subsubsection[{iterate}]{\setlength{\rightskip}{0pt plus 5cm}double synchrotron\-::iterate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsynchrotron_a0587f0a1da199ec87019a96589fcb58c}
+iterate synchrotron and S\-S\-C calculation to achieve steady state and balance between synchrotron and S\-S\-C luminosities 
+\begin{DoxyCode}
+125                              \{
+126   \textcolor{keywordtype}{double} sumN = 0.0;
+127   \textcolor{keywordtype}{double} err = 0.0;
+128   gsl\_vector* temp\_upe = gsl\_vector\_alloc( \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N} );
+129   
+130   \textcolor{comment}{/* copy current upe to temp\_upe */}
+131   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ gsl\_vector\_set( temp\_upe, i, get\_upe( i ) ); \}
+132 
+133   \textcolor{comment}{/* calculate synchrotron energy densities and luminosities with new Ngamma*/}
+134   \hyperlink{classsynchrotron_a52ec26284de15395bd203037024b7ae4}{update}( );
+135       
+136   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+137       sumN += get\_upe( i );
+138       err += fabs( get\_upe( i ) - gsl\_vector\_get( temp\_upe, i ) ); \}
+139   err /= sumN;
+140   gsl\_vector\_free( temp\_upe );
+141   temp\_upe = NULL;
+142 
+143   \textcolor{keywordflow}{return} err; \}
+\end{DoxyCode}
+\hypertarget{classsynchrotron_a6a8610b523a6e3c656372537ad28b756}{\index{synchrotron@{synchrotron}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!synchrotron@{synchrotron}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void synchrotron\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsynchrotron_a6a8610b523a6e3c656372537ad28b756}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classenergyDissProc_ad1fbde0f7635a19a81412b9766916eb9}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+46                              \{
+47   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+48   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+49   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"SABS"},SABS);
+50   \textcolor{keywordflow}{if}( setSSCBlob ) \{ 
+51     bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"setSSCBlob"},setSSCBlob); \}
+52 
+53   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} || \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ 
+54     bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using constant u' to calculate luminosity."});
+55     bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using constant v' to calculate luminosity."}); \}
+56 \}
+\end{DoxyCode}
+\hypertarget{classsynchrotron_adf30d0e7cbba05a39a16b60957d02321}{\index{synchrotron@{synchrotron}!set\-Lpv@{set\-Lpv}}
+\index{set\-Lpv@{set\-Lpv}!synchrotron@{synchrotron}}
+\subsubsection[{set\-Lpv}]{\setlength{\rightskip}{0pt plus 5cm}void synchrotron\-::set\-Lpv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsynchrotron_adf30d0e7cbba05a39a16b60957d02321}
+set intrinsic luminosities 
+
+Reimplemented from \hyperlink{classenergyDissProc_a93a39df53f30801f9f057cd55c05485d}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+74                           \{
+75   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+76     set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) );
+77     set\_Lpv( i, \hyperlink{classsynchrotron_ab12acf6ee2bdc60011e2739ba42cd32a}{calculateLpv}( get\_vp(i) ) ); \}
+78 \}
+\end{DoxyCode}
+\hypertarget{classsynchrotron_a52ec26284de15395bd203037024b7ae4}{\index{synchrotron@{synchrotron}!update@{update}}
+\index{update@{update}!synchrotron@{synchrotron}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void synchrotron\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsynchrotron_a52ec26284de15395bd203037024b7ae4}
+update all process internal parameters to current radius 
+
+Reimplemented from \hyperlink{classenergyDissProc_a6033524ea3d0fe38056bd74622f6c4ad}{energy\-Diss\-Proc}.
+
+
+\begin{DoxyCode}
+60                           \{
+61   \hyperlink{classsynchrotron_adf30d0e7cbba05a39a16b60957d02321}{setLpv}( );
+62   \textcolor{keywordtype}{double} lum\_to\_upe = 0.0;
+63   \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"blob"} || setSSCBlob ) \{ lum\_to\_upe = 2.0*M\_PI*thetaJ*thetaJ*\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )*
+      \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )*LIGHT\_SPEED; \}
+64   \textcolor{keywordflow}{if}( lumModel == \textcolor{stringliteral}{"steady"} && !setSSCBlob ) \{ lum\_to\_upe = 2.0*M\_PI*\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->get( )*\hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}->getDr( )*thetaJ*Gamma*
+      LIGHT\_SPEED; \}
+65 
+66   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{
+67       set\_ep( i, \hyperlink{classenergyDissProc_a57aee74ef8fc4cb9220127a9c345174a}{epMin}*pow(epMax/\hyperlink{classenergyDissProc_a57aee74ef8fc4cb9220127a9c345174a}{epMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) );
+68       set\_upe( i, mec2h*get\_Lpv(i)/lum\_to\_upe ); \}
+69 
+70   set\_upe\_r( B->\hyperlink{classmagneticField_ad1184833ba01cf9ef3fdf4bbd5b6f7f9}{get\_uB}( ) );
+71   \textcolor{comment}{//  std::cout << "BFIELD " << r->get() << " " << B->getB();}
+72   \hyperlink{classenergyDissProc_a7b51925f603e271657cab66afe822591}{flag\_upe\_r} = \textcolor{keyword}{false}; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{synchrotron_8hpp}{synchrotron.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{synchrotron_8cpp}{synchrotron.\-cpp}\end{DoxyCompactItemize}

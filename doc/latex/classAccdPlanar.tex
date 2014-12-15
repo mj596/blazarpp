@@ -1,0 +1,231 @@
+\hypertarget{classAccdPlanar}{\section{Accd\-Planar Class Reference}
+\label{classAccdPlanar}\index{Accd\-Planar@{Accd\-Planar}}
+}
+
+
+{\ttfamily \#include $<$Accd\-Planar.\-hpp$>$}
+
+Inheritance diagram for Accd\-Planar\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classAccdPlanar}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Parameters used by class (defaults) 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & (\hyperlink{classexternalRadiationPlanar}{external\-Radiation\-Planar}) ( alpha = -\/0.\-3333 ) \\
+\hline
+{\em R1} & -\/ (\hyperlink{classexternalRadiationPlanar}{external\-Radiation\-Planar}) accd lower boundary radius ('N\-E\-W' stratification) (R1 = 0.\-1$\ast$\-R\-\_\-sub) \\
+\hline
+{\em R2} & -\/ (\hyperlink{classexternalRadiationPlanar}{external\-Radiation\-Planar}) accd upper boundary radius ('N\-E\-W' stratification) (R2 = R\-\_\-sub) \\
+\hline
+{\em s} & -\/ (\hyperlink{classexternalRadiationPlanar}{external\-Radiation\-Planar}) stratification index ('N\-E\-W' stratification) (s = 2.\-0) \\
+\hline
+\end{DoxyParams}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAccdPlanar_a380728055445c3f86558fa1fa8713871}{Accd\-Planar} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classAccdPlanar_a0e4ebd194cbee7b95a16cfe323ea645c}{$\sim$\-Accd\-Planar} ()
+\item 
+void \hyperlink{classAccdPlanar_a51960bc05d15aedf068b65a369d1899c}{print\-Info} ()
+\item 
+void \hyperlink{classAccdPlanar_a4e540b445accba0d2159f141ea682be3}{set\-Radius} ()
+\item 
+double \hyperlink{classAccdPlanar_a1f9a8eadf2626c50ecf0a56d5b9a17de}{getvext} (double \-\_\-\-R)
+\item 
+void \hyperlink{classAccdPlanar_ab4fdeb7f7898f380e2f9e333d430b2de}{setd\-Ld\-R} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAccdPlanar_a380728055445c3f86558fa1fa8713871}{\index{Accd\-Planar@{Accd\-Planar}!Accd\-Planar@{Accd\-Planar}}
+\index{Accd\-Planar@{Accd\-Planar}!AccdPlanar@{Accd\-Planar}}
+\subsubsection[{Accd\-Planar}]{\setlength{\rightskip}{0pt plus 5cm}Accd\-Planar\-::\-Accd\-Planar (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classAccdPlanar_a380728055445c3f86558fa1fa8713871}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                                  : 
+      \hyperlink{classexternalRadiationPlanar_a6254e3256914a093886b7af1f1dc4876}{externalRadiationPlanar}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}, \textcolor{keywordtype}{id} ) \{
+10   \textcolor{comment}{/* request parameters */}
+11   \textcolor{comment}{/* -- */}
+12 
+13   \textcolor{keywordflow}{if}( R1 == 0.0 || R2 == 0.0 ) \{ \hyperlink{classAccdPlanar_a4e540b445accba0d2159f141ea682be3}{setRadius}( ); \}
+14   \textcolor{keywordflow}{else} \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Overwritting R1 and R2 values from config file!"}); \}
+15   
+16   \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin} = 0.01*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMin( ) )*\hyperlink{classAccdPlanar_a1f9a8eadf2626c50ecf0a56d5b9a17de}{getvext}( R2 );
+17   vpMax = 100.0*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMax( ) )*\hyperlink{classAccdPlanar_a1f9a8eadf2626c50ecf0a56d5b9a17de}{getvext}( R1 );
+18 
+19   \textcolor{comment}{/* initialize disk radius R;}
+20 \textcolor{comment}{     here we use N-1 to use the same Upe as in other processes */}
+21   R = \textcolor{keyword}{new} \hyperlink{classlogGeometry}{logGeometry}( R1, R2, \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}-1 );
+22 
+23   allocateUpe( ); \textcolor{comment}{// this is for storing matrix information about dUpe(r)/dR (R) }
+24   allocateUpeR( ); \textcolor{comment}{// this is for storing vector information about Upe(r) }
+25   allocateLpv( );
+26   allocateLvPoint( );
+27   allocateLvPointAvg( );
+28 
+29   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+30 
+31   \textcolor{comment}{/* set the values of dLdR */}
+32   \hyperlink{classAccdPlanar_ab4fdeb7f7898f380e2f9e333d430b2de}{setdLdR}( ); \}
+\end{DoxyCode}
+\hypertarget{classAccdPlanar_a0e4ebd194cbee7b95a16cfe323ea645c}{\index{Accd\-Planar@{Accd\-Planar}!$\sim$\-Accd\-Planar@{$\sim$\-Accd\-Planar}}
+\index{$\sim$\-Accd\-Planar@{$\sim$\-Accd\-Planar}!AccdPlanar@{Accd\-Planar}}
+\subsubsection[{$\sim$\-Accd\-Planar}]{\setlength{\rightskip}{0pt plus 5cm}Accd\-Planar\-::$\sim$\-Accd\-Planar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAccdPlanar_a0e4ebd194cbee7b95a16cfe323ea645c}
+destructor 
+\begin{DoxyCode}
+34                          \{
+35   freeUpe( );
+36   freeLpv( );
+37   freeLvPoint( );
+38   freeLvPointAvg( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAccdPlanar_a1f9a8eadf2626c50ecf0a56d5b9a17de}{\index{Accd\-Planar@{Accd\-Planar}!getvext@{getvext}}
+\index{getvext@{getvext}!AccdPlanar@{Accd\-Planar}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}double Accd\-Planar\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-\-R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdPlanar_a1f9a8eadf2626c50ecf0a56d5b9a17de}
+get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-\-R} & -\/ radius in accretion disk plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+77                                       \{
+78   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+79   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+80   \textcolor{keywordtype}{double} vext = 0.0;
+81   \textcolor{keywordtype}{double} Fdisk;
+82   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ Fdisk = (3.0*G\_CONST*mBH*1e09*MSUN)*mDot*Ledd/( DSQR(
+      LIGHT\_SPEED)*8.0*M\_PI*pow(R2,3.0) ); \}
+83   \textcolor{keywordflow}{else} \{ Fdisk = (3.0*G\_CONST*mBH*1e09*MSUN)*mDot*Ledd/( DSQR(LIGHT\_SPEED)*8.0*M\_PI*pow(\_R,3.0) ); \}
+84   \textcolor{keywordtype}{double} Teff = pow( Fdisk/SIGMA\_SB, 0.25 );
+85   vext = 3.92*Teff*K\_BOLTZMAN/PLANCK\_H;
+86   \textcolor{keywordflow}{return} vext; \}
+\end{DoxyCode}
+\hypertarget{classAccdPlanar_a51960bc05d15aedf068b65a369d1899c}{\index{Accd\-Planar@{Accd\-Planar}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!AccdPlanar@{Accd\-Planar}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Accd\-Planar\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdPlanar_a51960bc05d15aedf068b65a369d1899c}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_a47e497b12dfa4e71311bffb3a4b384b2}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+40                             \{
+41   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+42   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+43   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using stratification version NEW (only option)"});
+44   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius R1"},R1,\textcolor{stringliteral}{"cm"});
+45   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius R2"},R2,\textcolor{stringliteral}{"cm"});
+46   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"stratification index"},s);
+47   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"alpha"},alpha);
+48   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMin"},\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},\textcolor{stringliteral}{"Hz"});
+49   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMax"},vpMax,\textcolor{stringliteral}{"Hz"});
+50   \textcolor{keywordflow}{if}( approx ) \{ bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using approximate dependence on R"}); \} 
+51   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} ) \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using constant u' to calculate luminosity."}
+      ); \}
+52   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using constant v\_ext to calculate
+       luminosity."}); \}
+53 \}
+\end{DoxyCode}
+\hypertarget{classAccdPlanar_ab4fdeb7f7898f380e2f9e333d430b2de}{\index{Accd\-Planar@{Accd\-Planar}!setd\-Ld\-R@{setd\-Ld\-R}}
+\index{setd\-Ld\-R@{setd\-Ld\-R}!AccdPlanar@{Accd\-Planar}}
+\subsubsection[{setd\-Ld\-R}]{\setlength{\rightskip}{0pt plus 5cm}void Accd\-Planar\-::setd\-Ld\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdPlanar_ab4fdeb7f7898f380e2f9e333d430b2de}
+set d\-L/d\-R for particulat source 
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_a7914df2de2d822755ac1c9e6d860e22b}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+63                           \{
+64   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+65   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+66   \textcolor{comment}{/* fill in dLdR vector that will be used for the rest of the calculations */}
+67   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Seeting dLdR."});
+68   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<R->getMaxIndex();i++ ) \{
+69       R->update( i );
+70       \textcolor{keywordtype}{double} val = 0.0;
+71       val = (3.0*G\_CONST*mBH*1e09*MSUN)*mDot*Ledd*pow(R->get(),-s)/( 2.0*DSQR(LIGHT\_SPEED) );
+72       gsl\_vector\_set( dLdR, R->getIndex( ), val ); \}
+73   \textcolor{comment}{/* Now when we have all set let us save what we have just calculated - dLdR */}
+74   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving dLdR."});
+75   bazinga::save\_GSLVector( \textcolor{stringliteral}{"dLdR\_"}+this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), R->getRadius\_GSLVector( ), dLdR, 
+      \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+\end{DoxyCode}
+\hypertarget{classAccdPlanar_a4e540b445accba0d2159f141ea682be3}{\index{Accd\-Planar@{Accd\-Planar}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!AccdPlanar@{Accd\-Planar}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Accd\-Planar\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAccdPlanar_a4e540b445accba0d2159f141ea682be3}
+sets rext if not provided by config file 
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_a710859cda6258d75098ccb31e60ab261}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+55                             \{
+56   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+57   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+58   \textcolor{keywordtype}{double} R\_sub = 1.6e-5*sqrt( Ldisk );
+59   \textcolor{keywordtype}{double} Rg = mBH*1e09*MSUN*G\_CONST/DSQR(LIGHT\_SPEED);
+60   R1 = Rg/(2.0*eDisk);
+61   R2 = R\_sub; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{AccdPlanar_8hpp}{Accd\-Planar.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{AccdPlanar_8cpp}{Accd\-Planar.\-cpp}\end{DoxyCompactItemize}

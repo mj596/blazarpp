@@ -1,0 +1,82 @@
+#! /usr/bin/env python3
+
+import sys
+directory = sys.argv[1]
+
+prefix = 'LvPointAvg_'
+process = 'syn', 'ssc', 'blrPl', 'blrSp', 'ext1', 'dtPl', 'dtSp', 'ext2', 'accd', 'QAccd'
+#process = 'syn', 'ssc',
+precission = 1000
+
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+from scipy.interpolate import Rbf, InterpolatedUnivariateSpline
+
+luminosity_files = []
+for item in os.listdir(directory):
+    for proc in process:
+        if item == prefix+proc:
+            luminosity_files.append( proc )
+            print ("Using %s" % (item) )
+
+data = []
+for proc in luminosity_files:
+    file = open( directory+"/"+prefix+proc, 'r' )
+    x = []
+    y = []
+    for line in file.readlines():
+        entry = line.split()
+        if proc == 'QAccd' and float( entry[1] ) > 0:
+            x.append( np.log10( float( entry[0] ) ) )
+            y.append( np.log10( float( entry[1] ) ) )
+        if proc != 'QAccd' and float( entry[2] ) > 0:
+            x.append( np.log10( float( entry[0] ) ) )
+            y.append( np.log10( float( entry[2] ) ) )
+
+    file.close()
+    data.append( [ np.array(x),np.array(y),proc] )
+
+print ( "Processes: ", len(data))
+# print ( "Length: ", len(data[0][0]))
+
+# determine nu_min and nu_max
+nu_min = 1e40
+nu_max = 0
+for proc in data:
+    if min( proc[0] ) < nu_min:
+        nu_min = min( proc[0] )
+    if max( proc[0] ) > nu_max:
+        nu_max = max( proc[0] )
+
+print ( "nu_min", nu_min )
+print ( "nu_max", nu_max )
+
+x = np.linspace( nu_min, nu_max, precission )
+y = np.zeros( len( x ) )
+
+ffit = []
+for proc in data:
+    ffit.append( InterpolatedUnivariateSpline( proc[0], proc[1] ) )
+
+for i in range( len(x) ):
+    for j in range( len(data) ):
+        if min( data[j][0] ) < x[i] and x[i] < max( data[j][0] ):
+            y[i] = np.log10( math.pow(10.0,y[i]) + math.pow( 10.0, ffit[j]( x[i] ) ) )
+
+#print( x, y )
+
+for proc in data:
+    plt.plot( proc[0], proc[0]+proc[1], label=proc[2] )
+    
+plt.plot( x, x+y, '.', label="sum")
+plt.legend()
+plt.show()
+
+for i in range( len( x ) ):
+    x[i] = math.pow( 10, x[i] )
+    y[i] = math.pow( 10, y[i] )
+
+np.savetxt( directory+"/"+prefix+"sum", np.vstack( [x, y] ).transpose() )
+

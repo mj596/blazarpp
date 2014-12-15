@@ -1,0 +1,169 @@
+\hypertarget{electrons_8hpp}{\section{/home/mjaniak/\-Soft/blazar++/include/electrons.hpp File Reference}
+\label{electrons_8hpp}\index{/home/mjaniak/\-Soft/blazar++/include/electrons.\-hpp@{/home/mjaniak/\-Soft/blazar++/include/electrons.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}base\-Class.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-errno.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-math.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-roots.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-linalg.\-h$>$}\\*
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Mateusz Janiak 
+\end{DoxyAuthor}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classelectrons}{electrons}
+\item 
+struct \hyperlink{structgamma__break__params}{gamma\-\_\-break\-\_\-params}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{electrons_8hpp_afeab1ad5164ab8bb73e0da0a832fc33b}{function\-Gamma\-Break} (double x, void $\ast$params)
+\item 
+double \hyperlink{electrons_8hpp_aae35005445fafd6ebf5d7eebf42e48ce}{solve\-Gamma\-Break} (double p1, double p2, double gamma\-\_\-min, double gamma\-\_\-max, double avg\-\_\-gamma)
+\item 
+double \hyperlink{electrons_8hpp_ae77675dca0ac568a13ca68c538b2640c}{f1} (double p1, double p2, double gamma\-\_\-min, double gamma\-\_\-max, double gamma\-\_\-break)
+\item 
+double \hyperlink{electrons_8hpp_aaf2d21d8e8a007dc3b820258a16b6a27}{f2} (double p1, double p2, double gamma\-\_\-min, double gamma\-\_\-max, double gamma\-\_\-break)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{electrons_8hpp_ae77675dca0ac568a13ca68c538b2640c}{\index{electrons.\-hpp@{electrons.\-hpp}!f1@{f1}}
+\index{f1@{f1}!electrons.hpp@{electrons.\-hpp}}
+\subsubsection[{f1}]{\setlength{\rightskip}{0pt plus 5cm}double f1 (
+\begin{DoxyParamCaption}
+\item[{double}]{p1, }
+\item[{double}]{p2, }
+\item[{double}]{gamma\-\_\-min, }
+\item[{double}]{gamma\-\_\-max, }
+\item[{double}]{gamma\-\_\-break}
+\end{DoxyParamCaption}
+)}}\label{electrons_8hpp_ae77675dca0ac568a13ca68c538b2640c}
+auxillary for calculating gamma\-\_\-break 
+\begin{DoxyCode}
+297                                                                                           \{
+298   \textcolor{keywordflow}{return} ( (1.0-pow(gamma\_min/gamma\_break,2.0-p1))/(2.0-p1) + (1.0-pow(gamma\_break/gamma\_max,p2-2.0))/(p2-2
+      .0) )*pow(gamma\_break,1.0-p2); \}
+\end{DoxyCode}
+\hypertarget{electrons_8hpp_aaf2d21d8e8a007dc3b820258a16b6a27}{\index{electrons.\-hpp@{electrons.\-hpp}!f2@{f2}}
+\index{f2@{f2}!electrons.hpp@{electrons.\-hpp}}
+\subsubsection[{f2}]{\setlength{\rightskip}{0pt plus 5cm}double f2 (
+\begin{DoxyParamCaption}
+\item[{double}]{p1, }
+\item[{double}]{p2, }
+\item[{double}]{gamma\-\_\-min, }
+\item[{double}]{gamma\-\_\-max, }
+\item[{double}]{gamma\-\_\-break}
+\end{DoxyParamCaption}
+)}}\label{electrons_8hpp_aaf2d21d8e8a007dc3b820258a16b6a27}
+auxillary for calculating gamma\-\_\-break 
+\begin{DoxyCode}
+300                                                                                           \{
+301   \textcolor{keywordflow}{return} ( (1.0-pow(gamma\_min/gamma\_break,1.0-p1))/(1.0-p1) + (1.0-pow(gamma\_break/gamma\_max,p2-1.0))/(p2-1
+      .0) )*pow(gamma\_break,1.0-p2); \}
+\end{DoxyCode}
+\hypertarget{electrons_8hpp_afeab1ad5164ab8bb73e0da0a832fc33b}{\index{electrons.\-hpp@{electrons.\-hpp}!function\-Gamma\-Break@{function\-Gamma\-Break}}
+\index{function\-Gamma\-Break@{function\-Gamma\-Break}!electrons.hpp@{electrons.\-hpp}}
+\subsubsection[{function\-Gamma\-Break}]{\setlength{\rightskip}{0pt plus 5cm}double function\-Gamma\-Break (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{electrons_8hpp_afeab1ad5164ab8bb73e0da0a832fc33b}
+defines function to be solved to get break in electron energy spectrum 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ electron Lorentz gamma $\ast$ -\/ other parameters defined by struct \hyperlink{structgamma__break__params}{gamma\-\_\-break\-\_\-params} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+function value 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+303                                                     \{
+304   \textcolor{comment}{/* x <- gamma\_break */}
+305   \textcolor{keyword}{struct }\hyperlink{structgamma__break__params}{gamma\_break\_params} *p = (\textcolor{keyword}{struct }\hyperlink{structgamma__break__params}{gamma\_break\_params} *) params;
+306 
+307   \textcolor{keywordtype}{double} p1 = p->p1;
+308   \textcolor{keywordtype}{double} p2 = p->p2;
+309   \textcolor{keywordtype}{double} gamma\_min = p->gamma\_min;
+310   \textcolor{keywordtype}{double} gamma\_max = p->gamma\_max;
+311   \textcolor{keywordtype}{double} avg\_gamma = p->avg\_gamma;
+312   
+313   \textcolor{keywordflow}{return} x*\hyperlink{electrons_8cpp_ae77675dca0ac568a13ca68c538b2640c}{f1}(p1, p2, gamma\_min, gamma\_max, x)/\hyperlink{electrons_8cpp_aaf2d21d8e8a007dc3b820258a16b6a27}{f2}(p1, p2, gamma\_min, gamma\_max, x) - avg\_gamma; \}
+\end{DoxyCode}
+\hypertarget{electrons_8hpp_aae35005445fafd6ebf5d7eebf42e48ce}{\index{electrons.\-hpp@{electrons.\-hpp}!solve\-Gamma\-Break@{solve\-Gamma\-Break}}
+\index{solve\-Gamma\-Break@{solve\-Gamma\-Break}!electrons.hpp@{electrons.\-hpp}}
+\subsubsection[{solve\-Gamma\-Break}]{\setlength{\rightskip}{0pt plus 5cm}double solve\-Gamma\-Break (
+\begin{DoxyParamCaption}
+\item[{double}]{p1, }
+\item[{double}]{p2, }
+\item[{double}]{gamma\-\_\-min, }
+\item[{double}]{gamma\-\_\-max, }
+\item[{double}]{avg\-\_\-gamma}
+\end{DoxyParamCaption}
+)}}\label{electrons_8hpp_aae35005445fafd6ebf5d7eebf42e48ce}
+method to calculate gamma break 
+\begin{DoxyParams}{Parameters}
+{\em p1} & -\/ spectral index p1 \\
+\hline
+{\em p2} & -\/ spectral index p2  -\/ minimal electron Lorentz factor  -\/ max electron Lorentz factor  -\/ average electron injecton Lorentz factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gamma\-\_\-break 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+315                                                                                                      \{
+316   bazinga::info(\textcolor{stringliteral}{""},\textcolor{stringliteral}{"Entering solve\_gamma\_break"});
+317   \textcolor{comment}{//  std::cout << "Using p1: " << p1 << " p2: " << p2 << " gmin: " << gamma\_min << " gmax: " << gamma\_max
+       << " avg gamma: " << avg\_gamma << std::endl;}
+318   \textcolor{keywordtype}{int} status;
+319   \textcolor{keywordtype}{int} iter = 0;
+320   \textcolor{keywordtype}{int} max\_iter = 100;
+321 
+322   \textcolor{keywordtype}{double} r = 0;
+323   \textcolor{keywordtype}{double} x\_low = 0;
+324   \textcolor{keywordtype}{double} x\_high = 0;
+325 
+326   \textcolor{keyword}{const} gsl\_root\_fsolver\_type *T = gsl\_root\_fsolver\_brent;
+327   gsl\_root\_fsolver *s = gsl\_root\_fsolver\_alloc( T );
+328 
+329   gsl\_function F;
+330   \textcolor{keyword}{struct }\hyperlink{structgamma__break__params}{gamma\_break\_params} params = \{ p1, p2, gamma\_min, gamma\_max, avg\_gamma \};
+331 
+332   F.function = &\hyperlink{electrons_8cpp_afeab1ad5164ab8bb73e0da0a832fc33b}{functionGammaBreak};
+333   F.params = &params;
+334   
+335   gsl\_root\_fsolver\_set( s, &F, gamma\_min, gamma\_max );
+336   
+337   bazinga::print\_header();
+338   bazinga::info(\textcolor{stringliteral}{""},\textcolor{stringliteral}{"Trying to find gamma\_break ..."});
+339 
+340   printf(\textcolor{stringliteral}{"%5s [%8s, %7s] %8s\(\backslash\)n"}, \textcolor{stringliteral}{"iter"}, \textcolor{stringliteral}{"lower"}, \textcolor{stringliteral}{"upper"}, \textcolor{stringliteral}{"root"});
+341 
+342   \textcolor{keywordflow}{do}
+343     \{
+344       iter++;
+345       status = gsl\_root\_fsolver\_iterate( s );
+346       r = gsl\_root\_fsolver\_root( s );
+347       x\_low = gsl\_root\_fsolver\_x\_lower( s );
+348       x\_high = gsl\_root\_fsolver\_x\_upper( s );
+349       status = gsl\_root\_test\_interval( x\_low, x\_high, 0, 0.001 );
+350       
+351       \textcolor{keywordflow}{if}( status == GSL\_SUCCESS ) \{ bazinga::print\_info(\textcolor{stringliteral}{"Converged:"}); \}
+352       
+353       printf(\textcolor{stringliteral}{"%5d [%.2e %.2e] %.2e\(\backslash\)n"}, iter, x\_low, x\_high, r);
+354     \}
+355   
+356   \textcolor{keywordflow}{while}( status == GSL\_CONTINUE && iter <= max\_iter );
+357 
+358   gsl\_root\_fsolver\_free( s );
+359   \textcolor{keywordflow}{return} r; \}
+\end{DoxyCode}

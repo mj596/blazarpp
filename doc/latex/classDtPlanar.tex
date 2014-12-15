@@ -1,0 +1,212 @@
+\hypertarget{classDtPlanar}{\section{Dt\-Planar Class Reference}
+\label{classDtPlanar}\index{Dt\-Planar@{Dt\-Planar}}
+}
+Inheritance diagram for Dt\-Planar\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classDtPlanar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDtPlanar_a5d5b77f9362b9dccca97df093cf96ab2}{Dt\-Planar} (scfgp $\ast$\-\_\-cfg, \hyperlink{classjetGeometry}{jet\-Geometry} $\ast$\-\_\-r, \hyperlink{classelectrons}{electrons} $\ast$\-\_\-ele, std\-::string \-\_\-id)
+\item 
+\hyperlink{classDtPlanar_a5ce5e082dab0dbeea9b11c2fae22cfb8}{$\sim$\-Dt\-Planar} ()
+\item 
+void \hyperlink{classDtPlanar_a0d1b6697d54a08030ed50b7e4b5fbfef}{print\-Info} ()
+\item 
+void \hyperlink{classDtPlanar_aaa8956b3aa5b8ecff5e746a8ba84a67c}{set\-Radius} ()
+\item 
+double \hyperlink{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}{getvext} (double \-\_\-\-R)
+\item 
+void \hyperlink{classDtPlanar_a6445269d74ae176c5d299ac71cd7ac87}{setd\-Ld\-R} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDtPlanar_a5d5b77f9362b9dccca97df093cf96ab2}{\index{Dt\-Planar@{Dt\-Planar}!Dt\-Planar@{Dt\-Planar}}
+\index{Dt\-Planar@{Dt\-Planar}!DtPlanar@{Dt\-Planar}}
+\subsubsection[{Dt\-Planar}]{\setlength{\rightskip}{0pt plus 5cm}Dt\-Planar\-::\-Dt\-Planar (
+\begin{DoxyParamCaption}
+\item[{scfgp $\ast$}]{\-\_\-cfg, }
+\item[{{\bf jet\-Geometry} $\ast$}]{\-\_\-r, }
+\item[{{\bf electrons} $\ast$}]{\-\_\-ele, }
+\item[{std\-::string}]{\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classDtPlanar_a5d5b77f9362b9dccca97df093cf96ab2}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-cfg} & -\/ scfgp class object \\
+\hline
+{\em \-\_\-r} & -\/ \hyperlink{classjetGeometry}{jet\-Geometry} class object \\
+\hline
+{\em \-\_\-ele} & -\/ electrons class object \\
+\hline
+{\em \-\_\-id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+9                                                                              : 
+      \hyperlink{classexternalRadiationPlanar_a6254e3256914a093886b7af1f1dc4876}{externalRadiationPlanar}( \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}, \hyperlink{classbaseClass_a482bb9b1d94f3eb3f31026d14e9a2bb6}{r}, \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele}, \textcolor{keywordtype}{id} ) \{
+10   \textcolor{comment}{/* request parameters */}
+11   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>( \textcolor{keywordtype}{id}+\textcolor{stringliteral}{"e"}, 10.0, &e );
+12   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> request<double>( \textcolor{keywordtype}{id}+\textcolor{stringliteral}{"cf"}, 0.1, &cf );
+13 
+14   \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg} -> updateRequests( );
+15   
+16   \textcolor{keywordflow}{if}( R1 == 0.0 || R2 == 0.0 ) \{ \hyperlink{classDtPlanar_aaa8956b3aa5b8ecff5e746a8ba84a67c}{setRadius}( ); \}
+17   \textcolor{keywordflow}{else} \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Overwritting R1 and R2 values from config file!"}); \}
+18   
+19   \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin} = 0.01*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMin( ) )*\hyperlink{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}{getvext}( R2 );
+20   vpMax = 100.0*DSQR( \hyperlink{classenergyDissProc_a0dbf0777938131e938c1fdad5df38a7f}{ele} -> getGammaMax( ) )*\hyperlink{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}{getvext}( R1 );
+21 
+22   \textcolor{comment}{/* initialize disk radius R;}
+23 \textcolor{comment}{     here we use N-1 to use the same Upe as in other processes */}
+24   R = \textcolor{keyword}{new} \hyperlink{classlogGeometry}{logGeometry}( R1, R2, \hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N}-1 );
+25 
+26   allocateUpe( ); \textcolor{comment}{// this is for storing matrix information about dUpe(r)/dR (R) }
+27   allocateUpeR( ); \textcolor{comment}{// this is for storing vector information about Upe(r) }
+28   allocateLpv( );
+29   allocateLvPoint( );
+30   allocateLvPointAvg( );
+31 
+32   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N};i++ ) \{ set\_vp( i, \hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin}*pow( vpMax/\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},(\textcolor{keywordtype}{double})i/((\textcolor{keywordtype}{double})N-1)) ); \}
+33 
+34   \textcolor{comment}{/* set the values of dLdR */}
+35   \hyperlink{classDtPlanar_a6445269d74ae176c5d299ac71cd7ac87}{setdLdR}( ); \}
+\end{DoxyCode}
+\hypertarget{classDtPlanar_a5ce5e082dab0dbeea9b11c2fae22cfb8}{\index{Dt\-Planar@{Dt\-Planar}!$\sim$\-Dt\-Planar@{$\sim$\-Dt\-Planar}}
+\index{$\sim$\-Dt\-Planar@{$\sim$\-Dt\-Planar}!DtPlanar@{Dt\-Planar}}
+\subsubsection[{$\sim$\-Dt\-Planar}]{\setlength{\rightskip}{0pt plus 5cm}Dt\-Planar\-::$\sim$\-Dt\-Planar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDtPlanar_a5ce5e082dab0dbeea9b11c2fae22cfb8}
+destructor 
+\begin{DoxyCode}
+37                      \{
+38   freeUpe( );
+39   freeLpv( );
+40   freeLvPoint( );
+41   freeLvPointAvg( ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}{\index{Dt\-Planar@{Dt\-Planar}!getvext@{getvext}}
+\index{getvext@{getvext}!DtPlanar@{Dt\-Planar}}
+\subsubsection[{getvext}]{\setlength{\rightskip}{0pt plus 5cm}double Dt\-Planar\-::getvext (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-\-R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}
+get v\-\_\-ext value in Hz 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-\-R} & -\/ radius in accretion disk plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+v\-\_\-ext 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_aa9ea7f37d1e43219f71ec6b215a38b96}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+82                                     \{
+83   vext = e*eV2erg/PLANCK\_H;
+84   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ \textcolor{keywordflow}{return} vext; \}
+85   \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{return} vext*R1/\_R; \}
+86 \}
+\end{DoxyCode}
+\hypertarget{classDtPlanar_a0d1b6697d54a08030ed50b7e4b5fbfef}{\index{Dt\-Planar@{Dt\-Planar}!print\-Info@{print\-Info}}
+\index{print\-Info@{print\-Info}!DtPlanar@{Dt\-Planar}}
+\subsubsection[{print\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Dt\-Planar\-::print\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtPlanar_a0d1b6697d54a08030ed50b7e4b5fbfef}
+print basic information about myself (virtual) 
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_a47e497b12dfa4e71311bffb3a4b384b2}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+43                           \{
+44   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Info"});
+45   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"N"},\hyperlink{classbaseClass_a2b4d07d2b46197d495de0477f4bb22f8}{N});
+46   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using stratification version NEW (only option)"});
+47   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius R1"},R1,\textcolor{stringliteral}{"cm"});
+48   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"radius R2"},R2,\textcolor{stringliteral}{"cm"});
+49   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"stratification index"},s);
+50   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg energy (in external frame)"},e,\textcolor{stringliteral}{"eV"});
+51   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Avg frequency (in external frame)"},\hyperlink{classDtPlanar_a46eb0e18c9a391adccffe2623dd3dfbe}{getvext}( R1 ),\textcolor{stringliteral}{"Hz"});
+52   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Clouds covering factor cf"},cf);
+53   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"alpha"},alpha);
+54   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMin"},\hyperlink{classenergyDissProc_aafedd3c012010a8e8aa34247660fea3b}{vpMin},\textcolor{stringliteral}{"Hz"});
+55   bazinga::print\_info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"vpMax"},vpMax,\textcolor{stringliteral}{"Hz"});
+56   \textcolor{keywordflow}{if}( approx ) \{ bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using approximate dependence on R"}); \}
+57   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a2cc4e4eae15982f977a0dfa5458d80f4}{luminosityConstU} ) \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using constant u' to calculate luminosity."}
+      ); \}
+58   \textcolor{keywordflow}{if}( \hyperlink{classenergyDissProc_a0a23854c1c830dfb9ac33d116fce5b7d}{luminosityConstNu} ) \{ bazinga::warning(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Using constant v\_ext to calculate
+       luminosity."}); \}
+59 \}
+\end{DoxyCode}
+\hypertarget{classDtPlanar_a6445269d74ae176c5d299ac71cd7ac87}{\index{Dt\-Planar@{Dt\-Planar}!setd\-Ld\-R@{setd\-Ld\-R}}
+\index{setd\-Ld\-R@{setd\-Ld\-R}!DtPlanar@{Dt\-Planar}}
+\subsubsection[{setd\-Ld\-R}]{\setlength{\rightskip}{0pt plus 5cm}void Dt\-Planar\-::setd\-Ld\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtPlanar_a6445269d74ae176c5d299ac71cd7ac87}
+set d\-L/d\-R for particulat source 
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_a7914df2de2d822755ac1c9e6d860e22b}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+68                         \{
+69   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+70   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+71   \textcolor{comment}{/* fill in dLdR vector that will be used for the rest of the calculations */}
+72   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Seeting dLdR."});
+73   \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i=0;i<R->getMaxIndex();i++ ) \{
+74       R -> \hyperlink{classexternalRadiationPlanar_acfddae49394d11c89d1d47229ba8a3f7}{update}( i );
+75       \textcolor{keywordtype}{double} val = 0.0;
+76       val = cf*Ldisk*\hyperlink{classexternalRadiationPlanar_a351a13f462898c59bae55ce606829648}{ctau}( )*pow(R->get( ),-s);
+77       gsl\_vector\_set( dLdR, R->getIndex(), val ); \}
+78   \textcolor{comment}{/* Now when we have all set let us save what we have just calculated - dLdR */}
+79   bazinga::info(\textcolor{keywordtype}{id},\textcolor{stringliteral}{"Saving dLdR."});
+80   bazinga::save\_GSLVector( \textcolor{stringliteral}{"dLdR\_"}+this->\hyperlink{classbaseClass_a756d5accf10ced9a34024048c95a51c9}{whoAmI}( ), R->getRadius\_GSLVector( ), dLdR, 
+      \hyperlink{classbaseClass_a744f87a6ebe63da08256c022d42a4ca7}{cfg}->get<std::string>(\textcolor{stringliteral}{"output"}) ); \}
+\end{DoxyCode}
+\hypertarget{classDtPlanar_aaa8956b3aa5b8ecff5e746a8ba84a67c}{\index{Dt\-Planar@{Dt\-Planar}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!DtPlanar@{Dt\-Planar}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Dt\-Planar\-::set\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDtPlanar_aaa8956b3aa5b8ecff5e746a8ba84a67c}
+sets rext if not provided by config file 
+
+Reimplemented from \hyperlink{classexternalRadiationPlanar_a710859cda6258d75098ccb31e60ab261}{external\-Radiation\-Planar}.
+
+
+\begin{DoxyCode}
+61                           \{
+62   \textcolor{keywordtype}{double} Ledd = 1.3e47*mBH;
+63   \textcolor{keywordtype}{double} Ldisk = eDisk*mDot*Ledd;
+64   \textcolor{keywordtype}{double} R\_sub = 1.6e-5*sqrt( Ldisk );
+65   R1 = R\_sub;
+66   R2 = 10.0*R\_sub; \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mjaniak/\-Soft/blazar++/include/\hyperlink{DtPlanar_8hpp}{Dt\-Planar.\-hpp}\item 
+/home/mjaniak/\-Soft/blazar++/src/\hyperlink{DtPlanar_8cpp}{Dt\-Planar.\-cpp}\end{DoxyCompactItemize}
